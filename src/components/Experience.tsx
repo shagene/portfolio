@@ -7,8 +7,8 @@ const experiences = [
     "title": "Senior Software Developer / UX Engineer",
     "company": "Computershare",
     "period": "2021 - Present",
-    "description": "As the Senior Software Developer and UX Engineer at Computershare, I spearheaded the development and architecture of the Global Design System, significantly improving product consistency and development efficiency. I led the design and implementation of reusable React components for multiple projects and pioneered automated design-to-code workflows utilizing tools like Figma, Token Studio, Node.js, and Style Dictionary. As the company's accessibility champion, I focused on improving accessibility using tools like Axe Dev Tools, WAVE, and Lighthouse. Additionally, I ensured the technical feasibility of visual and UX designs, facilitated collaboration between design and development teams, mentored developers on Angular/.NET projects, and established best practices for component development across the organization.",
-    "skills": ["JavaScript", "React", "TypeScript", "Angular", "Figma", "Token Studio", "Node.js", "Style Dictionary", "Axe Dev Tools", "WAVE", "Lighthouse"]
+    "description": "At Computershare, as a Senior Software Developer and UX Engineer, I took charge of developing and structuring the Frontend of the Global Design System, resulting in substantial gains in product consistency and development efficiency. I led the design and implementation of reusable React components which are used across multiple projects and revolutionized the design-to-code workflow by automating the entire process. This automation seamlessly integrated Figma, Token Studio, ZeroHeight, and JSON files to generate production-ready components, drastically reducing manual effort and ensuring consistency across the design system.\n\nI pioneered automated design-to-code workflows utilizing tools like Node.js and Style Dictionary, further streamlining the development process. As the company's accessibility champion, I focused on improving accessibility using tools like Axe Dev Tools, WAVE, and Lighthouse. Additionally, I ensured the technical feasibility of visual and UX designs, facilitated collaboration between design and development teams, mentored developers on Angular/.NET projects, and established best practices for component development across the organization.\n\nIn a key project, I served as the team lead for the design team, overseeing one design team and three development teams. In this role, I successfully managed resources and priorities to keep the design team ahead of the development schedule, ensuring smooth workflow and timely delivery of design assets.",
+    "skills": ["JavaScript", "React", "TypeScript", "Angular", "Figma", "Token Studio", "ZeroHeight", "Node.js", "Style Dictionary", "Axe Dev Tools", "WAVE", "Lighthouse"]
   },
   {
     "title": "Software Developer",
@@ -21,8 +21,8 @@ const experiences = [
     "title": "Software Developer",
     "company": "Judge Consulting Group",
     "period": "2017 - 2018",
-    "description": "As a Software Developer at Judge Consulting Group, I led the development of innovative software solutions for the fabric industry, taking projects from concept to deployment. I spearheaded a standout project using PowerBuilder to enhance material production machinery, and I redesigned company website pages to improve user experience based on user needs. I participated in system specification meetings to ensure alignment with project requirements and facilitated effective team communication using Agile and Scrum methodologies. My contributions spanned a diverse tech stack including VS2012/PowerBuilder, .NET Framework, ASP.NET, C#, and VB.NET, while also improving database efficiency with LINQ, Entity Framework, and SQL Server.",
-    "skills": ["PowerBuilder", ".NET Framework", "ASP.NET", "C#", "VB.NET", "SQL Server", "Agile", "Scrum"]
+    "description": "As a Software Developer consulting for Judge Consulting Group, I drove the development of innovative software solutions for the fabric industry, guiding projects from concept to deployment. I successfully led a standout project utilizing PowerBuilder to enhance material production machinery, significantly improving operational efficiency.\n\nI took charge of redesigning company website pages, focusing on enhancing user experience based on comprehensive user needs analysis. My active participation in system specification meetings ensured seamless alignment with project requirements, while I facilitated effective team communication by implementing Agile and Scrum methodologies.\n\nMy technical contributions spanned a diverse tech stack including VS2012/PowerBuilder, .NET Framework, ASP.NET, C#, and VB.NET. Additionally, I played a key role in improving database efficiency through the strategic use of LINQ, Entity Framework, and SQL Server, resulting in optimized data management and retrieval processes.",
+    "skills": ["PowerBuilder", ".NET Framework", "ASP.NET", "C#", "VB.NET", "Bootsrap", "SQL Server", "Agile", "Scrum"]
   },
   {
     "title": "IT Specialist / Web Developer",
@@ -49,7 +49,7 @@ const experiences = [
     "title": "Sergeant, Tactical Data Systems Specialist",
     "company": "United States Marine Corps",
     "period": "2006 - 2011",
-    "description": "Served as a Combat Veteran, Technical Leader, and Communications Specialist, playing a crucial role in establishing and maintaining critical communications systems in both combat and garrison environments. Recognized for exceptional service and leadership in Iraq, consistently exceeding expectations in operational efficiency and network security.",
+    "description": "Combat Veteran, Technical Leader, and Communications Specialist. \n\nI served in both combat and garrison environments, playing a critical role in establishing and maintaining essential communications systems. While deployed to Iraq in combat roles, I was recognized for exceptional service and leadership, consistently exceeding expectations in operational efficiency, network security, and mission success.",
     "skills": [
       "Network Design & Implementation",
       "Satellite Communications",
@@ -74,6 +74,15 @@ const experiences = [
 ];
 
 const Experience = () => {
+  // Function to convert \n\n to line breaks
+  const formatDescription = (description: string) => {
+    return description.split('\n\n').map((paragraph, index) => (
+      <p key={index} className="text-light-text dark:text-dark-text mb-4">
+        {paragraph}
+      </p>
+    ));
+  };
+
   return (
     <section id="experience" className="py-16 relative overflow-hidden">
       <div className="container mx-auto relative z-10">
@@ -86,7 +95,9 @@ const Experience = () => {
                 <p className="text-light-text-secondary dark:text-dark-text-secondary font-medium">{exp.period}</p>
               </div>
               <p className="text-xl text-light-text-secondary dark:text-dark-text-secondary mb-4">{exp.company}</p>
-              <p className="text-light-text dark:text-dark-text mb-6">{exp.description}</p>
+              <div className="mb-6">
+                {formatDescription(exp.description)}
+              </div>
               
               {exp.company === "United States Marine Corps" && exp.achievements && (
                 <div className="mb-6">
