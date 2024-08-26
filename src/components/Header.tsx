@@ -25,10 +25,14 @@ const Header = () => {
     setMounted(true)
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
+      // Close the menu when scrolling
+      if (isMenuOpen) {
+        setIsMenuOpen(false)
+      }
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isMenuOpen]) // Add isMenuOpen to the dependency array
 
   useEffect(() => {
     const intervalId = setInterval(() => {
