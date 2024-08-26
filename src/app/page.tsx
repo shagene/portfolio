@@ -16,6 +16,11 @@ export default function Home() {
         <meta name="author" content="Steven Hagene" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.stevenhagene.com" />
+        <meta property="og:title" content="Steven Hagene - Senior Software Developer & UX Engineer" />
+        <meta property="og:description" content="Portfolio of Steven Hagene, a Senior Software Developer and UX Engineer with expertise in full-stack development and design systems architecture." />
+        <meta property="og:image" content="https://www.stevenhagene.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.stevenhagene.com" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <main className="min-h-screen">
         <Header />

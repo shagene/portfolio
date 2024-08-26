@@ -8,17 +8,20 @@ This is a modern, responsive portfolio website built with Next.js, showcasing St
 - Dark mode toggle for improved user experience
 - Animated background with interactive particles
 - Sections for Skills, Projects, Experience, and Contact
-- Parallax scrolling effects
-- Optimized performance using Next.js best practices
+- Google Analytics integration for tracking user interactions
+- Contact form connected to Google Sheets for easy management
+- SEO optimized with meta tags and sitemap generation
+- Custom 404 page for better user experience
 
 ## Technologies Used
 
 - Next.js 14
-- React
+- React 18
 - TypeScript
 - Tailwind CSS
 - next-themes for dark mode functionality
-- react-scroll-parallax for parallax effects
+- @next/third-parties for Google Analytics integration
+- Google Apps Script for contact form submission to Google Sheets
 
 ## Getting Started
 

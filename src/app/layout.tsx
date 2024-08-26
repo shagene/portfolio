@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from 'next-themes';
 import dynamic from 'next/dynamic';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 
 const AnimatedBackground = dynamic(() => import('@/components/AnimatedBackground'), { 
@@ -33,6 +34,7 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-67WJGHWR05" />
     </html>
   );
 }
