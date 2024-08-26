@@ -28,7 +28,7 @@ const ContactForm = () => {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwcz87q_-i-DCBpUJDTGC1anRbW7bw3DKckhDudGPhSgNaj6llRJsB7Fbunri-KyHxS/exec', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
