@@ -62,7 +62,7 @@ const projects: Project[] = [
   },
 ];
 
-const ImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
+const ImageCarousel: React.FC<{ images: string[]; projectTitle: string }> = ({ images, projectTitle }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -86,7 +86,7 @@ const ImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
         >
           <Image
             src={image}
-            alt={`Project image ${index + 1}`}
+            alt={`${projectTitle} - Project image ${index + 1}`}
             layout="fill"
             objectFit="contain"
             className="p-2"
@@ -105,7 +105,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-white/80 dark:bg-dark-accent/80 rounded-lg shadow-md overflow-hidden backdrop-blur-sm">
-              <ImageCarousel images={project.images} />
+              <ImageCarousel images={project.images} projectTitle={project.title} />
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2 text-navy-blue dark:text-usmc-gold">{project.title}</h3>
                 <p className="text-light-text-secondary dark:text-dark-text-secondary mb-2">{project.description}</p>

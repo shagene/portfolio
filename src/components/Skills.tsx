@@ -21,7 +21,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map((skill) => (
             <div key={skill.name} className="bg-white/80 dark:bg-dark-accent/80 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center backdrop-blur-sm">
-              <span className="text-4xl mb-2">{skill.icon}</span>
+              <span className="text-4xl mb-2" aria-hidden="true">{skill.icon}</span>
               <h3 className="text-lg font-semibold text-navy-blue dark:text-usmc-gold">{skill.name}</h3>
             </div>
           ))}
