@@ -9,7 +9,7 @@ const rotatingTitles = [
   "UX Engineer",
   "Full-Stack Development Expert",
   "Design Systems Architecture Specialist",
-  "Former Marine Sergeant",
+  "Marine Sergeant",
   "10+ Years in Software Development"
 ];
 
@@ -55,13 +55,13 @@ const Header = () => {
           <h2 className="text-2xl font-bold text-navy-blue dark:text-white transition-opacity duration-300 min-w-[300px] sm:min-w-0">
             {rotatingTitles[titleIndex]}
           </h2>
-          <button 
+          {/* <button 
             onClick={() => setIsPaused(!isPaused)}
             className="ml-2 text-sm text-usmc-scarlet dark:text-usmc-gold"
             aria-label={isPaused ? "Resume rotation" : "Pause rotation"}
           >
             {isPaused ? "▶️" : "⏸️"}
-          </button>
+          </button> */}
         </div>
         
         {/* Hamburger menu for mobile */}
