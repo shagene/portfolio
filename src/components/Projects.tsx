@@ -99,7 +99,7 @@ const ImageCarousel: React.FC<{ images: string[]; projectTitle: string }> = ({ i
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 relative overflow-hidden">
+    <section id="projects" className="pt-24 py-16 relative overflow-hidden"> {/* Added pt-24 for top padding */}
       <div className="container mx-auto relative z-10">
         <h2 className="text-4xl font-bold mb-8 text-center text-navy-blue dark:text-usmc-gold">Personal Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

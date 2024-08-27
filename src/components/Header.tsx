@@ -46,6 +46,19 @@ const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const yOffset = -80; // Adjust this value based on your header's height
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   if (!mounted) return null
 
   return (
@@ -77,10 +90,11 @@ const Header = () => {
 
         {/* Desktop menu */}
         <ul className="hidden sm:flex space-x-4">
-          {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
+          {['Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
             <li key={item}>
               <Link 
                 href={`#${item.toLowerCase()}`} 
+                onClick={(e) => scrollToSection(e, item.toLowerCase())}
                 className="hover:text-usmc-scarlet dark:hover:text-usmc-gold transition-colors px-2 py-1 rounded"
               >
                 {item}
@@ -120,12 +134,12 @@ const Header = () => {
           ×
         </button>
         <ul className="flex flex-col space-y-4 p-4 mt-16">
-          {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
+          {['Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
             <li key={item}>
               <Link 
                 href={`#${item.toLowerCase()}`} 
+                onClick={(e) => scrollToSection(e, item.toLowerCase())}
                 className="text-navy-blue dark:text-white hover:text-usmc-scarlet dark:hover:text-usmc-gold transition-colors px-2 py-1 rounded block"
-                onClick={toggleMenu}
               >
                 {item}
               </Link>
