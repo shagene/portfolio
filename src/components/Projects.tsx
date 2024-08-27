@@ -19,7 +19,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'SI Eclipse',
-    description: 'Your Essential Companion for the 2024 Solar Eclipse in Southern Illinois!',
+    description: 'Your Essential Companion for the 2024 Solar Eclipse in Southern Illinois! This project was in association with Packer Labs and MoonBunker Media. The project included a Wordpress site, and a mobile app. There was a team of individuals that designed, developed, and marketed the project for the eclipse.',
     technologies: ['Flutter', 'Dart', 'Firebase', 'Python', 'Wordpress'],
     images: ['/eclipse.png'],
     type: 'Mobile App',
@@ -43,19 +43,19 @@ const projects: Project[] = [
   },
   {
     title: 'CoinFaucet Suite',
-    description: 'Official App for the Coin Faucet site',
+    description: 'Official App for the Coin Faucet site. This app was paid by and developed for the owner of the Coin Faucet site. The app code was passed on to the owner of the Coin Faucet site after the project was completed.',
     technologies: ['Flutter', 'Firebase', 'Dart'],
     images: ['/faucetsuite.png'],
     type: 'Mobile App',
     dateActive: 'Jan 2022 - Jan 2024',
-    metrics: '4,000+ downloads',
+    metrics: '5,000+ downloads',
     link: '',
     isActive: false,
     background: 'bg-gradient-to-b from-[rgba(227,227,228,0.10)] to-[rgba(164,106,48,0.80)]'
   },
   {
     title: 'Crypto Faucet Hub',
-    description: 'Web 3 crypto centralized mobile app and web platform.',
+    description: 'Web 3 crypto centralized mobile app and web platform. This app codebase was eventually sold. Origally it had started off using Ionic and Angular, but was later converted to Flutter.',
     technologies: ['Flutter', 'Dart', 'SQLite', 'Firebase'],
     images: ['/cfh.png'],
     type: 'Mobile App',
