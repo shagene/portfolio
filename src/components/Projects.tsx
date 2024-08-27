@@ -13,6 +13,7 @@ interface Project {
   metrics: string;
   link?: string;
   isActive: boolean;
+  background: string;
 }
 
 const projects: Project[] = [
@@ -20,12 +21,13 @@ const projects: Project[] = [
     title: 'SI Eclipse',
     description: 'Your Essential Companion for the 2024 Solar Eclipse in Southern Illinois!',
     technologies: ['Flutter', 'Dart', 'Firebase', 'Python', 'Wordpress'],
-    images: ['/SI-Eclipse-Icon.png'],
+    images: ['/eclipse.png'],
     type: 'Mobile App',
     dateActive: 'Jun 2023 - Present',
     metrics: '2,000+ downloads',
     link: 'https://www.sieclipse.com/',
-    isActive: true
+    isActive: true,
+    background: 'bg-gradient-to-b from-[rgba(239,64,54,0.30)] to-[rgba(240,154,29,0.20)]'
   },
   {
     title: 'AssessmentSphere',
@@ -36,33 +38,36 @@ const projects: Project[] = [
     dateActive: 'Jan 2024 - Present',
     metrics: '10 - 100 Daily active users',
     link: 'https://flashcard-tan-psi.vercel.app/',
-    isActive: true
+    isActive: true,
+    background: 'bg-gradient-to-b from-[rgba(68,66,219,0.10)] to-[rgba(39,70,99,0.60)]'
   },
   {
     title: 'CoinFaucet Suite',
     description: 'Official App for the Coin Faucet site',
     technologies: ['Flutter', 'Firebase', 'Dart'],
-    images: ['/coinfaucet2.jpg'],
+    images: ['/faucetsuite.png'],
     type: 'Mobile App',
     dateActive: 'Jan 2022 - Jan 2024',
     metrics: '4,000+ downloads',
     link: '',
-    isActive: false
+    isActive: false,
+    background: 'bg-gradient-to-b from-[rgba(227,227,228,0.10)] to-[rgba(164,106,48,0.80)]'
   },
   {
     title: 'Crypto Faucet Hub',
     description: 'Web 3 crypto centralized mobile app and web platform.',
     technologies: ['Flutter', 'Dart', 'SQLite', 'Firebase'],
-    images: ['/cfh.png', '/cfh2.png'],
+    images: ['/cfh.png'],
     type: 'Mobile App',
     dateActive: 'July 2019 - Dec 2021',
     metrics: '2,000+ total users',
     link: '',
-    isActive: false
+    isActive: false,
+    background: 'bg-gradient-to-b from-[rgba(253,213,56,0.20)] to-[rgba(51,51,51,0.40)]'
   }
 ];
 
-const ImageCarousel: React.FC<{ images: string[]; projectTitle: string }> = ({ images, projectTitle }) => {
+const ImageCarousel: React.FC<{ images: string[]; projectTitle: string; background: string }> = ({ images, projectTitle, background }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -76,7 +81,7 @@ const ImageCarousel: React.FC<{ images: string[]; projectTitle: string }> = ({ i
   }, [images]);
 
   return (
-    <div className="relative w-full h-64 overflow-hidden bg-gray-200">
+    <div className={`relative w-full h-64 overflow-hidden ${background}`}>
       {images.map((image, index) => (
         <div
           key={index}
@@ -105,7 +110,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-white/80 dark:bg-dark-accent/80 rounded-lg shadow-md overflow-hidden backdrop-blur-sm flex flex-col">
-              <ImageCarousel images={project.images} projectTitle={project.title} />
+              <ImageCarousel images={project.images} projectTitle={project.title} background={project.background} />
               <div className="p-4 flex-grow flex flex-col">
                 <h3 className="text-xl font-semibold mb-2 text-navy-blue dark:text-usmc-gold">{project.title}</h3>
                 <p className="text-light-text-secondary dark:text-dark-text-secondary mb-2">{project.description}</p>
