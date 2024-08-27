@@ -17,28 +17,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'CoinFaucet Suite',
-    description: 'Official App for the Coin Faucet site',
-    technologies: ['Flutter', 'Firebase', 'Dart'],
-    images: ['/coinfaucet2.jpg'],
-    type: 'Mobile App',
-    dateActive: 'Jan 2022 - Jan 2024',
-    metrics: '4,000+ downloads',
-    link: '',
-    isActive: false
-  },
-  {
-    title: 'Crypto Faucet Hub',
-    description: 'Web 3 crypto centralized mobile app and web platform.',
-    technologies: ['Flutter', 'Dart', 'SQLite', 'Firebase'],
-    images: ['/cfh.png', '/cfh2.png'],
-    type: 'Mobile App',
-    dateActive: 'July 2019 - Dec 2021',
-    metrics: '2,000+ total users',
-    link: '',
-    isActive: false
-  },
-  {
     title: 'SI Eclipse',
     description: 'Your Essential Companion for the 2024 Solar Eclipse in Southern Illinois!',
     technologies: ['Flutter', 'Dart', 'Firebase', 'Python', 'Wordpress'],
@@ -60,6 +38,28 @@ const projects: Project[] = [
     link: 'https://flashcard-tan-psi.vercel.app/',
     isActive: true
   },
+  {
+    title: 'CoinFaucet Suite',
+    description: 'Official App for the Coin Faucet site',
+    technologies: ['Flutter', 'Firebase', 'Dart'],
+    images: ['/coinfaucet2.jpg'],
+    type: 'Mobile App',
+    dateActive: 'Jan 2022 - Jan 2024',
+    metrics: '4,000+ downloads',
+    link: '',
+    isActive: false
+  },
+  {
+    title: 'Crypto Faucet Hub',
+    description: 'Web 3 crypto centralized mobile app and web platform.',
+    technologies: ['Flutter', 'Dart', 'SQLite', 'Firebase'],
+    images: ['/cfh.png', '/cfh2.png'],
+    type: 'Mobile App',
+    dateActive: 'July 2019 - Dec 2021',
+    metrics: '2,000+ total users',
+    link: '',
+    isActive: false
+  }
 ];
 
 const ImageCarousel: React.FC<{ images: string[]; projectTitle: string }> = ({ images, projectTitle }) => {
@@ -99,14 +99,14 @@ const ImageCarousel: React.FC<{ images: string[]; projectTitle: string }> = ({ i
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-24 py-16 relative overflow-hidden"> {/* Added pt-24 for top padding */}
+    <section id="projects" className="pt-24 py-16 relative overflow-hidden">
       <div className="container mx-auto relative z-10">
         <h2 className="text-4xl font-bold mb-8 text-center text-navy-blue dark:text-usmc-gold">Personal Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white/80 dark:bg-dark-accent/80 rounded-lg shadow-md overflow-hidden backdrop-blur-sm">
+            <div key={index} className="bg-white/80 dark:bg-dark-accent/80 rounded-lg shadow-md overflow-hidden backdrop-blur-sm flex flex-col">
               <ImageCarousel images={project.images} projectTitle={project.title} />
-              <div className="p-4">
+              <div className="p-4 flex-grow flex flex-col">
                 <h3 className="text-xl font-semibold mb-2 text-navy-blue dark:text-usmc-gold">{project.title}</h3>
                 <p className="text-light-text-secondary dark:text-dark-text-secondary mb-2">{project.description}</p>
                 <p className="text-sm text-light-text-secondary dark:text-dark-text-secondary mb-2">
@@ -122,21 +122,23 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                {project.isActive && project.link && (
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="bg-usmc-scarlet hover:bg-usmc-gold text-white font-bold py-2 px-4 rounded transition duration-300 inline-block"
-                  >
-                    View Project
-                  </a>
-                )}
-                {!project.isActive && (
-                  <span className="text-light-text-secondary dark:text-dark-text-secondary italic">
-                    Project no longer active
-                  </span>
-                )}
+                <div className="mt-auto">
+                  {project.isActive && project.link && (
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="bg-usmc-scarlet hover:bg-usmc-gold text-white font-bold py-2 px-4 rounded transition duration-300 inline-block"
+                    >
+                      View Project
+                    </a>
+                  )}
+                  {!project.isActive && (
+                    <span className="text-light-text-secondary dark:text-dark-text-secondary italic">
+                      Project no longer active
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
           ))}
