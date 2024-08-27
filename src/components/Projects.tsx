@@ -117,7 +117,7 @@ const Projects = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-light-accent/80 dark:bg-dark-accent/80 text-navy-blue dark:text-usmc-gold px-2 py-1 rounded text-sm">
+                    <span key={techIndex} className="bg-navy-blue/10 dark:bg-usmc-gold/20 text-navy-blue dark:text-usmc-gold px-3 py-1 rounded-full text-sm font-medium">
                       {tech}
                     </span>
                   ))}
