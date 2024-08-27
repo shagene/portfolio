@@ -3,14 +3,18 @@
 import React from 'react';
 
 const skills = [
-  { name: 'React', icon: '⚛️' },
-  { name: 'Angular', icon: '🅰️' },
-  { name: 'Flutter', icon: '📱' },
   { name: 'JavaScript', icon: '🟨' },
   { name: 'TypeScript', icon: '🔷' },
+  { name: 'React', icon: '⚛️' },
+  { name: 'Angular', icon: '🅰️' },
   { name: 'Node.js', icon: '🟩' },
   { name: 'Python', icon: '🐍' },
   { name: 'SQL', icon: '🗃️' },
+  { name: 'Mobile App Development', icon: '📱' },
+  { name: 'Flutter', icon: '📱' },
+  { name: 'Analytics', icon: '📊' },
+  { name: 'Data Visualization', icon: '📈' },
+  { name: 'Web Accessibility', icon: '♿' },
 ];
 
 const Skills = () => {
