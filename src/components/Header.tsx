@@ -32,7 +32,7 @@ const Header = () => {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [isMenuOpen]) // Add isMenuOpen to the dependency array
+  }, [isMenuOpen])
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -49,10 +49,8 @@ const Header = () => {
   if (!mounted) return null
 
   return (
-    <header className={`transition-all duration-300 fixed w-full z-50 ${
-      scrolled 
-        ? 'bg-white/80 dark:bg-dark-bg/80 backdrop-blur-sm shadow-md' 
-        : 'bg-transparent'
+    <header className={`transition-all duration-300 fixed w-full z-50 bg-white dark:bg-dark-bg ${
+      scrolled ? 'shadow-md' : ''
     }`}>
       <nav className="container mx-auto flex justify-between items-center py-6 px-4">
         <div className="flex items-center">
@@ -101,12 +99,21 @@ const Header = () => {
         </ul>
       </nav>
 
+      {/* Mobile menu backdrop */}
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-40 sm:hidden"
+          onClick={toggleMenu}
+          aria-hidden="true"
+        ></div>
+      )}
+
       {/* Mobile side menu */}
-      <div className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-dark-bg shadow-lg transform transition-transform duration-300 ease-in-out ${
+      <div className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-dark-bg shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
         isMenuOpen ? 'translate-x-0' : 'translate-x-full'
       } sm:hidden`}>
         <button
-          className="absolute top-4 right-4 text-2xl"
+          className="absolute top-4 right-4 text-2xl text-navy-blue dark:text-white"
           onClick={toggleMenu}
           aria-label="Close menu"
         >
@@ -117,7 +124,7 @@ const Header = () => {
             <li key={item}>
               <Link 
                 href={`#${item.toLowerCase()}`} 
-                className="hover:text-usmc-scarlet dark:hover:text-usmc-gold transition-colors px-2 py-1 rounded block"
+                className="text-navy-blue dark:text-white hover:text-usmc-scarlet dark:hover:text-usmc-gold transition-colors px-2 py-1 rounded block"
                 onClick={toggleMenu}
               >
                 {item}
@@ -130,7 +137,7 @@ const Header = () => {
                 setTheme(theme === 'dark' ? 'light' : 'dark')
                 toggleMenu()
               }}
-              className="hover:text-usmc-scarlet dark:hover:text-usmc-gold transition-colors px-2 py-1 rounded"
+              className="text-navy-blue dark:text-white hover:text-usmc-scarlet dark:hover:text-usmc-gold transition-colors px-2 py-1 rounded"
               aria-label="Toggle dark mode"
             >
               {theme === 'dark' ? '🌞' : '🌙'}
