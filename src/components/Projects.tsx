@@ -18,6 +18,30 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'AssessmentSphere',
+    description: 'Take quizzes to reinforce your knowledge and identify areas for improvement. The app tracks your progress and provides detailed analytics to help you study more effectively. Active development of version 2.0 of AssessmentSphere is in the works to be multi-tennant, with AI assistance.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'AI'],
+    images: ['/assessment-sphere.png'],
+    type: 'Web App',
+    dateActive: 'Jan 2024 - Present',
+    metrics: '10 - 100 Daily active users',
+    link: 'https://flashcard-tan-psi.vercel.app/',
+    isActive: true,
+    background: 'bg-gradient-to-b from-[rgba(68,66,219,0.10)] to-[rgba(39,70,99,0.60)]'
+  },
+  {
+    title: 'SpellSphere',
+    description: 'SpellSphere is an innovative, interactive spelling practice app designed for children. Currently in prototype phase, it was initially developed for personal use by my own kids. The app utalizes cutting-edge text-to-speech technologies from ElevenLabs AI to create an engaging learning experience. Future plans include expanding its functionality and incorporating it into the broader AssessmentSphere ecosystem',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'AI', 'Text-To-Speech',],
+    images: ['/assessment-sphere.png'],
+    type: 'Web App',
+    dateActive: 'Aug 2024 - Present',
+    metrics: '10 - 100 Daily active users',
+    link: 'https://spell-sphere.vercel.app/',
+    isActive: true,
+    background: 'bg-gradient-to-b from-[rgba(68,66,219,0.10)] to-[rgba(39,70,99,0.60)]'
+  },
+  {
     title: 'SI Eclipse',
     description: 'Your Essential Companion for the 2024 Solar Eclipse in Southern Illinois! This project was in association with Packer Labs and MoonBunker Media. The project included a Wordpress site, and a mobile app. There was a team of individuals that designed, developed, and marketed the project for the eclipse.',
     technologies: ['Flutter', 'Dart', 'Firebase', 'Python', 'Wordpress'],
@@ -28,18 +52,6 @@ const projects: Project[] = [
     link: 'https://www.sieclipse.com/',
     isActive: true,
     background: 'bg-gradient-to-b from-[rgba(239,64,54,0.30)] to-[rgba(240,154,29,0.20)]'
-  },
-  {
-    title: 'AssessmentSphere',
-    description: 'Take quizzes to reinforce your knowledge and identify areas for improvement. The app tracks your progress and provides detailed analytics to help you study more effectively. Active development of version 2.0 of AssessmentSphere. This version is built with Go Lang, Next.js, Supabase, and Docker as a muti-tennant assessment platform. ',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Go Lang', 'Docker'],
-    images: ['/assessment-sphere.png'],
-    type: 'Web App',
-    dateActive: 'Jan 2024 - Present',
-    metrics: '10 - 100 Daily active users',
-    link: 'https://flashcard-tan-psi.vercel.app/',
-    isActive: true,
-    background: 'bg-gradient-to-b from-[rgba(68,66,219,0.10)] to-[rgba(39,70,99,0.60)]'
   },
   {
     title: 'CoinFaucet Suite',
