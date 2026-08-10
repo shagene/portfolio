@@ -1,0 +1,121 @@
+---
+import { navigation, site } from "@/data/portfolio";
+---
+
+<header class="site-header">
+  <div class="header-shell shell">
+    <a class="identity" href="#top" aria-label={`${site.name}, back to top`}>
+      <span aria-hidden="true">SH</span>
+      <strong>{site.name}</strong>
+    </a>
+    <nav aria-label="Primary navigation">
+      <ul>
+        {navigation.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: relative;
+    z-index: 20;
+    border-bottom: 1px solid var(--color-border);
+    background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+  }
+
+  .header-shell {
+    display: flex;
+    min-height: 5.25rem;
+    gap: var(--primitive-space-8);
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .identity {
+    display: inline-flex;
+    flex: none;
+    gap: var(--primitive-space-3);
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .identity span {
+    display: grid;
+    width: 2.35rem;
+    height: 2.35rem;
+    place-items: center;
+    border: 1px solid var(--color-accent);
+    border-radius: 50%;
+    color: var(--color-accent);
+    font-family: var(--typeface-mono);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  .identity strong {
+    font-family: var(--typeface-display);
+    font-size: 0.95rem;
+    letter-spacing: -0.02em;
+  }
+
+  nav {
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    width: max-content;
+    gap: clamp(var(--primitive-space-4), 2.5vw, var(--primitive-space-8));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav a {
+    color: var(--color-ink-muted);
+    font-family: var(--typeface-mono);
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  nav a:hover {
+    color: var(--color-accent-soft);
+  }
+
+  @media (max-width: 39.99rem) {
+    .header-shell {
+      min-height: 4.5rem;
+    }
+
+    .identity strong {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    nav ul {
+      gap: var(--primitive-space-5);
+    }
+
+    nav li:nth-child(3),
+    nav li:nth-child(4) {
+      display: none;
+    }
+  }
+</style>

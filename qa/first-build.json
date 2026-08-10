@@ -1,0 +1,77 @@
+[
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "Senior Product Engineer:Full-Stack, UX & AI Systems",
+    "sections": [
+      "top",
+      "work",
+      "github",
+      "experience",
+      "skills",
+      "contact"
+    ],
+    "scripts": 1,
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "Senior Product Engineer:Full-Stack, UX & AI Systems",
+    "sections": [
+      "top",
+      "work",
+      "github",
+      "experience",
+      "skills",
+      "contact"
+    ],
+    "scripts": 1,
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "Senior Product Engineer:Full-Stack, UX & AI Systems",
+    "sections": [
+      "top",
+      "work",
+      "github",
+      "experience",
+      "skills",
+      "contact"
+    ],
+    "scripts": 1,
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  }
+]

@@ -1,0 +1,183 @@
+---
+import { copy, resumes, site } from "@/data/portfolio";
+import SectionHeading from "./SectionHeading.astro";
+---
+
+<section class="section contact shell" id="contact" aria-labelledby="contact-heading">
+  <SectionHeading
+    number={copy.contact.number}
+    title={copy.contact.title}
+    intro={copy.contact.intro}
+  >
+    <span id="contact-heading">{copy.contact.heading}</span>
+  </SectionHeading>
+
+  <div class="contact-grid">
+    <div class="email-panel">
+      <p class="eyebrow">Direct</p>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+      <p>Clayton, North Carolina</p>
+    </div>
+    <div class="link-panel">
+      <div class="profiles">
+        <a class="text-link" href={site.linkedin} rel="me">LinkedIn</a>
+        <a class="text-link" href={site.github} rel="me">GitHub</a>
+      </div>
+      <div class="resumes">
+        <p class="eyebrow">Resumes</p>
+        <ul>
+          {resumes.map((resume) => (
+            <li>
+              <a href={resume.href} download>{resume.label}<span aria-hidden="true">↓</span></a>
+              {!resume.available && <small>PDF pending</small>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="shell">
+    <p>{copy.footer.identity}</p>
+    <p>{copy.footer.build}</p>
+  </div>
+</footer>
+
+<style>
+  .contact {
+    padding-bottom: var(--primitive-space-24);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+    gap: var(--primitive-space-4);
+  }
+
+  .email-panel,
+  .link-panel {
+    min-height: 22rem;
+    padding: clamp(var(--primitive-space-8), 5vw, var(--primitive-space-12));
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+  }
+
+  .email-panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email-panel > a {
+    margin: auto 0;
+    color: var(--color-ink);
+    font-family: var(--typeface-display);
+    font-size: clamp(1.25rem, 3.4vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: var(--primitive-tracking-heading);
+    line-height: 1.05;
+    white-space: nowrap;
+    text-decoration-color: var(--color-accent);
+  }
+
+  .email-panel > p:last-child {
+    margin: 0;
+    color: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-small);
+  }
+
+  .link-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: color-mix(in srgb, var(--card-bg) 76%, var(--color-surface-strong));
+  }
+
+  .profiles {
+    display: flex;
+    gap: var(--primitive-space-8);
+  }
+
+  .resumes ul {
+    margin: var(--primitive-space-5) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .resumes li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--primitive-space-3);
+    align-items: center;
+    padding-block: var(--primitive-space-4);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .resumes a {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: var(--primitive-space-3);
+    color: var(--color-ink-muted);
+    font-size: var(--primitive-type-small);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .resumes a span {
+    color: var(--color-accent);
+  }
+
+  .resumes small {
+    color: var(--color-accent-soft);
+    font-family: var(--typeface-mono);
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .site-footer {
+    padding-block: var(--primitive-space-8);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-ink-subtle);
+  }
+
+  .site-footer .shell {
+    display: flex;
+    gap: var(--primitive-space-8);
+    justify-content: space-between;
+  }
+
+  .site-footer p {
+    margin: 0;
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+  }
+
+  @media (max-width: 47.99rem) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .email-panel,
+    .link-panel {
+      min-height: 18rem;
+    }
+
+    .email-panel > a {
+      font-size: clamp(1.2rem, 5.35vw, 1.45rem);
+    }
+
+    .site-footer .shell {
+      flex-direction: column;
+      gap: var(--primitive-space-2);
+    }
+  }
+
+  @media (min-width: 48rem) and (max-width: 64rem) {
+    .email-panel > a {
+      font-size: clamp(1.2rem, 3.1vw, 1.45rem);
+    }
+  }
+</style>

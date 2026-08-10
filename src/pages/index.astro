@@ -1,0 +1,33 @@
+---
+import ContactSection from "@/components/ContactSection.astro";
+import ExperienceSection from "@/components/ExperienceSection.astro";
+import GitHubSection from "@/components/GitHubSection.astro";
+import Header from "@/components/Header.astro";
+import Hero from "@/components/Hero.astro";
+import SelectedWork from "@/components/SelectedWork.astro";
+import SkillsSection from "@/components/SkillsSection.astro";
+import { resumes } from "@/data/portfolio";
+import { getGitHubStats } from "@/data/github";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const missingResumes = resumes.filter((resume) => !resume.available);
+if (missingResumes.length > 0) {
+  console.warn(
+    `[resumes] Placeholder links remain for: ${missingResumes.map((resume) => resume.href).join(", ")}`,
+  );
+}
+
+const githubStats = await getGitHubStats();
+---
+
+<BaseLayout>
+  <Header />
+  <main id="main-content">
+    <Hero />
+    <SelectedWork />
+    <GitHubSection stats={githubStats} />
+    <ExperienceSection />
+    <SkillsSection />
+    <ContactSection />
+  </main>
+</BaseLayout>

@@ -1,0 +1,253 @@
+{
+  "results": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "sectionIds": [
+          "top",
+          "work",
+          "github",
+          "experience",
+          "skills",
+          "contact"
+        ],
+        "email": {
+          "width": 284,
+          "height": 21.890625,
+          "scrollWidth": 284,
+          "lineHeight": 21.9082,
+          "whiteSpace": "nowrap"
+        },
+        "statsWidths": [
+          350,
+          350,
+          350
+        ],
+        "portraitTransform": "matrix(1.62, 0, 0, 1.62, 0, 13.5832)",
+        "scripts": [
+          "application/ld+json"
+        ],
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 39,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 169,
+            "samples": [
+              [
+                "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
+              ],
+              [
+                "a[href$=\"#work\"]"
+              ],
+              [
+                "a[href$=\"#github\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "geometry": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "sectionIds": [
+          "top",
+          "work",
+          "github",
+          "experience",
+          "skills",
+          "contact"
+        ],
+        "email": {
+          "width": 301.015625,
+          "height": 24.359375,
+          "scrollWidth": 301,
+          "lineHeight": 24.36,
+          "whiteSpace": "nowrap"
+        },
+        "statsWidths": [
+          235.515625,
+          235.515625,
+          235.515625
+        ],
+        "portraitTransform": "matrix(1.62, 0, 0, 1.62, 0, 10.2819)",
+        "scripts": [
+          "application/ld+json"
+        ],
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 39,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 172,
+            "samples": [
+              [
+                "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "a[href$=\"#work\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "geometry": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "sectionIds": [
+          "top",
+          "work",
+          "github",
+          "experience",
+          "skills",
+          "contact"
+        ],
+        "email": {
+          "width": 544.390625,
+          "height": 45.6875,
+          "scrollWidth": 544,
+          "lineHeight": 45.696,
+          "whiteSpace": "nowrap"
+        },
+        "statsWidths": [
+          394.65625,
+          394.671875,
+          394.65625
+        ],
+        "portraitTransform": "matrix(1.62, 0, 0, 1.62, 0, 16.6212)",
+        "scripts": [
+          "application/ld+json"
+        ],
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0.015625,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 39,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 172,
+            "samples": [
+              [
+                "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "a[href$=\"#work\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    }
+  ],
+  "assetChecks": [
+    {
+      "path": "/resumes/full-stack-ai-product-engineer.pdf",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "path": "/resumes/senior-frontend-ux-engineer.pdf",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/sitemap-index.xml",
+      "status": 200,
+      "contentType": "application/xml"
+    },
+    {
+      "path": "/og-image.png",
+      "status": 200,
+      "contentType": "image/png"
+    }
+  ]
+}

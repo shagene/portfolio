@@ -1,0 +1,17 @@
+---
+type Props = {
+  number: string;
+  title: string;
+  intro: string;
+};
+
+const { number, title, intro } = Astro.props;
+---
+
+<header class="section-heading">
+  <div>
+    <p class="eyebrow">{number} · {title}</p>
+    <h2><slot /></h2>
+  </div>
+  <p class="section-intro">{intro}</p>
+</header>

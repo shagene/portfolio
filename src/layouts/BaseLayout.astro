@@ -1,0 +1,63 @@
+---
+import { site } from "@/data/portfolio";
+import "@/styles/global.css";
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const { title = `${site.name} | ${site.title}`, description = site.description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, site.canonical);
+const ogImage = new URL("/og-image.png", site.canonical);
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: site.name,
+  url: site.canonical,
+  image: `${site.canonical}/og-image.png`,
+  jobTitle: site.title,
+  email: `mailto:${site.email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Clayton",
+    addressRegion: "NC",
+    addressCountry: "US",
+  },
+  sameAs: [site.github, site.linkedin],
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#0c141a" />
+    <meta name="description" content={description} />
+    <meta name="author" content={site.name} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${site.name}, ${site.title}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(personSchema)} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <slot />
+  </body>
+</html>

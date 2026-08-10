@@ -1,0 +1,307 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/archivo-latin.woff2") format("woff2");
+  font-display: optional;
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-latin.woff2") format("woff2");
+  font-display: optional;
+  font-style: normal;
+  font-weight: 200 800;
+}
+
+:root {
+  /* Primitive layer */
+  --primitive-mineral-50: #faf8f3;
+  --primitive-mineral-100: #f3efe7;
+  --primitive-mineral-200: #e7e0d4;
+  --primitive-mineral-300: #d5cab9;
+  --primitive-mineral-400: #b2a592;
+  --primitive-steel-700: #315166;
+  --primitive-steel-800: #283f50;
+  --primitive-steel-850: #202f3b;
+  --primitive-steel-900: #1b2d3a;
+  --primitive-steel-925: #15232d;
+  --primitive-steel-950: #101b24;
+  --primitive-charcoal-975: #0c141a;
+  --primitive-copper-200: #fbcba7;
+  --primitive-copper-300: #f5a66f;
+  --primitive-copper-400: #ea7f43;
+  --primitive-copper-500: #d6652f;
+  --primitive-teal-300: #8bc9c5;
+  --primitive-font-display: "Archivo", "Arial Narrow", sans-serif;
+  --primitive-font-body: "Manrope", "Segoe UI", sans-serif;
+  --primitive-font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --primitive-type-hero: clamp(3.3rem, 6.5vw, 6.25rem);
+  --primitive-type-display: clamp(2.35rem, 5vw, 4.8rem);
+  --primitive-type-h2: clamp(1.8rem, 3.2vw, 3rem);
+  --primitive-type-h3: clamp(1.35rem, 2vw, 1.8rem);
+  --primitive-type-lead: clamp(1.05rem, 1.5vw, 1.3rem);
+  --primitive-type-body: 1rem;
+  --primitive-type-small: 0.875rem;
+  --primitive-type-micro: 0.75rem;
+  --primitive-leading-hero: 0.92;
+  --primitive-leading-heading: 1.06;
+  --primitive-leading-body: 1.72;
+  --primitive-tracking-display: -0.055em;
+  --primitive-tracking-heading: -0.035em;
+  --primitive-tracking-label: 0.16em;
+  --primitive-space-1: 0.25rem;
+  --primitive-space-2: 0.5rem;
+  --primitive-space-3: 0.75rem;
+  --primitive-space-4: 1rem;
+  --primitive-space-5: 1.25rem;
+  --primitive-space-6: 1.5rem;
+  --primitive-space-8: 2rem;
+  --primitive-space-10: 2.5rem;
+  --primitive-space-12: 3rem;
+  --primitive-space-16: 4rem;
+  --primitive-space-20: 5rem;
+  --primitive-space-24: 6rem;
+  --primitive-space-32: 8rem;
+  --primitive-radius-xs: 0.25rem;
+  --primitive-radius-sm: 0.5rem;
+  --primitive-radius-md: 0.875rem;
+  --primitive-radius-lg: 1.25rem;
+  --primitive-radius-pill: 999rem;
+  --primitive-shadow-card: 0 2rem 5rem -3rem rgb(0 0 0 / 75%);
+  --primitive-shadow-focus: 0 0 0 0.25rem rgb(234 127 67 / 35%);
+  --primitive-duration-fast: 160ms;
+  --primitive-duration-base: 260ms;
+  --primitive-ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --primitive-layout-shell: 82rem;
+  --primitive-layout-reading: 46rem;
+
+  /* Semantic layer */
+  --color-surface: var(--primitive-charcoal-975);
+  --color-surface-subtle: var(--primitive-steel-950);
+  --color-surface-raised: var(--primitive-steel-925);
+  --color-surface-strong: var(--primitive-steel-900);
+  --color-ink: var(--primitive-mineral-50);
+  --color-ink-muted: var(--primitive-mineral-300);
+  --color-ink-subtle: var(--primitive-mineral-400);
+  --color-accent: var(--primitive-copper-400);
+  --color-accent-soft: var(--primitive-copper-200);
+  --color-signal: var(--primitive-teal-300);
+  --color-border: var(--primitive-steel-800);
+  --color-border-strong: var(--primitive-steel-700);
+  --typeface-display: var(--primitive-font-display);
+  --typeface-body: var(--primitive-font-body);
+  --typeface-mono: var(--primitive-font-mono);
+  --space-page: clamp(var(--primitive-space-5), 4vw, var(--primitive-space-12));
+  --space-section: clamp(var(--primitive-space-20), 10vw, var(--primitive-space-32));
+  --space-cluster: clamp(var(--primitive-space-6), 4vw, var(--primitive-space-12));
+  --layout-shell: var(--primitive-layout-shell);
+  --layout-reading: var(--primitive-layout-reading);
+
+  /* Component layer */
+  --card-bg: var(--color-surface-raised);
+  --card-border: var(--color-border);
+  --card-radius: var(--primitive-radius-lg);
+  --card-shadow: var(--primitive-shadow-card);
+  --button-primary-bg: var(--color-accent);
+  --button-primary-ink: var(--primitive-steel-950);
+  --button-secondary-bg: transparent;
+  --button-secondary-border: var(--color-border-strong);
+  --button-secondary-ink: var(--color-ink);
+  --chip-bg: color-mix(in srgb, var(--color-surface-strong) 84%, transparent);
+  --chip-border: var(--color-border);
+  --chip-ink: var(--color-ink-muted);
+  --rule-color: var(--color-border);
+  --focus-ring: var(--primitive-shadow-focus);
+}
+
+@theme inline {
+  --font-sans: var(--typeface-body);
+  --font-display: var(--typeface-display);
+  --font-mono: var(--typeface-mono);
+  --color-canvas: var(--color-surface);
+  --color-panel: var(--color-surface-raised);
+  --color-copper: var(--color-accent);
+  --color-foreground: var(--color-ink);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-surface);
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  background:
+    radial-gradient(circle at 87% 4%, rgb(234 127 67 / 8%), transparent 24rem),
+    linear-gradient(90deg, transparent 0, transparent calc(100% - 1px), rgb(49 81 102 / 20%) calc(100% - 1px)) 0 0 / 25% 100%,
+    var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--typeface-body);
+  font-size: var(--primitive-type-body);
+  line-height: var(--primitive-leading-body);
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.25em;
+}
+
+a:hover {
+  color: var(--color-accent-soft);
+}
+
+:focus-visible {
+  border-radius: var(--primitive-radius-xs);
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 4px;
+  box-shadow: var(--focus-ring);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--primitive-steel-950);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.shell {
+  width: min(100%, var(--layout-shell));
+  margin-inline: auto;
+  padding-inline: var(--space-page);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: var(--primitive-space-4);
+  left: var(--primitive-space-4);
+  padding: var(--primitive-space-3) var(--primitive-space-5);
+  transform: translateY(-180%);
+  background: var(--color-accent);
+  color: var(--primitive-steel-950);
+  font-weight: 800;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  font-family: var(--typeface-mono);
+  font-size: var(--primitive-type-micro);
+  font-weight: 700;
+  letter-spacing: var(--primitive-tracking-label);
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.section {
+  scroll-margin-top: 6rem;
+  padding-block: var(--space-section);
+  border-top: 1px solid var(--rule-color);
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(16rem, 1fr);
+  gap: var(--space-cluster);
+  align-items: end;
+  margin-bottom: clamp(var(--primitive-space-12), 7vw, var(--primitive-space-20));
+}
+
+.section-heading h2 {
+  max-width: 14ch;
+  margin: var(--primitive-space-4) 0 0;
+  font-family: var(--typeface-display);
+  font-size: var(--primitive-type-display);
+  font-weight: 700;
+  letter-spacing: var(--primitive-tracking-display);
+  line-height: 0.98;
+}
+
+.section-intro {
+  max-width: 39rem;
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-size: var(--primitive-type-lead);
+}
+
+.text-link {
+  display: inline-flex;
+  gap: var(--primitive-space-2);
+  align-items: center;
+  color: var(--color-ink);
+  font-family: var(--typeface-mono);
+  font-size: var(--primitive-type-small);
+  font-weight: 650;
+  text-decoration-color: var(--color-accent);
+}
+
+.text-link::after {
+  content: "↗";
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--primitive-space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  padding: 0.42rem 0.7rem;
+  border: 1px solid var(--chip-border);
+  border-radius: var(--primitive-radius-pill);
+  background: var(--chip-bg);
+  color: var(--chip-ink);
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+@media (max-width: 47.99rem) {
+  body {
+    background:
+      radial-gradient(circle at 100% 0, rgb(234 127 67 / 8%), transparent 18rem),
+      var(--color-surface);
+  }
+
+  .section-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

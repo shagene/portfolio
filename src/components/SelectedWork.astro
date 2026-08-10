@@ -1,0 +1,201 @@
+---
+import { alsoBuilt, caseStudies, copy } from "@/data/portfolio";
+import SectionHeading from "./SectionHeading.astro";
+---
+
+<section class="section shell" id="work" aria-labelledby="work-heading">
+  <SectionHeading
+    number={copy.work.number}
+    title={copy.work.title}
+    intro={copy.work.intro}
+  >
+    <span id="work-heading">{copy.work.heading}</span>
+  </SectionHeading>
+
+  <div class="case-studies">
+    {caseStudies.map((study) => (
+      <article class="case-study">
+        <div class="case-id">
+          <span>{study.number}</span>
+          <p>{study.domain}</p>
+        </div>
+        <div class="case-main">
+          <div class="case-title">
+            <h3>{study.name}</h3>
+            <p>{study.role}</p>
+          </div>
+          <dl>
+            <div>
+              <dt>Problem</dt>
+              <dd>{study.problem}</dd>
+            </div>
+            <div>
+              <dt>What I built</dt>
+              <dd>{study.built}</dd>
+            </div>
+            <div>
+              <dt>What made it hard</dt>
+              <dd>{study.difficulty}</dd>
+            </div>
+          </dl>
+          <ul class="chips" aria-label={`${study.name} technologies`}>
+            {study.technologies.map((technology) => <li class="chip">{technology}</li>)}
+          </ul>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <aside class="also-built" aria-labelledby="also-built-heading">
+    <div>
+      <p class="eyebrow">01D · Also built</p>
+      <h3 id="also-built-heading">{copy.work.alsoBuiltHeading}</h3>
+    </div>
+    <ul>
+      {alsoBuilt.map((item, index) => (
+        <li><span aria-hidden="true">0{index + 1}</span>{item}</li>
+      ))}
+    </ul>
+  </aside>
+</section>
+
+<style>
+  .case-studies {
+    border-top: 1px solid var(--color-border-strong);
+  }
+
+  .case-study {
+    display: grid;
+    grid-template-columns: minmax(10rem, 0.45fr) minmax(0, 1.55fr);
+    gap: var(--space-cluster);
+    padding-block: clamp(var(--primitive-space-12), 7vw, var(--primitive-space-20));
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .case-id > span {
+    color: var(--color-accent);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    letter-spacing: var(--primitive-tracking-label);
+  }
+
+  .case-id p {
+    max-width: 13rem;
+    margin: var(--primitive-space-5) 0 0;
+    color: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-small);
+    line-height: 1.6;
+  }
+
+  .case-title {
+    display: flex;
+    gap: var(--primitive-space-8);
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: var(--primitive-space-10);
+  }
+
+  .case-title h3,
+  .also-built h3 {
+    margin: 0;
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-h2);
+    letter-spacing: var(--primitive-tracking-heading);
+    line-height: var(--primitive-leading-heading);
+  }
+
+  .case-title p {
+    margin: 0;
+    color: var(--color-accent-soft);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-small);
+    text-align: right;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--primitive-space-8);
+    margin: 0 0 var(--primitive-space-10);
+  }
+
+  dt {
+    margin-bottom: var(--primitive-space-3);
+    color: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--color-ink-muted);
+  }
+
+  .also-built {
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.75fr) minmax(0, 1.25fr);
+    gap: var(--space-cluster);
+    margin-top: var(--primitive-space-16);
+    padding: clamp(var(--primitive-space-8), 5vw, var(--primitive-space-12));
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+  }
+
+  .also-built h3 {
+    margin-top: var(--primitive-space-4);
+  }
+
+  .also-built ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .also-built li {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: var(--primitive-space-4);
+    padding-block: var(--primitive-space-5);
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-ink-muted);
+  }
+
+  .also-built li:last-child {
+    border-bottom: 0;
+  }
+
+  .also-built li span {
+    color: var(--color-accent);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+  }
+
+  @media (max-width: 63.99rem) {
+    dl {
+      grid-template-columns: 1fr;
+      gap: var(--primitive-space-6);
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .case-study,
+    .also-built {
+      grid-template-columns: 1fr;
+    }
+
+    .case-title {
+      display: block;
+    }
+
+    .case-title p {
+      margin-top: var(--primitive-space-2);
+      text-align: left;
+    }
+  }
+</style>
