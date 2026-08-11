@@ -318,3 +318,17 @@ SEO, identity, and contrast evidence:
 - `npm run check`: 35 files, 0 errors, 0 warnings, 0 hints. `npm run build`: 9 static pages and sitemap generated successfully from the committed GitHub activity cache.
 
 Production verdict: verified with no blockers. The current design, private-first GitHub hierarchy, founder framing, case-study structure, and logo were preserved.
+
+## Pass 14: production automation alignment
+
+Status: production verified
+
+- Confirmed that Vercel, not Cloudflare Pages, is the live production host for `www.stevenhagene.com`.
+- Replaced the inactive Cloudflare Pages deployment workflow with `weekly-github-activity-refresh.yml`. It runs every Monday at 6:17 a.m. Eastern or on demand, type-checks the site, requires a live authenticated GitHub activity fetch, and can commit only `src/data/github-activity-cache.json`.
+- The refresh uses Astro's static build directly so generated Open Graph images cannot appear as unrelated changes. The cache-only guard now has a narrow, verifiable scope.
+- Removed the unused `wrangler.toml` and the obsolete Cloudflare Pages and DNS-cutover runbook. The README now documents Vercel's `main`-branch deployment and the cache-refresh path. Cloudflare migration remains explicitly deferred as a separate hosting and DNS decision.
+- `actionlint` passes for the new workflow. Local `npm run check` reports 35 files with 0 errors, 0 warnings, and 0 hints; `npm run build` generates all 9 static pages successfully.
+- Manual workflow proof: [run 31512034025](https://github.com/shagene/portfolio/actions/runs/31512034025) completed successfully on August 11, 2026. It fetched live data, updated the committed cache through 2026-08-11, and created `fdcb039` containing only the cache update.
+- Vercel reported `fdcb039` as a successful production deployment. `https://www.stevenhagene.com/github/` returned HTTP 200 after that deployment.
+
+Production verdict: weekly GitHub activity freshness now follows the actual Vercel production path end to end.
