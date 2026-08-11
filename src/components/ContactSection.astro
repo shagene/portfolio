@@ -38,13 +38,6 @@ import SectionHeading from "./SectionHeading.astro";
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="shell">
-    <p>{copy.footer.identity}</p>
-    <p>{copy.footer.build}</p>
-  </div>
-</footer>
-
 <style>
   .contact {
     padding-bottom: var(--primitive-space-24);
@@ -137,24 +130,6 @@ import SectionHeading from "./SectionHeading.astro";
     white-space: nowrap;
   }
 
-  .site-footer {
-    padding-block: var(--primitive-space-8);
-    border-top: 1px solid var(--color-border);
-    color: var(--color-ink-subtle);
-  }
-
-  .site-footer .shell {
-    display: flex;
-    gap: var(--primitive-space-8);
-    justify-content: space-between;
-  }
-
-  .site-footer p {
-    margin: 0;
-    font-family: var(--typeface-mono);
-    font-size: var(--primitive-type-micro);
-  }
-
   @media (max-width: 47.99rem) {
     .contact-grid {
       grid-template-columns: 1fr;
@@ -169,10 +144,6 @@ import SectionHeading from "./SectionHeading.astro";
       font-size: clamp(1.2rem, 5.35vw, 1.45rem);
     }
 
-    .site-footer .shell {
-      flex-direction: column;
-      gap: var(--primitive-space-2);
-    }
   }
 
   @media (min-width: 48rem) and (max-width: 64rem) {

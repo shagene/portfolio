@@ -1,0 +1,204 @@
+---
+import { copy, semperStory, site } from "@/data/portfolio";
+import SectionHeading from "./SectionHeading.astro";
+---
+
+<section class="section shell" id="semper" aria-labelledby="semper-heading">
+  <SectionHeading
+    number={copy.semper.number}
+    title={copy.semper.title}
+    intro={copy.semper.intro}
+  >
+    <span id="semper-heading">{copy.semper.heading}</span>
+  </SectionHeading>
+
+  <article class="founder-card">
+    <div class="founder-story">
+      <p class="eyebrow">{semperStory.homepage.eyebrow}</p>
+      <h3>{semperStory.homepage.role}</h3>
+      {semperStory.homepage.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      <div class="founder-links">
+        <a class="story-link" href={semperStory.path}>{semperStory.homepage.storyLinkLabel}</a>
+        <a class="text-link" href={site.semper.url}>{semperStory.homepage.companyLinkLabel}</a>
+      </div>
+    </div>
+
+    <aside class="status-panel" aria-labelledby="company-status-heading">
+      <p class="eyebrow">{semperStory.homepage.statusLabel}</p>
+      <h3 id="company-status-heading">{semperStory.homepage.statusHeading}</h3>
+      <ul>
+        {semperStory.status.map((status) => <li>{status}</li>)}
+      </ul>
+      <p class="boundary">{semperStory.homepage.boundary}</p>
+    </aside>
+  </article>
+
+  <dl class="company-signals">
+    {semperStory.homepage.signals.map((signal) => (
+      <div>
+        <dt>{signal.label}</dt>
+        <dd>{signal.value}</dd>
+      </div>
+    ))}
+  </dl>
+</section>
+
+<style>
+  .founder-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+  }
+
+  .founder-story,
+  .status-panel {
+    padding: clamp(var(--primitive-space-8), 5vw, var(--primitive-space-16));
+  }
+
+  .founder-story h3,
+  .status-panel h3 {
+    margin: var(--primitive-space-5) 0 var(--primitive-space-8);
+    font-family: var(--typeface-display);
+    letter-spacing: var(--primitive-tracking-heading);
+    line-height: var(--primitive-leading-heading);
+  }
+
+  .founder-story h3 {
+    max-width: 12ch;
+    font-size: var(--primitive-type-h2);
+  }
+
+  .founder-story > p:not(.eyebrow) {
+    max-width: 44rem;
+    margin: 0 0 var(--primitive-space-5);
+    color: var(--color-ink-muted);
+  }
+
+  .founder-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--primitive-space-5) var(--primitive-space-8);
+    align-items: center;
+    margin-top: var(--primitive-space-10);
+  }
+
+  .story-link {
+    display: inline-flex;
+    gap: var(--primitive-space-3);
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: var(--primitive-radius-pill);
+    background: var(--button-primary-bg);
+    color: var(--button-primary-ink);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-small);
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .story-link::after {
+    content: "→";
+  }
+
+  .story-link:hover {
+    background: var(--color-accent-soft);
+    color: var(--button-primary-ink);
+  }
+
+  .status-panel {
+    border-left: 1px solid var(--color-border);
+    background:
+      radial-gradient(circle at 100% 0, rgb(234 127 67 / 12%), transparent 18rem),
+      color-mix(in srgb, var(--color-surface-strong) 82%, var(--color-surface-raised));
+  }
+
+  .status-panel h3 {
+    max-width: 15ch;
+    font-size: var(--primitive-type-h3);
+  }
+
+  .status-panel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .status-panel li {
+    padding-block: var(--primitive-space-4);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-ink-muted);
+    font-weight: 700;
+  }
+
+  .status-panel li::before {
+    margin-right: var(--primitive-space-3);
+    color: var(--color-accent);
+    content: "◆";
+    font-size: 0.55rem;
+  }
+
+  .boundary {
+    margin: var(--primitive-space-8) 0 0;
+    color: var(--color-ink-subtle);
+    font-size: var(--primitive-type-small);
+  }
+
+  .company-signals {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: var(--primitive-space-4) 0 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--primitive-radius-lg);
+  }
+
+  .company-signals div {
+    padding: var(--primitive-space-6);
+    border-right: 1px solid var(--color-border);
+  }
+
+  .company-signals div:last-child {
+    border-right: 0;
+  }
+
+  .company-signals dt {
+    color: var(--color-accent);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    font-weight: 700;
+    letter-spacing: var(--primitive-tracking-label);
+    text-transform: uppercase;
+  }
+
+  .company-signals dd {
+    margin: var(--primitive-space-2) 0 0;
+    color: var(--color-ink);
+    font-family: var(--typeface-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  @media (max-width: 47.99rem) {
+    .founder-card,
+    .company-signals {
+      grid-template-columns: 1fr;
+    }
+
+    .status-panel {
+      border-top: 1px solid var(--color-border);
+      border-left: 0;
+    }
+
+    .company-signals div {
+      border-right: 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .company-signals div:last-child {
+      border-bottom: 0;
+    }
+  }
+</style>

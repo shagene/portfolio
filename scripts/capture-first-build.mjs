@@ -35,11 +35,18 @@ for (const viewport of viewports) {
     ["portrait", ".portrait"],
     ["stats", ".stats"],
     ["contact", ".contact-grid"],
+    ["semper-home", ".founder-card"],
+    ["company-ledger", ".status-ledger"],
+    ["claim-boundary", ".claim-boundary"],
   ]) {
     const locator = page.locator(selector);
     if (await locator.count()) {
+      await page.evaluate(() => {
+        if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+      });
       await locator.screenshot({
         path: new URL(`${phase}-${name}-${viewport.width}.png`, outputDirectory).pathname,
+        style: ".skip-link { display: none !important; }",
       });
     }
   }

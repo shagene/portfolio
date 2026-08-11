@@ -99,3 +99,20 @@ Changes and evidence:
 - Retained only a restrained saturation, contrast, and edge treatment so the photograph belongs to the sister-site palette without looking processed.
 - Refreshed the presentation-ready screenshots at 390, 768, and 1280 pixels.
 - Re-ran the full browser gate: zero horizontal overflow, console errors, page errors, or axe violations at all three widths.
+
+## Pass 7: Semper founder story and second indexable route
+
+Status: complete
+
+Changes and evidence:
+
+- Added `02 · Founder` to the homepage and renumbered the remaining chapters through `06 · Contact`.
+- Added `/founder/semper-digital-solutions/` with a source-backed operating model, company-system narrative, federal-readiness explanation, and explicit certification claim boundary.
+- Kept commercial services and procurement conversion on Semper's website to avoid duplicating or competing with the company site's search intent.
+- Added a unique title, description, canonical URL, 1200 by 630 social card, Person-to-Organization relationship, `ProfilePage`, and `BreadcrumbList` structured data.
+- Expanded the browser gate across both routes and all three target widths. Result: zero horizontal overflow, console errors, page errors, or axe violations.
+- Added a navigation journey at 390 and 1280 pixels covering homepage section navigation, entry into the founder case study, and return to the Semper chapter; both journeys pass.
+- Homepage mobile Lighthouse: Performance 99, Accessibility 100, Best Practices 100, SEO 100.
+- Semper founder mobile and desktop Lighthouse: 100 in all four categories.
+- Static build contains both routes in `sitemap-0.xml`; both social images and both resume PDFs return 200 with expected content types.
+- `npm run check` reports zero errors, warnings, or hints; `npm audit` reports zero vulnerabilities.

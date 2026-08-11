@@ -1,10 +1,12 @@
 ---
 import ContactSection from "@/components/ContactSection.astro";
 import ExperienceSection from "@/components/ExperienceSection.astro";
+import Footer from "@/components/Footer.astro";
 import GitHubSection from "@/components/GitHubSection.astro";
 import Header from "@/components/Header.astro";
 import Hero from "@/components/Hero.astro";
 import SelectedWork from "@/components/SelectedWork.astro";
+import SemperSection from "@/components/SemperSection.astro";
 import SkillsSection from "@/components/SkillsSection.astro";
 import { resumes } from "@/data/portfolio";
 import { getGitHubStats } from "@/data/github";
@@ -25,9 +27,11 @@ const githubStats = await getGitHubStats();
   <main id="main-content">
     <Hero />
     <SelectedWork />
+    <SemperSection />
     <GitHubSection stats={githubStats} />
     <ExperienceSection />
     <SkillsSection />
     <ContactSection />
   </main>
+  <Footer />
 </BaseLayout>

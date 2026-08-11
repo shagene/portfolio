@@ -5,8 +5,9 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 ## Hard gates
 
 - Production build succeeds with no type errors.
+- The homepage and Semper founder route both build as static HTML and appear in the sitemap.
 - Lighthouse scores are 95 or higher for Performance, Accessibility, Best Practices, and SEO.
-- axe-core reports zero violations at 390, 768, and 1280 pixel widths.
+- axe-core reports zero violations on both routes at 390, 768, and 1280 pixel widths.
 - No horizontal overflow at 390, 768, or 1280 pixels.
 - All page content is available without client-side JavaScript.
 - Keyboard order follows the visual order; skip link and focus states are visible.
@@ -50,4 +51,5 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 - Hover and focus feedback are coherent and do not move layout.
 - Social image is 1200 by 630 and matches the page identity.
 - Canonical, Open Graph, Twitter, sitemap, robots, and Person JSON-LD are present in built output.
+- The founder route has a unique title, description, canonical URL, social card, and valid Person, Organization/ProfilePage, and breadcrumb relationships.
 - Cloudflare Pages configuration and DNS runbook agree with current official documentation.

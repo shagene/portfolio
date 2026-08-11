@@ -37,10 +37,16 @@ export const site = {
   github: "https://github.com/shagene",
   linkedin: "https://www.linkedin.com/in/steven-hagene-32279531",
   canonical: "https://stevenhagene.com",
+  semper: {
+    name: "Semper Digital Solutions",
+    url: "https://www.semperdigitalsolutions.com/",
+    aboutUrl: "https://www.semperdigitalsolutions.com/about/",
+  },
 } as const;
 
 export const navigation = [
   { label: "Selected Work", href: "#work" },
+  { label: "Semper", href: "#semper" },
   { label: "GitHub", href: "#github" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
@@ -71,29 +77,36 @@ export const copy = {
       "Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.",
     alsoBuiltHeading: "The work between the flagships.",
   },
-  github: {
+  semper: {
     number: "02",
+    title: "Founder",
+    heading: "Building the company behind the work.",
+    intro:
+      "Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.",
+  },
+  github: {
+    number: "03",
     title: "GitHub",
     heading: "Public code, selected for signal.",
     intro:
       "A deliberately small public crop. Most current product and client work lives in private repositories; these samples show the thinking without pretending otherwise.",
   },
   experience: {
-    number: "03",
+    number: "04",
     title: "Experience",
     heading: "From tactical systems to product systems.",
     intro:
       "A career connecting product engineering and interface systems, with Semper and Endpoint shown honestly as concurrent work.",
   },
   skills: {
-    number: "04",
+    number: "05",
     title: "Skills",
     heading: "Breadth with a reason.",
     intro:
       "The working set behind the case studies, grouped by the part of the product it serves rather than a made-up proficiency score.",
   },
   contact: {
-    number: "05",
+    number: "06",
     title: "Contact",
     heading: "Bring the difficult part.",
     intro: "The shortest route is email. For work history and code, use the links below.",
@@ -101,6 +114,130 @@ export const copy = {
   footer: {
     identity: "Steven Hagene · Senior Product Engineer",
     build: "Built with Astro, a three-layer token system, and no client-side framework.",
+  },
+} as const;
+
+export const semperStory = {
+  path: "/founder/semper-digital-solutions/",
+  pageTitle: "Building Semper Digital Solutions | Steven Hagene",
+  pageDescription:
+    "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
+  organizationDescription:
+    "A founder-led software company serving clients nationwide across web, mobile, integrations, automation, AI, and custom software.",
+  eyebrow: "Founder case study · 2024 to present",
+  headline: "Building the company behind the work.",
+  lead:
+    "Semper Digital Solutions is the operating model I wanted as an engineer: senior product judgment stays close to the problem, and the same person remains accountable from framing through release.",
+  ledgerHeading: "Built to be accountable.",
+  status: [
+    "SBA-certified SDVOSB & VOSB",
+    "Registered federal contractor",
+    "Serving clients nationwide",
+  ],
+  homepage: {
+    eyebrow: "Semper Digital Solutions · 2024 to present",
+    role: "Founder & Principal Engineer",
+    storyLinkLabel: "Read the founder case study",
+    companyLinkLabel: "Visit Semper",
+    statusLabel: "Company status",
+    statusHeading: "Verified ownership. Direct accountability.",
+    boundary:
+      "Certification creates eligibility to compete. The work still has to prove the company.",
+    paragraphs: [
+      "I founded Semper to keep strategy, UX, architecture, implementation, and delivery connected. Clients work directly with the senior engineer responsible for the outcome.",
+      "The company spans web products, mobile apps, integrations, automation, and AI systems, while its internal operating system turns the same engineering discipline toward running the business itself.",
+    ],
+    signals: [
+      { label: "Delivery", value: "Founder-led" },
+      { label: "Market", value: "Commercial + federal" },
+      { label: "Standard", value: "Accessible, measurable, shipped" },
+    ],
+  },
+  labels: {
+    backLink: "← Portfolio / Founder",
+    visitCompany: "Visit Semper Digital Solutions",
+    contact: "Contact Steven",
+    ledger: "Company ledger",
+    workingScope: "Working scope",
+    claimBoundary: "Claim boundary",
+    certificationDetails: "See Semper's certification details",
+  },
+  operatingSection: {
+    eyebrow: "01 · Operating model",
+    heading: "Senior engineering stays close to the problem.",
+    intro:
+      "Semper is not a layer between a client and the people doing the work. It is the company structure around direct product ownership and disciplined delivery.",
+    paragraphs: [
+      "I founded the company to keep product strategy, interface decisions, architecture, implementation, and release accountability connected. That continuity matters most when the problem crosses more than one discipline.",
+      "The work serves founders, established businesses, and public-sector buyers. The commercial offer lives on Semper's site; this page documents the company-building and engineering story behind it.",
+    ],
+  },
+  systemSection: {
+    eyebrow: "02 · Company system",
+    heading: "What I built into Semper.",
+    intro:
+      "The company itself is a product: a delivery model, an operating system, and a set of standards designed to compound rather than reset with every engagement.",
+  },
+  readinessSection: {
+    eyebrow: "03 · Federal readiness",
+    heading: "Verified status, stated precisely.",
+    intro:
+      "Veteran ownership is part of the company's identity and procurement position. It is presented here as verified eligibility, never as an invented performance claim.",
+  },
+  operatingModel: [
+    {
+      number: "01",
+      title: "Direct senior delivery",
+      body:
+        "Semper serves founders, businesses, and public-sector buyers without separating product thinking from implementation. I stay directly involved across strategy, interface systems, architecture, engineering, validation, and release.",
+    },
+    {
+      number: "02",
+      title: "A company with its own systems",
+      body:
+        "I built an internal, continuously running multi-agent operations system with Node.js and the Claude API. It supports the recurring research, communication, content, and market-analysis work behind the company.",
+    },
+    {
+      number: "03",
+      title: "Delivery standards that compound",
+      body:
+        "Reusable token systems, accessibility gates, browser QA, and static delivery make each build stronger than a one-off project. The portfolio includes more than ten Astro marketing and municipal builds with Lighthouse scores of 95 or better.",
+    },
+  ],
+  capabilities: [
+    "Web development",
+    "Mobile apps",
+    "Product and UX systems",
+    "Integrations",
+    "Workflow automation",
+    "AI and LLM systems",
+    "Custom software",
+    "Technical delivery",
+  ],
+  readiness: [
+    {
+      label: "SBA-certified SDVOSB",
+      detail:
+        "Verified service-disabled veteran ownership and control, with eligibility to compete for qualifying federal sole-source and set-aside opportunities.",
+    },
+    {
+      label: "SBA-certified VOSB",
+      detail:
+        "Verified veteran ownership and control, with eligibility to pursue qualifying opportunities through the Department of Veterans Affairs Vets First program.",
+    },
+    {
+      label: "Federal contractor registration",
+      detail:
+        "Semper maintains the company foundation required to be evaluated as a federal technology supplier, alongside its commercial delivery work.",
+    },
+  ],
+  certificationBoundary:
+    "Certification verifies ownership and control and establishes eligibility to compete. It is not a contract award, an agency endorsement, or a substitute for demonstrated delivery.",
+  closing: {
+    eyebrow: "04 · Two destinations",
+    heading: "The founder story lives here. The company offer lives at Semper.",
+    primaryLabel: "Explore Semper's services",
+    secondaryLabel: "Return to selected work",
   },
 } as const;
 

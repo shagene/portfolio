@@ -1,0 +1,18 @@
+[
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "finalUrl": "http://127.0.0.1:4330/#semper",
+    "failures": []
+  },
+  {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "finalUrl": "http://127.0.0.1:4330/#semper",
+    "failures": []
+  }
+]

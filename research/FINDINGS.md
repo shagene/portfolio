@@ -57,6 +57,12 @@ Brand signatures carried forward:
 
 The portfolio differs intentionally by staying dark-only, using a slightly warmer charcoal canvas, making the editorial grid more visible, and letting the headshot create a personal focal point. It is a sibling, not a duplicate.
 
+## Semper founder-page source boundary
+
+The personal portfolio now documents Steven's founder and company-building story without copying Semper's commercial pages. Current public Semper material supports the founder-led delivery model, nationwide service, software/mobile/integration/AI breadth, and SBA-certified SDVOSB and VOSB status. The portfolio does not infer awards, agency endorsement, or federal past performance from those credentials.
+
+SBA guidance supports the narrower procurement wording used on the page: SDVOSB certification establishes eligibility to compete for qualifying federal sole-source and set-aside opportunities, while VOSB certification creates qualifying VA Vets First opportunities. Sources: [SBA veteran contracting programs](https://www.sba.gov/federal-contracting/contracting-assistance-programs/veteran-contracting-assistance-programs), [Semper Digital Solutions](https://www.semperdigitalsolutions.com/), and [Semper about and certifications](https://www.semperdigitalsolutions.com/about/).
+
 ## Current technical baseline
 
 - Astro registry version checked on August 10, 2026: `7.2.0`. The brief permits Astro 5+, so the rebuild uses the current major.

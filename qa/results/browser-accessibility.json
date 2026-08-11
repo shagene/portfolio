@@ -1,6 +1,7 @@
 {
   "results": [
     {
+      "route": "/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -11,6 +12,7 @@
         "sectionIds": [
           "top",
           "work",
+          "semper",
           "github",
           "experience",
           "skills",
@@ -32,6 +34,15 @@
         "scripts": [
           "application/ld+json"
         ],
+        "metadata": {
+          "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
+          "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
+          "canonical": "https://stevenhagene.com/",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person"
+          ]
+        },
         "oldRepoLinks": []
       },
       "statsWidthDelta": 0,
@@ -50,21 +61,21 @@
       },
       "axe": {
         "violations": [],
-        "passes": 39,
+        "passes": 40,
         "incomplete": [
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 169,
+            "nodeCount": 184,
             "samples": [
               [
                 "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
               ],
               [
-                "a[href$=\"#work\"]"
+                "a[href$=\"/#work\"]"
               ],
               [
-                "a[href$=\"#github\"]"
+                "a[href$=\"/#semper\"]"
               ]
             ]
           }
@@ -75,6 +86,7 @@
       "failures": []
     },
     {
+      "route": "/",
       "viewport": {
         "width": 768,
         "height": 1024
@@ -85,6 +97,7 @@
         "sectionIds": [
           "top",
           "work",
+          "semper",
           "github",
           "experience",
           "skills",
@@ -106,6 +119,15 @@
         "scripts": [
           "application/ld+json"
         ],
+        "metadata": {
+          "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
+          "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
+          "canonical": "https://stevenhagene.com/",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person"
+          ]
+        },
         "oldRepoLinks": []
       },
       "statsWidthDelta": 0,
@@ -124,12 +146,12 @@
       },
       "axe": {
         "violations": [],
-        "passes": 39,
+        "passes": 40,
         "incomplete": [
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 172,
+            "nodeCount": 188,
             "samples": [
               [
                 "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
@@ -138,7 +160,7 @@
                 "strong"
               ],
               [
-                "a[href$=\"#work\"]"
+                "a[href$=\"/#work\"]"
               ]
             ]
           }
@@ -149,6 +171,7 @@
       "failures": []
     },
     {
+      "route": "/",
       "viewport": {
         "width": 1280,
         "height": 900
@@ -159,6 +182,7 @@
         "sectionIds": [
           "top",
           "work",
+          "semper",
           "github",
           "experience",
           "skills",
@@ -180,6 +204,15 @@
         "scripts": [
           "application/ld+json"
         ],
+        "metadata": {
+          "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
+          "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
+          "canonical": "https://stevenhagene.com/",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person"
+          ]
+        },
         "oldRepoLinks": []
       },
       "statsWidthDelta": 0.015625,
@@ -198,12 +231,12 @@
       },
       "axe": {
         "violations": [],
-        "passes": 39,
+        "passes": 40,
         "incomplete": [
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 172,
+            "nodeCount": 188,
             "samples": [
               [
                 "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
@@ -212,7 +245,238 @@
                 "strong"
               ],
               [
-                "a[href$=\"#work\"]"
+                "a[href$=\"/#work\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/founder/semper-digital-solutions/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "sectionIds": [
+          "company",
+          "operating-model",
+          "company-system",
+          "federal-readiness",
+          "next"
+        ],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Building Semper Digital Solutions | Steven Hagene",
+          "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
+          "canonical": "https://stevenhagene.com/founder/semper-digital-solutions/",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "ProfilePage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 40,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"/#work\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"/#semper\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/founder/semper-digital-solutions/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "geometry": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "sectionIds": [
+          "company",
+          "operating-model",
+          "company-system",
+          "federal-readiness",
+          "next"
+        ],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Building Semper Digital Solutions | Steven Hagene",
+          "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
+          "canonical": "https://stevenhagene.com/founder/semper-digital-solutions/",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "ProfilePage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 44,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"/#work\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/founder/semper-digital-solutions/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "geometry": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "sectionIds": [
+          "company",
+          "operating-model",
+          "company-system",
+          "federal-readiness",
+          "next"
+        ],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Building Semper Digital Solutions | Steven Hagene",
+          "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
+          "canonical": "https://stevenhagene.com/founder/semper-digital-solutions/",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "ProfilePage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 44,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"/#work\"]"
               ]
             ]
           }
@@ -246,6 +510,11 @@
     },
     {
       "path": "/og-image.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "/og-semper.png",
       "status": 200,
       "contentType": "image/png"
     }

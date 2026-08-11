@@ -1,6 +1,6 @@
 # Steven Hagene portfolio
 
-A single-page, static Astro portfolio for [stevenhagene.com](https://stevenhagene.com). The site is dark-only, content-driven, indexable, and built as a sister brand to Semper Digital Solutions.
+A small, static Astro portfolio for [stevenhagene.com](https://stevenhagene.com). The site is dark-only, content-driven, indexable, and built as a sister brand to Semper Digital Solutions.
 
 ## Stack
 
@@ -13,6 +13,13 @@ A single-page, static Astro portfolio for [stevenhagene.com](https://stevenhagen
 - Cloudflare Pages deployment from `dist`
 
 There is no client-side framework and no contact form.
+
+## Page structure
+
+- `/` is the recruiter-focused portfolio, including the Semper founder chapter.
+- `/founder/semper-digital-solutions/` is the company-building case study. It owns Steven's founder story while Semper's website remains the destination for services and procurement inquiries.
+
+Each route has its own title, description, canonical URL, Open Graph card, and structured data. The founder page connects Steven's `Person` entity to Semper's `Organization` entity with `ProfilePage` and breadcrumb markup.
 
 ## Local development
 
@@ -35,7 +42,7 @@ The build fetches public GitHub data. If GitHub is unreachable, the stats strip 
 
 ## Editing content
 
-Portfolio copy, links, case studies, experience, skills, repository curation, credentials, and resume metadata live in [`src/data/portfolio.ts`](src/data/portfolio.ts). Components only define structure and presentation.
+Portfolio copy, links, case studies, the Semper founder story, experience, skills, repository curation, credentials, and resume metadata live in [`src/data/portfolio.ts`](src/data/portfolio.ts). Components only define structure and presentation.
 
 Design decisions:
 

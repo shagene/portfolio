@@ -2,7 +2,10 @@ import { mkdir, writeFile } from "node:fs/promises";
 import AxeBuilder from "@axe-core/playwright";
 import { chromium } from "@playwright/test";
 
-const target = process.env.PORTFOLIO_URL ?? "http://127.0.0.1:4330";
+const baseUrl = process.env.PORTFOLIO_URL ?? "http://127.0.0.1:4330";
+const routes = (process.env.PORTFOLIO_PATHS ?? "/,/founder/semper-digital-solutions/")
+  .split(",")
+  .map((path) => path.trim());
 const outputDirectory = new URL("../qa/results/", import.meta.url);
 await mkdir(outputDirectory, { recursive: true });
 
@@ -14,6 +17,7 @@ const viewports = [
 ];
 const results = [];
 
+for (const route of routes) {
 for (const viewport of viewports) {
   const context = await browser.newContext({ viewport, colorScheme: "dark" });
   const page = await context.newPage();
@@ -24,7 +28,7 @@ for (const viewport of viewports) {
   });
   page.on("pageerror", (error) => pageErrors.push(error.message));
 
-  await page.goto(target, { waitUntil: "networkidle" });
+  await page.goto(new URL(route, baseUrl).toString(), { waitUntil: "networkidle" });
   const axe = await new AxeBuilder({ page }).analyze();
   const geometry = await page.evaluate(() => {
     const root = document.documentElement;
@@ -33,6 +37,15 @@ for (const viewport of viewports) {
     const portrait = document.querySelector(".portrait img");
     const emailStyle = email ? getComputedStyle(email) : null;
     const emailRect = email?.getBoundingClientRect();
+
+    const schemas = [...document.querySelectorAll('script[type="application/ld+json"]')]
+      .map((script) => {
+        try {
+          return JSON.parse(script.textContent ?? "{}");
+        } catch {
+          return { "@type": "INVALID_JSON" };
+        }
+      });
 
     return {
       clientWidth: root.clientWidth,
@@ -50,6 +63,13 @@ for (const viewport of viewports) {
       statsWidths: stats.map((cell) => cell.getBoundingClientRect().width),
       portraitTransform: portrait ? getComputedStyle(portrait).transform : null,
       scripts: [...document.scripts].map((script) => script.type || "text/javascript"),
+      metadata: {
+        title: document.title,
+        description: document.querySelector('meta[name="description"]')?.getAttribute("content"),
+        canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href"),
+        h1Count: document.querySelectorAll("h1").length,
+        schemaTypes: schemas.map((schema) => schema["@type"]),
+      },
       oldRepoLinks: [...document.links]
         .map((link) => link.href)
         .filter((href) => href.includes("fde-case-study") || href.includes("line-take-home")),
@@ -109,6 +129,16 @@ for (const viewport of viewports) {
     ...(axe.violations.length > 0 ? [`${axe.violations.length} axe violation groups`] : []),
     ...(consoleErrors.length > 0 ? ["console errors"] : []),
     ...(pageErrors.length > 0 ? ["page errors"] : []),
+    ...(!geometry.metadata.title ? ["missing page title"] : []),
+    ...(!geometry.metadata.description ? ["missing meta description"] : []),
+    ...(geometry.metadata.canonical !== new URL(route, "https://stevenhagene.com").toString()
+      ? [`incorrect canonical: ${geometry.metadata.canonical}`]
+      : []),
+    ...(geometry.metadata.h1Count !== 1 ? [`expected one h1, found ${geometry.metadata.h1Count}`] : []),
+    ...(geometry.metadata.schemaTypes.includes("INVALID_JSON") ? ["invalid JSON-LD"] : []),
+    ...(route !== "/" && !geometry.metadata.schemaTypes.includes("ProfilePage")
+      ? ["founder page is missing ProfilePage schema"]
+      : []),
     ...(!skipLink?.visible || skipLink.href !== "#main-content" ? ["skip link is not first visible focus"] : []),
     ...(reducedMotionScrollBehavior !== "auto" ? ["reduced-motion scroll behavior is not auto"] : []),
     ...Object.entries(contrastRatios)
@@ -117,6 +147,7 @@ for (const viewport of viewports) {
   ];
 
   results.push({
+    route,
     viewport,
     geometry,
     statsWidthDelta,
@@ -144,6 +175,14 @@ for (const viewport of viewports) {
   });
   await context.close();
 }
+}
+
+const routeTitles = routes.map((route) =>
+  results.find((result) => result.route === route)?.geometry.metadata.title,
+);
+if (new Set(routeTitles).size !== routes.length) {
+  for (const result of results) result.failures.push("page titles are not unique across routes");
+}
 
 const requestContext = await browser.newContext();
 const request = await requestContext.newPage();
@@ -154,8 +193,9 @@ for (const path of [
   "/robots.txt",
   "/sitemap-index.xml",
   "/og-image.png",
+  "/og-semper.png",
 ]) {
-  const response = await request.request.get(`${target}${path}`);
+  const response = await request.request.get(new URL(path, baseUrl).toString());
   assetChecks.push({ path, status: response.status(), contentType: response.headers()["content-type"] });
 }
 await requestContext.close();

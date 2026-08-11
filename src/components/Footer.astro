@@ -1,0 +1,37 @@
+---
+import { copy } from "@/data/portfolio";
+---
+
+<footer class="site-footer">
+  <div class="shell">
+    <p>{copy.footer.identity}</p>
+    <p>{copy.footer.build}</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    padding-block: var(--primitive-space-8);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-ink-subtle);
+  }
+
+  .site-footer .shell {
+    display: flex;
+    gap: var(--primitive-space-8);
+    justify-content: space-between;
+  }
+
+  .site-footer p {
+    margin: 0;
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+  }
+
+  @media (max-width: 47.99rem) {
+    .site-footer .shell {
+      flex-direction: column;
+      gap: var(--primitive-space-2);
+    }
+  }
+</style>

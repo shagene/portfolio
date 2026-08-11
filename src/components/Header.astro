@@ -4,14 +4,14 @@ import { navigation, site } from "@/data/portfolio";
 
 <header class="site-header">
   <div class="header-shell shell">
-    <a class="identity" href="#top" aria-label={`${site.name}, back to top`}>
+    <a class="identity" href="/" aria-label={`${site.name}, homepage`}>
       <span aria-hidden="true">SH</span>
       <strong>{site.name}</strong>
     </a>
     <nav aria-label="Primary navigation">
       <ul>
         {navigation.map((item) => (
-          <li><a href={item.href}>{item.label}</a></li>
+          <li><a href={`/${item.href}`}>{item.label}</a></li>
         ))}
       </ul>
     </nav>
@@ -114,7 +114,8 @@ import { navigation, site } from "@/data/portfolio";
     }
 
     nav li:nth-child(3),
-    nav li:nth-child(4) {
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
       display: none;
     }
   }
