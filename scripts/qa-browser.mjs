@@ -3,7 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 import { chromium } from "@playwright/test";
 
 const baseUrl = process.env.PORTFOLIO_URL ?? "http://127.0.0.1:4330";
-const canonicalOrigin = "https://stevenhagene.com";
+const canonicalOrigin = "https://www.stevenhagene.com";
 const defaultPublicRoutes = [
   "/",
   "/work/",
@@ -704,7 +704,7 @@ if (robotsResponse.status() !== 200) siteChecks.robots.failures.push(`robots sta
 if (!/^User-agent:\s*\*$/im.test(siteChecks.robots.body)) siteChecks.robots.failures.push("robots lacks wildcard user agent");
 if (!/^Allow:\s*\/$/im.test(siteChecks.robots.body)) siteChecks.robots.failures.push("robots does not explicitly allow root");
 if (/^Disallow:\s*\/$/im.test(siteChecks.robots.body)) siteChecks.robots.failures.push("robots blocks the site root");
-if (!/^Sitemap:\s*https:\/\/stevenhagene\.com\/sitemap-index\.xml$/im.test(siteChecks.robots.body)) {
+if (!/^Sitemap:\s*https:\/\/www\.stevenhagene\.com\/sitemap-index\.xml$/im.test(siteChecks.robots.body)) {
   siteChecks.robots.failures.push("robots lacks the canonical sitemap declaration");
 }
 

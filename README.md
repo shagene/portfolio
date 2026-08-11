@@ -10,7 +10,7 @@ A small, static Astro portfolio for [stevenhagene.com](https://stevenhagene.com)
 - `astro:assets` responsive headshot generation
 - Build-time GitHub GraphQL activity across two accounts with a committed fallback snapshot
 - Generated 1200 by 630 Open Graph images for each search intent
-- Cloudflare Pages deployment from `dist`
+- Vercel production deployment from `main`, with Cloudflare Pages review and scheduled-build deployment from `dist`
 
 There is no client-side framework and no contact form.
 

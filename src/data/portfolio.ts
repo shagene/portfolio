@@ -53,7 +53,7 @@ export const site = {
   github: "https://github.com/shagene",
   githubCompany: "https://github.com/semperdigitalsolutions",
   linkedin: "https://www.linkedin.com/in/steven-hagene-32279531",
-  canonical: "https://stevenhagene.com",
+  canonical: "https://www.stevenhagene.com",
   semper: {
     name: "Semper Digital Solutions",
     url: "https://www.semperdigitalsolutions.com/",
