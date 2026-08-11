@@ -43,6 +43,41 @@ const cards = [
     descriptor: "Founder-led delivery · SBA-Certified SDVOSB &amp; VOSB",
     footer: "FOUNDER / ENGINEERING / READINESS",
   },
+  {
+    file: "../public/og-work.png",
+    primary: "Selected Work",
+    secondary: "Systems built for trust",
+    descriptor: "Financial SaaS · Cross-platform products · Grounded AI",
+    footer: "PRODUCT / SYSTEMS / TRUST",
+  },
+  {
+    file: "../public/og-experience.png",
+    primary: "Experience &amp; Skills",
+    secondary: "Product meets systems",
+    descriptor: "Full-stack engineering · UX systems · AI",
+    footer: "2006 / PRESENT",
+  },
+  {
+    file: "../public/og-teo.png",
+    primary: "TEO",
+    secondary: "Trustworthy financial state",
+    descriptor: "QuickBooks · Payabli · Ledgers · Design systems",
+    footer: "CASE STUDY / 01A",
+  },
+  {
+    file: "../public/og-musterhall.png",
+    primary: "Musterhall",
+    secondary: "One cross-platform system",
+    descriptor: "Next.js · Flutter · Postgres · LiveKit",
+    footer: "CASE STUDY / 01B",
+  },
+  {
+    file: "../public/og-crimcaseai.png",
+    primary: "CrimCaseAI",
+    secondary: "Grounded legal intelligence",
+    descriptor: "Local processing · Evidence graphs · Citation-gated AI",
+    footer: "CASE STUDY / 01C",
+  },
 ];
 
 await Promise.all(cards.map(({ file, ...content }) =>

@@ -116,3 +116,36 @@ Changes and evidence:
 - Semper founder mobile and desktop Lighthouse: 100 in all four categories.
 - Static build contains both routes in `sitemap-0.xml`; both social images and both resume PDFs return 200 with expected content types.
 - `npm run check` reports zero errors, warnings, or hints; `npm audit` reports zero vulnerabilities.
+
+## Pass 8: selective multipage architecture and visual polish
+
+Status: presentation-ready
+
+Changes:
+
+- Reduced `/` to a focused landing page with concise work and Semper previews plus the existing contact destination.
+- Added `/work/`, `/work/teo/`, `/work/musterhall/`, `/work/crimcaseai/`, and `/experience/`; retained the Semper founder route for seven indexable pages total.
+- Rebuilt primary navigation around Work, Semper, Experience, and Contact. All four destinations remain visible and reachable at 390 pixels, with active-route state on the three dedicated destinations.
+- Added page-specific titles, descriptions, canonicals, Open Graph cards, breadcrumbs, and `CollectionPage`, `Article`, or `ProfilePage` structured data as appropriate.
+- Added previous and next project navigation, recruiter-oriented system narratives, and explicit problem, system, and hard-part sections to each engineering case study.
+- Kept GitHub within the Work hub so the public-code proof has context without becoming a thin standalone page.
+
+Playwright evidence:
+
+- Captured all seven routes at 390, 768, and 1280 pixels in `qa/screenshots/presentation-ready-multipage-*`.
+- Visual review found and corrected a full-page screenshot artifact that painted the offscreen skip link. The measured initial state confirms `BODY` owns focus and the skip link is entirely above the viewport until keyboard focus.
+- No route has horizontal overflow, clipped text, console errors, or page errors. Primary navigation targets measure 44 pixels high at every tested width.
+- The complete 390-pixel set confirms the email stays on one line, all timeline roles remain legible, project navigation is reachable, and all four primary routes fit without horizontal scrolling.
+- Cross-route journeys pass at 390 and 1280 pixels from Home to Work to TEO to Musterhall to Experience to Semper to Contact.
+
+Hard-gate evidence:
+
+- `npm run check`: 0 errors, 0 warnings, 0 hints.
+- `npm run build`: seven static pages, sitemap generated, responsive portrait variants generated, and current public GitHub statistics included.
+- `npm run qa:browser`: zero axe violations across 21 route and viewport combinations; unique titles, correct canonicals, one H1 per route, valid JSON-LD, expected schemas, and all required assets pass.
+- The three GitHub statistics cells measure equally at 390, 768, and 1280 pixels.
+- Direct copper-token contrast checks remain 6.74:1 on canvas, 5.81:1 on raised surfaces, 5.13:1 on strong surfaces, and 12.56:1 for soft copper on canvas.
+- `npm run qa:lighthouse`: every mobile route and the desktop homepage score 100 for Performance, Accessibility, Best Practices, and SEO, with no run warnings.
+- `npm audit --audit-level=high`: 0 vulnerabilities.
+
+Presentation verdict: ready for review. The live `stevenhagene.com` domain and DNS remain untouched.

@@ -9,17 +9,20 @@ A small, static Astro portfolio for [stevenhagene.com](https://stevenhagene.com)
 - Three-layer CSS tokens documented in [`src/styles/TOKENS.md`](src/styles/TOKENS.md)
 - `astro:assets` responsive headshot generation
 - Build-time public GitHub stats with a fail-clean omission path
-- Generated 1200 by 630 Open Graph image
+- Generated 1200 by 630 Open Graph images for each search intent
 - Cloudflare Pages deployment from `dist`
 
 There is no client-side framework and no contact form.
 
 ## Page structure
 
-- `/` is the recruiter-focused portfolio, including the Semper founder chapter.
-- `/founder/semper-digital-solutions/` is the company-building case study. It owns Steven's founder story while Semper's website remains the destination for services and procurement inquiries.
+- `/` is the focused recruiter landing page with selected-work and Semper previews plus contact details.
+- `/work/` is the engineering-work hub and curated public-code section.
+- `/work/teo/`, `/work/musterhall/`, and `/work/crimcaseai/` are full engineering case studies.
+- `/experience/` owns the timeline, credentials, and skills taxonomy.
+- `/founder/semper-digital-solutions/` owns Steven's company-building story while Semper's website remains the destination for services and procurement inquiries.
 
-Each route has its own title, description, canonical URL, Open Graph card, and structured data. The founder page connects Steven's `Person` entity to Semper's `Organization` entity with `ProfilePage` and breadcrumb markup.
+Each route has its own title, description, canonical URL, Open Graph card, breadcrumb path, and appropriate structured data. The work hub uses `CollectionPage`, project pages use `Article`, and the experience and founder pages use `ProfilePage` relationships around the shared `Person` entity.
 
 ## Local development
 
@@ -36,6 +39,9 @@ Production checks:
 npm run check
 npm run build
 npm run preview
+npm run qa:browser
+npm run qa:navigation
+npm run qa:lighthouse
 ```
 
 The build fetches public GitHub data. If GitHub is unreachable, the stats strip is omitted and the curated repository cards still render.

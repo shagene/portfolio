@@ -41,6 +41,9 @@ import SectionHeading from "./SectionHeading.astro";
           <ul class="chips" aria-label={`${study.name} technologies`}>
             {study.technologies.map((technology) => <li class="chip">{technology}</li>)}
           </ul>
+          <a class="case-link" href={study.path} aria-label={`Read the ${study.name} case study`}>
+            Read full case study <span aria-hidden="true">→</span>
+          </a>
         </div>
       </article>
     ))}
@@ -133,6 +136,22 @@ import SectionHeading from "./SectionHeading.astro";
   dd {
     margin: 0;
     color: var(--color-ink-muted);
+  }
+
+  .case-link {
+    display: inline-flex;
+    gap: var(--primitive-space-3);
+    align-items: center;
+    margin-top: var(--primitive-space-8);
+    color: var(--color-ink);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-small);
+    font-weight: 700;
+    text-decoration-color: var(--color-accent);
+  }
+
+  .case-link span {
+    color: var(--color-accent);
   }
 
   .also-built {

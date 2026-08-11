@@ -13,9 +13,6 @@
           "top",
           "work",
           "semper",
-          "github",
-          "experience",
-          "skills",
           "contact"
         ],
         "email": {
@@ -25,11 +22,7 @@
           "lineHeight": 21.9082,
           "whiteSpace": "nowrap"
         },
-        "statsWidths": [
-          350,
-          350,
-          350
-        ],
+        "statsWidths": [],
         "portraitTransform": "none",
         "scripts": [
           "application/ld+json"
@@ -38,6 +31,9 @@
           "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
           "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
           "canonical": "https://stevenhagene.com/",
+          "ogTitle": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
+          "ogDescription": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
+          "ogImage": "https://stevenhagene.com/og-image.png",
           "h1Count": 1,
           "schemaTypes": [
             "Person"
@@ -66,16 +62,16 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 184,
+            "nodeCount": 51,
             "samples": [
               [
-                "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
+                "span[aria-hidden=\"true\"][data-astro-cid-nen7h5rs=\"\"]"
               ],
               [
-                "a[href$=\"/#work\"]"
+                "a[href$=\"work/\"][data-astro-cid-nen7h5rs=\"\"]"
               ],
               [
-                "a[href$=\"/#semper\"]"
+                "li:nth-child(2) > a[data-astro-cid-nen7h5rs=\"\"]"
               ]
             ]
           }
@@ -98,9 +94,6 @@
           "top",
           "work",
           "semper",
-          "github",
-          "experience",
-          "skills",
           "contact"
         ],
         "email": {
@@ -110,11 +103,7 @@
           "lineHeight": 24.36,
           "whiteSpace": "nowrap"
         },
-        "statsWidths": [
-          235.515625,
-          235.515625,
-          235.515625
-        ],
+        "statsWidths": [],
         "portraitTransform": "none",
         "scripts": [
           "application/ld+json"
@@ -123,6 +112,9 @@
           "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
           "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
           "canonical": "https://stevenhagene.com/",
+          "ogTitle": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
+          "ogDescription": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
+          "ogImage": "https://stevenhagene.com/og-image.png",
           "h1Count": 1,
           "schemaTypes": [
             "Person"
@@ -151,16 +143,16 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 188,
+            "nodeCount": 52,
             "samples": [
               [
-                "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
+                "span[aria-hidden=\"true\"][data-astro-cid-nen7h5rs=\"\"]"
               ],
               [
                 "strong"
               ],
               [
-                "a[href$=\"/#work\"]"
+                "a[href$=\"work/\"][data-astro-cid-nen7h5rs=\"\"]"
               ]
             ]
           }
@@ -183,9 +175,6 @@
           "top",
           "work",
           "semper",
-          "github",
-          "experience",
-          "skills",
           "contact"
         ],
         "email": {
@@ -195,11 +184,7 @@
           "lineHeight": 45.696,
           "whiteSpace": "nowrap"
         },
-        "statsWidths": [
-          394.65625,
-          394.671875,
-          394.65625
-        ],
+        "statsWidths": [],
         "portraitTransform": "none",
         "scripts": [
           "application/ld+json"
@@ -208,6 +193,9 @@
           "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
           "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
           "canonical": "https://stevenhagene.com/",
+          "ogTitle": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
+          "ogDescription": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
+          "ogImage": "https://stevenhagene.com/og-image.png",
           "h1Count": 1,
           "schemaTypes": [
             "Person"
@@ -215,7 +203,7 @@
         },
         "oldRepoLinks": []
       },
-      "statsWidthDelta": 0.015625,
+      "statsWidthDelta": 0,
       "skipLink": {
         "text": "Skip to main content",
         "href": "#main-content",
@@ -236,16 +224,1165 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 188,
+            "nodeCount": 52,
             "samples": [
               [
-                "span[data-astro-cid-nen7h5rs=\"\"][aria-hidden=\"true\"]"
+                "span[aria-hidden=\"true\"][data-astro-cid-nen7h5rs=\"\"]"
               ],
               [
                 "strong"
               ],
               [
-                "a[href$=\"/#work\"]"
+                "a[href$=\"work/\"][data-astro-cid-nen7h5rs=\"\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "sectionIds": [
+          "page-intro",
+          "work",
+          "github"
+        ],
+        "email": null,
+        "statsWidths": [
+          350,
+          350,
+          350
+        ],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Engineering Case Studies | Steven Hagene",
+          "description": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
+          "canonical": "https://stevenhagene.com/work/",
+          "ogTitle": "Engineering Case Studies | Steven Hagene",
+          "ogDescription": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
+          "ogImage": "https://stevenhagene.com/og-work.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "CollectionPage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 83,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"][data-astro-cid-nen7h5rs=\"\"]"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ],
+              [
+                "li[data-astro-cid-nen7h5rs=\"\"]:nth-child(2) > a[data-astro-cid-nen7h5rs=\"\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "geometry": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "sectionIds": [
+          "page-intro",
+          "work",
+          "github"
+        ],
+        "email": null,
+        "statsWidths": [
+          235.515625,
+          235.515625,
+          235.515625
+        ],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Engineering Case Studies | Steven Hagene",
+          "description": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
+          "canonical": "https://stevenhagene.com/work/",
+          "ogTitle": "Engineering Case Studies | Steven Hagene",
+          "ogDescription": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
+          "ogImage": "https://stevenhagene.com/og-work.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "CollectionPage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 84,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"][data-astro-cid-nen7h5rs=\"\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "geometry": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "sectionIds": [
+          "page-intro",
+          "work",
+          "github"
+        ],
+        "email": null,
+        "statsWidths": [
+          394.65625,
+          394.671875,
+          394.65625
+        ],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Engineering Case Studies | Steven Hagene",
+          "description": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
+          "canonical": "https://stevenhagene.com/work/",
+          "ogTitle": "Engineering Case Studies | Steven Hagene",
+          "ogDescription": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
+          "ogImage": "https://stevenhagene.com/og-work.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "CollectionPage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0.015625,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 84,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"][data-astro-cid-nen7h5rs=\"\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/teo/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "TEO Financial SaaS Case Study | Steven Hagene",
+          "description": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
+          "canonical": "https://stevenhagene.com/work/teo/",
+          "ogTitle": "TEO Financial SaaS Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
+          "ogImage": "https://stevenhagene.com/og-teo.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 44,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ],
+              [
+                "li:nth-child(2) > a"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/teo/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "geometry": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "TEO Financial SaaS Case Study | Steven Hagene",
+          "description": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
+          "canonical": "https://stevenhagene.com/work/teo/",
+          "ogTitle": "TEO Financial SaaS Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
+          "ogImage": "https://stevenhagene.com/og-teo.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 45,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".identity > strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/teo/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "geometry": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "TEO Financial SaaS Case Study | Steven Hagene",
+          "description": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
+          "canonical": "https://stevenhagene.com/work/teo/",
+          "ogTitle": "TEO Financial SaaS Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
+          "ogImage": "https://stevenhagene.com/og-teo.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 45,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".identity > strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/musterhall/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Musterhall Product Engineering Case Study | Steven Hagene",
+          "description": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
+          "canonical": "https://stevenhagene.com/work/musterhall/",
+          "ogTitle": "Musterhall Product Engineering Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
+          "ogImage": "https://stevenhagene.com/og-musterhall.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 44,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ],
+              [
+                "li:nth-child(2) > a"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/musterhall/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "geometry": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Musterhall Product Engineering Case Study | Steven Hagene",
+          "description": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
+          "canonical": "https://stevenhagene.com/work/musterhall/",
+          "ogTitle": "Musterhall Product Engineering Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
+          "ogImage": "https://stevenhagene.com/og-musterhall.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 45,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".identity > strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/musterhall/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "geometry": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Musterhall Product Engineering Case Study | Steven Hagene",
+          "description": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
+          "canonical": "https://stevenhagene.com/work/musterhall/",
+          "ogTitle": "Musterhall Product Engineering Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
+          "ogImage": "https://stevenhagene.com/og-musterhall.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 45,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".identity > strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/crimcaseai/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
+          "description": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
+          "canonical": "https://stevenhagene.com/work/crimcaseai/",
+          "ogTitle": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
+          "ogImage": "https://stevenhagene.com/og-crimcaseai.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 44,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ],
+              [
+                "li:nth-child(2) > a"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/crimcaseai/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "geometry": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
+          "description": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
+          "canonical": "https://stevenhagene.com/work/crimcaseai/",
+          "ogTitle": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
+          "ogImage": "https://stevenhagene.com/og-crimcaseai.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 45,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".identity > strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/work/crimcaseai/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "geometry": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "sectionIds": [],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
+          "description": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
+          "canonical": "https://stevenhagene.com/work/crimcaseai/",
+          "ogTitle": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
+          "ogDescription": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
+          "ogImage": "https://stevenhagene.com/og-crimcaseai.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "Article",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 45,
+            "samples": [
+              [
+                "span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".identity > strong"
+              ],
+              [
+                "a[aria-current=\"page\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "sectionIds": [
+          "page-intro",
+          "experience",
+          "skills",
+          "next"
+        ],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Experience & Skills | Steven Hagene",
+          "description": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
+          "canonical": "https://stevenhagene.com/experience/",
+          "ogTitle": "Experience & Skills | Steven Hagene",
+          "ogDescription": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
+          "ogImage": "https://stevenhagene.com/og-experience.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "ProfilePage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 35,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 96,
+            "samples": [
+              [
+                ".identity > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "li[data-astro-cid-nen7h5rs=\"\"]:nth-child(1) > a[href$=\"work/\"]"
+              ],
+              [
+                "li[data-astro-cid-nen7h5rs=\"\"]:nth-child(2) > a"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "geometry": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "sectionIds": [
+          "page-intro",
+          "experience",
+          "skills",
+          "next"
+        ],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Experience & Skills | Steven Hagene",
+          "description": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
+          "canonical": "https://stevenhagene.com/experience/",
+          "ogTitle": "Experience & Skills | Steven Hagene",
+          "ogDescription": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
+          "ogImage": "https://stevenhagene.com/og-experience.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "ProfilePage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 35,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 97,
+            "samples": [
+              [
+                ".identity > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "li[data-astro-cid-nen7h5rs=\"\"]:nth-child(1) > a[href$=\"work/\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "route": "/experience/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "geometry": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "sectionIds": [
+          "page-intro",
+          "experience",
+          "skills",
+          "next"
+        ],
+        "email": null,
+        "statsWidths": [],
+        "portraitTransform": null,
+        "scripts": [
+          "application/ld+json",
+          "application/ld+json",
+          "application/ld+json"
+        ],
+        "metadata": {
+          "title": "Experience & Skills | Steven Hagene",
+          "description": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
+          "canonical": "https://stevenhagene.com/experience/",
+          "ogTitle": "Experience & Skills | Steven Hagene",
+          "ogDescription": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
+          "ogImage": "https://stevenhagene.com/og-experience.png",
+          "h1Count": 1,
+          "schemaTypes": [
+            "Person",
+            "ProfilePage",
+            "BreadcrumbList"
+          ]
+        },
+        "oldRepoLinks": []
+      },
+      "statsWidthDelta": 0,
+      "skipLink": {
+        "text": "Skip to main content",
+        "href": "#main-content",
+        "visible": true,
+        "outlineWidth": "2px"
+      },
+      "reducedMotionScrollBehavior": "auto",
+      "contrastRatios": {
+        "copper/canvas": 6.74,
+        "copper/raised": 5.81,
+        "copper/strong": 5.13,
+        "copper-soft/canvas": 12.56
+      },
+      "axe": {
+        "violations": [],
+        "passes": 35,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 97,
+            "samples": [
+              [
+                ".identity > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "strong"
+              ],
+              [
+                "li[data-astro-cid-nen7h5rs=\"\"]:nth-child(1) > a[href$=\"work/\"]"
               ]
             ]
           }
@@ -283,6 +1420,9 @@
           "title": "Building Semper Digital Solutions | Steven Hagene",
           "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
           "canonical": "https://stevenhagene.com/founder/semper-digital-solutions/",
+          "ogTitle": "Building Semper Digital Solutions | Steven Hagene",
+          "ogDescription": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
+          "ogImage": "https://stevenhagene.com/og-semper.png",
           "h1Count": 1,
           "schemaTypes": [
             "Person",
@@ -313,16 +1453,16 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 40,
+            "nodeCount": 41,
             "samples": [
               [
                 "span[aria-hidden=\"true\"]"
               ],
               [
-                "li:nth-child(1) > a[href$=\"/#work\"]"
+                "li:nth-child(1) > a[href$=\"work/\"]"
               ],
               [
-                "li:nth-child(2) > a[href$=\"/#semper\"]"
+                "a[aria-current=\"page\"]"
               ]
             ]
           }
@@ -360,6 +1500,9 @@
           "title": "Building Semper Digital Solutions | Steven Hagene",
           "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
           "canonical": "https://stevenhagene.com/founder/semper-digital-solutions/",
+          "ogTitle": "Building Semper Digital Solutions | Steven Hagene",
+          "ogDescription": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
+          "ogImage": "https://stevenhagene.com/og-semper.png",
           "h1Count": 1,
           "schemaTypes": [
             "Person",
@@ -390,7 +1533,7 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 44,
+            "nodeCount": 42,
             "samples": [
               [
                 "span[aria-hidden=\"true\"]"
@@ -399,7 +1542,7 @@
                 "strong"
               ],
               [
-                "li:nth-child(1) > a[href$=\"/#work\"]"
+                "li:nth-child(1) > a[href$=\"work/\"]"
               ]
             ]
           }
@@ -437,6 +1580,9 @@
           "title": "Building Semper Digital Solutions | Steven Hagene",
           "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
           "canonical": "https://stevenhagene.com/founder/semper-digital-solutions/",
+          "ogTitle": "Building Semper Digital Solutions | Steven Hagene",
+          "ogDescription": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
+          "ogImage": "https://stevenhagene.com/og-semper.png",
           "h1Count": 1,
           "schemaTypes": [
             "Person",
@@ -467,7 +1613,7 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 44,
+            "nodeCount": 42,
             "samples": [
               [
                 "span[aria-hidden=\"true\"]"
@@ -476,7 +1622,7 @@
                 "strong"
               ],
               [
-                "li:nth-child(1) > a[href$=\"/#work\"]"
+                "li:nth-child(1) > a[href$=\"work/\"]"
               ]
             ]
           }
@@ -515,6 +1661,31 @@
     },
     {
       "path": "/og-semper.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "/og-work.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "/og-experience.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "/og-teo.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "/og-musterhall.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "/og-crimcaseai.png",
       "status": 200,
       "contentType": "image/png"
     }

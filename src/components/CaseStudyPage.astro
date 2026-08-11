@@ -1,0 +1,476 @@
+---
+import type { CaseStudy } from "@/data/portfolio";
+import { site } from "@/data/portfolio";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
+
+type Props = {
+  study: CaseStudy;
+  previous: CaseStudy;
+  next: CaseStudy;
+};
+
+const { study, previous, next } = Astro.props;
+const pageUrl = new URL(study.path, site.canonical).toString();
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${pageUrl}#case-study`,
+    mainEntityOfPage: pageUrl,
+    headline: study.headline,
+    name: study.pageTitle,
+    description: study.pageDescription,
+    author: { "@id": `${site.canonical}/#person` },
+    about: {
+      "@type": "SoftwareApplication",
+      name: study.name,
+      applicationCategory: study.domain,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: site.name, item: site.canonical },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Engineering case studies",
+        item: new URL("/work/", site.canonical).toString(),
+      },
+      { "@type": "ListItem", position: 3, name: study.name, item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={study.pageTitle}
+  description={study.pageDescription}
+  ogImagePath={`/og-${study.slug}.png`}
+  ogImageAlt={`${study.name} engineering case study by Steven Hagene`}
+  ogType="article"
+  structuredData={structuredData}
+>
+  <Header />
+  <main id="main-content">
+    <article class="case-detail">
+      <header class="case-hero shell" id="case-study">
+        <a class="back-link" href="/work/">← Work / {study.name}</a>
+        <div class="case-hero-grid">
+          <div>
+            <p class="eyebrow">{study.eyebrow}</p>
+            <h1>{study.headline}</h1>
+          </div>
+          <div class="hero-context">
+            <p class="lead">{study.lead}</p>
+            <ul class="chips" aria-label={`${study.name} technologies`}>
+              {study.technologies.map((technology) => <li class="chip">{technology}</li>)}
+            </ul>
+          </div>
+        </div>
+        <dl class="scope-ledger" aria-label={`${study.name} case study scope`}>
+          {study.scope.map((item, index) => (
+            <div>
+              <dt>0{index + 1} · {item.label}</dt>
+              <dd>{item.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </header>
+
+      <section class="case-section shell" id="problem" aria-labelledby="problem-heading">
+        <header class="section-title">
+          <p class="eyebrow">01 · Problem</p>
+          <h2 id="problem-heading">The screen was not the hard part.</h2>
+        </header>
+        <div class="context-copy">
+          {study.context.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </section>
+
+      <section class="case-section shell" id="system" aria-labelledby="system-heading">
+        <header class="split-heading">
+          <div>
+            <p class="eyebrow">02 · System</p>
+            <h2 id="system-heading">{study.systemHeading}</h2>
+          </div>
+          <p>{study.systemIntro}</p>
+        </header>
+        <ol class="system-grid">
+          {study.system.map((item) => (
+            <li>
+              <span>{item.number}</span>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section class="case-section shell" id="hard-part" aria-labelledby="hard-part-heading">
+        <header class="split-heading">
+          <div>
+            <p class="eyebrow">03 · What made it hard</p>
+            <h2 id="hard-part-heading">{study.hardPartHeading}</h2>
+          </div>
+          <p>{study.hardPartIntro}</p>
+        </header>
+        <div class="guardrail-list">
+          {study.guardrails.map((item, index) => (
+            <article>
+              <span>0{index + 1}</span>
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <nav class="case-navigation shell" aria-label="Case study navigation">
+        <a href={previous.path}>
+          <span>Previous case study</span>
+          <strong>← {previous.name}</strong>
+        </a>
+        <a href={next.path}>
+          <span>Next case study</span>
+          <strong>{next.name} →</strong>
+        </a>
+      </nav>
+
+      <section class="case-cta shell" id="next" aria-labelledby="case-cta-heading">
+        <p class="eyebrow">04 · Next</p>
+        <h2 id="case-cta-heading">Have a difficult system to make coherent?</h2>
+        <div>
+          <a class="primary-link" href={`mailto:${site.email}`}>Email Steven</a>
+          <a class="text-link" href="/experience/">View experience</a>
+        </div>
+      </section>
+    </article>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .case-hero {
+    padding-block: clamp(var(--primitive-space-12), 7vw, var(--primitive-space-24));
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: clamp(var(--primitive-space-12), 6vw, var(--primitive-space-20));
+    color: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .case-hero-grid,
+  .split-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(18rem, 0.92fr);
+    gap: var(--space-cluster);
+    align-items: end;
+  }
+
+  h1 {
+    max-width: 11ch;
+    margin: var(--primitive-space-5) 0 0;
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-hero);
+    letter-spacing: var(--primitive-tracking-display);
+    line-height: var(--primitive-leading-hero);
+    text-wrap: balance;
+  }
+
+  .lead {
+    max-width: 42rem;
+    margin: 0;
+    color: var(--color-ink-muted);
+    font-size: var(--primitive-type-lead);
+  }
+
+  .hero-context .chips {
+    margin-top: var(--primitive-space-8);
+  }
+
+  .scope-ledger {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: clamp(var(--primitive-space-12), 7vw, var(--primitive-space-20)) 0 0;
+    border-block: 1px solid var(--color-border-strong);
+  }
+
+  .scope-ledger div {
+    padding: var(--primitive-space-5) var(--primitive-space-6);
+  }
+
+  .scope-ledger div:first-child {
+    padding-left: 0;
+  }
+
+  .scope-ledger div + div {
+    border-left: 1px solid var(--color-border);
+  }
+
+  .scope-ledger dt {
+    color: var(--color-accent);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .scope-ledger dd {
+    margin: var(--primitive-space-2) 0 0;
+    color: var(--color-ink);
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-lead);
+    font-weight: 650;
+  }
+
+  .case-section,
+  .case-cta,
+  .case-navigation {
+    padding-block: var(--space-section);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .section-title {
+    display: grid;
+    grid-template-columns: minmax(10rem, 0.43fr) minmax(0, 1.57fr);
+    gap: var(--space-cluster);
+    align-items: end;
+    margin-bottom: clamp(var(--primitive-space-10), 6vw, var(--primitive-space-16));
+  }
+
+  .section-title h2,
+  .split-heading h2,
+  .case-cta h2 {
+    max-width: 13ch;
+    margin: var(--primitive-space-4) 0 0;
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-display);
+    letter-spacing: var(--primitive-tracking-display);
+    line-height: 0.98;
+    text-wrap: balance;
+  }
+
+  .context-copy {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--primitive-space-4);
+    margin-left: calc(27% + var(--space-cluster));
+  }
+
+  .context-copy p {
+    margin: 0;
+    padding: clamp(var(--primitive-space-6), 4vw, var(--primitive-space-10));
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+    color: var(--color-ink-muted);
+    font-size: var(--primitive-type-lead);
+  }
+
+  .split-heading {
+    margin-bottom: clamp(var(--primitive-space-12), 7vw, var(--primitive-space-20));
+  }
+
+  .split-heading > p {
+    max-width: 40rem;
+    margin: 0;
+    color: var(--color-ink-muted);
+    font-size: var(--primitive-type-lead);
+  }
+
+  .system-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--primitive-space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .system-grid li {
+    min-height: 25rem;
+    padding: clamp(var(--primitive-space-7), 4vw, var(--primitive-space-10));
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+  }
+
+  .system-grid li:nth-child(2) {
+    background: color-mix(in srgb, var(--card-bg) 78%, var(--color-surface-strong));
+  }
+
+  .system-grid li > span,
+  .guardrail-list article > span {
+    color: var(--color-accent);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    letter-spacing: var(--primitive-tracking-label);
+  }
+
+  .system-grid h3,
+  .guardrail-list h3 {
+    margin: var(--primitive-space-12) 0 var(--primitive-space-5);
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-h3);
+    letter-spacing: var(--primitive-tracking-heading);
+    line-height: var(--primitive-leading-heading);
+  }
+
+  .system-grid p,
+  .guardrail-list p {
+    margin: 0;
+    color: var(--color-ink-muted);
+  }
+
+  .guardrail-list {
+    border-top: 1px solid var(--color-border-strong);
+  }
+
+  .guardrail-list article {
+    display: grid;
+    grid-template-columns: minmax(3rem, 0.25fr) minmax(0, 1.75fr);
+    gap: var(--space-cluster);
+    padding-block: var(--primitive-space-10);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .guardrail-list h3 {
+    margin: 0 0 var(--primitive-space-3);
+  }
+
+  .guardrail-list p {
+    max-width: 49rem;
+  }
+
+  .case-navigation {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--primitive-space-4);
+  }
+
+  .case-navigation a {
+    display: flex;
+    min-height: 10rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--primitive-space-6);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+    text-decoration: none;
+  }
+
+  .case-navigation a:last-child {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .case-navigation span {
+    color: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .case-navigation strong {
+    color: var(--color-ink);
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-h3);
+  }
+
+  .case-cta {
+    padding-bottom: var(--primitive-space-32);
+  }
+
+  .case-cta h2 {
+    max-width: 16ch;
+  }
+
+  .case-cta > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--primitive-space-5) var(--primitive-space-8);
+    align-items: center;
+    margin-top: var(--primitive-space-10);
+  }
+
+  .primary-link {
+    display: inline-flex;
+    gap: var(--primitive-space-3);
+    align-items: center;
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--primitive-radius-pill);
+    background: var(--button-primary-bg);
+    color: var(--button-primary-ink);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-small);
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .primary-link::after {
+    content: "↗";
+  }
+
+  .primary-link:hover {
+    background: var(--color-accent-soft);
+    color: var(--button-primary-ink);
+  }
+
+  @media (max-width: 63.99rem) {
+    .system-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .system-grid li {
+      min-height: 0;
+    }
+
+    .context-copy {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .case-hero-grid,
+    .split-heading,
+    .section-title,
+    .context-copy,
+    .scope-ledger,
+    .case-navigation {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 14vw, 4.6rem);
+    }
+
+    .scope-ledger div {
+      padding-inline: 0;
+    }
+
+    .scope-ledger div + div {
+      border-top: 1px solid var(--color-border);
+      border-left: 0;
+    }
+
+    .guardrail-list article {
+      grid-template-columns: 2.5rem 1fr;
+      gap: var(--primitive-space-4);
+    }
+  }
+</style>

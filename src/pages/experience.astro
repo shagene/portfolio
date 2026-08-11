@@ -1,0 +1,118 @@
+---
+import ExperienceSection from "@/components/ExperienceSection.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import PageIntro from "@/components/PageIntro.astro";
+import SkillsSection from "@/components/SkillsSection.astro";
+import { experiencePage, site } from "@/data/portfolio";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const pageUrl = new URL(experiencePage.path, site.canonical).toString();
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${pageUrl}#profile-page`,
+    url: pageUrl,
+    name: experiencePage.pageTitle,
+    description: experiencePage.pageDescription,
+    mainEntity: { "@id": `${site.canonical}/#person` },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: site.name, item: site.canonical },
+      { "@type": "ListItem", position: 2, name: "Experience and skills", item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={experiencePage.pageTitle}
+  description={experiencePage.pageDescription}
+  ogImagePath="/og-experience.png"
+  ogImageAlt="Steven Hagene engineering experience and skills"
+  structuredData={structuredData}
+>
+  <Header />
+  <main id="main-content">
+    <PageIntro
+      eyebrow={experiencePage.eyebrow}
+      headline={experiencePage.headline}
+      lead={experiencePage.lead}
+    >
+      <div class="page-actions">
+        <a class="text-link" href="/work/">View engineering case studies</a>
+        <a class="text-link" href="/#contact">Contact Steven</a>
+      </div>
+    </PageIntro>
+    <ExperienceSection />
+    <SkillsSection />
+    <section class="experience-cta shell" id="next" aria-labelledby="experience-cta-heading">
+      <p class="eyebrow">03 · Next</p>
+      <h2 id="experience-cta-heading">Need the full chronology?</h2>
+      <p>Download the role-specific resumes from the contact section, or start with the work itself.</p>
+      <div>
+        <a class="primary-link" href="/#contact">Resume and contact</a>
+        <a class="text-link" href="/work/">Selected work</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .experience-cta {
+    padding-block: var(--space-section) var(--primitive-space-32);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .experience-cta h2 {
+    max-width: 14ch;
+    margin: var(--primitive-space-4) 0 var(--primitive-space-6);
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-display);
+    letter-spacing: var(--primitive-tracking-display);
+    line-height: 0.98;
+  }
+
+  .experience-cta > p:not(.eyebrow) {
+    max-width: 42rem;
+    margin: 0;
+    color: var(--color-ink-muted);
+    font-size: var(--primitive-type-lead);
+  }
+
+  .experience-cta > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--primitive-space-5) var(--primitive-space-8);
+    align-items: center;
+    margin-top: var(--primitive-space-10);
+  }
+
+  .primary-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--primitive-radius-pill);
+    background: var(--button-primary-bg);
+    color: var(--button-primary-ink);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-small);
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .primary-link::after {
+    margin-left: var(--primitive-space-3);
+    content: "→";
+  }
+
+  .primary-link:hover {
+    background: var(--color-accent-soft);
+    color: var(--button-primary-ink);
+  }
+</style>

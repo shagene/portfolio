@@ -4,7 +4,17 @@
       "width": 390,
       "height": 844
     },
-    "finalUrl": "https://astro-rebuild.steven-hagene-portfolio.pages.dev/#semper",
+    "finalUrl": "http://127.0.0.1:4330/#contact",
+    "navState": {
+      "clientWidth": 223,
+      "scrollWidth": 223,
+      "labels": [
+        "Work",
+        "Semper",
+        "Experience",
+        "Contact"
+      ]
+    },
     "failures": []
   },
   {
@@ -12,7 +22,17 @@
       "width": 1280,
       "height": 900
     },
-    "finalUrl": "https://astro-rebuild.steven-hagene-portfolio.pages.dev/#semper",
+    "finalUrl": "http://127.0.0.1:4330/#contact",
+    "navState": {
+      "clientWidth": 295,
+      "scrollWidth": 295,
+      "labels": [
+        "Work",
+        "Semper",
+        "Experience",
+        "Contact"
+      ]
+    },
     "failures": []
   }
 ]

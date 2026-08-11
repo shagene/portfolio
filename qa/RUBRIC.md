@@ -5,21 +5,22 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 ## Hard gates
 
 - Production build succeeds with no type errors.
-- The homepage and Semper founder route both build as static HTML and appear in the sitemap.
+- All seven routes build as static HTML and appear in the sitemap.
 - Lighthouse scores are 95 or higher for Performance, Accessibility, Best Practices, and SEO.
-- axe-core reports zero violations on both routes at 390, 768, and 1280 pixel widths.
+- axe-core reports zero violations on every route at 390, 768, and 1280 pixel widths.
 - No horizontal overflow at 390, 768, or 1280 pixels.
 - All page content is available without client-side JavaScript.
 - Keyboard order follows the visual order; skip link and focus states are visible.
 - Reduced-motion mode removes nonessential smooth movement.
 - GitHub API failure leaves a complete, intentional section with no empty shell.
-- Resume absence produces a build warning and an honest UI label.
+- Removing a resume produces a build warning and an honest UI label.
 
 ## Five-second recruiter test
 
 - Steven's name, exact target headline, location, and seniority are visible immediately.
 - The first screen feels like a senior product engineer, not a generic template or freelance landing page.
 - The portfolio leads with TEO, Musterhall, and CrimCaseAI, never the retired hobby projects.
+- Each flagship project has a dedicated, recruiter-readable case study rather than an overloaded landing-page chapter.
 - The page makes full-stack, UX/design systems, AI, and delivery breadth legible without a wall of logos.
 
 ## Sister-site test
@@ -51,5 +52,6 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 - Hover and focus feedback are coherent and do not move layout.
 - Social image is 1200 by 630 and matches the page identity.
 - Canonical, Open Graph, Twitter, sitemap, robots, and Person JSON-LD are present in built output.
-- The founder route has a unique title, description, canonical URL, social card, and valid Person, Organization/ProfilePage, and breadcrumb relationships.
+- Every route has a unique title, description, canonical URL, social card, and structured data appropriate to its page type.
+- The founder route retains valid Person, Organization/ProfilePage, and breadcrumb relationships.
 - Cloudflare Pages configuration and DNS runbook agree with current official documentation.

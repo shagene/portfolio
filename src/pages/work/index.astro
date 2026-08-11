@@ -1,0 +1,59 @@
+---
+import Footer from "@/components/Footer.astro";
+import GitHubSection from "@/components/GitHubSection.astro";
+import Header from "@/components/Header.astro";
+import PageIntro from "@/components/PageIntro.astro";
+import SelectedWork from "@/components/SelectedWork.astro";
+import { caseStudies, site, workPage } from "@/data/portfolio";
+import { getGitHubStats } from "@/data/github";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const githubStats = await getGitHubStats();
+const pageUrl = new URL(workPage.path, site.canonical).toString();
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${pageUrl}#collection`,
+    url: pageUrl,
+    name: workPage.pageTitle,
+    description: workPage.pageDescription,
+    author: { "@id": `${site.canonical}/#person` },
+    hasPart: caseStudies.map((study) => ({
+      "@type": "Article",
+      name: study.headline,
+      url: new URL(study.path, site.canonical).toString(),
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: site.name, item: site.canonical },
+      { "@type": "ListItem", position: 2, name: "Engineering case studies", item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={workPage.pageTitle}
+  description={workPage.pageDescription}
+  ogImagePath="/og-work.png"
+  ogImageAlt="Selected engineering case studies by Steven Hagene"
+  ogType="website"
+  structuredData={structuredData}
+>
+  <Header />
+  <main id="main-content">
+    <PageIntro eyebrow={workPage.eyebrow} headline={workPage.headline} lead={workPage.lead}>
+      <div class="page-actions">
+        <a class="text-link" href="/experience/">Experience and skills</a>
+        <a class="text-link" href="/#contact">Contact Steven</a>
+      </div>
+    </PageIntro>
+    <SelectedWork />
+    <GitHubSection stats={githubStats} />
+  </main>
+  <Footer />
+</BaseLayout>

@@ -1,5 +1,11 @@
 ---
 import { navigation, site } from "@/data/portfolio";
+
+const currentPath = Astro.url.pathname;
+const isCurrent = (href: string) => {
+  if (href.startsWith("/#")) return false;
+  return currentPath === href || (href === "/work/" && currentPath.startsWith("/work/"));
+};
 ---
 
 <header class="site-header">
@@ -11,7 +17,11 @@ import { navigation, site } from "@/data/portfolio";
     <nav aria-label="Primary navigation">
       <ul>
         {navigation.map((item) => (
-          <li><a href={`/${item.href}`}>{item.label}</a></li>
+          <li>
+            <a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>
+              {item.label}
+            </a>
+          </li>
         ))}
       </ul>
     </nav>
@@ -75,13 +85,16 @@ import { navigation, site } from "@/data/portfolio";
   nav ul {
     display: flex;
     width: max-content;
-    gap: clamp(var(--primitive-space-4), 2.5vw, var(--primitive-space-8));
+    gap: clamp(var(--primitive-space-3), 2.5vw, var(--primitive-space-8));
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
   nav a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
     color: var(--color-ink-muted);
     font-family: var(--typeface-mono);
     font-size: 0.72rem;
@@ -93,6 +106,14 @@ import { navigation, site } from "@/data/portfolio";
 
   nav a:hover {
     color: var(--color-accent-soft);
+  }
+
+  nav a[aria-current="page"] {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.55rem;
   }
 
   @media (max-width: 39.99rem) {
@@ -109,14 +130,16 @@ import { navigation, site } from "@/data/portfolio";
       clip: rect(0, 0, 0, 0);
     }
 
-    nav ul {
+    .header-shell {
       gap: var(--primitive-space-5);
     }
 
-    nav li:nth-child(3),
-    nav li:nth-child(4),
-    nav li:nth-child(5) {
-      display: none;
+    nav ul {
+      gap: var(--primitive-space-2);
+    }
+
+    nav a {
+      font-size: 0.72rem;
     }
   }
 </style>

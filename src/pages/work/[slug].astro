@@ -1,0 +1,26 @@
+---
+import CaseStudyPage from "@/components/CaseStudyPage.astro";
+import { caseStudies } from "@/data/portfolio";
+import type { CaseStudy } from "@/data/portfolio";
+
+type Props = {
+  study: CaseStudy;
+  previous: CaseStudy;
+  next: CaseStudy;
+};
+
+export function getStaticPaths() {
+  return caseStudies.map((study, index) => ({
+    params: { slug: study.slug },
+    props: {
+      study,
+      previous: caseStudies[(index - 1 + caseStudies.length) % caseStudies.length],
+      next: caseStudies[(index + 1) % caseStudies.length],
+    },
+  }));
+}
+
+const { study, previous, next } = Astro.props;
+---
+
+<CaseStudyPage study={study} previous={previous} next={next} />

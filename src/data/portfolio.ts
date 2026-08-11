@@ -9,6 +9,8 @@ export type Link = {
 
 export type CaseStudy = {
   number: string;
+  slug: string;
+  path: string;
   name: string;
   domain: string;
   role: string;
@@ -16,6 +18,19 @@ export type CaseStudy = {
   built: string;
   difficulty: string;
   technologies: string[];
+  pageTitle: string;
+  pageDescription: string;
+  eyebrow: string;
+  headline: string;
+  lead: string;
+  scope: { label: string; value: string }[];
+  context: string[];
+  systemHeading: string;
+  systemIntro: string;
+  system: { number: string; title: string; body: string }[];
+  hardPartHeading: string;
+  hardPartIntro: string;
+  guardrails: { title: string; body: string }[];
 };
 
 export type Experience = {
@@ -45,19 +60,17 @@ export const site = {
 } as const;
 
 export const navigation = [
-  { label: "Selected Work", href: "#work" },
-  { label: "Semper", href: "#semper" },
-  { label: "GitHub", href: "#github" },
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/work/" },
+  { label: "Semper", href: "/founder/semper-digital-solutions/" },
+  { label: "Experience", href: "/experience/" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
 
 export const heroLinks: Link[] = [
-  { label: "Email", href: `mailto:${site.email}`, kind: "primary" },
-  { label: "GitHub", href: site.github },
+  { label: "View work", href: "/work/", kind: "primary" },
+  { label: "Email", href: `mailto:${site.email}` },
   { label: "LinkedIn", href: site.linkedin },
-  { label: "Resume", href: "#contact" },
+  { label: "Resume", href: "/#contact" },
 ];
 
 export const copy = {
@@ -85,28 +98,28 @@ export const copy = {
       "Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.",
   },
   github: {
-    number: "03",
+    number: "02",
     title: "GitHub",
     heading: "Public code, selected for signal.",
     intro:
       "A deliberately small public crop. Most current product and client work lives in private repositories; these samples show the thinking without pretending otherwise.",
   },
   experience: {
-    number: "04",
+    number: "01",
     title: "Experience",
     heading: "From tactical systems to product systems.",
     intro:
       "A career connecting product engineering and interface systems, with Semper and Endpoint shown honestly as concurrent work.",
   },
   skills: {
-    number: "05",
+    number: "02",
     title: "Skills",
     heading: "Breadth with a reason.",
     intro:
       "The working set behind the case studies, grouped by the part of the product it serves rather than a made-up proficiency score.",
   },
   contact: {
-    number: "06",
+    number: "03",
     title: "Contact",
     heading: "Bring the difficult part.",
     intro: "The shortest route is email. For work history and code, use the links below.",
@@ -115,6 +128,28 @@ export const copy = {
     identity: "Steven Hagene · Senior Product Engineer",
     build: "Built with Astro, a three-layer token system, and no client-side framework.",
   },
+} as const;
+
+export const workPage = {
+  path: "/work/",
+  pageTitle: "Engineering Case Studies | Steven Hagene",
+  pageDescription:
+    "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
+  eyebrow: "Work · Product engineering",
+  headline: "Systems built for the difficult part.",
+  lead:
+    "The interface matters. These case studies go one layer deeper into the state, policy, platform, and trust problems that made each product difficult to build well.",
+} as const;
+
+export const experiencePage = {
+  path: "/experience/",
+  pageTitle: "Experience & Skills | Steven Hagene",
+  pageDescription:
+    "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
+  eyebrow: "Experience · 2006 to present",
+  headline: "A career connecting product and systems.",
+  lead:
+    "From tactical communications to financial software, clinical platforms, design systems, and founder-led delivery, the throughline is accountable engineering in complicated environments.",
 } as const;
 
 export const semperStory = {
@@ -154,7 +189,7 @@ export const semperStory = {
     ],
   },
   labels: {
-    backLink: "← Portfolio / Founder",
+    backLink: "← Home / Founder",
     visitCompany: "Visit Semper Digital Solutions",
     contact: "Contact Steven",
     ledger: "Company ledger",
@@ -237,13 +272,15 @@ export const semperStory = {
     eyebrow: "04 · Two destinations",
     heading: "The founder story lives here. The company offer lives at Semper.",
     primaryLabel: "Explore Semper's services",
-    secondaryLabel: "Return to selected work",
+    secondaryLabel: "Explore selected work",
   },
 } as const;
 
 export const caseStudies: CaseStudy[] = [
   {
     number: "01A",
+    slug: "teo",
+    path: "/work/teo/",
     name: "TEO",
     domain: "Property-management financial SaaS",
     role: "Lead Full-Stack Engineer",
@@ -262,9 +299,70 @@ export const caseStudies: CaseStudy[] = [
       "Design tokens",
       "WCAG",
     ],
+    pageTitle: "TEO Financial SaaS Case Study | Steven Hagene",
+    pageDescription:
+      "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
+    eyebrow: "Case study 01A · Financial SaaS",
+    headline: "Keeping financial state trustworthy across systems.",
+    lead:
+      "At TEO, I own the payments and accounts-receivable path from invoice creation through hosted checkout, asynchronous processing, and the product state users ultimately trust.",
+    scope: [
+      { label: "Role", value: "Lead Full-Stack Engineer" },
+      { label: "Domain", value: "Property-management finance" },
+      { label: "Focus", value: "Payments, AR, product systems" },
+    ],
+    context: [
+      "A financial product cannot treat each integration response as its own version of the truth. QuickBooks, Payabli, webhooks, and background workers all observe or change a transaction at different moments.",
+      "The engineering problem was to preserve a coherent account of the invoice while keeping the interface useful, the payment path conservative, and the product foundation enforceable across the team.",
+    ],
+    systemHeading: "One money path, three engineering layers.",
+    systemIntro:
+      "The product separates external events, durable financial state, and interface behavior so that each layer has a clear responsibility.",
+    system: [
+      {
+        number: "01",
+        title: "Invoice and ledger state",
+        body:
+          "QuickBooks invoicing feeds a product model where invoice status is derived from the ledger rather than maintained as an unrelated flag.",
+      },
+      {
+        number: "02",
+        title: "Payment event processing",
+        body:
+          "Payabli hosted checkout, webhook handlers, and background workers carry payment activity through asynchronous boundaries without treating an early response as final state.",
+      },
+      {
+        number: "03",
+        title: "Enforced product foundations",
+        body:
+          "A three-layer token architecture, ESLint enforcement, and WCAG remediation give the interface system rules that can be checked instead of remembered.",
+      },
+    ],
+    hardPartHeading: "The money path has to fail closed.",
+    hardPartIntro:
+      "Correctness here is not only about a successful transaction. It is also about refusing unsafe transitions and making discrepancies visible before they become financial state.",
+    guardrails: [
+      {
+        title: "Default-deny safeguards",
+        body:
+          "Ambiguous or incomplete financial conditions do not earn a permissive fallback. The system protects the boundary before dispatching a money-moving action.",
+      },
+      {
+        title: "Adversarial review",
+        body:
+          "A multi-model AI review gate challenges assumptions in the payment path and supplements conventional engineering review on high-risk changes.",
+      },
+      {
+        title: "Accessible by construction",
+        body:
+          "WCAG remediation and enforceable design tokens keep accessibility tied to the product system, not reserved for a cleanup pass after release.",
+      },
+    ],
   },
   {
     number: "01B",
+    slug: "musterhall",
+    path: "/work/musterhall/",
     name: "Musterhall",
     domain: "Creator learning platform",
     role: "Sole Engineer",
@@ -283,9 +381,70 @@ export const caseStudies: CaseStudy[] = [
       "LiveKit",
       "Storybook",
     ],
+    pageTitle: "Musterhall Product Engineering Case Study | Steven Hagene",
+    pageDescription:
+      "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
+    eyebrow: "Case study 01B · Cross-platform product",
+    headline: "One product system across every surface.",
+    lead:
+      "Musterhall is a creator learning platform I built across web, mobile, database, design-system, and real-time room boundaries as the sole engineer.",
+    scope: [
+      { label: "Role", value: "Sole Engineer" },
+      { label: "Domain", value: "Creator learning" },
+      { label: "Surfaces", value: "Web, mobile, live rooms" },
+    ],
+    context: [
+      "A cross-platform product can look consistent while quietly implementing different rules in every client. Musterhall needed one coherent product model across a TypeScript web app, Flutter mobile app, and Supabase/Postgres backend.",
+      "The hard work was deciding which rules belonged in the database, which foundations should be generated for each interface, and how a real-time capability could enter the product without destabilizing every surface at once.",
+    ],
+    systemHeading: "Shared rules without pretending the platforms are identical.",
+    systemIntro:
+      "Each platform keeps its native implementation while receiving product rules and design foundations from deliberate shared sources.",
+    system: [
+      {
+        number: "01",
+        title: "Web and mobile products",
+        body:
+          "Next.js and TypeScript power the web experience while Flutter and Dart provide the mobile surface, with both organized around the same product model.",
+      },
+      {
+        number: "02",
+        title: "Schema-enforced invariants",
+        body:
+          "Supabase and Postgres hold rules that should not drift according to which client happens to write the data.",
+      },
+      {
+        number: "03",
+        title: "Compiled design foundations",
+        body:
+          "A single token source produces web CSS and a generated Dart package, with Storybook making the public component system inspectable.",
+      },
+    ],
+    hardPartHeading: "Real-time rooms change more than the screen.",
+    hardPartIntro:
+      "Live video introduces authority, moderation, and release risk. The capability needed an operating model as much as it needed an interface.",
+    guardrails: [
+      {
+        title: "Host moderation",
+        body:
+          "LiveKit rooms include explicit host controls so authority is part of the room model rather than an improvised client-side convention.",
+      },
+      {
+        title: "Feature-flag rollout",
+        body:
+          "A rollout ladder allows real-time behavior to be introduced deliberately across surfaces instead of forcing one all-or-nothing launch.",
+      },
+      {
+        title: "One visible system",
+        body:
+          "Generated tokens and public Storybook documentation make cross-platform consistency observable and maintainable.",
+      },
+    ],
   },
   {
     number: "01C",
+    slug: "crimcaseai",
+    path: "/work/crimcaseai/",
     name: "CrimCaseAI",
     domain: "Legal intelligence portfolio",
     role: "Principal Engineer",
@@ -303,6 +462,65 @@ export const caseStudies: CaseStudy[] = [
       "Vector search",
       "Entity graphs",
       "Grounded AI",
+    ],
+    pageTitle: "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
+    pageDescription:
+      "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
+    eyebrow: "Case study 01C · Legal intelligence",
+    headline: "Useful legal intelligence without losing provenance.",
+    lead:
+      "CrimCaseAI is a portfolio of case-management and evidence-intelligence systems designed around sensitive material, restricted environments, and answers that must remain traceable to source evidence.",
+    scope: [
+      { label: "Role", value: "Principal Engineer" },
+      { label: "Domain", value: "Legal intelligence" },
+      { label: "Boundary", value: "Privileged case material" },
+    ],
+    context: [
+      "Legal teams need software that can make large bodies of case material easier to navigate without weakening privilege, provenance, or control of the underlying evidence.",
+      "That creates a different product standard for AI: retrieval must stay connected to source material, processing boundaries must be explicit, and a confident answer without support is a failure state.",
+    ],
+    systemHeading: "A portfolio built around evidence boundaries.",
+    systemIntro:
+      "The work moves from case management to evidence intelligence while preserving a consistent emphasis on structured data, local control, and grounded output.",
+    system: [
+      {
+        number: "01",
+        title: "Case-management product",
+        body:
+          "The live SaaS product organizes case work, while a generation-two rebuild uses schema-generated forms and in-browser machine learning to strengthen the application model.",
+      },
+      {
+        number: "02",
+        title: "Evidence intelligence",
+        body:
+          "A separate platform serving paying law firms turns case material into a navigable evidence layer rather than an unstructured document pile.",
+      },
+      {
+        number: "03",
+        title: "Aegis on-prem appliance",
+        body:
+          "Aegis packages multimodal ingestion, local OCR and transcription, vector search, entity graphs, and citation-gated chat into a Docker appliance controlled by the firm.",
+      },
+    ],
+    hardPartHeading: "The answer is only useful if the source survives it.",
+    hardPartIntro:
+      "The architecture treats provenance, local processing, and citation as product behavior, not implementation details hidden behind the interface.",
+    guardrails: [
+      {
+        title: "Local processing boundary",
+        body:
+          "The on-prem model keeps privileged material on hardware the firm controls and makes the deployment boundary understandable to the people relying on it.",
+      },
+      {
+        title: "Multimodal provenance",
+        body:
+          "OCR, transcription, retrieval, and entity relationships remain tied to ingested evidence so analysis can be traced back through the system.",
+      },
+      {
+        title: "Citation-gated output",
+        body:
+          "AI chat must ground material claims in available evidence rather than turning model confidence into an unsupported product promise.",
+      },
     ],
   },
 ];

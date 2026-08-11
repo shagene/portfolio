@@ -1,0 +1,1304 @@
+[
+  {
+    "route": "/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "Senior Product Engineer:Full-Stack, UX & AI Systems",
+    "h1Rect": {
+      "width": 350,
+      "height": 200.875,
+      "top": 104.796875
+    },
+    "sections": [
+      "top",
+      "work",
+      "semper",
+      "contact"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContactSteven Hagene · Cl",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "Senior Product Engineer:Full-Stack, UX & AI Systems",
+    "h1Rect": {
+      "width": 398.9375,
+      "height": 220.4375,
+      "top": 189.796875
+    },
+    "sections": [
+      "top",
+      "work",
+      "semper",
+      "contact"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContactSteven Hagene · Cl",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "Senior Product Engineer:Full-Stack, UX & AI Systems",
+    "h1Rect": {
+      "width": 600.03125,
+      "height": 306.1875,
+      "top": 216.796875
+    },
+    "sections": [
+      "top",
+      "work",
+      "semper",
+      "contact"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContactSteven Hagene · Cl",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "Systems built for the difficult part.",
+    "h1Rect": {
+      "width": 350,
+      "height": 150.65625,
+      "top": 231.421875
+    },
+    "sections": [
+      "page-intro",
+      "work",
+      "github"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← PortfolioWork · ",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "Systems built for the difficult part.",
+    "h1Rect": {
+      "width": 349.046875,
+      "height": 145.6875,
+      "top": 311.296875
+    },
+    "sections": [
+      "page-intro",
+      "work",
+      "github"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← PortfolioWork · ",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "Systems built for the difficult part.",
+    "h1Rect": {
+      "width": 550.03125,
+      "height": 229.640625,
+      "top": 313.8125
+    },
+    "sections": [
+      "page-intro",
+      "work",
+      "github"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← PortfolioWork · ",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/teo/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "Keeping financial state trustworthy across systems.",
+    "h1Rect": {
+      "width": 343.953125,
+      "height": 251.09375,
+      "top": 158.421875
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / TEOCase s",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/teo/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "Keeping financial state trustworthy across systems.",
+    "h1Rect": {
+      "width": 332.625,
+      "height": 242.8125,
+      "top": 253.234375
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / TEOCase s",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/teo/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "Keeping financial state trustworthy across systems.",
+    "h1Rect": {
+      "width": 524.125,
+      "height": 382.734375,
+      "top": 243.8125
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / TEOCase s",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/musterhall/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "One product system across every surface.",
+    "h1Rect": {
+      "width": 343.953125,
+      "height": 150.65625,
+      "top": 175.21875
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / Musterhal",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/musterhall/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "One product system across every surface.",
+    "h1Rect": {
+      "width": 332.625,
+      "height": 145.6875,
+      "top": 321.46875
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / Musterhal",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/musterhall/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "One product system across every surface.",
+    "h1Rect": {
+      "width": 524.125,
+      "height": 229.640625,
+      "top": 313.8125
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / Musterhal",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/crimcaseai/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "Useful legal intelligence without losing provenance.",
+    "h1Rect": {
+      "width": 343.953125,
+      "height": 200.875,
+      "top": 158.421875
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / CrimCaseA",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/crimcaseai/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "Useful legal intelligence without losing provenance.",
+    "h1Rect": {
+      "width": 332.625,
+      "height": 194.25,
+      "top": 330.6875
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / CrimCaseA",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/work/crimcaseai/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "Useful legal intelligence without losing provenance.",
+    "h1Rect": {
+      "width": 524.125,
+      "height": 306.1875,
+      "top": 313.8125
+    },
+    "sections": [
+      "problem",
+      "system",
+      "hard-part",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Work / CrimCaseA",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/experience/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "A career connecting product and systems.",
+    "h1Rect": {
+      "width": 350,
+      "height": 200.875,
+      "top": 231.421875
+    },
+    "sections": [
+      "page-intro",
+      "experience",
+      "skills",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← PortfolioExperie",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/experience/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "A career connecting product and systems.",
+    "h1Rect": {
+      "width": 349.046875,
+      "height": 194.25,
+      "top": 291.625
+    },
+    "sections": [
+      "page-intro",
+      "experience",
+      "skills",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← PortfolioExperie",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/experience/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "A career connecting product and systems.",
+    "h1Rect": {
+      "width": 550.03125,
+      "height": 306.1875,
+      "top": 313.8125
+    },
+    "sections": [
+      "page-intro",
+      "experience",
+      "skills",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← PortfolioExperie",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/founder/semper-digital-solutions/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "Building the company behind the work.",
+    "h1Rect": {
+      "width": 312.6875,
+      "height": 200.875,
+      "top": 174.421875
+    },
+    "sections": [
+      "company",
+      "operating-model",
+      "company-system",
+      "federal-readiness",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Home / FounderFo",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/founder/semper-digital-solutions/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "Building the company behind the work.",
+    "h1Rect": {
+      "width": 302.375,
+      "height": 194.25,
+      "top": 185.28125
+    },
+    "sections": [
+      "company",
+      "operating-model",
+      "company-system",
+      "federal-readiness",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Home / FounderFo",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/founder/semper-digital-solutions/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "Building the company behind the work.",
+    "h1Rect": {
+      "width": 476.484375,
+      "height": 306.1875,
+      "top": 257.609375
+    },
+    "sections": [
+      "company",
+      "operating-model",
+      "company-system",
+      "federal-readiness",
+      "next"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSHSteven HageneWorkSemperExperienceContact← Home / FounderFo",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  }
+]

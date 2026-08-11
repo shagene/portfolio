@@ -14,29 +14,57 @@ for (const viewport of [
 ]) {
   const page = await browser.newPage({ viewport, colorScheme: "dark" });
   const failures = [];
+  const primaryNavigation = () => page.getByRole("navigation", { name: "Primary navigation" });
 
   await page.goto(new URL("/", baseUrl).toString(), { waitUntil: "networkidle" });
-  await page.getByRole("navigation", { name: "Primary navigation" })
-    .getByRole("link", { name: "Semper" })
+  await primaryNavigation().getByRole("link", { name: "Work", exact: true }).click();
+  await page.waitForURL(/\/work\/$/);
+  if (!(await page.getByRole("heading", { level: 1, name: "Systems built for the difficult part." }).isVisible())) {
+    failures.push("work hub h1 is not visible");
+  }
+
+  await page.getByRole("link", { name: "Read the TEO case study" }).click();
+  await page.waitForURL(/\/work\/teo\/$/);
+  if (!(await page.getByRole("heading", { level: 1, name: "Keeping financial state trustworthy across systems." }).isVisible())) {
+    failures.push("TEO case-study h1 is not visible");
+  }
+
+  await page.getByRole("navigation", { name: "Case study navigation" })
+    .getByRole("link", { name: /Next case study Musterhall/ })
     .click();
-  await page.waitForURL(/\/#semper$/);
+  await page.waitForURL(/\/work\/musterhall\/$/);
 
-  const founderHeading = page.getByRole("heading", { name: "Building the company behind the work." });
-  if (!(await founderHeading.isVisible())) failures.push("homepage founder heading is not visible");
+  await primaryNavigation().getByRole("link", { name: "Experience", exact: true }).click();
+  await page.waitForURL(/\/experience\/$/);
+  if (!(await page.getByRole("heading", { level: 1, name: "A career connecting product and systems." }).isVisible())) {
+    failures.push("experience h1 is not visible");
+  }
 
-  await page.getByRole("link", { name: /Read the founder case study/ }).click();
+  await primaryNavigation().getByRole("link", { name: "Semper", exact: true }).click();
   await page.waitForURL(/\/founder\/semper-digital-solutions\/$/);
-  const caseStudyHeading = page.getByRole("heading", {
-    level: 1,
-    name: "Building the company behind the work.",
+  if (!(await page.getByRole("heading", { level: 1, name: "Building the company behind the work." }).isVisible())) {
+    failures.push("Semper founder h1 is not visible");
+  }
+
+  await primaryNavigation().getByRole("link", { name: "Contact", exact: true }).click();
+  await page.waitForURL(/\/#contact$/);
+  if (!(await page.getByRole("heading", { name: "Bring the difficult part." }).isVisible())) {
+    failures.push("contact heading is not visible after cross-page navigation");
+  }
+
+  const navState = await page.evaluate(() => {
+    const nav = document.querySelector('nav[aria-label="Primary navigation"]');
+    return nav
+      ? {
+          clientWidth: nav.clientWidth,
+          scrollWidth: nav.scrollWidth,
+          labels: [...nav.querySelectorAll("a")].map((link) => link.textContent?.trim()),
+        }
+      : null;
   });
-  if (!(await caseStudyHeading.isVisible())) failures.push("founder page h1 is not visible");
+  if (!navState || navState.labels.length !== 4) failures.push("all four primary routes are not reachable");
 
-  await page.getByRole("link", { name: /Portfolio \/ Founder/ }).click();
-  await page.waitForURL(/\/#semper$/);
-  if (!(await founderHeading.isVisible())) failures.push("back link did not return to the founder section");
-
-  results.push({ viewport, finalUrl: page.url(), failures });
+  results.push({ viewport, finalUrl: page.url(), navState, failures });
   await page.close();
 }
 

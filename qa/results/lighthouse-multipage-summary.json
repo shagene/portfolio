@@ -1,0 +1,98 @@
+[
+  {
+    "route": "/",
+    "formFactor": "desktop",
+    "finalUrl": "http://127.0.0.1:4330/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  },
+  {
+    "route": "/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4330/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  },
+  {
+    "route": "/work/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4330/work/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  },
+  {
+    "route": "/work/teo/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4330/work/teo/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  },
+  {
+    "route": "/work/musterhall/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4330/work/musterhall/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  },
+  {
+    "route": "/work/crimcaseai/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4330/work/crimcaseai/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  },
+  {
+    "route": "/experience/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4330/experience/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  },
+  {
+    "route": "/founder/semper-digital-solutions/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4330/founder/semper-digital-solutions/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": []
+  }
+]

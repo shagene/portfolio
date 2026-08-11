@@ -2,6 +2,12 @@
 import { Image } from "astro:assets";
 import headshot from "@/assets/stevenprofile.png";
 import { copy, heroLinks, site } from "@/data/portfolio";
+
+const linkMark = (href: string) => {
+  if (href.startsWith("/#") || href.startsWith("#")) return "↓";
+  if (href.startsWith("/")) return "→";
+  return "↗";
+};
 ---
 
 <section class="hero shell" id="top" aria-labelledby="hero-title">
@@ -14,7 +20,7 @@ import { copy, heroLinks, site } from "@/data/portfolio";
       {heroLinks.map((link) => (
         <li>
           <a class:list={["hero-link", { primary: link.kind === "primary" }]} href={link.href}>
-            {link.label}<span aria-hidden="true">{link.href.startsWith("#") ? "↓" : "↗"}</span>
+            {link.label}<span aria-hidden="true">{linkMark(link.href)}</span>
           </a>
         </li>
       ))}

@@ -11,7 +11,8 @@
     "check": "astro check",
     "qa:screenshots": "node scripts/capture-first-build.mjs",
     "qa:browser": "node scripts/qa-browser.mjs",
-    "qa:navigation": "node scripts/qa-navigation.mjs"
+    "qa:navigation": "node scripts/qa-navigation.mjs",
+    "qa:lighthouse": "node scripts/qa-lighthouse.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

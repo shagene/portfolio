@@ -3,9 +3,25 @@ import AxeBuilder from "@axe-core/playwright";
 import { chromium } from "@playwright/test";
 
 const baseUrl = process.env.PORTFOLIO_URL ?? "http://127.0.0.1:4330";
-const routes = (process.env.PORTFOLIO_PATHS ?? "/,/founder/semper-digital-solutions/")
+const routes = (process.env.PORTFOLIO_PATHS ?? [
+  "/",
+  "/work/",
+  "/work/teo/",
+  "/work/musterhall/",
+  "/work/crimcaseai/",
+  "/experience/",
+  "/founder/semper-digital-solutions/",
+].join(","))
   .split(",")
   .map((path) => path.trim());
+const expectedSchema = (route) => {
+  if (route === "/work/") return "CollectionPage";
+  if (route.startsWith("/work/") && route !== "/work/") return "Article";
+  if (route === "/experience/" || route === "/founder/semper-digital-solutions/") {
+    return "ProfilePage";
+  }
+  return null;
+};
 const outputDirectory = new URL("../qa/results/", import.meta.url);
 await mkdir(outputDirectory, { recursive: true });
 
@@ -67,6 +83,9 @@ for (const viewport of viewports) {
         title: document.title,
         description: document.querySelector('meta[name="description"]')?.getAttribute("content"),
         canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href"),
+        ogTitle: document.querySelector('meta[property="og:title"]')?.getAttribute("content"),
+        ogDescription: document.querySelector('meta[property="og:description"]')?.getAttribute("content"),
+        ogImage: document.querySelector('meta[property="og:image"]')?.getAttribute("content"),
         h1Count: document.querySelectorAll("h1").length,
         schemaTypes: schemas.map((schema) => schema["@type"]),
       },
@@ -131,13 +150,18 @@ for (const viewport of viewports) {
     ...(pageErrors.length > 0 ? ["page errors"] : []),
     ...(!geometry.metadata.title ? ["missing page title"] : []),
     ...(!geometry.metadata.description ? ["missing meta description"] : []),
+    ...(geometry.metadata.ogTitle !== geometry.metadata.title ? ["Open Graph title differs from page title"] : []),
+    ...(geometry.metadata.ogDescription !== geometry.metadata.description
+      ? ["Open Graph description differs from meta description"]
+      : []),
+    ...(!geometry.metadata.ogImage ? ["missing Open Graph image"] : []),
     ...(geometry.metadata.canonical !== new URL(route, "https://stevenhagene.com").toString()
       ? [`incorrect canonical: ${geometry.metadata.canonical}`]
       : []),
     ...(geometry.metadata.h1Count !== 1 ? [`expected one h1, found ${geometry.metadata.h1Count}`] : []),
     ...(geometry.metadata.schemaTypes.includes("INVALID_JSON") ? ["invalid JSON-LD"] : []),
-    ...(route !== "/" && !geometry.metadata.schemaTypes.includes("ProfilePage")
-      ? ["founder page is missing ProfilePage schema"]
+    ...(expectedSchema(route) && !geometry.metadata.schemaTypes.includes(expectedSchema(route))
+      ? [`page is missing ${expectedSchema(route)} schema`]
       : []),
     ...(!skipLink?.visible || skipLink.href !== "#main-content" ? ["skip link is not first visible focus"] : []),
     ...(reducedMotionScrollBehavior !== "auto" ? ["reduced-motion scroll behavior is not auto"] : []),
@@ -194,6 +218,11 @@ for (const path of [
   "/sitemap-index.xml",
   "/og-image.png",
   "/og-semper.png",
+  "/og-work.png",
+  "/og-experience.png",
+  "/og-teo.png",
+  "/og-musterhall.png",
+  "/og-crimcaseai.png",
 ]) {
   const response = await request.request.get(new URL(path, baseUrl).toString());
   assetChecks.push({ path, status: response.status(), contentType: response.headers()["content-type"] });
