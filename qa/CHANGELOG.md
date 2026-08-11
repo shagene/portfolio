@@ -263,3 +263,58 @@ Changes and evidence:
 - Live production browser gate: all 27 checks pass at 390, 768, and 1280 pixels with 0 axe, keyboard, focus, route, asset, sitemap, or robots failures. Live navigation journeys pass at 390 and 1280 pixels, and the nonsense route still returns 404.
 
 Production verdict: shipped and verified.
+
+## Pass 13: independent live-site verification and final accessibility polish
+
+Status: production verified
+
+Production target:
+
+- URL: `https://www.stevenhagene.com`
+- Verified site commit: `00e9bd5`
+- Vercel status: successful production deployment on August 11, 2026
+
+Changes:
+
+- Removed a redundant `aria-label` from the visual contribution legend. This clears axe's `aria-prohibited-attr` manual-review result without changing the visible GitHub design.
+- Added a hard navigation-overflow assertion to the 390 and 1280 pixel cross-route journey.
+
+Live HTTP, semantics, and accessibility evidence:
+
+- `GET /zzz-does-not-exist/` returns HTTP 404 with no redirects, `noindex, nofollow`, the branded `This path ends here.` page, and genuine anchors to Home, Work, and GitHub. It does not return the homepage.
+- The five primary destinations, all three homepage `Read case study` actions, and `Explore all selected work` are genuine `<a href>` elements. No div, button, fake `role="link"`, or click-handler substitute was found.
+- A full keyboard traversal across the eight public routes reached 112 focusable elements: 111 anchors and the intentionally focusable GitHub calendar scroll region. Every stop displayed a 2-pixel outline and copper focus halo.
+- Post-deploy `npm run qa:browser`: 27 checks across nine routes at 390, 768, and 1280 pixels; 0 axe violations, 0 `aria-prohibited-attr` incomplete results, 0 incomplete keyboard traversals, 0 focus failures, 0 route failures, 0 asset failures, and 0 sitemap or robots failures.
+- Post-deploy `npm run qa:navigation`: 390 and 1280 pixel journeys pass. At 390 pixels, the five-item nav measures 275 pixels for both client and scroll width, so it has no horizontal overflow.
+
+Live responsive evidence:
+
+- Captured and visually reviewed all eight public routes plus the nonsense-path 404 at 390, 768, and 1280 pixels under `qa/screenshots/live-review-*`; 27 route-width captures report no failures, root overflow, clipped text, console errors, or page errors.
+- The 390-pixel GitHub calendar remains inside its panel: a 308-pixel scroll region contains a 768-pixel SVG with `overflow-x: auto`, while the root remains exactly 390 pixels wide. The most recent months are visible first and the full year remains keyboard-scrollable.
+- The homepage, Work hub, all three case studies, GitHub private-work cards, Experience timeline, Semper founder page, calls to action, previous/next controls, footers, and branded 404 retain their intended composition at every tested width.
+
+Live Lighthouse scores:
+
+| Route | Form factor | Performance | Accessibility | Best Practices | SEO |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `/` | Desktop | 100 | 100 | 100 | 100 |
+| `/` | Mobile | 100 | 100 | 100 | 100 |
+| `/work/` | Mobile | 100 | 100 | 100 | 100 |
+| `/work/teo/` | Mobile | 100 | 100 | 100 | 100 |
+| `/work/musterhall/` | Mobile | 100 | 100 | 100 | 100 |
+| `/work/crimcaseai/` | Mobile | 100 | 100 | 100 | 100 |
+| `/github/` | Mobile | 100 | 100 | 100 | 100 |
+| `/experience/` | Mobile | 100 | 100 | 100 | 100 |
+| `/founder/semper-digital-solutions/` | Mobile | 100 | 100 | 100 | 100 |
+| `/404.html` | Mobile | 100 | 100 | 100 | Not applicable; intentionally noindex |
+
+SEO, identity, and contrast evidence:
+
+- All eight indexable routes have unique titles, descriptions, canonical URLs, Open Graph images, and complete Twitter metadata. Every canonical and `og:url` matches its live URL, every OG asset is a real 1200 by 630 PNG, and the sitemap contains exactly those eight routes.
+- `robots.txt` allows indexing and points to the live sitemap. Homepage Person JSON-LD includes Steven Hagene, the current job title, Semper Digital Solutions, GitHub, and LinkedIn.
+- The rejected interview-exercise repository slugs and their renamed replacements are absent from the rendered site. `/github/` continues to lead with Aegis, Semper Command Center, and VolumeGuard, with `shagene/portfolio` as the single curated public-source link.
+- Production serves `favicon.svg`, a multi-frame `favicon.ico` containing 16, 32, and 48 pixel entries, and a 180 by 180 Apple touch icon. A true-size render confirms the SH mark remains distinguishable at 16 pixels and crisp at 32 pixels.
+- Copper contrast measures 6.74:1 on canvas, 5.81:1 on raised surfaces, 5.13:1 on strong surfaces, and 12.56:1 for soft copper on canvas. The dark and inverted marks exceed the 3:1 non-text requirement.
+- `npm run check`: 35 files, 0 errors, 0 warnings, 0 hints. `npm run build`: 9 static pages and sitemap generated successfully from the committed GitHub activity cache.
+
+Production verdict: verified with no blockers. The current design, private-first GitHub hierarchy, founder framing, case-study structure, and logo were preserved.
