@@ -313,7 +313,7 @@ SEO, identity, and contrast evidence:
 - All eight indexable routes have unique titles, descriptions, canonical URLs, Open Graph images, and complete Twitter metadata. Every canonical and `og:url` matches its live URL, every OG asset is a real 1200 by 630 PNG, and the sitemap contains exactly those eight routes.
 - `robots.txt` allows indexing and points to the live sitemap. Homepage Person JSON-LD includes Steven Hagene, the current job title, Semper Digital Solutions, GitHub, and LinkedIn.
 - The rejected interview-exercise repository slugs and their renamed replacements are absent from the rendered site. `/github/` continues to lead with Aegis, Semper Command Center, and VolumeGuard, with `shagene/portfolio` as the single curated public-source link.
-- Production serves `favicon.svg`, a multi-frame `favicon.ico` containing 16, 32, and 48 pixel entries, and a 180 by 180 Apple touch icon. A true-size render confirms the SH mark remains distinguishable at 16 pixels and crisp at 32 pixels.
+- Production serves `favicon.svg`, a multi-frame `favicon.ico` containing 16, 32, and 48 pixel entries, and a 180 by 180 Apple touch icon. After releasing the browser-control overlay, a native Chromium tab-strip capture at `qa/screenshots/live-review-favicon-tab-16.png` confirms the SH mark remains distinguishable at the real 16-pixel tab size.
 - Copper contrast measures 6.74:1 on canvas, 5.81:1 on raised surfaces, 5.13:1 on strong surfaces, and 12.56:1 for soft copper on canvas. The dark and inverted marks exceed the 3:1 non-text requirement.
 - `npm run check`: 35 files, 0 errors, 0 warnings, 0 hints. `npm run build`: 9 static pages and sitemap generated successfully from the committed GitHub activity cache.
 
