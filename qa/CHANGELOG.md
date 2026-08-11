@@ -223,14 +223,20 @@ Presentation verdict: ready for review. The live `stevenhagene.com` domain and D
 
 ## Pass 11: main promotion and production release
 
-Status: production release in progress
+Status: production
 
 Changes and evidence:
 
 - Fast-forwarded `main` from the legacy Next.js portfolio at `3d0aab2` to the reviewed Astro build at `74aa2e0`; no independent mainline commits were overwritten.
 - The first Vercel production attempt failed under the existing project configuration. Added repository-owned Vercel settings for the Astro framework, `npm ci`, `npm run build`, the `dist` output directory, trailing-slash routing, Node 22, and the same security/cache headers used by the Cloudflare build.
 - The corrected Vercel deployment completed successfully at `dd4b0e2`, and `stevenhagene.com` began serving the Astro build with the private-first GitHub page and a real 404.
-- Promoted the same build artifact to the Cloudflare Pages `main` branch at `https://80fea02f.steven-hagene-portfolio.pages.dev` so the scheduled deployment path and repository production branch are aligned.
+- Promoted the final canonical-host build to the Cloudflare Pages `main` branch at `https://831dbfc2.steven-hagene-portfolio.pages.dev` so the scheduled deployment path and repository production branch are aligned.
 - Aligned canonical URLs, generated sitemap URLs, and the robots sitemap declaration with Vercel's 200-serving primary hostname, `https://www.stevenhagene.com`, rather than the redirecting apex.
 - Rebuilt from `main`: 0 Astro errors, warnings, or hints; 9 static pages generated successfully.
 - Re-ran the complete local browser gate after the canonical-host correction: 27 route and viewport checks, 0 axe violations, 0 keyboard or focus failures, and 0 route, asset, sitemap, or robots failures.
+- Live production browser gate: all 27 checks pass at 390, 768, and 1280 pixels with 0 axe, keyboard, focus, route, asset, sitemap, or robots failures.
+- Live production navigation journeys pass at 390 and 1280 pixels; every expected primary and case-study destination remains a genuine anchor.
+- Live production Lighthouse: Performance, Accessibility, Best Practices, and SEO are 100 on every public route, with no warnings. The 404 scores 100 for Performance, Accessibility, and Best Practices.
+- `https://stevenhagene.com` redirects to the primary `www` hostname, which returns 200 with the Astro portfolio. `/github/` returns 200 with the private-first proof, and a nonsense path returns 404.
+
+Production verdict: shipped. The legacy Next.js portfolio has been replaced on the custom domain.
