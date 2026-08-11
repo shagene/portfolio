@@ -103,9 +103,9 @@ export const copy = {
   github: {
     number: "02",
     title: "GitHub",
-    heading: "Public code, selected for signal.",
+    heading: "Private systems, documented at the decision level.",
     intro:
-      "A deliberately small public crop. Most current product and client work lives in private repositories; these samples show the thinking without pretending otherwise.",
+      "Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.",
   },
   experience: {
     number: "01",
@@ -157,13 +157,13 @@ export const experiencePage = {
 
 export const githubPage = {
   path: "/github/",
-  pageTitle: "Combined GitHub Activity & Public Code | Steven Hagene",
+  pageTitle: "Private Engineering Work & GitHub Activity | Steven Hagene",
   pageDescription:
-    "A unified, build-time view of Steven Hagene's public GitHub activity across his personal and Semper Digital Solutions accounts, with curated repositories and honest context.",
-  eyebrow: "GitHub · Two accounts, one view",
-  headline: "Public activity without the split-screen version.",
+    "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+  eyebrow: "Engineering proof · Private systems, public signal",
+  headline: "The strongest work is private. The engineering story is not.",
   lead:
-    "My public work lives across a personal account and the Semper Digital Solutions account. This page combines the visible activity into one static, linkable view while keeping private client repositories private.",
+    "TEO, Musterhall, and CrimCaseAI best represent how I design and ship systems. Their repositories stay private, so this page leads with what I built and why it was difficult, then puts public activity from both GitHub accounts in context.",
 } as const;
 
 export const semperStory = {
@@ -629,7 +629,7 @@ export const experiences: Experience[] = [
     role: "Sergeant, Communications Specialist",
     period: "2006 – 2011",
     detail:
-      "Combat veteran. MARSOC support. First Marine to deploy G-SWAN satellite communications in Iraq. Held TS/SCI.",
+      "Combat veteran with Marine Corps infantry and MARSOC service. Recipient of multiple Navy and Marine Corps Achievement Medals. First Marine to deploy G-SWAN satellite communications in Iraq. Held TS/SCI clearance.",
   },
 ];
 

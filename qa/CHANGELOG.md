@@ -188,3 +188,35 @@ Deployment evidence:
 - The full deployed browser gate passes all 27 checks with zero axe, keyboard, route, asset, sitemap, or robots failures. Deployed 390 and 1280 navigation journeys also pass.
 
 Presentation verdict: ready for review. The live `stevenhagene.com` domain and DNS remain untouched.
+
+## Pass 10: private-first engineering proof and service record
+
+Status: presentation-ready and deployed for review
+
+Changes:
+
+- Reframed `/github/` around the three private systems that best represent the work: TEO, Musterhall, and CrimCaseAI. Each now carries a private-repository boundary, role, build summary, hard problem, and genuine link to its full case study.
+- Kept the combined two-account calendar and statistics as supporting signal, then reduced the four public repositories to compact, explicitly secondary code snapshots.
+- Updated the homepage GitHub preview, route metadata, breadcrumb, and 1200 by 630 Open Graph card to match the private-first hierarchy.
+- Replaced “MARSOC support” with: “Combat veteran with Marine Corps infantry and MARSOC service. Recipient of multiple Navy and Marine Corps Achievement Medals. First Marine to deploy G-SWAN satellite communications in Iraq. Held TS/SCI clearance.”
+- Corrected the browser harness so a route-scoped run still validates the sitemap against the complete public route set.
+
+Measured evidence:
+
+- `npm run check`: 0 errors, 0 warnings, 0 hints across 35 files.
+- `npm run build`: 9 static pages, sitemap, brand assets, responsive portrait variants, and route-specific Open Graph images generated successfully. GitHub data loaded from the committed fallback through August 10, 2026.
+- Focused screenshots: `/`, `/github/`, and `/experience/` captured at 390, 768, and 1280 pixels with no screenshot, console, page, clipped-text, or root-overflow failures. The 390-pixel heatmap remains contained in its horizontal region.
+- Full `npm run qa:browser`: 27 route and viewport checks; 0 axe violations, 0 incomplete keyboard traversals, 0 focus failures, 0 route failures, 0 asset failures, and 0 sitemap or robots failures.
+- `npm run qa:navigation`: complete cross-route journeys pass at 390 and 1280 pixels; every expected navigation and case-study destination is a genuine anchor.
+- Launch-mode Lighthouse: homepage and GitHub mobile Performance 99; every other audited public route 100. Accessibility, Best Practices, and SEO are 100 on every public route. Desktop homepage is 100 in all four categories, and the noindex 404 is 100 for Performance, Accessibility, and Best Practices.
+- `npm audit --audit-level=high`: 0 vulnerabilities.
+- Deployed full browser gate: all 27 checks pass on the immutable HTTPS deployment with 0 axe, keyboard, focus, route, asset, sitemap, or robots failures. The 390 and 1280 deployed navigation journeys also pass.
+
+Deployment evidence:
+
+- Review alias: `https://astro-rebuild.steven-hagene-portfolio.pages.dev`.
+- Immutable review: `https://c4ea397d.steven-hagene-portfolio.pages.dev`.
+- Homepage, GitHub, experience, sitemap, and GitHub Open Graph asset return 200. A nonsense path returns 404.
+- The stable review alias serves the new private-first headline.
+
+Presentation verdict: ready for review. The live `stevenhagene.com` domain and DNS remain untouched.

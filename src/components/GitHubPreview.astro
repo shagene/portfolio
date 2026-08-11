@@ -21,9 +21,9 @@ const formatDate = (value: string) => new Intl.DateTimeFormat("en-US", {
 
   <div class="proof-panel">
     <div class="accounts">
-      <p class="eyebrow">One link, two accounts</p>
-      <h3>shagene <span aria-hidden="true">+</span> semperdigitalsolutions</h3>
-      <p>Combined public-profile activity, curated code from both sides, and a clear boundary around private client work.</p>
+      <p class="eyebrow">Private systems first</p>
+      <h3>The work I would actually lead with is documented, not exposed.</h3>
+      <p>TEO, Musterhall, and CrimCaseAI live in private repositories. Their case studies come first; combined public activity across both accounts supplies the supporting signal.</p>
     </div>
     {activity && (
       <dl>
@@ -43,7 +43,7 @@ const formatDate = (value: string) => new Intl.DateTimeFormat("en-US", {
     )}
   </div>
 
-  <p class="github-cta"><a href="/github/">Explore the combined GitHub view <span aria-hidden="true">→</span></a></p>
+  <p class="github-cta"><a href="/github/">See private systems and GitHub activity <span aria-hidden="true">→</span></a></p>
 </section>
 
 <style>
@@ -69,7 +69,6 @@ const formatDate = (value: string) => new Intl.DateTimeFormat("en-US", {
     overflow-wrap: anywhere;
   }
 
-  .accounts h3 span { color: var(--color-accent); }
   .accounts > p:last-child { max-width: 40rem; margin: 0; color: var(--color-ink-muted); }
 
   dl { margin: 0; border-block: 1px solid var(--color-border-strong); }

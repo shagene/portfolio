@@ -62,10 +62,10 @@ const cards = [
   },
   {
     file: "../public/og-github.png",
-    primary: "Public Code",
-    secondary: "Two accounts, one view",
-    descriptor: "Combined activity · Curated repositories · Honest context",
-    footer: "GITHUB / BUILD-TIME DATA",
+    primary: "Private Systems",
+    secondary: "GitHub, in context",
+    descriptor: "Case studies first · Two accounts · Public snapshots",
+    footer: "WORK / CONTEXT / ACTIVITY",
   },
   {
     file: "../public/og-teo.png",

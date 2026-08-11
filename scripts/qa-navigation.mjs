@@ -72,7 +72,7 @@ for (const viewport of [
 
   await primaryNavigation().getByRole("link", { name: "GitHub", exact: true }).click();
   await page.waitForURL(/\/github\/$/);
-  if (!(await page.getByRole("heading", { level: 1, name: "Public activity without the split-screen version." }).isVisible())) {
+  if (!(await page.getByRole("heading", { level: 1, name: "The strongest work is private. The engineering story is not." }).isVisible())) {
     failures.push("GitHub h1 is not visible");
   }
 

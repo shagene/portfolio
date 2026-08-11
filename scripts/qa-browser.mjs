@@ -686,7 +686,9 @@ if (sitemapIndexResponse.status() !== 200) {
       .map((match) => match[1].replaceAll("&amp;", "&")));
   }
   siteChecks.sitemap.urls = [...new Set(routeUrls)].sort();
-  const expectedUrls = publicRoutes.map((route) => new URL(route, canonicalOrigin).toString()).sort();
+  const expectedUrls = defaultPublicRoutes
+    .map((route) => new URL(route, canonicalOrigin).toString())
+    .sort();
   if (JSON.stringify(siteChecks.sitemap.urls) !== JSON.stringify(expectedUrls)) {
     siteChecks.sitemap.failures.push("sitemap route set does not exactly match public routes");
   }
