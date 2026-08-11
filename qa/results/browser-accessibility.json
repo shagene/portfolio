@@ -1647,7 +1647,7 @@
     {
       "path": "/robots.txt",
       "status": 200,
-      "contentType": "text/plain"
+      "contentType": "text/plain; charset=utf-8"
     },
     {
       "path": "/sitemap-index.xml",

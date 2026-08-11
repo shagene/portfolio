@@ -147,5 +147,7 @@ Hard-gate evidence:
 - Direct copper-token contrast checks remain 6.74:1 on canvas, 5.81:1 on raised surfaces, 5.13:1 on strong surfaces, and 12.56:1 for soft copper on canvas.
 - `npm run qa:lighthouse`: every mobile route and the desktop homepage score 100 for Performance, Accessibility, Best Practices, and SEO, with no run warnings.
 - `npm audit --audit-level=high`: 0 vulnerabilities.
+- Cloudflare preview deployment completed at `https://astro-rebuild.steven-hagene-portfolio.pages.dev`; immutable deployment URL: `https://caa30d7d.steven-hagene-portfolio.pages.dev`.
+- The full browser and axe gate passes against the immutable HTTPS deployment, and the 390/1280 cross-route navigation journeys pass there as well.
 
 Presentation verdict: ready for review. The live `stevenhagene.com` domain and DNS remain untouched.
