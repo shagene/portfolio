@@ -86,4 +86,16 @@ Evidence:
 - Cloudflare Pages project `steven-hagene-portfolio` was created without custom domains or DNS changes.
 - Preview branch deployment completed at `https://astro-rebuild.steven-hagene-portfolio.pages.dev`; immutable deployment URL: `https://65d5d6df.steven-hagene-portfolio.pages.dev`.
 
-Presentation verdict: ready for final review. The supplied event photo is substantially improved by the crop and tonal treatment, but a purpose-shot portrait remains the one optional future upgrade. Nothing has touched the live `stevenhagene.com` domain.
+Presentation verdict: ready for final review. Nothing has touched the live `stevenhagene.com` domain.
+
+## Pass 6: professional portrait replacement
+
+Status: complete
+
+Changes and evidence:
+
+- Moved the supplied 1122 by 1402 professional portrait into `src/assets/stevenprofile.png` and removed the superseded event photo.
+- Removed the event-photo-specific 1.62x crop. The replacement's native near-4:5 composition now fills the frame without transform-based cropping.
+- Retained only a restrained saturation, contrast, and edge treatment so the photograph belongs to the sister-site palette without looking processed.
+- Refreshed the presentation-ready screenshots at 390, 768, and 1280 pixels.
+- Re-ran the full browser gate: zero horizontal overflow, console errors, page errors, or axe violations at all three widths.

@@ -4,7 +4,7 @@ Audit date: August 10, 2026
 
 ## Verdict
 
-The existing Next.js site undermined the August 2026 resumes. It presented Computershare as current, centered five retired hobby projects, used the dated navy/scarlet/gold theme, and shipped client-side animation and theme code that did not support the new positioning. The rebuild should preserve only the supplied headshot and favicon.
+The existing Next.js site undermined the August 2026 resumes. It presented Computershare as current, centered five retired hobby projects, used the dated navy/scarlet/gold theme, and shipped client-side animation and theme code that did not support the new positioning. The initial rebuild preserved only the supplied headshot and favicon until stronger replacements were available.
 
 ## Legacy inventory
 
@@ -18,11 +18,11 @@ Removed:
 
 Preserved:
 
-- `public/photo.jpg`, moved into `src/assets/photo.jpg` so Astro can generate responsive image variants.
-- The existing favicon, moved to `public/favicon.ico`.
+- The original `public/photo.jpg`, initially moved into Astro's asset pipeline and later replaced by `src/assets/stevenprofile.png`.
+- The original favicon concept, rebuilt as a correctly sized `public/favicon.png`.
 - Repository history and the new `BRIEF.md`.
 
-The 800 by 800 supplied photo is technically usable, friendly, and large enough for responsive generation. Its busy event background and casual crop make it a dated placeholder. Replace it before launch with a current portrait that has a quiet background, similar warmth, and enough room for a 4:5 crop.
+The initial 800 by 800 event photo was technically usable but visually dated. It was replaced before launch by a professional 1122 by 1402 portrait with a quiet, naturally blurred background and a native near-4:5 composition.
 
 ## Public GitHub crop
 
@@ -68,6 +68,6 @@ The portfolio differs intentionally by staying dark-only, using a slightly warme
 ## Known launch dependencies
 
 - Both August 9, 2026 persona resume PDFs are present under `public/resumes/` and were visually checked after rendering both pages of each file.
-- The headshot should be replaced before live cutover.
+- The professional replacement headshot is present and verified at all target widths.
 - Cloudflare preview deployment depends on authenticated account access and is deferred to the ship phase after first-build review.
 - DNS is intentionally untouched. The cutover runbook lives in `README.md`.

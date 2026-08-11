@@ -28,7 +28,7 @@
           350,
           350
         ],
-        "portraitTransform": "matrix(1.62, 0, 0, 1.62, 0, 13.5832)",
+        "portraitTransform": "none",
         "scripts": [
           "application/ld+json"
         ],
@@ -102,7 +102,7 @@
           235.515625,
           235.515625
         ],
-        "portraitTransform": "matrix(1.62, 0, 0, 1.62, 0, 10.2819)",
+        "portraitTransform": "none",
         "scripts": [
           "application/ld+json"
         ],
@@ -176,7 +176,7 @@
           394.671875,
           394.65625
         ],
-        "portraitTransform": "matrix(1.62, 0, 0, 1.62, 0, 16.6212)",
+        "portraitTransform": "none",
         "scripts": [
           "application/ld+json"
         ],
@@ -237,7 +237,7 @@
     {
       "path": "/robots.txt",
       "status": 200,
-      "contentType": "text/plain; charset=utf-8"
+      "contentType": "text/plain"
     },
     {
       "path": "/sitemap-index.xml",

@@ -54,9 +54,7 @@ public/resumes/senior-frontend-ux-engineer.pdf
 
 If either file is removed, `npm run build` emits a warning and the site labels that link `PDF pending`.
 
-Replace [`src/assets/photo.jpg`](src/assets/photo.jpg) with a current square or portrait-oriented headshot. Preserve the filename so no component change is required.
-
-The current supplied event photo is presented with a tight shoulders-up crop and dark tonal treatment. It is shippable, but a purpose-shot portrait remains the clearest future visual upgrade.
+The current professional portrait lives at [`src/assets/stevenprofile.png`](src/assets/stevenprofile.png). Preserve that filename when replacing it so no component change is required.
 
 ## Cloudflare Pages
 

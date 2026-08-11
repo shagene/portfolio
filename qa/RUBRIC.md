@@ -35,7 +35,7 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 - Private-work limitations are explicit.
 - Experience dates match the brief and concurrent roles are unambiguous.
 - The site never claims that placeholder PDFs exist.
-- The supplied photo is marked in project documentation as a replacement item, not presented as a newly commissioned headshot.
+- The professional portrait is source-controlled, responsive, and framed without an artificial crop that compromises the composition.
 
 ## Responsive composition
 
