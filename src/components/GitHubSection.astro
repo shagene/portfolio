@@ -200,7 +200,7 @@ weeks.forEach((week, weekIndex) => {
 
         <div class="heatmap-footer">
           <p>{activity.source === "live" ? "Live build data" : "Cached build data"} as of {formatDate(activity.dataAsOf)}.</p>
-          <div class="legend" aria-label="Contribution intensity from less to more">
+          <div class="legend">
             <span>Less</span>
             {[0, 1, 2, 3, 4].map((item) => <i class={`level-${item}`} aria-hidden="true"></i>)}
             <span>More</span>

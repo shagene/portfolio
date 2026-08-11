@@ -96,6 +96,9 @@ for (const viewport of [
   if (!navState || JSON.stringify(navState.labels) !== JSON.stringify(expectedLabels)) {
     failures.push("all five primary destinations are not reachable in the expected order");
   }
+  if (navState && navState.scrollWidth > navState.clientWidth) {
+    failures.push(`primary navigation overflows horizontally (${navState.scrollWidth}px > ${navState.clientWidth}px)`);
+  }
 
   results.push({ viewport, finalUrl: page.url(), semanticLinks, navState, failures });
   await page.close();
