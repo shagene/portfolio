@@ -243,7 +243,7 @@ Production verdict: shipped. The legacy Next.js portfolio has been replaced on t
 
 ## Pass 12: owner-controlled private engineering curation
 
-Status: local verification complete
+Status: production
 
 Changes and evidence:
 
@@ -259,5 +259,7 @@ Changes and evidence:
 - Navigation journeys pass at 390 and 1280 pixels with genuine anchors and no navigation overflow.
 - Responsive GitHub captures at 390, 768, and 1280 pixels report no overflow, clipped text, console errors, or page errors. The private cards and public-source panel were also inspected visually at all three widths.
 - Lighthouse: 100 Accessibility, Best Practices, and SEO on every public route; Performance is 99 on the mobile homepage and GitHub route and 100 elsewhere. The 404 scores 100 for Performance, Accessibility, and Best Practices and remains non-indexable.
+- Pushed commit `e64a3d7` to `main`; Vercel reported a successful production deployment. The live GitHub route returns 200 with Aegis, Semper Command Center, VolumeGuard, and the `shagene/portfolio` source link, while all four rejected repository cards are absent.
+- Live production browser gate: all 27 checks pass at 390, 768, and 1280 pixels with 0 axe, keyboard, focus, route, asset, sitemap, or robots failures. Live navigation journeys pass at 390 and 1280 pixels, and the nonsense route still returns 404.
 
-Local verdict: ready to commit and deploy for live verification.
+Production verdict: shipped and verified.
