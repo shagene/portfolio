@@ -10,7 +10,7 @@ A small, static Astro portfolio for [stevenhagene.com](https://stevenhagene.com)
 - `astro:assets` responsive headshot generation
 - Build-time GitHub GraphQL activity across two accounts with a committed fallback snapshot
 - Generated 1200 by 630 Open Graph images for each search intent
-- Vercel production deployment from `main`, with Cloudflare Pages review and scheduled-build deployment from `dist`
+- Vercel production deployment from `main`, with a weekly GitHub activity-cache refresh that triggers the same deployment path
 
 There is no client-side framework and no contact form.
 
@@ -46,7 +46,7 @@ PORTFOLIO_URL=http://127.0.0.1:4331 npm run qa:screenshots
 PORTFOLIO_URL=http://127.0.0.1:4331 npm run qa:lighthouse
 ```
 
-The static QA server mirrors Pages route resolution, including serving `404.html` with an actual 404 status for unknown paths.
+The static QA server mirrors production route resolution, including serving `404.html` with an actual 404 status for unknown paths.
 
 The build reads public repository metadata, language byte counts, and contribution calendars for `shagene` and `semperdigitalsolutions` through GitHub GraphQL when `GITHUB_TOKEN`, `GH_TOKEN`, or `GITHUB_GRAPHQL_TOKEN` is available. It merges both calendars and repository datasets at build time; there are no browser-side GitHub requests.
 
@@ -58,7 +58,7 @@ To refresh the committed snapshot deliberately, authenticate with a GitHub token
 GITHUB_TOKEN=your-token npm run refresh:github
 ```
 
-Do not commit or print the token. `GITHUB_LIVE_REQUIRED=1` is reserved for the scheduled deployment so a freshness failure stops the deploy instead of silently publishing an older snapshot.
+Do not commit or print the token. `GITHUB_LIVE_REQUIRED=1` is reserved for the scheduled refresh so a freshness failure stops the process instead of silently publishing an older snapshot.
 
 ## Editing content
 
@@ -84,46 +84,13 @@ If either file is removed, `npm run build` emits a warning and the site labels t
 
 The current professional portrait lives at [`src/assets/stevenprofile.png`](src/assets/stevenprofile.png). Preserve that filename when replacing it so no component change is required.
 
-## Cloudflare Pages
+## Production deployment and weekly refresh
 
-The static build follows Cloudflare's current Astro settings:
+Vercel is the production host. It deploys from `main` using [`vercel.json`](vercel.json), and [`www.stevenhagene.com`](https://www.stevenhagene.com) is the canonical production host.
 
-- Production branch: `main`
-- Build command: `npm run build`
-- Build output directory: `dist`
-- Node version: `22.22.3` or another supported Node 22 release
+`.github/workflows/weekly-github-activity-refresh.yml` runs at 6:17 a.m. Eastern every Monday and can also be started manually. It type-checks the site, fetches current two-account GitHub activity with the repository `GITHUB_TOKEN`, and fails if the live fetch is unavailable. When the activity cache changes, the workflow commits only `src/data/github-activity-cache.json` to `main`; Vercel then deploys that commit through its existing Git integration. A cache that has not changed creates no commit and no deployment.
 
-The repository includes `wrangler.toml` for direct uploads. After authenticating Wrangler:
-
-```bash
-npx wrangler pages deploy dist --project-name steven-hagene-portfolio
-```
-
-Current review deployment: [astro-rebuild.steven-hagene-portfolio.pages.dev](https://astro-rebuild.steven-hagene-portfolio.pages.dev). Immutable deployment: [ee090520.steven-hagene-portfolio.pages.dev](https://ee090520.steven-hagene-portfolio.pages.dev). This is a preview branch only; no custom domain or DNS record has been changed.
-
-The existing Cloudflare Pages project is a Direct Upload project, so it cannot use a Pages deploy hook or be converted in place to Git integration. `.github/workflows/weekly-pages-rebuild.yml` is the weekly rebuild path: every Monday it checks, builds with current GitHub activity, deploys `dist` to the Pages `main` branch, and verifies the homepage, GitHub route, sitemap, and a real 404 response.
-
-The workflow becomes active when it reaches the default branch. These repository settings were provisioned on August 11, 2026:
-
-- Secret `CLOUDFLARE_API_TOKEN`, scoped to `Account > Cloudflare Pages > Edit` for the correct account.
-- Variable `CLOUDFLARE_ACCOUNT_ID` containing the Pages account ID.
-
-The workflow maps GitHub's automatic repository token into the build as `GITHUB_TOKEN`; a separate GitHub PAT is not required for the public and publicly visible aggregate activity used here. The scoped Pages token is stored only in GitHub Actions, and the local Wrangler OAuth session is not copied into Actions because it is broader and refresh-based.
-
-## Vercel to Cloudflare DNS cutover
-
-Do not change DNS until the Pages preview has passed final QA and both resume files are present.
-
-1. Create the Pages project and verify the generated `*.pages.dev` production URL.
-2. In Pages, open **Custom domains** and add `stevenhagene.com` before changing DNS. Add `www.stevenhagene.com` as well if it should resolve.
-3. If the apex domain is not already a Cloudflare zone, add it to Cloudflare and update the registrar nameservers to the assigned Cloudflare nameservers. Cloudflare requires the apex to be a zone on the same account as the Pages project.
-4. If DNS is already hosted by Cloudflare, accept the automatically created Pages records. For a separately hosted subdomain, create the requested CNAME to the project `*.pages.dev` hostname only after associating the domain in Pages.
-5. Wait for Pages to show the custom domains as active and for certificates to issue.
-6. Verify both apex and `www`, canonical URLs, resume downloads, robots, sitemap, and social metadata over HTTPS.
-7. Choose one canonical hostname and add the corresponding redirect for the other.
-8. After at least one successful live verification, remove the old Vercel project/domain association. Keep the last Vercel deployment available until rollback is no longer needed.
-
-Cloudflare references: [Astro on Pages](https://developers.cloudflare.com/pages/framework-guides/deploy-an-astro-site/), [Pages custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/), and [Wrangler configuration](https://developers.cloudflare.com/pages/functions/wrangler-configuration/).
+The workflow does not require a Vercel token or deploy hook. It also does not deploy to Cloudflare Pages. Cloudflare migration is deferred and must be treated as a separate hosting and DNS decision, not as a routine portfolio deployment.
 
 ## Evidence
 

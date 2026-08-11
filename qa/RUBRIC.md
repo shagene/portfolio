@@ -5,7 +5,7 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 ## Hard gates
 
 - Production build succeeds with no type errors.
-- All seven routes build as static HTML and appear in the sitemap.
+- All eight indexable routes build as static HTML and appear in the sitemap.
 - Lighthouse scores are 95 or higher for Performance, Accessibility, Best Practices, and SEO.
 - axe-core reports zero violations on every route at 390, 768, and 1280 pixel widths.
 - No horizontal overflow at 390, 768, or 1280 pixels.
@@ -57,4 +57,4 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 - Canonical, Open Graph, Twitter, sitemap, robots, and Person JSON-LD are present in built output.
 - Every route has a unique title, description, canonical URL, social card, and structured data appropriate to its page type.
 - The founder route retains valid Person, Organization/ProfilePage, and breadcrumb relationships.
-- Cloudflare Pages configuration and DNS runbook agree with current official documentation.
+- Vercel production configuration and the weekly GitHub activity-cache refresh agree with the documented deployment path.
