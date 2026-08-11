@@ -2,97 +2,130 @@
   {
     "route": "/",
     "formFactor": "desktop",
-    "finalUrl": "http://127.0.0.1:4330/",
+    "finalUrl": "http://127.0.0.1:4331/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
   },
   {
     "route": "/",
     "formFactor": "mobile",
-    "finalUrl": "http://127.0.0.1:4330/",
+    "finalUrl": "http://127.0.0.1:4331/",
     "scores": {
-      "performance": 100,
+      "performance": 99,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
   },
   {
     "route": "/work/",
     "formFactor": "mobile",
-    "finalUrl": "http://127.0.0.1:4330/work/",
+    "finalUrl": "http://127.0.0.1:4331/work/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
   },
   {
     "route": "/work/teo/",
     "formFactor": "mobile",
-    "finalUrl": "http://127.0.0.1:4330/work/teo/",
+    "finalUrl": "http://127.0.0.1:4331/work/teo/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
   },
   {
     "route": "/work/musterhall/",
     "formFactor": "mobile",
-    "finalUrl": "http://127.0.0.1:4330/work/musterhall/",
+    "finalUrl": "http://127.0.0.1:4331/work/musterhall/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
   },
   {
     "route": "/work/crimcaseai/",
     "formFactor": "mobile",
-    "finalUrl": "http://127.0.0.1:4330/work/crimcaseai/",
+    "finalUrl": "http://127.0.0.1:4331/work/crimcaseai/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
   },
   {
     "route": "/experience/",
     "formFactor": "mobile",
-    "finalUrl": "http://127.0.0.1:4330/experience/",
+    "finalUrl": "http://127.0.0.1:4331/experience/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
   },
   {
     "route": "/founder/semper-digital-solutions/",
     "formFactor": "mobile",
-    "finalUrl": "http://127.0.0.1:4330/founder/semper-digital-solutions/",
+    "finalUrl": "http://127.0.0.1:4331/founder/semper-digital-solutions/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "warnings": []
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/github/",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4331/github/",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/404.html",
+    "formFactor": "mobile",
+    "finalUrl": "http://127.0.0.1:4331/404.html",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100
+    },
+    "warnings": [],
+    "indexable": false
   }
 ]

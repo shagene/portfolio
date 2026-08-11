@@ -5,7 +5,7 @@ const baseUrl = process.env.PORTFOLIO_URL ?? "http://127.0.0.1:4330";
 const outputDirectory = new URL("../qa/results/", import.meta.url);
 await mkdir(outputDirectory, { recursive: true });
 
-const browser = await chromium.launch({ channel: "chrome", headless: true });
+const browser = await chromium.launch({ headless: true });
 const results = [];
 
 for (const viewport of [
@@ -17,6 +17,30 @@ for (const viewport of [
   const primaryNavigation = () => page.getByRole("navigation", { name: "Primary navigation" });
 
   await page.goto(new URL("/", baseUrl).toString(), { waitUntil: "networkidle" });
+  const semanticLinks = await page.evaluate(() => {
+    const expected = [
+      "/work/",
+      "/github/",
+      "/founder/semper-digital-solutions/",
+      "/experience/",
+      "/#contact",
+      "/work/teo/",
+      "/work/musterhall/",
+      "/work/crimcaseai/",
+    ];
+    return expected.map((href) => {
+      const element = document.querySelector(`a[href="${href}"]`);
+      return {
+        href,
+        exists: Boolean(element),
+        isAnchor: element instanceof HTMLAnchorElement,
+        resolvedHref: element instanceof HTMLAnchorElement ? element.href : null,
+      };
+    });
+  });
+  if (semanticLinks.some((link) => !link.exists || !link.isAnchor || !link.resolvedHref)) {
+    failures.push("one or more primary or case-study destinations are not genuine anchors");
+  }
   await primaryNavigation().getByRole("link", { name: "Work", exact: true }).click();
   await page.waitForURL(/\/work\/$/);
   if (!(await page.getByRole("heading", { level: 1, name: "Systems built for the difficult part." }).isVisible())) {
@@ -46,6 +70,12 @@ for (const viewport of [
     failures.push("Semper founder h1 is not visible");
   }
 
+  await primaryNavigation().getByRole("link", { name: "GitHub", exact: true }).click();
+  await page.waitForURL(/\/github\/$/);
+  if (!(await page.getByRole("heading", { level: 1, name: "Public activity without the split-screen version." }).isVisible())) {
+    failures.push("GitHub h1 is not visible");
+  }
+
   await primaryNavigation().getByRole("link", { name: "Contact", exact: true }).click();
   await page.waitForURL(/\/#contact$/);
   if (!(await page.getByRole("heading", { name: "Bring the difficult part." }).isVisible())) {
@@ -62,9 +92,12 @@ for (const viewport of [
         }
       : null;
   });
-  if (!navState || navState.labels.length !== 4) failures.push("all four primary routes are not reachable");
+  const expectedLabels = ["Work", "GitHub", "Semper", "Experience", "Contact"];
+  if (!navState || JSON.stringify(navState.labels) !== JSON.stringify(expectedLabels)) {
+    failures.push("all five primary destinations are not reachable in the expected order");
+  }
 
-  results.push({ viewport, finalUrl: page.url(), navState, failures });
+  results.push({ viewport, finalUrl: page.url(), semanticLinks, navState, failures });
   await page.close();
 }
 

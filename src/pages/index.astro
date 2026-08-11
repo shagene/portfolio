@@ -3,12 +3,15 @@ import ContactSection from "@/components/ContactSection.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import Hero from "@/components/Hero.astro";
+import GitHubPreview from "@/components/GitHubPreview.astro";
 import SemperSection from "@/components/SemperSection.astro";
 import WorkPreview from "@/components/WorkPreview.astro";
 import { resumes } from "@/data/portfolio";
+import { getGitHubActivity } from "@/data/github";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const missingResumes = resumes.filter((resume) => !resume.available);
+const githubActivity = await getGitHubActivity();
 if (missingResumes.length > 0) {
   console.warn(
     `[resumes] Placeholder links remain for: ${missingResumes.map((resume) => resume.href).join(", ")}`,
@@ -22,6 +25,7 @@ if (missingResumes.length > 0) {
   <main id="main-content">
     <Hero />
     <WorkPreview />
+    <GitHubPreview activity={githubActivity} />
     <SemperSection />
     <ContactSection />
   </main>

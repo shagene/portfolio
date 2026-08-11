@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "generate:brand": "node scripts/generate-brand-assets.mjs",
     "generate:og": "node scripts/generate-og.mjs",
-    "build": "npm run generate:og && astro build",
+    "refresh:github": "GITHUB_CACHE_WRITE=1 GITHUB_LIVE_REQUIRED=1 npm run build",
+    "build": "npm run generate:brand && npm run generate:og && astro build",
     "preview": "astro preview",
+    "serve:dist": "node scripts/serve-dist.mjs",
     "check": "astro check",
     "qa:screenshots": "node scripts/capture-first-build.mjs",
     "qa:browser": "node scripts/qa-browser.mjs",

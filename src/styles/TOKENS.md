@@ -12,7 +12,9 @@ The site uses three explicit token layers. Components must consume component tok
 
 ## 3. Component tokens
 
-`--card-*`, `--button-*`, `--chip-*`, `--rule-*`, and `--focus-*` are the public contract for UI components. Component styles may combine these with semantic layout and typography tokens.
+`--card-*`, `--button-*`, `--chip-*`, `--rule-*`, `--focus-*`, and `--logo-*` are the public contract for UI components. Component styles may combine these with semantic layout and typography tokens.
+
+The navigation logo lockup uses a `2rem` mark and `--logo-lockup-gap`, currently `0.75rem`. The gap is three-eighths of the mark width, keeping the wordmark optically separate without turning it into a second navigation item. The dark-context mark consumes `--logo-mark-dark`; the inverted light-context variant consumes `--logo-mark-light` because copper does not meet the 3:1 non-text threshold on the mineral surface. `public/logo-mark.svg` is the dark-ground standalone asset, while `public/logo-mark-inverted.svg` is the explicit light-ground asset.
 
 Tailwind v4 is loaded through the Vite integration. The `@theme inline` block in `global.css` exposes the semantic layer to Tailwind utilities without creating a second source of truth.
 

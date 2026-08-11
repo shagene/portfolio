@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="copper-stamp-title copper-stamp-desc">
+  <title id="copper-stamp-title">Copper Stamp SH monogram concept</title>
+  <desc id="copper-stamp-desc">A solid copper disc with a compact geometric S and H cut into its center.</desc>
+  <style>
+    .disc { fill: var(--logo-accent, #ea7f43); }
+    .cut { fill: none; stroke: #000; stroke-linecap: square; stroke-linejoin: miter; }
+  </style>
+  <defs>
+    <mask id="copper-stamp-cut">
+      <rect width="64" height="64" fill="#000"/>
+      <circle cx="32" cy="32" r="29" fill="#fff"/>
+      <path class="cut" d="M28 20H18v12h10v12H17" stroke-width="5"/>
+      <path class="cut" d="M36 20v24m0-12h11m0-12v24" stroke-width="5"/>
+    </mask>
+  </defs>
+  <rect class="disc" width="64" height="64" mask="url(#copper-stamp-cut)"/>
+</svg>

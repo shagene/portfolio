@@ -15,6 +15,7 @@ export type CaseStudy = {
   domain: string;
   role: string;
   problem: string;
+  previewBuilt: string;
   built: string;
   difficulty: string;
   technologies: string[];
@@ -50,6 +51,7 @@ export const site = {
   location: "Clayton, NC",
   email: "steven.hagene@gmail.com",
   github: "https://github.com/shagene",
+  githubCompany: "https://github.com/semperdigitalsolutions",
   linkedin: "https://www.linkedin.com/in/steven-hagene-32279531",
   canonical: "https://stevenhagene.com",
   semper: {
@@ -61,6 +63,7 @@ export const site = {
 
 export const navigation = [
   { label: "Work", href: "/work/" },
+  { label: "GitHub", href: "/github/" },
   { label: "Semper", href: "/founder/semper-digital-solutions/" },
   { label: "Experience", href: "/experience/" },
   { label: "Contact", href: "/#contact" },
@@ -91,7 +94,7 @@ export const copy = {
     alsoBuiltHeading: "The work between the flagships.",
   },
   semper: {
-    number: "02",
+    number: "03",
     title: "Founder",
     heading: "Building the company behind the work.",
     intro:
@@ -119,7 +122,7 @@ export const copy = {
       "The working set behind the case studies, grouped by the part of the product it serves rather than a made-up proficiency score.",
   },
   contact: {
-    number: "03",
+    number: "04",
     title: "Contact",
     heading: "Bring the difficult part.",
     intro: "The shortest route is email. For work history and code, use the links below.",
@@ -150,6 +153,17 @@ export const experiencePage = {
   headline: "A career connecting product and systems.",
   lead:
     "From tactical communications to financial software, clinical platforms, design systems, and founder-led delivery, the throughline is accountable engineering in complicated environments.",
+} as const;
+
+export const githubPage = {
+  path: "/github/",
+  pageTitle: "Combined GitHub Activity & Public Code | Steven Hagene",
+  pageDescription:
+    "A unified, build-time view of Steven Hagene's public GitHub activity across his personal and Semper Digital Solutions accounts, with curated repositories and honest context.",
+  eyebrow: "GitHub · Two accounts, one view",
+  headline: "Public activity without the split-screen version.",
+  lead:
+    "My public work lives across a personal account and the Semper Digital Solutions account. This page combines the visible activity into one static, linkable view while keeping private client repositories private.",
 } as const;
 
 export const semperStory = {
@@ -286,6 +300,8 @@ export const caseStudies: CaseStudy[] = [
     role: "Lead Full-Stack Engineer",
     problem:
       "A financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.",
+    previewBuilt:
+      "Payments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.",
     built:
       "I own payments and accounts receivable end to end: QuickBooks invoicing through Payabli hosted checkout, webhook processing, background workers, and invoice status derived from the ledger. I also founded the design system from zero with a three-layer token architecture and ESLint enforcement.",
     difficulty:
@@ -368,6 +384,8 @@ export const caseStudies: CaseStudy[] = [
     role: "Sole Engineer",
     problem:
       "One learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.",
+    previewBuilt:
+      "A Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.",
     built:
       "I built the full platform: a Next.js and TypeScript web app, Flutter mobile app, and Supabase/Postgres backend with schema-enforced invariants. A single token source compiles to web CSS and a generated Dart package, with a public Storybook for the system.",
     difficulty:
@@ -450,6 +468,8 @@ export const caseStudies: CaseStudy[] = [
     role: "Principal Engineer",
     problem:
       "Legal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.",
+    previewBuilt:
+      "Case-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.",
     built:
       "The portfolio includes a live case-management SaaS, a generation-two rebuild with schema-generated forms and in-browser ML, and an evidence-intelligence platform serving paying law firms.",
     difficulty:
@@ -539,6 +559,7 @@ export const curatedRepos = [
     description:
       "Schema-enforced LLM quote extraction with deterministic validation and a source-side human review workflow.",
     language: "TypeScript",
+    account: "Personal · shagene",
   },
   {
     name: "Restaurant Hours API",
@@ -547,6 +568,7 @@ export const curatedRepos = [
     description:
       "A tested FastAPI service that normalizes messy schedules into a compact week-minute interval engine.",
     language: "Python",
+    account: "Personal · shagene",
   },
   {
     name: "Python SEO Toolkit",
@@ -555,14 +577,16 @@ export const curatedRepos = [
     description:
       "A crawler and sitemap-analysis toolkit for technical SEO checks and site-structure visualization.",
     language: "Python",
+    account: "Personal · shagene",
   },
   {
-    name: "Component System Explorer",
-    repository: "shagene/cs-components",
-    href: "https://github.com/shagene/cs-components",
+    name: "MeetScribe",
+    repository: "semperdigitalsolutions/MeetScribe",
+    href: "https://github.com/semperdigitalsolutions/MeetScribe",
     description:
-      "A broad TypeScript component catalog spanning controls, navigation, content containers, and system states.",
-    language: "TypeScript",
+      "Local-first macOS transcription tooling built with SwiftUI, ffmpeg, whisper.cpp, structured transcript artifacts, and optional localhost-only Ollama summaries.",
+    language: "Swift",
+    account: "Semper Digital Solutions · semperdigitalsolutions",
   },
 ] as const;
 

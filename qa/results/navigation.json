@@ -4,12 +4,63 @@
       "width": 390,
       "height": 844
     },
-    "finalUrl": "https://caa30d7d.steven-hagene-portfolio.pages.dev/#contact",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/#contact",
+    "semanticLinks": [
+      {
+        "href": "/work/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/"
+      },
+      {
+        "href": "/github/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/github/"
+      },
+      {
+        "href": "/founder/semper-digital-solutions/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/founder/semper-digital-solutions/"
+      },
+      {
+        "href": "/experience/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/experience/"
+      },
+      {
+        "href": "/#contact",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/#contact"
+      },
+      {
+        "href": "/work/teo/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/teo/"
+      },
+      {
+        "href": "/work/musterhall/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/musterhall/"
+      },
+      {
+        "href": "/work/crimcaseai/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/crimcaseai/"
+      }
+    ],
     "navState": {
-      "clientWidth": 223,
-      "scrollWidth": 223,
+      "clientWidth": 275,
+      "scrollWidth": 275,
       "labels": [
         "Work",
+        "GitHub",
         "Semper",
         "Experience",
         "Contact"
@@ -22,12 +73,63 @@
       "width": 1280,
       "height": 900
     },
-    "finalUrl": "https://caa30d7d.steven-hagene-portfolio.pages.dev/#contact",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/#contact",
+    "semanticLinks": [
+      {
+        "href": "/work/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/"
+      },
+      {
+        "href": "/github/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/github/"
+      },
+      {
+        "href": "/founder/semper-digital-solutions/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/founder/semper-digital-solutions/"
+      },
+      {
+        "href": "/experience/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/experience/"
+      },
+      {
+        "href": "/#contact",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/#contact"
+      },
+      {
+        "href": "/work/teo/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/teo/"
+      },
+      {
+        "href": "/work/musterhall/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/musterhall/"
+      },
+      {
+        "href": "/work/crimcaseai/",
+        "exists": true,
+        "isAnchor": true,
+        "resolvedHref": "https://ee090520.steven-hagene-portfolio.pages.dev/work/crimcaseai/"
+      }
+    ],
     "navState": {
-      "clientWidth": 295,
-      "scrollWidth": 295,
+      "clientWidth": 371,
+      "scrollWidth": 371,
       "labels": [
         "Work",
+        "GitHub",
         "Semper",
         "Experience",
         "Contact"

@@ -151,3 +151,40 @@ Hard-gate evidence:
 - The full browser and axe gate passes against the immutable HTTPS deployment, and the 390/1280 cross-route navigation journeys pass there as well.
 
 Presentation verdict: ready for review. The live `stevenhagene.com` domain and DNS remain untouched.
+
+## Pass 9: punch-list closeout, unified GitHub proof, and B2 identity
+
+Status: presentation-ready and deployed for review
+
+Changes:
+
+- Restored GitHub as a homepage proof point and added `/github/` as the canonical combined view across `shagene` and `semperdigitalsolutions`.
+- Added a build-time merged 365-day calendar, combined repository and language statistics, current-activity date, source attribution, explicit restricted-contribution boundary, a committed fallback cache, and strict scheduled-build freshness behavior.
+- Kept the curated repository crop, used the renamed `quote-extractor` and `hours-interval-engine` slugs, and added the evidence-backed `semperdigitalsolutions/MeetScribe` snapshot with account labels on every card.
+- Added a branded `src/pages/404.astro`; unknown Cloudflare URLs now return HTTP 404 with a distinct noindex page instead of a duplicate homepage.
+- Added a concise `What I built` line to every homepage work card and restored genuine anchors for primary navigation and case-study actions.
+- Confirmed unique titles, descriptions, canonicals, Open Graph and Twitter cards across all eight public routes; Person JSON-LD, sitemap, and robots coverage are present and verified.
+- Integrated the selected B2 Axis Ring as the inline navigation lockup and 404 mark, standalone dark and inverted SVGs, adaptive SVG/ICO favicons, a 180-pixel Apple icon, and every 1200 by 630 Open Graph card. The 2rem mark and 0.75rem wordmark gap are documented in `TOKENS.md`.
+- Added a Monday scheduled GitHub Action with live-data strict mode, Cloudflare direct upload, and post-deploy smoke checks. The one-account Pages Edit token and account variable are provisioned in GitHub; the schedule begins when the workflow reaches `main`.
+
+Measured evidence:
+
+- `npm run check`: 0 errors, 0 warnings, 0 hints across 35 files.
+- `npm run build`: 9 static pages, 4 responsive portrait variants, sitemap, brand assets, and all route-specific Open Graph images generated successfully.
+- Fallback proof: a deliberately invalid GitHub token logged the live failure and completed from the committed cache; `GITHUB_LIVE_REQUIRED=1` stopped the same build before deployment.
+- `npm run qa:browser`: 27 route and viewport checks across 390, 768, and 1280 pixels; 0 axe violations, 0 incomplete keyboard traversals, 0 focus failures, 0 route failures, 0 asset failures, and 0 sitemap or robots failures.
+- Every keyboard target has a visible 2-pixel focus indicator. Every nav and case-study destination is a genuine `<a href>` element.
+- Copper contrast: 6.74:1 on canvas, 5.81:1 on raised surfaces, 5.13:1 on strong surfaces, and 12.56:1 for soft copper on canvas. Logo contrast is 6.74:1 on the dark canvas and 17.5:1 for the inverted mark on the mineral light surface.
+- `npm run qa:screenshots`: 27 full-page captures with no failures. The 390-pixel GitHub heatmap stays inside a 308-pixel scroll region, starts at the current-month edge, and never creates root overflow.
+- Launch-mode Lighthouse: homepage and GitHub mobile Performance 99; every other audited public route 100. Accessibility, Best Practices, and SEO are 100 on all eight public routes. Desktop homepage is 100 in all four categories. The rendered noindex 404 is 100 for Performance, Accessibility, and Best Practices.
+- Cloudflare preview Lighthouse: Performance 99 or 100, Accessibility 100, and Best Practices 100. Raw SEO is 66 to 69 because Cloudflare adds `X-Robots-Tag: noindex` to branch previews; the separate launch-mode report verifies SEO 100 without that provider protection.
+- `npm audit --audit-level=high`: 0 vulnerabilities. `actionlint`: clean.
+
+Deployment evidence:
+
+- Review alias: `https://astro-rebuild.steven-hagene-portfolio.pages.dev`.
+- Immutable review: `https://ee090520.steven-hagene-portfolio.pages.dev`.
+- Deployed homepage, GitHub page, sitemap, and favicon return 200. A nonsense path returns 404.
+- The full deployed browser gate passes all 27 checks with zero axe, keyboard, route, asset, sitemap, or robots failures. Deployed 390 and 1280 navigation journeys also pass.
+
+Presentation verdict: ready for review. The live `stevenhagene.com` domain and DNS remain untouched.

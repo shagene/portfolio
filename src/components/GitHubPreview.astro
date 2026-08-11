@@ -1,0 +1,88 @@
+---
+import type { GitHubActivity } from "@/data/github";
+import { copy } from "@/data/portfolio";
+import SectionHeading from "./SectionHeading.astro";
+
+type Props = { activity: GitHubActivity | null };
+const { activity } = Astro.props;
+const numberFormat = new Intl.NumberFormat("en-US");
+const formatDate = (value: string) => new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(new Date(`${value.slice(0, 10)}T12:00:00Z`));
+---
+
+<section class="section shell github-preview" id="github" aria-labelledby="github-preview-heading">
+  <SectionHeading number={copy.github.number} title={copy.github.title} intro={copy.github.intro}>
+    <span id="github-preview-heading">{copy.github.heading}</span>
+  </SectionHeading>
+
+  <div class="proof-panel">
+    <div class="accounts">
+      <p class="eyebrow">One link, two accounts</p>
+      <h3>shagene <span aria-hidden="true">+</span> semperdigitalsolutions</h3>
+      <p>Combined public-profile activity, curated code from both sides, and a clear boundary around private client work.</p>
+    </div>
+    {activity && (
+      <dl>
+        <div>
+          <dt>Visible contributions</dt>
+          <dd>{numberFormat.format(activity.combined.visibleContributions)}</dd>
+        </div>
+        <div>
+          <dt>Public repos</dt>
+          <dd>{numberFormat.format(activity.combined.publicRepos)}</dd>
+        </div>
+        <div>
+          <dt>Latest public activity</dt>
+          <dd>{formatDate(activity.combined.latestPublicActivity)}</dd>
+        </div>
+      </dl>
+    )}
+  </div>
+
+  <p class="github-cta"><a href="/github/">Explore the combined GitHub view <span aria-hidden="true">→</span></a></p>
+</section>
+
+<style>
+  .proof-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+    gap: var(--space-cluster);
+    padding: clamp(var(--primitive-space-6), 5vw, var(--primitive-space-12));
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background:
+      radial-gradient(circle at 100% 0, rgb(234 127 67 / 10%), transparent 20rem),
+      var(--card-bg);
+    box-shadow: var(--card-shadow);
+  }
+
+  .accounts h3 {
+    margin: var(--primitive-space-4) 0;
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-h2);
+    letter-spacing: var(--primitive-tracking-heading);
+    line-height: var(--primitive-leading-heading);
+    overflow-wrap: anywhere;
+  }
+
+  .accounts h3 span { color: var(--color-accent); }
+  .accounts > p:last-child { max-width: 40rem; margin: 0; color: var(--color-ink-muted); }
+
+  dl { margin: 0; border-block: 1px solid var(--color-border-strong); }
+  dl div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--primitive-space-4); padding-block: var(--primitive-space-4); }
+  dl div + div { border-top: 1px solid var(--color-border); }
+  dt { color: var(--color-ink-subtle); font-family: var(--typeface-mono); font-size: var(--primitive-type-micro); letter-spacing: .08em; text-transform: uppercase; }
+  dd { margin: 0; color: var(--color-ink); font-family: var(--typeface-display); font-weight: 700; text-align: right; }
+
+  .github-cta { margin: var(--primitive-space-8) 0 0; text-align: right; }
+  .github-cta a { display: inline-flex; gap: var(--primitive-space-3); align-items: center; font-family: var(--typeface-mono); font-size: var(--primitive-type-small); font-weight: 700; text-decoration-color: var(--color-accent); }
+  .github-cta span { color: var(--color-accent); }
+
+  @media (max-width: 47.99rem) {
+    .proof-panel { grid-template-columns: 1fr; }
+  }
+</style>

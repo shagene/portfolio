@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="shared-datum-title shared-datum-desc">
+  <title id="shared-datum-title">Open Datum SH monogram concept</title>
+  <desc id="shared-datum-desc">A geometric S and H framed by two open precision arcs.</desc>
+  <style>
+    .ground { fill: var(--logo-ground, #0c141a); }
+    .line { fill: none; stroke: var(--logo-accent, #ea7f43); stroke-linecap: square; stroke-linejoin: miter; }
+  </style>
+  <circle class="ground" cx="32" cy="32" r="32"/>
+  <path class="line" d="M22 10a24 24 0 0 0 0 44M42 54a24 24 0 0 0 0-44" stroke-width="4"/>
+  <path class="line" d="M28 20H18v12h10v12H18" stroke-width="5"/>
+  <path class="line" d="M36 20v24m0-12h10m0-12v24" stroke-width="5"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="b1-title b1-desc" style="color:var(--logo-mark,#ea7f43)">
+  <title id="b1-title">Segmented Rail SH monogram</title>
+  <desc id="b1-desc">An angular S paired with an H whose outer stem bows like a partial precision ring.</desc>
+  <g id="b1-mark" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M29 14H18l-6 6v10h17v20H18l-6-6"/>
+    <path d="M36 13v38m0-19h11m0-17c4 8 4 26 0 34"/>
+  </g>
+</svg>

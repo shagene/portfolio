@@ -10,6 +10,8 @@ const routes = (process.env.PORTFOLIO_PATHS ?? [
   "/work/crimcaseai/",
   "/experience/",
   "/founder/semper-digital-solutions/",
+  "/github/",
+  "/zzz-does-not-exist/",
 ].join(","))
   .split(",")
   .map((path) => path.trim());
@@ -21,7 +23,7 @@ const routeName = (route) => route === "/"
   ? "home"
   : route.replace(/^\//, "").replace(/\/$/, "").replaceAll("/", "-");
 
-const browser = await chromium.launch({ channel: "chrome", headless: true });
+const browser = await chromium.launch({ headless: true });
 const viewports = [
   { width: 390, height: 844 },
   { width: 768, height: 1024 },
@@ -31,7 +33,11 @@ const report = [];
 
 for (const route of routes) {
   for (const viewport of viewports) {
-    const page = await browser.newPage({ viewport, colorScheme: "dark" });
+    const page = await browser.newPage({
+      viewport,
+      colorScheme: "dark",
+      reducedMotion: "reduce",
+    });
     const consoleErrors = [];
     const pageErrors = [];
     page.on("console", (message) => {
@@ -71,6 +77,13 @@ for (const route of routes) {
       fullPage: true,
       style: ".skip-link { display: none !important; }",
     });
+    if (route === "/github/") {
+      await page.locator(".heatmap-panel").screenshot({
+        path: new URL(`${prefix}-heatmap-${viewport.width}.png`, outputDirectory).pathname,
+        style: ".skip-link { display: none !important; }",
+      });
+      await page.evaluate(() => window.scrollTo(0, 0));
+    }
 
     const measurements = await page.evaluate(() => {
       const visible = (element) => {
@@ -92,6 +105,8 @@ for (const route of routes) {
           const rect = link.getBoundingClientRect();
           return { label: link.textContent?.trim(), width: rect.width, height: rect.height };
         });
+      const heatmap = document.querySelector(".heatmap-scroll");
+      const heatmapRect = heatmap?.getBoundingClientRect();
       return {
         clientWidth: document.documentElement.clientWidth,
         scrollWidth: document.documentElement.scrollWidth,
@@ -103,6 +118,15 @@ for (const route of routes) {
         sections: [...document.querySelectorAll("main section")].map((section) => section.id),
         navLinks,
         clippedText,
+        heatmap: heatmap && heatmapRect
+          ? {
+              clientWidth: heatmap.clientWidth,
+              scrollWidth: heatmap.scrollWidth,
+              left: heatmapRect.left,
+              right: heatmapRect.right,
+              viewportWidth: window.innerWidth,
+            }
+          : null,
       };
     });
 
@@ -116,7 +140,18 @@ for (const route of routes) {
       ...(measurements.scrollWidth > measurements.clientWidth ? ["horizontal overflow"] : []),
       ...(measurements.clippedText.length > 0 ? ["clipped text"] : []),
       ...(measurements.navLinks.some((link) => link.height < 44) ? ["primary navigation target below 44px"] : []),
-      ...(consoleErrors.length > 0 ? ["console errors"] : []),
+      ...(measurements.heatmap && viewport.width <= 768
+        && measurements.heatmap.scrollWidth <= measurements.heatmap.clientWidth
+        ? ["narrow heatmap does not provide internal horizontal scrolling"]
+        : []),
+      ...(measurements.heatmap
+        && (measurements.heatmap.left < 0 || measurements.heatmap.right > measurements.heatmap.viewportWidth + 1)
+        ? ["heatmap scroll region escapes the viewport"]
+        : []),
+      ...(consoleErrors.length > 0 && !(
+        route === "/zzz-does-not-exist/"
+        && consoleErrors.every((message) => message.includes("status of 404"))
+      ) ? ["unexpected console errors"] : []),
       ...(pageErrors.length > 0 ? ["page errors"] : []),
     ];
 
@@ -141,5 +176,16 @@ await writeFile(
   `${JSON.stringify(report, null, 2)}\n`,
 );
 
-console.log(JSON.stringify(report, null, 2));
-if (report.some((result) => result.failures.length > 0)) process.exitCode = 1;
+const failedResults = report.filter((result) => result.failures.length > 0);
+console.log(JSON.stringify({
+  phase,
+  baseUrl,
+  routes: routes.length,
+  captures: report.length,
+  failures: failedResults.map((result) => ({
+    route: result.route,
+    width: result.viewport.width,
+    failures: result.failures,
+  })),
+}, null, 2));
+if (failedResults.length > 0) process.exitCode = 1;

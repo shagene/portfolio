@@ -18,8 +18,11 @@ const createCard = ({ primary, secondary, descriptor, footer }) => `
   <rect width="1200" height="630" fill="#0c141a" />
   <path d="M0 0H1200M0 157.5H1200M0 315H1200M0 472.5H1200M300 0V630M600 0V630M900 0V630" stroke="#283f50" stroke-width="1" opacity="0.7" />
   <circle cx="1055" cy="80" r="270" fill="#ea7f43" opacity="0.07" />
-  <rect x="72" y="68" width="52" height="52" rx="26" fill="none" stroke="#ea7f43" stroke-width="2" />
-  <text x="98" y="101" text-anchor="middle" class="body" font-size="14" font-weight="800" letter-spacing="1.5" fill="#ea7f43">SH</text>
+  <g transform="translate(72 68) scale(.8125)" fill="none" stroke="#ea7f43" stroke-linecap="square" stroke-linejoin="miter">
+    <circle cx="32" cy="32" r="27" stroke-width="4" />
+    <path d="M29 20H17v12h12v12H17" stroke-width="5" />
+    <path d="M35 8v48m0-24h12m0-12v24" stroke-width="5" />
+  </g>
   <text x="148" y="102" class="body" font-size="20" font-weight="700" fill="#faf8f3">Steven Hagene</text>
   <text x="72" y="258" class="display" font-size="78" fill="#faf8f3">${primary}</text>
   <text x="72" y="346" class="display" font-size="78" fill="#d5cab9">${secondary}</text>
@@ -56,6 +59,13 @@ const cards = [
     secondary: "Product meets systems",
     descriptor: "Full-stack engineering · UX systems · AI",
     footer: "2006 / PRESENT",
+  },
+  {
+    file: "../public/og-github.png",
+    primary: "Public Code",
+    secondary: "Two accounts, one view",
+    descriptor: "Combined activity · Curated repositories · Honest context",
+    footer: "GITHUB / BUILD-TIME DATA",
   },
   {
     file: "../public/og-teo.png",

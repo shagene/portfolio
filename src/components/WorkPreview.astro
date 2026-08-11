@@ -24,6 +24,7 @@ import SectionHeading from "./SectionHeading.astro";
           <p>{study.role}</p>
         </div>
         <p class="problem">{study.problem}</p>
+        <p class="what-built"><span>What I built</span>{study.previewBuilt}</p>
         <a href={study.path} aria-label={`Read the ${study.name} case study`}>
           Read case study <span aria-hidden="true">→</span>
         </a>
@@ -43,7 +44,7 @@ import SectionHeading from "./SectionHeading.astro";
 
   article {
     display: flex;
-    min-height: 28rem;
+    min-height: 32rem;
     flex-direction: column;
     padding: clamp(var(--primitive-space-6), 3vw, var(--primitive-space-10));
     border: 1px solid var(--card-border);
@@ -96,8 +97,25 @@ import SectionHeading from "./SectionHeading.astro";
   }
 
   .problem {
+    margin: 0 0 var(--primitive-space-5);
+    color: var(--color-ink-muted);
+  }
+
+  .what-built {
     margin: 0 0 var(--primitive-space-8);
     color: var(--color-ink-muted);
+    font-size: var(--primitive-type-small);
+  }
+
+  .what-built span {
+    display: block;
+    margin-bottom: var(--primitive-space-2);
+    color: var(--color-accent-soft);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   article > a,
@@ -132,13 +150,13 @@ import SectionHeading from "./SectionHeading.astro";
     }
 
     article {
-      min-height: 22rem;
+      min-height: 27rem;
     }
   }
 
   @media (max-width: 47.99rem) {
     article {
-      min-height: 24rem;
+      min-height: 28rem;
     }
   }
 </style>

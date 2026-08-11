@@ -1,14 +1,11 @@
 ---
 import Footer from "@/components/Footer.astro";
-import GitHubSection from "@/components/GitHubSection.astro";
 import Header from "@/components/Header.astro";
 import PageIntro from "@/components/PageIntro.astro";
 import SelectedWork from "@/components/SelectedWork.astro";
 import { caseStudies, site, workPage } from "@/data/portfolio";
-import { getGitHubStats } from "@/data/github";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
-const githubStats = await getGitHubStats();
 const pageUrl = new URL(workPage.path, site.canonical).toString();
 const structuredData = [
   {
@@ -49,11 +46,11 @@ const structuredData = [
     <PageIntro eyebrow={workPage.eyebrow} headline={workPage.headline} lead={workPage.lead}>
       <div class="page-actions">
         <a class="text-link" href="/experience/">Experience and skills</a>
+        <a class="text-link" href="/github/">Combined GitHub activity</a>
         <a class="text-link" href="/#contact">Contact Steven</a>
       </div>
     </PageIntro>
     <SelectedWork />
-    <GitHubSection stats={githubStats} />
   </main>
   <Footer />
 </BaseLayout>

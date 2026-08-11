@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Steven Hagene logo finalists from generated middle row</title>
+    <style>
+      @font-face {
+        font-family: Archivo;
+        src: url("../../../public/fonts/archivo-latin.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: Manrope;
+        src: url("../../../public/fonts/manrope-latin.woff2") format("woff2");
+      }
+
+      :root {
+        --ground: #0c141a;
+        --panel: #15232d;
+        --rule: #315166;
+        --ink: #faf8f3;
+        --muted: #b2a592;
+        --accent: #ea7f43;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        width: 1500px;
+        margin: 0;
+        padding: 60px 64px;
+        background: var(--ground);
+        color: var(--ink);
+        font-family: Manrope, sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 48px;
+        align-items: end;
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .eyebrow,
+      .scale {
+        color: var(--accent);
+        font-family: ui-monospace, monospace;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 8px 0 0;
+        font-family: Archivo, sans-serif;
+        font-size: 42px;
+        letter-spacing: -.04em;
+      }
+
+      header p:last-child {
+        max-width: 560px;
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .concept {
+        display: grid;
+        grid-template-columns: 218px 104px 104px 282px 112px 1fr;
+        gap: 22px;
+        align-items: center;
+        min-height: 284px;
+        border-bottom: 1px solid #283f50;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-family: Archivo, sans-serif;
+        font-size: 25px;
+        letter-spacing: -.03em;
+      }
+
+      .concept-copy p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .sample {
+        display: grid;
+        min-height: 84px;
+        place-items: center;
+        border: 1px solid #283f50;
+        background: var(--panel);
+      }
+
+      .sample.large { min-height: 270px; }
+      .sample.light { background: #faf8f3; }
+      .sample img { display: block; }
+      .sample-16 img { width: 16px; height: 16px; }
+      .sample-32 img { width: 32px; height: 32px; }
+      .sample-256 img { width: 256px; height: 256px; }
+
+      .light-mark {
+        display: block;
+        width: 32px;
+        height: 32px;
+        color: #0c141a;
+      }
+
+      .lockup {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        min-height: 84px;
+        padding: 20px;
+        border: 1px solid #283f50;
+        background: var(--panel);
+      }
+
+      .lockup img { width: 32px; height: 32px; }
+      .lockup strong {
+        font-family: Archivo, sans-serif;
+        font-size: 18px;
+        letter-spacing: -.02em;
+      }
+
+      .scale { margin-bottom: 8px; color: var(--muted); }
+      .sample-wrap { text-align: center; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="eyebrow">Vector study · generated row B</p>
+        <h1>B1–B3 / rebuilt as production geometry</h1>
+      </div>
+      <p>Each dark sample uses one hand-authored SVG source at the exact labeled size. The light sample reuses that source as a silhouette and switches to the accessible inverted token pair.</p>
+    </header>
+
+    <main>
+      <section class="concept">
+        <div class="concept-copy">
+          <h2>B1 · Segmented Rail</h2>
+          <p>An angular S meets an H with a bowed outer rail. The most segmented interpretation.</p>
+        </div>
+        <div class="sample-wrap"><div class="scale">16 px</div><div class="sample sample-16"><img src="b1-segmented-rail.svg" alt="Segmented Rail at 16 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">32 px</div><div class="sample sample-32"><img src="b1-segmented-rail.svg" alt="Segmented Rail at 32 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">256 px</div><div class="sample large sample-256"><img src="b1-segmented-rail.svg" alt="Segmented Rail at 256 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">Light · 32</div><div class="sample light"><svg class="light-mark" viewBox="0 0 64 64" aria-label="Segmented Rail inverted on a light background" role="img"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"><path d="M29 14H18l-6 6v10h17v20H18l-6-6"></path><path d="M36 13v38m0-19h11m0-17c4 8 4 26 0 34"></path></g></svg></div></div>
+        <div class="sample-wrap"><div class="scale">Nav lockup</div><div class="lockup"><img src="b1-segmented-rail.svg" alt="" /><strong>Steven Hagene</strong></div></div>
+      </section>
+
+      <section class="concept">
+        <div class="concept-copy">
+          <h2>B2 · Axis Ring</h2>
+          <p>A complete calibrated ring with separate initials organized around one central datum.</p>
+        </div>
+        <div class="sample-wrap"><div class="scale">16 px</div><div class="sample sample-16"><img src="b2-axis-ring.svg" alt="Axis Ring at 16 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">32 px</div><div class="sample sample-32"><img src="b2-axis-ring.svg" alt="Axis Ring at 32 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">256 px</div><div class="sample large sample-256"><img src="b2-axis-ring.svg" alt="Axis Ring at 256 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">Light · 32</div><div class="sample light"><svg class="light-mark" viewBox="0 0 64 64" aria-label="Axis Ring inverted on a light background" role="img"><g fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter"><circle cx="32" cy="32" r="27" stroke-width="4"></circle><path d="M29 20H17v12h12v12H17" stroke-width="5"></path><path d="M35 8v48m0-24h12m0-12v24" stroke-width="5"></path></g></svg></div></div>
+        <div class="sample-wrap"><div class="scale">Nav lockup</div><div class="lockup"><img src="b2-axis-ring.svg" alt="" /><strong>Steven Hagene</strong></div></div>
+      </section>
+
+      <section class="concept">
+        <div class="concept-copy">
+          <h2>B3 · Open Pair</h2>
+          <p>A softer S beside a precise H. No enclosing ring, leaving the initials to carry the silhouette.</p>
+        </div>
+        <div class="sample-wrap"><div class="scale">16 px</div><div class="sample sample-16"><img src="b3-open-pair.svg" alt="Open Pair at 16 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">32 px</div><div class="sample sample-32"><img src="b3-open-pair.svg" alt="Open Pair at 32 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">256 px</div><div class="sample large sample-256"><img src="b3-open-pair.svg" alt="Open Pair at 256 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">Light · 32</div><div class="sample light"><svg class="light-mark" viewBox="0 0 64 64" aria-label="Open Pair inverted on a light background" role="img"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square"><path d="M29 17h-8c-5.5 0-9 3.2-9 7.5s3.5 7.5 9 7.5h1.5c5.5 0 8.5 3.2 8.5 7.5S27.5 47 22 47H12" stroke-linejoin="round"></path><path d="M37 17v30m0-15h14m0-15v30" stroke-linejoin="miter"></path></g></svg></div></div>
+        <div class="sample-wrap"><div class="scale">Nav lockup</div><div class="lockup"><img src="b3-open-pair.svg" alt="" /><strong>Steven Hagene</strong></div></div>
+      </section>
+    </main>
+  </body>
+</html>

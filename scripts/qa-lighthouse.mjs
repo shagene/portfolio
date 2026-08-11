@@ -12,6 +12,7 @@ const routes = (process.env.PORTFOLIO_PATHS ?? [
   "/work/crimcaseai/",
   "/experience/",
   "/founder/semper-digital-solutions/",
+  "/github/",
 ].join(","))
   .split(",")
   .map((path) => path.trim());
@@ -27,6 +28,11 @@ try {
   const audits = [
     { route: "/", formFactor: "desktop" },
     ...routes.map((route) => ({ route, formFactor: "mobile" })),
+    {
+      route: "/404.html",
+      formFactor: "mobile",
+      categories: ["performance", "accessibility", "best-practices"],
+    },
   ];
 
   for (const audit of audits) {
@@ -36,7 +42,8 @@ try {
         port: chrome.port,
         logLevel: "error",
         output: "json",
-        onlyCategories: ["performance", "accessibility", "best-practices", "seo"],
+        onlyCategories: audit.categories
+          ?? ["performance", "accessibility", "best-practices", "seo"],
       },
       audit.formFactor === "desktop" ? desktopConfig : undefined,
     );
@@ -54,6 +61,7 @@ try {
       finalUrl: runner.lhr.finalDisplayedUrl,
       scores,
       warnings: runner.lhr.runWarnings,
+      indexable: audit.route !== "/404.html",
     };
     results.push(result);
     console.log(JSON.stringify(result));

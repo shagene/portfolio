@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="b3-title b3-desc" style="color:var(--logo-mark,#ea7f43)">
+  <title id="b3-title">Open Pair SH monogram</title>
+  <desc id="b3-desc">A direct S and H pairing with a softened S and precise square-ended H.</desc>
+  <g id="b3-mark" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square">
+    <path d="M29 17h-8c-5.5 0-9 3.2-9 7.5s3.5 7.5 9 7.5h1.5c5.5 0 8.5 3.2 8.5 7.5S27.5 47 22 47H12" stroke-linejoin="round"/>
+    <path d="M37 17v30m0-15h14m0-15v30" stroke-linejoin="miter"/>
+  </g>
+</svg>

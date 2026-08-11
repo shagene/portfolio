@@ -1,5 +1,6 @@
 ---
 import { navigation, site } from "@/data/portfolio";
+import LogoMark from "./LogoMark.astro";
 
 const currentPath = Astro.url.pathname;
 const isCurrent = (href: string) => {
@@ -11,7 +12,7 @@ const isCurrent = (href: string) => {
 <header class="site-header">
   <div class="header-shell shell">
     <a class="identity" href="/" aria-label={`${site.name}, homepage`}>
-      <span aria-hidden="true">SH</span>
+      <LogoMark titleId="header-logo-title" />
       <strong>{site.name}</strong>
     </a>
     <nav aria-label="Primary navigation">
@@ -47,23 +48,9 @@ const isCurrent = (href: string) => {
   .identity {
     display: inline-flex;
     flex: none;
-    gap: var(--primitive-space-3);
+    gap: var(--logo-lockup-gap);
     align-items: center;
     text-decoration: none;
-  }
-
-  .identity span {
-    display: grid;
-    width: 2.35rem;
-    height: 2.35rem;
-    place-items: center;
-    border: 1px solid var(--color-accent);
-    border-radius: 50%;
-    color: var(--color-accent);
-    font-family: var(--typeface-mono);
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
   }
 
   .identity strong {

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title logo-desc" style="color:var(--logo-mark,#ea7f43)">
+  <title id="logo-title">Steven Hagene SH monogram</title>
+  <desc id="logo-desc">A geometric S and H organized around a central datum inside a circular frame.</desc>
+  <g fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter">
+    <circle cx="32" cy="32" r="27" stroke-width="4"/>
+    <path d="M29 20H17v12h12v12H17" stroke-width="5"/>
+    <path d="M35 8v48m0-24h12m0-12v24" stroke-width="5"/>
+  </g>
+</svg>

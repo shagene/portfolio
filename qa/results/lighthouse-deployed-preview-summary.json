@@ -1,0 +1,133 @@
+[
+  {
+    "route": "/",
+    "formFactor": "desktop",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/work/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/work/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/work/teo/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/work/teo/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/work/musterhall/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/work/musterhall/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/work/crimcaseai/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/work/crimcaseai/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/experience/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/experience/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/founder/semper-digital-solutions/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/founder/semper-digital-solutions/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/github/",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/github/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "warnings": [],
+    "indexable": true
+  },
+  {
+    "route": "/404.html",
+    "formFactor": "mobile",
+    "finalUrl": "https://ee090520.steven-hagene-portfolio.pages.dev/404",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100
+    },
+    "warnings": [
+      "The page may not be loading as expected because your test URL (https://ee090520.steven-hagene-portfolio.pages.dev/404.html) was redirected to https://ee090520.steven-hagene-portfolio.pages.dev/404. Try testing the second URL directly."
+    ],
+    "indexable": false
+  }
+]

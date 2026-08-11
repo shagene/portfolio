@@ -116,6 +116,10 @@
   --chip-ink: var(--color-ink-muted);
   --rule-color: var(--color-border);
   --focus-ring: var(--primitive-shadow-focus);
+  --logo-mark-size-nav: 2rem;
+  --logo-lockup-gap: var(--primitive-space-3);
+  --logo-mark-dark: var(--color-accent);
+  --logo-mark-light: var(--primitive-charcoal-975);
 }
 
 @theme inline {

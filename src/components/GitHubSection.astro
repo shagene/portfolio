@@ -1,39 +1,196 @@
 ---
-import { copy, curatedRepos, site } from "@/data/portfolio";
-import type { GitHubStats } from "@/data/github";
+import { copy, curatedRepos } from "@/data/portfolio";
+import type { GitHubActivity, GitHubContributionDay } from "@/data/github";
 import SectionHeading from "./SectionHeading.astro";
 
 type Props = {
-  stats: GitHubStats | null;
+  activity: GitHubActivity | null;
+  number?: string;
 };
 
-const { stats } = Astro.props;
+const { activity, number = "01" } = Astro.props;
+const numberFormat = new Intl.NumberFormat("en-US");
+const formatDate = (value: string, includeDay = true) => new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: includeDay ? "numeric" : undefined,
+  year: "numeric",
+  timeZone: "UTC",
+}).format(new Date(`${value.slice(0, 10)}T12:00:00Z`));
+
+const contributionLabel = activity?.combined.publicContributions === null
+  ? "Public-profile contributions"
+  : "Public contributions";
+const contributionValue = activity
+  ? activity.combined.publicContributions ?? activity.combined.visibleContributions
+  : null;
+
+const cellSize = 10;
+const cellGap = 3;
+const labelWidth = 30;
+const chartTop = 24;
+const rowStep = cellSize + cellGap;
+const calendar = activity?.combined.calendar ?? [];
+const firstCalendarDay = calendar.at(0);
+const startPadding = firstCalendarDay
+  ? new Date(`${firstCalendarDay.date}T12:00:00Z`).getUTCDay()
+  : 0;
+const padded: Array<GitHubContributionDay | null> = [
+  ...Array.from({ length: startPadding }, () => null),
+  ...calendar,
+];
+while (padded.length % 7 !== 0) padded.push(null);
+const weeks = Array.from({ length: padded.length / 7 }, (_, index) =>
+  padded.slice(index * 7, (index + 1) * 7));
+const chartWidth = labelWidth + (weeks.length * rowStep) + cellGap;
+const chartHeight = chartTop + (7 * rowStep) + 22;
+const nonZero = calendar.map((day) => day.count).filter((count) => count > 0).sort((a, b) => a - b);
+const quantile = (position: number) => nonZero[Math.min(
+  nonZero.length - 1,
+  Math.floor((nonZero.length - 1) * position),
+)] ?? 0;
+const thresholds: [number, number, number] = [
+  quantile(0.25),
+  quantile(0.5),
+  quantile(0.75),
+];
+const level = (count: number) => {
+  if (count === 0) return 0;
+  if (count <= thresholds[0]) return 1;
+  if (count <= thresholds[1]) return 2;
+  if (count <= thresholds[2]) return 3;
+  return 4;
+};
+const monthLabels: Array<{ label: string; x: number }> = [];
+const personalAccount = activity?.accounts.find((account) => account.login === "shagene");
+const companyAccount = activity?.accounts.find(
+  (account) => account.login === "semperdigitalsolutions",
+);
+let previousMonth = "";
+weeks.forEach((week, weekIndex) => {
+  const firstDay = week.find((day) => day !== null);
+  if (!firstDay) return;
+  const month = firstDay.date.slice(0, 7);
+  if (month !== previousMonth) {
+    monthLabels.push({
+      label: new Intl.DateTimeFormat("en-US", { month: "short", timeZone: "UTC" })
+        .format(new Date(`${firstDay.date}T12:00:00Z`)),
+      x: labelWidth + (weekIndex * rowStep),
+    });
+    previousMonth = month;
+  }
+});
 ---
 
-<section class="section shell" id="github" aria-labelledby="github-heading">
-  <SectionHeading
-    number={copy.github.number}
-    title={copy.github.title}
-    intro={copy.github.intro}
-  >
+<section
+  class="section shell github-section"
+  id="github"
+  aria-labelledby="github-heading"
+  data-github-source={activity?.source ?? "unavailable"}
+>
+  <SectionHeading number={number} title={copy.github.title} intro={copy.github.intro}>
     <span id="github-heading">{copy.github.heading}</span>
   </SectionHeading>
 
-  {stats && (
-    <dl class="stats" aria-label="Live public GitHub statistics captured at build time">
-      <div>
-        <dt>Public repositories</dt>
-        <dd>{stats.publicRepos}</dd>
+  {activity ? (
+    <>
+      <dl class="stats" aria-label="Combined GitHub statistics captured at build time">
+        <div>
+          <dt>{contributionLabel} · 12 mo</dt>
+          <dd>{numberFormat.format(contributionValue ?? 0)}</dd>
+        </div>
+        <div>
+          <dt>Combined public repos</dt>
+          <dd>{numberFormat.format(activity.combined.publicRepos)}</dd>
+        </div>
+        <div>
+          <dt>Top languages by bytes</dt>
+          <dd class="languages">{activity.combined.topLanguages.slice(0, 4).map((item) => item.name).join(" · ")}</dd>
+        </div>
+        <div>
+          <dt>Latest public activity</dt>
+          <dd>{formatDate(activity.combined.latestPublicActivity)}</dd>
+        </div>
+      </dl>
+
+      <div class="heatmap-panel">
+        <div class="heatmap-heading">
+          <div>
+            <p class="eyebrow">Trailing 12 months</p>
+            <h3>One combined contribution calendar.</h3>
+          </div>
+          <p>{numberFormat.format(activity.combined.visibleContributions)} contributions visible across both public profiles.</p>
+        </div>
+
+        <p class="heatmap-scroll-note" id="heatmap-scroll-note">Scroll horizontally to inspect the full year.</p>
+        <div
+          class="heatmap-scroll"
+          tabindex="0"
+          role="region"
+          aria-label="Scrollable combined GitHub contribution calendar"
+          aria-describedby="heatmap-scroll-note"
+        >
+          <svg
+            class="heatmap"
+            viewBox={`0 0 ${chartWidth} ${chartHeight}`}
+            width={chartWidth}
+            height={chartHeight}
+            role="img"
+            aria-labelledby="heatmap-title heatmap-description"
+          >
+            <title id="heatmap-title">Combined GitHub contribution activity</title>
+            <desc id="heatmap-description">
+              Daily activity visible across shagene and semperdigitalsolutions from {formatDate(activity.range.from)} through {formatDate(activity.range.to)}.
+            </desc>
+            {monthLabels.map((month) => (
+              <text class="month" x={month.x} y="11">{month.label}</text>
+            ))}
+            <text class="weekday" x="2" y={chartTop + rowStep + 8}>M</text>
+            <text class="weekday" x="2" y={chartTop + (3 * rowStep) + 8}>W</text>
+            <text class="weekday" x="2" y={chartTop + (5 * rowStep) + 8}>F</text>
+            {weeks.map((week, weekIndex) => week.map((day, dayIndex) => day && (
+              <rect
+                class={`level-${level(day.count)}`}
+                x={labelWidth + (weekIndex * rowStep)}
+                y={chartTop + (dayIndex * rowStep)}
+                width={cellSize}
+                height={cellSize}
+                rx="1.5"
+              >
+                <title>{day.count === 0 ? "No" : numberFormat.format(day.count)} {day.count === 1 ? "contribution" : "contributions"} on {formatDate(day.date)}</title>
+              </rect>
+            )))}
+          </svg>
+        </div>
+
+        <div class="heatmap-footer">
+          <p>{activity.source === "live" ? "Live build data" : "Cached build data"} as of {formatDate(activity.dataAsOf)}.</p>
+          <div class="legend" aria-label="Contribution intensity from less to more">
+            <span>Less</span>
+            {[0, 1, 2, 3, 4].map((item) => <i class={`level-${item}`} aria-hidden="true"></i>)}
+            <span>More</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <dt>Top public languages</dt>
-        <dd>{stats.topLanguages.join(" · ")}</dd>
+
+      <div class="attribution">
+        <p>
+          Combined activity visible across my <a href={personalAccount?.profileUrl ?? "https://github.com/shagene"}>personal account</a> and <a href={companyAccount?.profileUrl ?? "https://github.com/semperdigitalsolutions"}>Semper Digital Solutions</a>. Client repositories remain private; these are the public profiles and repositories.
+        </p>
+        <p class="data-boundary">
+          {activity.combined.restrictedContributions === null
+            ? "GitHub's public profile calendar can include anonymized private contributions. This cached snapshot cannot separate those contributions by day."
+            : activity.combined.restrictedContributions > 0
+              ? `GitHub includes ${numberFormat.format(activity.combined.restrictedContributions)} anonymized private contributions in the visible calendar. The public-contribution statistic excludes them.`
+              : "GitHub reported no restricted contributions in this calendar range."}
+        </p>
       </div>
-      <div>
-        <dt>Latest public push</dt>
-        <dd>{stats.latestPublicPush}</dd>
-      </div>
-    </dl>
+    </>
+  ) : (
+    <aside class="fallback" aria-label="GitHub activity data status">
+      <p class="eyebrow">Static fallback</p>
+      <h3>Activity data is temporarily unavailable.</h3>
+      <p>The build still carries the curated repository crop below, so a transient API or cache failure never leaves an empty section.</p>
+    </aside>
   )}
 
   <div class="repo-grid">
@@ -43,39 +200,33 @@ const { stats } = Astro.props;
           <span>0{index + 1}</span>
           <span>{repo.language}</span>
         </div>
+        <p class="repo-account">{repo.account}</p>
         <h3>{repo.name}</h3>
         <p>{repo.description}</p>
         <a class="text-link" href={repo.href} rel="noreferrer">{repo.repository}</a>
       </article>
     ))}
   </div>
-
-  <p class="github-link">
-    <a class="text-link" href={site.github} rel="me">View the complete public profile</a>
-  </p>
 </section>
 
 <style>
   .stats {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     margin: 0 0 var(--primitive-space-12);
     border-block: 1px solid var(--color-border-strong);
   }
 
   .stats div {
+    min-width: 0;
     padding: var(--primitive-space-5) var(--primitive-space-6);
   }
 
-  .stats div:first-child {
-    padding-left: 0;
-  }
+  .stats div:first-child { padding-left: 0; }
+  .stats div + div { border-left: 1px solid var(--color-border); }
 
-  .stats div + div {
-    border-left: 1px solid var(--color-border);
-  }
-
-  .stats dt {
+  .stats dt,
+  .repo-account {
     color: var(--color-ink-subtle);
     font-family: var(--typeface-mono);
     font-size: var(--primitive-type-micro);
@@ -91,6 +242,138 @@ const { stats } = Astro.props;
     font-weight: 650;
   }
 
+  .stats .languages { font-size: 1rem; }
+
+  .heatmap-panel {
+    padding: clamp(var(--primitive-space-5), 4vw, var(--primitive-space-10));
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+  }
+
+  .heatmap-heading {
+    display: flex;
+    gap: var(--primitive-space-8);
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: var(--primitive-space-8);
+  }
+
+  .heatmap-heading h3 {
+    margin: var(--primitive-space-2) 0 0;
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-h3);
+    letter-spacing: var(--primitive-tracking-heading);
+  }
+
+  .heatmap-heading > p {
+    max-width: 27rem;
+    margin: 0;
+    color: var(--color-ink-muted);
+    font-size: var(--primitive-type-small);
+    text-align: right;
+  }
+
+  .heatmap-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: var(--primitive-space-2);
+    scrollbar-color: var(--color-border-strong) transparent;
+    direction: rtl;
+  }
+
+  .heatmap {
+    display: block;
+    width: 100%;
+    min-width: 48rem;
+    height: auto;
+    direction: ltr;
+  }
+
+  .heatmap-scroll-note {
+    display: none;
+    margin: 0 0 var(--primitive-space-3);
+    color: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+  }
+
+  .heatmap :global(.month),
+  .heatmap :global(.weekday) {
+    fill: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: 8px;
+  }
+
+  .heatmap :global(.level-0),
+  .legend .level-0 { fill: var(--color-surface-strong); background: var(--color-surface-strong); }
+  .heatmap :global(.level-1),
+  .legend .level-1 { fill: color-mix(in srgb, var(--color-accent) 30%, var(--color-surface-raised)); background: color-mix(in srgb, var(--color-accent) 30%, var(--color-surface-raised)); }
+  .heatmap :global(.level-2),
+  .legend .level-2 { fill: color-mix(in srgb, var(--color-accent) 55%, var(--color-surface-raised)); background: color-mix(in srgb, var(--color-accent) 55%, var(--color-surface-raised)); }
+  .heatmap :global(.level-3),
+  .legend .level-3 { fill: var(--primitive-copper-500); background: var(--primitive-copper-500); }
+  .heatmap :global(.level-4),
+  .legend .level-4 { fill: var(--primitive-copper-300); background: var(--primitive-copper-300); }
+
+  .heatmap-footer {
+    display: flex;
+    gap: var(--primitive-space-6);
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--primitive-space-4);
+    color: var(--color-ink-subtle);
+    font-family: var(--typeface-mono);
+    font-size: var(--primitive-type-micro);
+  }
+
+  .heatmap-footer p { margin: 0; }
+
+  .legend {
+    display: flex;
+    gap: var(--primitive-space-2);
+    align-items: center;
+  }
+
+  .legend i {
+    display: block;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 0.1rem;
+  }
+
+  .attribution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--primitive-space-6);
+    margin: var(--primitive-space-5) 0 var(--primitive-space-12);
+    color: var(--color-ink-muted);
+    font-size: var(--primitive-type-small);
+  }
+
+  .attribution p { margin: 0; }
+  .attribution a { color: var(--color-ink); text-decoration-color: var(--color-accent); }
+  .data-boundary { color: var(--color-ink-subtle); }
+
+  .fallback {
+    margin-bottom: var(--primitive-space-12);
+    padding: var(--primitive-space-8);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-bg);
+  }
+
+  .fallback h3 {
+    margin: var(--primitive-space-3) 0;
+    font-family: var(--typeface-display);
+    font-size: var(--primitive-type-h3);
+  }
+
+  .fallback p:last-child { max-width: 44rem; margin-bottom: 0; color: var(--color-ink-muted); }
+
   .repo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -99,7 +382,7 @@ const { stats } = Astro.props;
 
   .repo-card {
     display: flex;
-    min-height: 21rem;
+    min-height: 22rem;
     flex-direction: column;
     padding: clamp(var(--primitive-space-6), 4vw, var(--primitive-space-10));
     border: 1px solid var(--card-border);
@@ -122,11 +405,10 @@ const { stats } = Astro.props;
     text-transform: uppercase;
   }
 
-  .repo-meta span:first-child {
-    color: var(--color-accent);
-  }
+  .repo-meta span:first-child { color: var(--color-accent); }
+  .repo-account { margin: var(--primitive-space-4) 0 0; }
 
-  h3 {
+  .repo-card h3 {
     max-width: 16ch;
     margin: auto 0 var(--primitive-space-5);
     font-family: var(--typeface-display);
@@ -134,38 +416,34 @@ const { stats } = Astro.props;
     letter-spacing: var(--primitive-tracking-heading);
   }
 
-  .repo-card p {
+  .repo-card > p:not(.repo-account) {
     max-width: 36rem;
     margin: 0 0 var(--primitive-space-8);
     color: var(--color-ink-muted);
   }
 
-  .repo-card .text-link {
-    margin-top: auto;
-  }
+  .repo-card .text-link { margin-top: auto; overflow-wrap: anywhere; }
 
-  .github-link {
-    margin: var(--primitive-space-8) 0 0;
-    text-align: right;
+  @media (max-width: 63.99rem) {
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stats div:nth-child(3) { border-top: 1px solid var(--color-border); border-left: 0; padding-left: 0; }
+    .stats div:nth-child(4) { border-top: 1px solid var(--color-border); }
   }
 
   @media (max-width: 47.99rem) {
-    .stats,
-    .repo-grid {
-      grid-template-columns: 1fr;
-    }
+    .heatmap-scroll-note { display: block; }
+    .heatmap-heading,
+    .heatmap-footer { align-items: flex-start; flex-direction: column; }
+    .heatmap-heading > p { text-align: left; }
+    .attribution,
+    .repo-grid { grid-template-columns: 1fr; }
+    .repo-card { min-height: 19rem; }
+  }
 
-    .stats div {
-      padding-inline: 0;
-    }
-
-    .stats div + div {
-      border-top: 1px solid var(--color-border);
-      border-left: 0;
-    }
-
-    .repo-card {
-      min-height: 18rem;
-    }
+  @media (max-width: 29.99rem) {
+    .stats { grid-template-columns: 1fr; }
+    .stats div { padding-inline: 0; }
+    .stats div + div,
+    .stats div:nth-child(4) { border-top: 1px solid var(--color-border); border-left: 0; }
   }
 </style>

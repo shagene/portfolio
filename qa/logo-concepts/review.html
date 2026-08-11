@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Steven Hagene logo concepts</title>
+    <style>
+      @font-face {
+        font-family: Archivo;
+        src: url("../../public/fonts/archivo-latin.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: Manrope;
+        src: url("../../public/fonts/manrope-latin.woff2") format("woff2");
+      }
+
+      :root {
+        --ground: #0c141a;
+        --panel: #15232d;
+        --rule: #315166;
+        --ink: #faf8f3;
+        --muted: #b2a592;
+        --accent: #ea7f43;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        width: 1440px;
+        margin: 0;
+        padding: 64px;
+        background: var(--ground);
+        color: var(--ink);
+        font-family: Manrope, sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 48px;
+        align-items: end;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .eyebrow,
+      .scale {
+        color: var(--accent);
+        font-family: ui-monospace, monospace;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 8px 0 0;
+        font-family: Archivo, sans-serif;
+        font-size: 44px;
+        letter-spacing: -.04em;
+      }
+
+      header p:last-child {
+        max-width: 520px;
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .concept {
+        display: grid;
+        grid-template-columns: 220px 112px 112px 304px 1fr;
+        gap: 24px;
+        align-items: center;
+        min-height: 282px;
+        border-bottom: 1px solid #283f50;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-family: Archivo, sans-serif;
+        font-size: 26px;
+        letter-spacing: -.03em;
+      }
+
+      .concept-copy p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .sample {
+        display: grid;
+        min-height: 88px;
+        place-items: center;
+        border: 1px solid #283f50;
+        background: var(--panel);
+      }
+
+      .sample.large { min-height: 270px; }
+      .sample img { display: block; }
+      .sample-16 img { width: 16px; height: 16px; }
+      .sample-32 img { width: 32px; height: 32px; }
+      .sample-256 img { width: 256px; height: 256px; }
+
+      .lockup {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        padding: 22px;
+        border: 1px solid #283f50;
+        background: var(--panel);
+      }
+
+      .lockup img { width: 32px; height: 32px; }
+      .lockup strong {
+        font-family: Archivo, sans-serif;
+        font-size: 18px;
+        letter-spacing: -.02em;
+      }
+
+      .scale { margin-bottom: 8px; color: var(--muted); }
+      .sample-wrap { text-align: center; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="eyebrow">Logo study · round 01</p>
+        <h1>Steven Hagene / SH monogram</h1>
+      </div>
+      <p>Three unselected directions, designed from the favicon size upward. Every sample below is the same hand-authored SVG rendered at its labeled size.</p>
+    </header>
+
+    <main>
+      <section class="concept">
+        <div class="concept-copy">
+          <h2>01 · Rail Circle</h2>
+          <p>Literal initials, closed datum ring, square terminals. The closest evolution of the current mark.</p>
+        </div>
+        <div class="sample-wrap"><div class="scale">16 px</div><div class="sample sample-16"><img src="01-rail-circle.svg" alt="Rail Circle at 16 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">32 px</div><div class="sample sample-32"><img src="01-rail-circle.svg" alt="Rail Circle at 32 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">256 px</div><div class="sample large sample-256"><img src="01-rail-circle.svg" alt="Rail Circle at 256 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">Nav lockup</div><div class="lockup"><img src="01-rail-circle.svg" alt="" /><strong>Steven Hagene</strong></div></div>
+      </section>
+
+      <section class="concept">
+        <div class="concept-copy">
+          <h2>02 · Open Datum</h2>
+          <p>Two aligned initials held by open precision arcs. More mechanical, with less badge weight.</p>
+        </div>
+        <div class="sample-wrap"><div class="scale">16 px</div><div class="sample sample-16"><img src="02-shared-datum.svg" alt="Shared Datum at 16 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">32 px</div><div class="sample sample-32"><img src="02-shared-datum.svg" alt="Shared Datum at 32 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">256 px</div><div class="sample large sample-256"><img src="02-shared-datum.svg" alt="Shared Datum at 256 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">Nav lockup</div><div class="lockup"><img src="02-shared-datum.svg" alt="" /><strong>Steven Hagene</strong></div></div>
+      </section>
+
+      <section class="concept">
+        <div class="concept-copy">
+          <h2>03 · Copper Stamp</h2>
+          <p>A solid field with the same geometric initials cut away. The boldest small-size silhouette.</p>
+        </div>
+        <div class="sample-wrap"><div class="scale">16 px</div><div class="sample sample-16"><img src="03-copper-stamp.svg" alt="Copper Stamp at 16 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">32 px</div><div class="sample sample-32"><img src="03-copper-stamp.svg" alt="Copper Stamp at 32 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">256 px</div><div class="sample large sample-256"><img src="03-copper-stamp.svg" alt="Copper Stamp at 256 pixels" /></div></div>
+        <div class="sample-wrap"><div class="scale">Nav lockup</div><div class="lockup"><img src="03-copper-stamp.svg" alt="" /><strong>Steven Hagene</strong></div></div>
+      </section>
+    </main>
+  </body>
+</html>

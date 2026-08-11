@@ -10,6 +10,8 @@ type Props = {
   ogImagePath?: string;
   ogImageAlt?: string;
   ogType?: "profile" | "website" | "article";
+  robots?: string;
+  canonicalPath?: string;
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 };
 
@@ -19,9 +21,11 @@ const {
   ogImagePath = "/og-image.png",
   ogImageAlt = `${site.name}, ${site.title}`,
   ogType = "profile",
+  robots = "index, follow",
+  canonicalPath = Astro.url.pathname,
   structuredData = [],
 } = Astro.props;
-const canonical = new URL(Astro.url.pathname, site.canonical);
+const canonical = new URL(canonicalPath, site.canonical);
 const ogImage = new URL(ogImagePath, site.canonical);
 const optimizedHeadshot = await getImage({ src: headshot, width: 720, format: "webp" });
 const personId = `${site.canonical}/#person`;
@@ -61,8 +65,11 @@ const schemas = [personSchema, ...(Array.isArray(structuredData) ? structuredDat
     <meta name="theme-color" content="#0c141a" />
     <meta name="description" content={description} />
     <meta name="author" content={site.name} />
+    <meta name="robots" content={robots} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="alternate icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
     <meta property="og:type" content={ogType} />
@@ -77,6 +84,7 @@ const schemas = [personSchema, ...(Array.isArray(structuredData) ? structuredDat
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
     {schemas.map((schema) => (
       <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
     ))}

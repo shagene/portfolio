@@ -1,0 +1,51 @@
+---
+import Footer from "@/components/Footer.astro";
+import GitHubSection from "@/components/GitHubSection.astro";
+import Header from "@/components/Header.astro";
+import PageIntro from "@/components/PageIntro.astro";
+import { getGitHubActivity } from "@/data/github";
+import { githubPage, site } from "@/data/portfolio";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const activity = await getGitHubActivity();
+const pageUrl = new URL(githubPage.path, site.canonical).toString();
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${pageUrl}#profile-page`,
+    url: pageUrl,
+    name: githubPage.pageTitle,
+    description: githubPage.pageDescription,
+    mainEntity: { "@id": `${site.canonical}/#person` },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: site.name, item: site.canonical },
+      { "@type": "ListItem", position: 2, name: "Combined GitHub activity", item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={githubPage.pageTitle}
+  description={githubPage.pageDescription}
+  ogImagePath="/og-github.png"
+  ogImageAlt="Combined GitHub activity and selected public code by Steven Hagene"
+  structuredData={structuredData}
+>
+  <Header />
+  <main id="main-content">
+    <PageIntro eyebrow={githubPage.eyebrow} headline={githubPage.headline} lead={githubPage.lead}>
+      <div class="page-actions">
+        <a class="text-link" href="/work/">Engineering case studies</a>
+        <a class="text-link" href="/#contact">Contact Steven</a>
+      </div>
+    </PageIntro>
+    <GitHubSection activity={activity} />
+  </main>
+  <Footer />
+</BaseLayout>
