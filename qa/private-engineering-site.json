@@ -1,0 +1,218 @@
+[
+  {
+    "route": "/github/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "heading": "The strongest work is private. The engineering story is not.",
+    "h1Rect": {
+      "width": 350,
+      "height": 251.09375,
+      "top": 248.21875
+    },
+    "sections": [
+      "page-intro",
+      "github"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "GitHub",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "heatmap": {
+      "clientWidth": 308,
+      "scrollWidth": 768,
+      "left": 41,
+      "right": 349,
+      "viewportWidth": 390
+    },
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSteven Hagene SH monogramSteven HageneWorkGitHubSemperExperi",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/github/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "heading": "The strongest work is private. The engineering story is not.",
+    "h1Rect": {
+      "width": 349.046875,
+      "height": 242.8125,
+      "top": 271.953125
+    },
+    "sections": [
+      "page-intro",
+      "github"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "GitHub",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "heatmap": {
+      "clientWidth": 643,
+      "scrollWidth": 768,
+      "left": 62.4375,
+      "right": 705.5625,
+      "viewportWidth": 768
+    },
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSteven Hagene SH monogramSteven HageneWorkGitHubSemperExperi",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  },
+  {
+    "route": "/github/",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "heading": "The strongest work is private. The engineering story is not.",
+    "h1Rect": {
+      "width": 550.03125,
+      "height": 382.734375,
+      "top": 313.8125
+    },
+    "sections": [
+      "page-intro",
+      "github"
+    ],
+    "navLinks": [
+      {
+        "label": "Work",
+        "width": 29.59375,
+        "height": 44
+      },
+      {
+        "label": "GitHub",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Semper",
+        "width": 44.390625,
+        "height": 44
+      },
+      {
+        "label": "Experience",
+        "width": 73.96875,
+        "height": 44
+      },
+      {
+        "label": "Contact",
+        "width": 51.78125,
+        "height": 44
+      }
+    ],
+    "clippedText": [],
+    "heatmap": {
+      "clientWidth": 1102,
+      "scrollWidth": 1102,
+      "left": 89,
+      "right": 1191,
+      "viewportWidth": 1280
+    },
+    "horizontalOverflow": false,
+    "firstFocus": {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    "initialFocus": {
+      "tag": "BODY",
+      "text": "Skip to main contentSteven Hagene SH monogramSteven HageneWorkGitHubSemperExperi",
+      "skipLink": {
+        "top": -76.7281265258789,
+        "bottom": -25.212501525878906,
+        "transform": "matrix(1, 0, 0, 1, 0, -92.7281)",
+        "focused": false
+      }
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failures": []
+  }
+]

@@ -13,6 +13,8 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 - Keyboard order follows the visual order; skip link and focus states are visible.
 - Reduced-motion mode removes nonessential smooth movement.
 - GitHub API failure leaves a complete, intentional section with no empty shell.
+- The GitHub route features exactly Aegis, Semper Command Center, and VolumeGuard as private-source systems, with no implied repository access.
+- The only curated public-source link is the source for `stevenhagene.com`; rejected demo and hiring-exercise repositories never render.
 - Removing a resume produces a build warning and an honest UI label.
 
 ## Five-second recruiter test
@@ -33,7 +35,8 @@ Every QA pass records its viewport, evidence, critique, and change in `qa/CHANGE
 ## Claim integrity
 
 - Every project statement traces to `BRIEF.md`.
-- Public GitHub descriptions trace to inspected repository source or README content.
+- Private-engineering descriptions trace to inspected repository source, and their ownership and source boundaries are explicit.
+- The public source description traces to the repository that builds this site.
 - Private-work limitations are explicit.
 - Experience dates match the brief and concurrent roles are unambiguous.
 - The site never claims that placeholder PDFs exist.

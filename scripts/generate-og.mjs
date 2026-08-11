@@ -64,7 +64,7 @@ const cards = [
     file: "../public/og-github.png",
     primary: "Private Systems",
     secondary: "GitHub, in context",
-    descriptor: "Case studies first · Two accounts · Public snapshots",
+    descriptor: "Private engineering · Two accounts · Public source",
     footer: "WORK / CONTEXT / ACTIVITY",
   },
   {

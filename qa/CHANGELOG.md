@@ -240,3 +240,24 @@ Changes and evidence:
 - `https://stevenhagene.com` redirects to the primary `www` hostname, which returns 200 with the Astro portfolio. `/github/` returns 200 with the private-first proof, and a nonsense path returns 404.
 
 Production verdict: shipped. The legacy Next.js portfolio has been replaced on the custom domain.
+
+## Pass 12: owner-controlled private engineering curation
+
+Status: local verification complete
+
+Changes and evidence:
+
+- Decoupled the GitHub route from the general case-study array so TEO and Musterhall remain valid Work pages without being presented as Steven-owned private repositories.
+- Replaced the GitHub route's private cards with Aegis, Semper Command Center, and VolumeGuard. Every card states its private-source boundary, Steven's role, the implemented system, and the hard constraint; none implies repository access.
+- Removed the four arbitrary public-repository cards. The only curated public code link is now the genuine `shagene/portfolio` source for this site.
+- Replaced the unverified autonomous-operations wording with evidence-backed, human-controlled sourcing-system language.
+- Updated the homepage GitHub preview, GitHub metadata, 404 link copy, generated Open Graph card, README, rubric, and research findings to match the new evidence model.
+- Added browser assertions for the exact private-project set, zero repository links inside private cards, one genuine portfolio-source anchor, and the absence of all rejected repository slugs.
+- Astro check: 35 files, 0 errors, 0 warnings, 0 hints.
+- Static build: 9 pages generated successfully using the committed GitHub activity fallback.
+- Browser and accessibility gate: 27 checks across 9 routes at 390, 768, and 1280 pixels; 0 axe violations, 0 incomplete keyboard traversals, 0 focus failures, and 0 route, asset, sitemap, or robots failures.
+- Navigation journeys pass at 390 and 1280 pixels with genuine anchors and no navigation overflow.
+- Responsive GitHub captures at 390, 768, and 1280 pixels report no overflow, clipped text, console errors, or page errors. The private cards and public-source panel were also inspected visually at all three widths.
+- Lighthouse: 100 Accessibility, Best Practices, and SEO on every public route; Performance is 99 on the mobile homepage and GitHub route and 100 elsewhere. The 404 scores 100 for Performance, Accessibility, and Best Practices and remains non-indexable.
+
+Local verdict: ready to commit and deploy for live verification.

@@ -43,6 +43,16 @@ export type Experience = {
   compact?: boolean;
 };
 
+export type PrivateEngineeringWork = {
+  number: string;
+  name: string;
+  ownership: string;
+  role: string;
+  domain: string;
+  built: string;
+  constraint: string;
+};
+
 export const site = {
   name: "Steven Hagene",
   title: "Senior Product Engineer: Full-Stack, UX & AI Systems",
@@ -103,9 +113,9 @@ export const copy = {
   github: {
     number: "02",
     title: "GitHub",
-    heading: "Private systems, documented at the decision level.",
+    heading: "Private engineering, documented without exposing source.",
     intro:
-      "Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.",
+      "The strongest owner-controlled product work lives in private repositories. These summaries explain the architecture and constraints; public activity follows as supporting evidence.",
   },
   experience: {
     number: "01",
@@ -157,13 +167,13 @@ export const experiencePage = {
 
 export const githubPage = {
   path: "/github/",
-  pageTitle: "Private Engineering Work & GitHub Activity | Steven Hagene",
+  pageTitle: "Private Product Engineering & GitHub Activity | Steven Hagene",
   pageDescription:
-    "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+    "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
   eyebrow: "Engineering proof · Private systems, public signal",
   headline: "The strongest work is private. The engineering story is not.",
   lead:
-    "TEO, Musterhall, and CrimCaseAI best represent how I design and ship systems. Their repositories stay private, so this page leads with what I built and why it was difficult, then puts public activity from both GitHub accounts in context.",
+    "Aegis, Semper Command Center, and VolumeGuard are owner-controlled products whose repositories stay private. This page documents what I built and the constraints that shaped each system, then puts public activity from both GitHub accounts in context.",
 } as const;
 
 export const semperStory = {
@@ -548,47 +558,53 @@ export const caseStudies: CaseStudy[] = [
 export const alsoBuilt = [
   "10+ Astro marketing and municipal sites with token systems and Lighthouse 95+ scores",
   "A Python site-audit engine",
-  "A 24/7 autonomous multi-agent business operations system built with Node.js and the Claude API",
+  "A private AI-assisted sourcing system built around durable jobs, human approval, and deployment controls",
 ] as const;
 
-export const curatedRepos = [
+export const privateEngineeringWork = [
   {
-    name: "Quote Extractor",
-    repository: "shagene/quote-extractor",
-    href: "https://github.com/shagene/quote-extractor",
-    description:
-      "Schema-enforced LLM quote extraction with deterministic validation and a source-side human review workflow.",
-    language: "TypeScript",
-    account: "Personal · shagene",
+    number: "01",
+    name: "Aegis",
+    ownership: "Semper product · Source private",
+    role: "Founder & Principal Engineer",
+    domain: "Local-first legal evidence intelligence",
+    built:
+      "A FastAPI and React appliance that ingests discovery, preserves source hashes, processes documents and media locally, and supports case-scoped search with source-linked answers.",
+    constraint:
+      "Raw evidence remains read-only and case-scoped; restricted material produces no derivatives, and AI must cite the record or decline to answer.",
   },
   {
-    name: "Restaurant Hours API",
-    repository: "shagene/hours-interval-engine",
-    href: "https://github.com/shagene/hours-interval-engine",
-    description:
-      "A tested FastAPI service that normalizes messy schedules into a compact week-minute interval engine.",
-    language: "Python",
-    account: "Personal · shagene",
+    number: "02",
+    name: "Semper Command Center",
+    ownership: "Semper product · Source private",
+    role: "Founder & Principal Engineer",
+    domain: "AI-assisted sourcing operations",
+    built:
+      "A Next.js operations hub that turns part requests, supplier results, and replies into durable RFQ jobs with role-scoped queues, evidence-backed rankings, handoff briefs, and a hash-chained work log.",
+    constraint:
+      "AI can normalize, rank, and draft, but purchasing, supplier outreach, and customer-facing quotes remain behind explicit human review.",
   },
   {
-    name: "Python SEO Toolkit",
-    repository: "shagene/python_seo",
-    href: "https://github.com/shagene/python_seo",
-    description:
-      "A crawler and sitemap-analysis toolkit for technical SEO checks and site-structure visualization.",
-    language: "Python",
-    account: "Personal · shagene",
+    number: "03",
+    name: "VolumeGuard",
+    ownership: "Semper product · Source private",
+    role: "Founder & Android Product Engineer",
+    domain: "Native Android utility",
+    built:
+      "A Kotlin and Jetpack Compose app that enforces user-selected media-volume limits through coordinated service, system-observer, notification-listener, media-session, and fallback polling paths.",
+    constraint:
+      "Android provides no sanctioned volume-lock API, so enforcement must recover across independent change paths without creating feedback loops or excessive battery use.",
   },
-  {
-    name: "MeetScribe",
-    repository: "semperdigitalsolutions/MeetScribe",
-    href: "https://github.com/semperdigitalsolutions/MeetScribe",
-    description:
-      "Local-first macOS transcription tooling built with SwiftUI, ffmpeg, whisper.cpp, structured transcript artifacts, and optional localhost-only Ollama summaries.",
-    language: "Swift",
-    account: "Semper Digital Solutions · semperdigitalsolutions",
-  },
-] as const;
+] as const satisfies readonly PrivateEngineeringWork[];
+
+export const portfolioSource = {
+  name: "Source for stevenhagene.com",
+  repository: "shagene/portfolio",
+  href: "https://github.com/shagene/portfolio",
+  stack: "Astro · TypeScript · Playwright · axe-core",
+  description:
+    "The complete source for this site, including its token system, build-time GitHub aggregation, metadata pipeline, accessibility checks, responsive screenshots, and deployment automation.",
+} as const;
 
 export const experiences: Experience[] = [
   {

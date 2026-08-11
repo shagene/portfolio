@@ -77,3 +77,17 @@ SBA guidance supports the narrower procurement wording used on the page: SDVOSB 
 - The professional replacement headshot is present and verified at all target widths.
 - Cloudflare preview deployment depends on authenticated account access and is deferred to the ship phase after first-build review.
 - DNS is intentionally untouched. The cutover runbook lives in `README.md`.
+
+## Public-repository re-audit and private-work curation
+
+Re-audit date: August 11, 2026
+
+The original four-card public crop is superseded. A repository-by-repository review found that the renamed quote extractor remains an AI-assisted prototype with essentially one implementation commit, the restaurant-hours engine still identifies itself as a hiring exercise, `python_seo` lacks basic repository hygiene, and MeetScribe needs a focused public-release cleanup. None should be presented as Steven's strongest current work merely because its source is visible.
+
+The GitHub route now separates three kinds of evidence:
+
+1. Owner-controlled private engineering: Aegis, Semper Command Center, and VolumeGuard. Each summary states the ownership/source boundary, Steven's role, what he built, and the constraint that shaped the system without exposing private repository names or implementation secrets.
+2. Combined activity across the personal and Semper accounts, presented as recency and breadth context rather than proof of any specific private project.
+3. One inspectable public artifact: the source for `stevenhagene.com`, whose repository contains the site's architecture, metadata pipeline, design tokens, accessibility automation, responsive QA, and deployment configuration.
+
+TEO and Musterhall remain valid engineering case studies under `/work/`, but they no longer appear as private-repository cards on `/github/`. This avoids implying that employer or collaborative codebases are Steven-owned private repositories.

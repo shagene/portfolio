@@ -4,55 +4,55 @@
       "width": 390,
       "height": 844
     },
-    "finalUrl": "https://www.stevenhagene.com/#contact",
+    "finalUrl": "http://127.0.0.1:4331/#contact",
     "semanticLinks": [
       {
         "href": "/work/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/"
+        "resolvedHref": "http://127.0.0.1:4331/work/"
       },
       {
         "href": "/github/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/github/"
+        "resolvedHref": "http://127.0.0.1:4331/github/"
       },
       {
         "href": "/founder/semper-digital-solutions/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/founder/semper-digital-solutions/"
+        "resolvedHref": "http://127.0.0.1:4331/founder/semper-digital-solutions/"
       },
       {
         "href": "/experience/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/experience/"
+        "resolvedHref": "http://127.0.0.1:4331/experience/"
       },
       {
         "href": "/#contact",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/#contact"
+        "resolvedHref": "http://127.0.0.1:4331/#contact"
       },
       {
         "href": "/work/teo/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/teo/"
+        "resolvedHref": "http://127.0.0.1:4331/work/teo/"
       },
       {
         "href": "/work/musterhall/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/musterhall/"
+        "resolvedHref": "http://127.0.0.1:4331/work/musterhall/"
       },
       {
         "href": "/work/crimcaseai/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/crimcaseai/"
+        "resolvedHref": "http://127.0.0.1:4331/work/crimcaseai/"
       }
     ],
     "navState": {
@@ -73,55 +73,55 @@
       "width": 1280,
       "height": 900
     },
-    "finalUrl": "https://www.stevenhagene.com/#contact",
+    "finalUrl": "http://127.0.0.1:4331/#contact",
     "semanticLinks": [
       {
         "href": "/work/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/"
+        "resolvedHref": "http://127.0.0.1:4331/work/"
       },
       {
         "href": "/github/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/github/"
+        "resolvedHref": "http://127.0.0.1:4331/github/"
       },
       {
         "href": "/founder/semper-digital-solutions/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/founder/semper-digital-solutions/"
+        "resolvedHref": "http://127.0.0.1:4331/founder/semper-digital-solutions/"
       },
       {
         "href": "/experience/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/experience/"
+        "resolvedHref": "http://127.0.0.1:4331/experience/"
       },
       {
         "href": "/#contact",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/#contact"
+        "resolvedHref": "http://127.0.0.1:4331/#contact"
       },
       {
         "href": "/work/teo/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/teo/"
+        "resolvedHref": "http://127.0.0.1:4331/work/teo/"
       },
       {
         "href": "/work/musterhall/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/musterhall/"
+        "resolvedHref": "http://127.0.0.1:4331/work/musterhall/"
       },
       {
         "href": "/work/crimcaseai/",
         "exists": true,
         "isAnchor": true,
-        "resolvedHref": "https://www.stevenhagene.com/work/crimcaseai/"
+        "resolvedHref": "http://127.0.0.1:4331/work/crimcaseai/"
       }
     ],
     "navState": {

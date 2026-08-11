@@ -18,7 +18,7 @@ There is no client-side framework and no contact form.
 
 - `/` is the focused recruiter landing page with selected-work and Semper previews plus contact details.
 - `/work/` is the engineering-work hub.
-- `/github/` leads with private-system case studies, then provides combined public activity and compact code snapshots across `shagene` and `semperdigitalsolutions`.
+- `/github/` leads with owner-controlled private engineering summaries, then provides combined public activity across `shagene` and `semperdigitalsolutions` plus the public source for this site.
 - `/work/teo/`, `/work/musterhall/`, and `/work/crimcaseai/` are full engineering case studies.
 - `/experience/` owns the timeline, credentials, and skills taxonomy.
 - `/founder/semper-digital-solutions/` owns Steven's company-building story while Semper's website remains the destination for services and procurement inquiries.
@@ -50,7 +50,7 @@ The static QA server mirrors Pages route resolution, including serving `404.html
 
 The build reads public repository metadata, language byte counts, and contribution calendars for `shagene` and `semperdigitalsolutions` through GitHub GraphQL when `GITHUB_TOKEN`, `GH_TOKEN`, or `GITHUB_GRAPHQL_TOKEN` is available. It merges both calendars and repository datasets at build time; there are no browser-side GitHub requests.
 
-If the token is absent, GitHub rate-limits, or the API fails, the build logs the failure and loads `src/data/github-activity-cache.json`. If both live data and the cache are unavailable, the private-system case studies and public code snapshots remain visible with a static status message rather than an empty component. The UI distinguishes public-profile contribution totals from public-repository activity because GitHub can include anonymized private contributions in a profile calendar.
+If the token is absent, GitHub rate-limits, or the API fails, the build logs the failure and loads `src/data/github-activity-cache.json`. If both live data and the cache are unavailable, the private-engineering summaries and public source for this site remain visible with a static status message rather than an empty component. The UI distinguishes public-profile contribution totals from public-repository activity because GitHub can include anonymized private contributions in a profile calendar.
 
 To refresh the committed snapshot deliberately, authenticate with a GitHub token and run:
 
@@ -62,7 +62,7 @@ Do not commit or print the token. `GITHUB_LIVE_REQUIRED=1` is reserved for the s
 
 ## Editing content
 
-Portfolio copy, links, case studies, the Semper founder story, experience, skills, repository curation, credentials, and resume metadata live in [`src/data/portfolio.ts`](src/data/portfolio.ts). Components only define structure and presentation.
+Portfolio copy, links, case studies, private-engineering curation, the Semper founder story, experience, skills, credentials, and resume metadata live in [`src/data/portfolio.ts`](src/data/portfolio.ts). Components only define structure and presentation.
 
 Design decisions:
 

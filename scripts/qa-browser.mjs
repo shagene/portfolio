@@ -205,6 +205,16 @@ for (const route of routes) {
       const heatmapScroll = document.querySelector(".heatmap-scroll");
       const heatmap = document.querySelector(".heatmap");
       const headerLogo = document.querySelector("header .logo-mark");
+      const privateProjects = [...document.querySelectorAll("[data-private-project]")].map((card) => ({
+        name: card.getAttribute("data-private-project"),
+        repositoryLinks: card.querySelectorAll('a[href*="github.com"]').length,
+      }));
+      const portfolioSourceLinks = [...document.querySelectorAll(
+        'a[href="https://github.com/shagene/portfolio"]',
+      )].map((element) => ({
+        tag: element.tagName,
+        href: element.getAttribute("href"),
+      }));
       const panelRect = heatmapPanel?.getBoundingClientRect();
       const wrapperRect = heatmapScroll?.getBoundingClientRect();
       const heatmapRect = heatmap?.getBoundingClientRect();
@@ -271,6 +281,8 @@ for (const route of routes) {
               containedByViewport: wrapperRect.left >= -1 && wrapperRect.right <= root.clientWidth + 1,
             }
           : null,
+        privateProjects,
+        portfolioSourceLinks,
         metadata: {
           title: document.title,
           description: metadataValue('meta[name="description"]'),
@@ -316,8 +328,8 @@ for (const route of routes) {
             text: element.textContent?.replace(/\s+/g, " ").trim().slice(0, 100) ?? "",
           })),
         },
-        oldRepoReferences: (document.documentElement.innerHTML.match(
-          /fde-case-study|line-take-home/gi,
+        rejectedRepoReferences: (document.documentElement.innerHTML.match(
+          /fde-case-study|line-take-home|quote-extractor|hours-interval-engine|python_seo|semperdigitalsolutions\/MeetScribe/gi,
         ) ?? []),
         notFound: route === notFoundRoute ? {
           heading: document.querySelector("h1")?.textContent?.trim() ?? "",
@@ -398,7 +410,7 @@ for (const route of routes) {
       ...(geometry.email && geometry.email.scrollWidth > geometry.email.width + 1 ? ["email overflow"] : []),
       ...(geometry.email && geometry.email.height > geometry.email.lineHeight * 1.5 ? ["email wraps"] : []),
       ...(statsWidthDelta > 1 ? [`stats cells differ by ${statsWidthDelta}px`] : []),
-      ...(geometry.oldRepoReferences.length > 0 ? ["old repository URL remains"] : []),
+      ...(geometry.rejectedRepoReferences.length > 0 ? ["rejected repository reference remains"] : []),
       ...(axe.violations.length > 0 ? [`${axe.violations.length} axe violation groups`] : []),
       ...(consoleErrors.length > 0 && !(
         isNotFound
@@ -508,6 +520,17 @@ for (const route of routes) {
         geometry.heatmap.wrapperScrollWidth <= geometry.heatmap.wrapperClientWidth + 1
         || !["auto", "scroll"].includes(geometry.heatmap.wrapperOverflowX)
       ) ? ["GitHub heatmap does not provide contained horizontal scrolling at narrow width"] : []),
+      ...(route === "/github/" && JSON.stringify(geometry.privateProjects.map((project) => project.name))
+        !== JSON.stringify(["Aegis", "Semper Command Center", "VolumeGuard"])
+        ? ["GitHub private-engineering curation is incomplete or out of order"]
+        : []),
+      ...(route === "/github/" && geometry.privateProjects.some(
+        (project) => project.repositoryLinks > 0,
+      ) ? ["private-engineering card implies public repository access"] : []),
+      ...(route === "/github/" && (
+        geometry.portfolioSourceLinks.length !== 1
+        || geometry.portfolioSourceLinks[0].tag !== "A"
+      ) ? ["portfolio source is not exposed as one genuine GitHub anchor"] : []),
     ];
 
     if (route === "/") {

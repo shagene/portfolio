@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-11T11:53:11.240Z",
-  "baseUrl": "https://www.stevenhagene.com",
+  "generatedAt": "2026-08-11T12:20:36.000Z",
+  "baseUrl": "http://127.0.0.1:4331",
   "publicRoutes": [
     "/",
     "/work/",
@@ -30,7 +30,7 @@
           "semper",
           "contact"
         ],
-        "mainText": "Steven Hagene · Clayton, NCSenior Product Engineer:Full-Stack, UX & AI SystemsMarine veteran. / SDVOSB founder.I build the product and the system behind it: financial workflows, cross-platform experiences, accessible design foundations, and AI that has to earn trust.View work→Email↗LinkedIn↗Resume↓001Principal engineerClayton, North CarolinaProductSystemsTrust01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Read case study →01BCreator learning platformMusterhallSole EngineerOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Read case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Read case study →Explore all selected work →02 · GitHubPrivate systems, documented at the decision level.Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.Private systems firstThe work I would actually lead with is documented, not exposed.TEO, Musterhall, and CrimCaseAI live in private repositories. Their case studies come first; combined public activity across both accounts supplies the supporting signal.Visible contributions2,043Public repos48Latest public activityJun 20, 2026See private systems and GitHub activity →03 · FounderBuilding the company behind the work.Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.Semper Digital Solutions · 2024 to presentFounder & Principal EngineerI founded Semper to keep strategy, UX, architecture, implementation, and delivery connected. Clients work directly with the senior engineer responsible for the outcome.The company spans web products, mobile apps, integrations, automation, and AI systems, while its internal operating system turns the same engineering discipline toward running the business itself.Read the founder case studyVisit SemperCompany statusVerified ownership. Direct accountability.SBA-certified SDVOSB & VOSBRegistered federal contractorServing clients nationwideCertification creates eligibility to compete. The work still has to prove the company.DeliveryFounder-ledMarketCommercial + federalStandardAccessible, measurable, shipped04 · ContactBring the difficult part.The shortest route is email. For work history and code, use the links below.Directsteven.hagene@gmail.comClayton, North CarolinaLinkedInGitHubResumesFull-Stack AI Product Engineer resume↓Senior Frontend / UX Engineer resume↓",
+        "mainText": "Steven Hagene · Clayton, NCSenior Product Engineer:Full-Stack, UX & AI SystemsMarine veteran. / SDVOSB founder.I build the product and the system behind it: financial workflows, cross-platform experiences, accessible design foundations, and AI that has to earn trust.View work→Email↗LinkedIn↗Resume↓001Principal engineerClayton, North CarolinaProductSystemsTrust01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Read case study →01BCreator learning platformMusterhallSole EngineerOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Read case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Read case study →Explore all selected work →02 · GitHubPrivate engineering, documented without exposing source.The strongest owner-controlled product work lives in private repositories. These summaries explain the architecture and constraints; public activity follows as supporting evidence.Private systems firstThe work I would actually lead with is documented, not exposed.Aegis, Semper Command Center, and VolumeGuard are owner-controlled private products. Their engineering boundaries come first; combined public activity across both accounts supplies the supporting signal.Visible contributions2,043Public repos48Latest public activityJun 20, 2026See private engineering and GitHub activity →03 · FounderBuilding the company behind the work.Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.Semper Digital Solutions · 2024 to presentFounder & Principal EngineerI founded Semper to keep strategy, UX, architecture, implementation, and delivery connected. Clients work directly with the senior engineer responsible for the outcome.The company spans web products, mobile apps, integrations, automation, and AI systems, while its internal operating system turns the same engineering discipline toward running the business itself.Read the founder case studyVisit SemperCompany statusVerified ownership. Direct accountability.SBA-certified SDVOSB & VOSBRegistered federal contractorServing clients nationwideCertification creates eligibility to compete. The work still has to prove the company.DeliveryFounder-ledMarketCommercial + federalStandardAccessible, measurable, shipped04 · ContactBring the difficult part.The shortest route is email. For work history and code, use the links below.Directsteven.hagene@gmail.comClayton, North CarolinaLinkedInGitHubResumesFull-Stack AI Product Engineer resume↓Senior Frontend / UX Engineer resume↓",
         "email": {
           "width": 284,
           "height": 21.890625,
@@ -51,6 +51,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
           "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
@@ -140,7 +142,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -314,7 +316,7 @@
           {
             "index": 15,
             "tag": "A",
-            "text": "See private systems and GitHub activity →",
+            "text": "See private engineering and GitHub activity →",
             "href": "/github/",
             "outlineWidth": 2,
             "outlineStyle": "solid",
@@ -481,7 +483,7 @@
           "semper",
           "contact"
         ],
-        "mainText": "Steven Hagene · Clayton, NCSenior Product Engineer:Full-Stack, UX & AI SystemsMarine veteran. / SDVOSB founder.I build the product and the system behind it: financial workflows, cross-platform experiences, accessible design foundations, and AI that has to earn trust.View work→Email↗LinkedIn↗Resume↓001Principal engineerClayton, North CarolinaProductSystemsTrust01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Read case study →01BCreator learning platformMusterhallSole EngineerOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Read case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Read case study →Explore all selected work →02 · GitHubPrivate systems, documented at the decision level.Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.Private systems firstThe work I would actually lead with is documented, not exposed.TEO, Musterhall, and CrimCaseAI live in private repositories. Their case studies come first; combined public activity across both accounts supplies the supporting signal.Visible contributions2,043Public repos48Latest public activityJun 20, 2026See private systems and GitHub activity →03 · FounderBuilding the company behind the work.Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.Semper Digital Solutions · 2024 to presentFounder & Principal EngineerI founded Semper to keep strategy, UX, architecture, implementation, and delivery connected. Clients work directly with the senior engineer responsible for the outcome.The company spans web products, mobile apps, integrations, automation, and AI systems, while its internal operating system turns the same engineering discipline toward running the business itself.Read the founder case studyVisit SemperCompany statusVerified ownership. Direct accountability.SBA-certified SDVOSB & VOSBRegistered federal contractorServing clients nationwideCertification creates eligibility to compete. The work still has to prove the company.DeliveryFounder-ledMarketCommercial + federalStandardAccessible, measurable, shipped04 · ContactBring the difficult part.The shortest route is email. For work history and code, use the links below.Directsteven.hagene@gmail.comClayton, North CarolinaLinkedInGitHubResumesFull-Stack AI Product Engineer resume↓Senior Frontend / UX Engineer resume↓",
+        "mainText": "Steven Hagene · Clayton, NCSenior Product Engineer:Full-Stack, UX & AI SystemsMarine veteran. / SDVOSB founder.I build the product and the system behind it: financial workflows, cross-platform experiences, accessible design foundations, and AI that has to earn trust.View work→Email↗LinkedIn↗Resume↓001Principal engineerClayton, North CarolinaProductSystemsTrust01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Read case study →01BCreator learning platformMusterhallSole EngineerOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Read case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Read case study →Explore all selected work →02 · GitHubPrivate engineering, documented without exposing source.The strongest owner-controlled product work lives in private repositories. These summaries explain the architecture and constraints; public activity follows as supporting evidence.Private systems firstThe work I would actually lead with is documented, not exposed.Aegis, Semper Command Center, and VolumeGuard are owner-controlled private products. Their engineering boundaries come first; combined public activity across both accounts supplies the supporting signal.Visible contributions2,043Public repos48Latest public activityJun 20, 2026See private engineering and GitHub activity →03 · FounderBuilding the company behind the work.Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.Semper Digital Solutions · 2024 to presentFounder & Principal EngineerI founded Semper to keep strategy, UX, architecture, implementation, and delivery connected. Clients work directly with the senior engineer responsible for the outcome.The company spans web products, mobile apps, integrations, automation, and AI systems, while its internal operating system turns the same engineering discipline toward running the business itself.Read the founder case studyVisit SemperCompany statusVerified ownership. Direct accountability.SBA-certified SDVOSB & VOSBRegistered federal contractorServing clients nationwideCertification creates eligibility to compete. The work still has to prove the company.DeliveryFounder-ledMarketCommercial + federalStandardAccessible, measurable, shipped04 · ContactBring the difficult part.The shortest route is email. For work history and code, use the links below.Directsteven.hagene@gmail.comClayton, North CarolinaLinkedInGitHubResumesFull-Stack AI Product Engineer resume↓Senior Frontend / UX Engineer resume↓",
         "email": {
           "width": 301.015625,
           "height": 24.359375,
@@ -502,6 +504,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
           "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
@@ -591,7 +595,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -765,7 +769,7 @@
           {
             "index": 15,
             "tag": "A",
-            "text": "See private systems and GitHub activity →",
+            "text": "See private engineering and GitHub activity →",
             "href": "/github/",
             "outlineWidth": 2,
             "outlineStyle": "solid",
@@ -932,7 +936,7 @@
           "semper",
           "contact"
         ],
-        "mainText": "Steven Hagene · Clayton, NCSenior Product Engineer:Full-Stack, UX & AI SystemsMarine veteran. / SDVOSB founder.I build the product and the system behind it: financial workflows, cross-platform experiences, accessible design foundations, and AI that has to earn trust.View work→Email↗LinkedIn↗Resume↓001Principal engineerClayton, North CarolinaProductSystemsTrust01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Read case study →01BCreator learning platformMusterhallSole EngineerOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Read case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Read case study →Explore all selected work →02 · GitHubPrivate systems, documented at the decision level.Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.Private systems firstThe work I would actually lead with is documented, not exposed.TEO, Musterhall, and CrimCaseAI live in private repositories. Their case studies come first; combined public activity across both accounts supplies the supporting signal.Visible contributions2,043Public repos48Latest public activityJun 20, 2026See private systems and GitHub activity →03 · FounderBuilding the company behind the work.Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.Semper Digital Solutions · 2024 to presentFounder & Principal EngineerI founded Semper to keep strategy, UX, architecture, implementation, and delivery connected. Clients work directly with the senior engineer responsible for the outcome.The company spans web products, mobile apps, integrations, automation, and AI systems, while its internal operating system turns the same engineering discipline toward running the business itself.Read the founder case studyVisit SemperCompany statusVerified ownership. Direct accountability.SBA-certified SDVOSB & VOSBRegistered federal contractorServing clients nationwideCertification creates eligibility to compete. The work still has to prove the company.DeliveryFounder-ledMarketCommercial + federalStandardAccessible, measurable, shipped04 · ContactBring the difficult part.The shortest route is email. For work history and code, use the links below.Directsteven.hagene@gmail.comClayton, North CarolinaLinkedInGitHubResumesFull-Stack AI Product Engineer resume↓Senior Frontend / UX Engineer resume↓",
+        "mainText": "Steven Hagene · Clayton, NCSenior Product Engineer:Full-Stack, UX & AI SystemsMarine veteran. / SDVOSB founder.I build the product and the system behind it: financial workflows, cross-platform experiences, accessible design foundations, and AI that has to earn trust.View work→Email↗LinkedIn↗Resume↓001Principal engineerClayton, North CarolinaProductSystemsTrust01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Read case study →01BCreator learning platformMusterhallSole EngineerOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Read case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Read case study →Explore all selected work →02 · GitHubPrivate engineering, documented without exposing source.The strongest owner-controlled product work lives in private repositories. These summaries explain the architecture and constraints; public activity follows as supporting evidence.Private systems firstThe work I would actually lead with is documented, not exposed.Aegis, Semper Command Center, and VolumeGuard are owner-controlled private products. Their engineering boundaries come first; combined public activity across both accounts supplies the supporting signal.Visible contributions2,043Public repos48Latest public activityJun 20, 2026See private engineering and GitHub activity →03 · FounderBuilding the company behind the work.Semper Digital Solutions is where product judgment, engineering delivery, and company-building meet, with federal readiness built on verified status rather than borrowed credibility.Semper Digital Solutions · 2024 to presentFounder & Principal EngineerI founded Semper to keep strategy, UX, architecture, implementation, and delivery connected. Clients work directly with the senior engineer responsible for the outcome.The company spans web products, mobile apps, integrations, automation, and AI systems, while its internal operating system turns the same engineering discipline toward running the business itself.Read the founder case studyVisit SemperCompany statusVerified ownership. Direct accountability.SBA-certified SDVOSB & VOSBRegistered federal contractorServing clients nationwideCertification creates eligibility to compete. The work still has to prove the company.DeliveryFounder-ledMarketCommercial + federalStandardAccessible, measurable, shipped04 · ContactBring the difficult part.The shortest route is email. For work history and code, use the links below.Directsteven.hagene@gmail.comClayton, North CarolinaLinkedInGitHubResumesFull-Stack AI Product Engineer resume↓Senior Frontend / UX Engineer resume↓",
         "email": {
           "width": 544.390625,
           "height": 45.6875,
@@ -953,6 +957,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Steven Hagene | Senior Product Engineer: Full-Stack, UX & AI Systems",
           "description": "Steven Hagene is a senior product engineer in Clayton, NC building full-stack products, accessible design systems, and grounded AI systems.",
@@ -1042,7 +1048,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -1216,7 +1222,7 @@
           {
             "index": 15,
             "tag": "A",
-            "text": "See private systems and GitHub activity →",
+            "text": "See private engineering and GitHub activity →",
             "href": "/github/",
             "outlineWidth": 2,
             "outlineStyle": "solid",
@@ -1380,7 +1386,7 @@
           "page-intro",
           "work"
         ],
-        "mainText": "← PortfolioWork · Product engineeringSystems built for the difficult part.The interface matters. These case studies go one layer deeper into the state, policy, platform, and trust problems that made each product difficult to build well.Experience and skillsCombined GitHub activityContact Steven01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerProblemA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtI own payments and accounts receivable end to end: QuickBooks invoicing through Payabli hosted checkout, webhook processing, background workers, and invoice status derived from the ledger. I also founded the design system from zero with a three-layer token architecture and ESLint enforcement.What made it hardThe money path must fail closed. I hardened it with default-deny safeguards, established an adversarial multi-model AI review gate, and led WCAG remediation across the product.TypeScriptQuickBooksPayabliWebhooksBackground workersDesign tokensWCAGRead full case study →01BCreator learning platformMusterhallSole EngineerProblemOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtI built the full platform: a Next.js and TypeScript web app, Flutter mobile app, and Supabase/Postgres backend with schema-enforced invariants. A single token source compiles to web CSS and a generated Dart package, with a public Storybook for the system.What made it hardLiveKit rooms required a real-time engine with host moderation. A feature-flag rollout ladder let the platform introduce that capability deliberately across surfaces.Next.jsTypeScriptFlutterSupabasePostgresLiveKitStorybookRead full case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerProblemLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtThe portfolio includes a live case-management SaaS, a generation-two rebuild with schema-generated forms and in-browser ML, and an evidence-intelligence platform serving paying law firms.What made it hardAegis extends the same work into an on-prem Docker appliance: multimodal ingestion, local OCR and transcription, vector search, entity graphs, and citation-gated AI chat, with privileged data kept on hardware the firm controls.In-browser MLDockerLocal OCRTranscriptionVector searchEntity graphsGrounded AIRead full case study →01D · Also builtThe work between the flagships.0110+ Astro marketing and municipal sites with token systems and Lighthouse 95+ scores02A Python site-audit engine03A 24/7 autonomous multi-agent business operations system built with Node.js and the Claude API",
+        "mainText": "← PortfolioWork · Product engineeringSystems built for the difficult part.The interface matters. These case studies go one layer deeper into the state, policy, platform, and trust problems that made each product difficult to build well.Experience and skillsCombined GitHub activityContact Steven01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerProblemA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtI own payments and accounts receivable end to end: QuickBooks invoicing through Payabli hosted checkout, webhook processing, background workers, and invoice status derived from the ledger. I also founded the design system from zero with a three-layer token architecture and ESLint enforcement.What made it hardThe money path must fail closed. I hardened it with default-deny safeguards, established an adversarial multi-model AI review gate, and led WCAG remediation across the product.TypeScriptQuickBooksPayabliWebhooksBackground workersDesign tokensWCAGRead full case study →01BCreator learning platformMusterhallSole EngineerProblemOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtI built the full platform: a Next.js and TypeScript web app, Flutter mobile app, and Supabase/Postgres backend with schema-enforced invariants. A single token source compiles to web CSS and a generated Dart package, with a public Storybook for the system.What made it hardLiveKit rooms required a real-time engine with host moderation. A feature-flag rollout ladder let the platform introduce that capability deliberately across surfaces.Next.jsTypeScriptFlutterSupabasePostgresLiveKitStorybookRead full case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerProblemLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtThe portfolio includes a live case-management SaaS, a generation-two rebuild with schema-generated forms and in-browser ML, and an evidence-intelligence platform serving paying law firms.What made it hardAegis extends the same work into an on-prem Docker appliance: multimodal ingestion, local OCR and transcription, vector search, entity graphs, and citation-gated AI chat, with privileged data kept on hardware the firm controls.In-browser MLDockerLocal OCRTranscriptionVector searchEntity graphsGrounded AIRead full case study →01D · Also builtThe work between the flagships.0110+ Astro marketing and municipal sites with token systems and Lighthouse 95+ scores02A Python site-audit engine03A private AI-assisted sourcing system built around durable jobs, human approval, and deployment controls",
         "email": null,
         "statsWidths": [],
         "portraitTransform": null,
@@ -1397,6 +1403,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Engineering Case Studies | Steven Hagene",
           "description": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
@@ -1470,7 +1478,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -1718,7 +1726,7 @@
           "page-intro",
           "work"
         ],
-        "mainText": "← PortfolioWork · Product engineeringSystems built for the difficult part.The interface matters. These case studies go one layer deeper into the state, policy, platform, and trust problems that made each product difficult to build well.Experience and skillsCombined GitHub activityContact Steven01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerProblemA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtI own payments and accounts receivable end to end: QuickBooks invoicing through Payabli hosted checkout, webhook processing, background workers, and invoice status derived from the ledger. I also founded the design system from zero with a three-layer token architecture and ESLint enforcement.What made it hardThe money path must fail closed. I hardened it with default-deny safeguards, established an adversarial multi-model AI review gate, and led WCAG remediation across the product.TypeScriptQuickBooksPayabliWebhooksBackground workersDesign tokensWCAGRead full case study →01BCreator learning platformMusterhallSole EngineerProblemOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtI built the full platform: a Next.js and TypeScript web app, Flutter mobile app, and Supabase/Postgres backend with schema-enforced invariants. A single token source compiles to web CSS and a generated Dart package, with a public Storybook for the system.What made it hardLiveKit rooms required a real-time engine with host moderation. A feature-flag rollout ladder let the platform introduce that capability deliberately across surfaces.Next.jsTypeScriptFlutterSupabasePostgresLiveKitStorybookRead full case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerProblemLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtThe portfolio includes a live case-management SaaS, a generation-two rebuild with schema-generated forms and in-browser ML, and an evidence-intelligence platform serving paying law firms.What made it hardAegis extends the same work into an on-prem Docker appliance: multimodal ingestion, local OCR and transcription, vector search, entity graphs, and citation-gated AI chat, with privileged data kept on hardware the firm controls.In-browser MLDockerLocal OCRTranscriptionVector searchEntity graphsGrounded AIRead full case study →01D · Also builtThe work between the flagships.0110+ Astro marketing and municipal sites with token systems and Lighthouse 95+ scores02A Python site-audit engine03A 24/7 autonomous multi-agent business operations system built with Node.js and the Claude API",
+        "mainText": "← PortfolioWork · Product engineeringSystems built for the difficult part.The interface matters. These case studies go one layer deeper into the state, policy, platform, and trust problems that made each product difficult to build well.Experience and skillsCombined GitHub activityContact Steven01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerProblemA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtI own payments and accounts receivable end to end: QuickBooks invoicing through Payabli hosted checkout, webhook processing, background workers, and invoice status derived from the ledger. I also founded the design system from zero with a three-layer token architecture and ESLint enforcement.What made it hardThe money path must fail closed. I hardened it with default-deny safeguards, established an adversarial multi-model AI review gate, and led WCAG remediation across the product.TypeScriptQuickBooksPayabliWebhooksBackground workersDesign tokensWCAGRead full case study →01BCreator learning platformMusterhallSole EngineerProblemOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtI built the full platform: a Next.js and TypeScript web app, Flutter mobile app, and Supabase/Postgres backend with schema-enforced invariants. A single token source compiles to web CSS and a generated Dart package, with a public Storybook for the system.What made it hardLiveKit rooms required a real-time engine with host moderation. A feature-flag rollout ladder let the platform introduce that capability deliberately across surfaces.Next.jsTypeScriptFlutterSupabasePostgresLiveKitStorybookRead full case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerProblemLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtThe portfolio includes a live case-management SaaS, a generation-two rebuild with schema-generated forms and in-browser ML, and an evidence-intelligence platform serving paying law firms.What made it hardAegis extends the same work into an on-prem Docker appliance: multimodal ingestion, local OCR and transcription, vector search, entity graphs, and citation-gated AI chat, with privileged data kept on hardware the firm controls.In-browser MLDockerLocal OCRTranscriptionVector searchEntity graphsGrounded AIRead full case study →01D · Also builtThe work between the flagships.0110+ Astro marketing and municipal sites with token systems and Lighthouse 95+ scores02A Python site-audit engine03A private AI-assisted sourcing system built around durable jobs, human approval, and deployment controls",
         "email": null,
         "statsWidths": [],
         "portraitTransform": null,
@@ -1735,6 +1743,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Engineering Case Studies | Steven Hagene",
           "description": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
@@ -1808,7 +1818,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -2056,7 +2066,7 @@
           "page-intro",
           "work"
         ],
-        "mainText": "← PortfolioWork · Product engineeringSystems built for the difficult part.The interface matters. These case studies go one layer deeper into the state, policy, platform, and trust problems that made each product difficult to build well.Experience and skillsCombined GitHub activityContact Steven01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerProblemA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtI own payments and accounts receivable end to end: QuickBooks invoicing through Payabli hosted checkout, webhook processing, background workers, and invoice status derived from the ledger. I also founded the design system from zero with a three-layer token architecture and ESLint enforcement.What made it hardThe money path must fail closed. I hardened it with default-deny safeguards, established an adversarial multi-model AI review gate, and led WCAG remediation across the product.TypeScriptQuickBooksPayabliWebhooksBackground workersDesign tokensWCAGRead full case study →01BCreator learning platformMusterhallSole EngineerProblemOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtI built the full platform: a Next.js and TypeScript web app, Flutter mobile app, and Supabase/Postgres backend with schema-enforced invariants. A single token source compiles to web CSS and a generated Dart package, with a public Storybook for the system.What made it hardLiveKit rooms required a real-time engine with host moderation. A feature-flag rollout ladder let the platform introduce that capability deliberately across surfaces.Next.jsTypeScriptFlutterSupabasePostgresLiveKitStorybookRead full case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerProblemLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtThe portfolio includes a live case-management SaaS, a generation-two rebuild with schema-generated forms and in-browser ML, and an evidence-intelligence platform serving paying law firms.What made it hardAegis extends the same work into an on-prem Docker appliance: multimodal ingestion, local OCR and transcription, vector search, entity graphs, and citation-gated AI chat, with privileged data kept on hardware the firm controls.In-browser MLDockerLocal OCRTranscriptionVector searchEntity graphsGrounded AIRead full case study →01D · Also builtThe work between the flagships.0110+ Astro marketing and municipal sites with token systems and Lighthouse 95+ scores02A Python site-audit engine03A 24/7 autonomous multi-agent business operations system built with Node.js and the Claude API",
+        "mainText": "← PortfolioWork · Product engineeringSystems built for the difficult part.The interface matters. These case studies go one layer deeper into the state, policy, platform, and trust problems that made each product difficult to build well.Experience and skillsCombined GitHub activityContact Steven01 · Selected WorkBuilt where trust is part of the architecture.Three systems where the hard part was not the screen. It was keeping money, policy, platforms, and sensitive information coherent.01AProperty-management financial SaaSTEOLead Full-Stack EngineerProblemA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.What I builtI own payments and accounts receivable end to end: QuickBooks invoicing through Payabli hosted checkout, webhook processing, background workers, and invoice status derived from the ledger. I also founded the design system from zero with a three-layer token architecture and ESLint enforcement.What made it hardThe money path must fail closed. I hardened it with default-deny safeguards, established an adversarial multi-model AI review gate, and led WCAG remediation across the product.TypeScriptQuickBooksPayabliWebhooksBackground workersDesign tokensWCAGRead full case study →01BCreator learning platformMusterhallSole EngineerProblemOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.What I builtI built the full platform: a Next.js and TypeScript web app, Flutter mobile app, and Supabase/Postgres backend with schema-enforced invariants. A single token source compiles to web CSS and a generated Dart package, with a public Storybook for the system.What made it hardLiveKit rooms required a real-time engine with host moderation. A feature-flag rollout ladder let the platform introduce that capability deliberately across surfaces.Next.jsTypeScriptFlutterSupabasePostgresLiveKitStorybookRead full case study →01CLegal intelligence portfolioCrimCaseAIPrincipal EngineerProblemLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.What I builtThe portfolio includes a live case-management SaaS, a generation-two rebuild with schema-generated forms and in-browser ML, and an evidence-intelligence platform serving paying law firms.What made it hardAegis extends the same work into an on-prem Docker appliance: multimodal ingestion, local OCR and transcription, vector search, entity graphs, and citation-gated AI chat, with privileged data kept on hardware the firm controls.In-browser MLDockerLocal OCRTranscriptionVector searchEntity graphsGrounded AIRead full case study →01D · Also builtThe work between the flagships.0110+ Astro marketing and municipal sites with token systems and Lighthouse 95+ scores02A Python site-audit engine03A private AI-assisted sourcing system built around durable jobs, human approval, and deployment controls",
         "email": null,
         "statsWidths": [],
         "portraitTransform": null,
@@ -2073,6 +2083,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Engineering Case Studies | Steven Hagene",
           "description": "Engineering case studies from Steven Hagene covering financial SaaS, cross-platform learning products, and grounded legal intelligence systems.",
@@ -2146,7 +2158,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -2408,6 +2420,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "TEO Financial SaaS Case Study | Steven Hagene",
           "description": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
@@ -2481,7 +2495,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -2723,6 +2737,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "TEO Financial SaaS Case Study | Steven Hagene",
           "description": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
@@ -2796,7 +2812,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -3038,6 +3054,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "TEO Financial SaaS Case Study | Steven Hagene",
           "description": "How Steven Hagene engineers trustworthy invoice and payment state across QuickBooks, Payabli, webhooks, workers, and a ledger-derived financial product.",
@@ -3111,7 +3129,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -3353,6 +3371,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Musterhall Product Engineering Case Study | Steven Hagene",
           "description": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
@@ -3426,7 +3446,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -3668,6 +3688,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Musterhall Product Engineering Case Study | Steven Hagene",
           "description": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
@@ -3741,7 +3763,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -3983,6 +4005,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Musterhall Product Engineering Case Study | Steven Hagene",
           "description": "How Steven Hagene built Musterhall across Next.js, Flutter, Supabase, Postgres, LiveKit, and a shared cross-platform design-token system.",
@@ -4056,7 +4080,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -4298,6 +4322,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
           "description": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
@@ -4371,7 +4397,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -4613,6 +4639,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
           "description": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
@@ -4686,7 +4714,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -4928,6 +4956,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "CrimCaseAI Legal Intelligence Case Study | Steven Hagene",
           "description": "How Steven Hagene builds legal intelligence systems with local processing, multimodal ingestion, vector search, entity graphs, and citation-gated AI.",
@@ -5001,7 +5031,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -5229,7 +5259,7 @@
           "page-intro",
           "github"
         ],
-        "mainText": "← PortfolioEngineering proof · Private systems, public signalThe strongest work is private. The engineering story is not.TEO, Musterhall, and CrimCaseAI best represent how I design and ship systems. Their repositories stay private, so this page leads with what I built and why it was difficult, then puts public activity from both GitHub accounts in context.Engineering case studiesContact Steven01 · GitHubPrivate systems, documented at the decision level.Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.Selected private systemsThe work I would put in front of a technical interviewer.The repositories remain private. Each case study documents the system boundary, my role, what I built, and the hard part without publishing protected source.01ALead Full-Stack EngineerPrivate repository · Case study availableTEOProperty-management financial SaaSWhat I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Why it was hardA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.Read engineering case study01BSole EngineerPrivate repository · Case study availableMusterhallCreator learning platformWhat I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Why it was hardOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.Read engineering case study01CPrincipal EngineerPrivate repository · Case study availableCrimCaseAILegal intelligence portfolioWhat I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Why it was hardLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.Read engineering case studySupporting signalOne public activity view across both accounts.The calendar and repository statistics establish visible recency and breadth. They support the private-system evidence above; they do not replace it.Public-profile contributions · 12 mo2,043Combined public repos48Top languages by bytesTypeScript · Swift · HTML · DartLatest public activityJun 20, 2026Trailing 12 monthsOne combined contribution calendar.2,043 contributions visible across both public profiles.Scroll horizontally to inspect the full year.Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolutions from Aug 11, 2025 through Aug 10, 2026.AugSepOctNovDecJanFebMarAprMayJunJulAugMWFNo contributions on Aug 11, 2025No contributions on Aug 12, 2025No contributions on Aug 13, 2025No contributions on Aug 14, 2025No contributions on Aug 15, 2025No contributions on Aug 16, 2025No contributions on Aug 17, 2025No contributions on Aug 18, 2025No contributions on Aug 19, 2025No contributions on Aug 20, 2025No contributions on Aug 21, 2025No contributions on Aug 22, 2025No contributions on Aug 23, 2025No contributions on Aug 24, 2025No contributions on Aug 25, 2025No contributions on Aug 26, 2025No contributions on Aug 27, 2025No contributions on Aug 28, 2025No contributions on Aug 29, 2025No contributions on Aug 30, 2025No contributions on Aug 31, 2025No contributions on Sep 1, 2025No contributions on Sep 2, 2025No contributions on Sep 3, 2025No contributions on Sep 4, 2025No contributions on Sep 5, 2025No contributions on Sep 6, 20251 contribution on Sep 7, 2025No contributions on Sep 8, 2025No contributions on Sep 9, 2025No contributions on Sep 10, 2025No contributions on Sep 11, 2025No contributions on Sep 12, 2025No contributions on Sep 13, 2025No contributions on Sep 14, 2025No contributions on Sep 15, 2025No contributions on Sep 16, 2025No contributions on Sep 17, 2025No contributions on Sep 18, 2025No contributions on Sep 19, 2025No contributions on Sep 20, 2025No contributions on Sep 21, 2025No contributions on Sep 22, 20253 contributions on Sep 23, 2025No contributions on Sep 24, 2025No contributions on Sep 25, 2025No contributions on Sep 26, 2025No contributions on Sep 27, 20253 contributions on Sep 28, 2025No contributions on Sep 29, 20254 contributions on Sep 30, 2025No contributions on Oct 1, 20252 contributions on Oct 2, 20254 contributions on Oct 3, 20253 contributions on Oct 4, 2025No contributions on Oct 5, 20259 contributions on Oct 6, 20254 contributions on Oct 7, 2025No contributions on Oct 8, 2025No contributions on Oct 9, 20252 contributions on Oct 10, 2025No contributions on Oct 11, 2025No contributions on Oct 12, 20251 contribution on Oct 13, 2025No contributions on Oct 14, 2025No contributions on Oct 15, 2025No contributions on Oct 16, 2025No contributions on Oct 17, 2025No contributions on Oct 18, 20254 contributions on Oct 19, 2025No contributions on Oct 20, 2025No contributions on Oct 21, 2025No contributions on Oct 22, 2025No contributions on Oct 23, 2025No contributions on Oct 24, 2025No contributions on Oct 25, 2025No contributions on Oct 26, 2025No contributions on Oct 27, 2025No contributions on Oct 28, 2025No contributions on Oct 29, 2025No contributions on Oct 30, 2025No contributions on Oct 31, 2025No contributions on Nov 1, 2025No contributions on Nov 2, 2025No contributions on Nov 3, 2025No contributions on Nov 4, 2025No contributions on Nov 5, 2025No contributions on Nov 6, 2025No contributions on Nov 7, 2025No contributions on Nov 8, 2025No contributions on Nov 9, 2025No contributions on Nov 10, 2025No contributions on Nov 11, 2025No contributions on Nov 12, 2025No contributions on Nov 13, 20252 contributions on Nov 14, 2025No contributions on Nov 15, 2025No contributions on Nov 16, 2025No contributions on Nov 17, 2025No contributions on Nov 18, 20252 contributions on Nov 19, 20254 contributions on Nov 20, 20253 contributions on Nov 21, 202515 contributions on Nov 22, 202521 contributions on Nov 23, 20254 contributions on Nov 24, 2025No contributions on Nov 25, 20252 contributions on Nov 26, 20253 contributions on Nov 27, 2025No contributions on Nov 28, 2025No contributions on Nov 29, 2025No contributions on Nov 30, 2025No contributions on Dec 1, 20252 contributions on Dec 2, 2025No contributions on Dec 3, 2025No contributions on Dec 4, 2025No contributions on Dec 5, 2025No contributions on Dec 6, 2025No contributions on Dec 7, 2025No contributions on Dec 8, 2025No contributions on Dec 9, 2025No contributions on Dec 10, 2025No contributions on Dec 11, 2025No contributions on Dec 12, 2025No contributions on Dec 13, 20252 contributions on Dec 14, 2025No contributions on Dec 15, 2025No contributions on Dec 16, 2025No contributions on Dec 17, 2025No contributions on Dec 18, 2025No contributions on Dec 19, 2025No contributions on Dec 20, 2025No contributions on Dec 21, 2025No contributions on Dec 22, 2025No contributions on Dec 23, 2025No contributions on Dec 24, 2025No contributions on Dec 25, 2025No contributions on Dec 26, 2025No contributions on Dec 27, 2025No contributions on Dec 28, 2025No contributions on Dec 29, 2025No contributions on Dec 30, 2025No contributions on Dec 31, 2025No contributions on Jan 1, 2026No contributions on Jan 2, 2026No contributions on Jan 3, 2026No contributions on Jan 4, 2026No contributions on Jan 5, 2026No contributions on Jan 6, 2026No contributions on Jan 7, 2026No contributions on Jan 8, 2026No contributions on Jan 9, 2026No contributions on Jan 10, 2026No contributions on Jan 11, 202624 contributions on Jan 12, 202615 contributions on Jan 13, 2026134 contributions on Jan 14, 202616 contributions on Jan 15, 20267 contributions on Jan 16, 202628 contributions on Jan 17, 202624 contributions on Jan 18, 20264 contributions on Jan 19, 202610 contributions on Jan 20, 20262 contributions on Jan 21, 2026No contributions on Jan 22, 202615 contributions on Jan 23, 20261 contribution on Jan 24, 20264 contributions on Jan 25, 202614 contributions on Jan 26, 20268 contributions on Jan 27, 202635 contributions on Jan 28, 202690 contributions on Jan 29, 20264 contributions on Jan 30, 2026No contributions on Jan 31, 202622 contributions on Feb 1, 202612 contributions on Feb 2, 202629 contributions on Feb 3, 20262 contributions on Feb 4, 20265 contributions on Feb 5, 20261 contribution on Feb 6, 20261 contribution on Feb 7, 202648 contributions on Feb 8, 2026110 contributions on Feb 9, 202643 contributions on Feb 10, 20264 contributions on Feb 11, 20264 contributions on Feb 12, 2026No contributions on Feb 13, 20262 contributions on Feb 14, 2026No contributions on Feb 15, 2026No contributions on Feb 16, 2026No contributions on Feb 17, 20264 contributions on Feb 18, 20266 contributions on Feb 19, 20267 contributions on Feb 20, 20269 contributions on Feb 21, 202616 contributions on Feb 22, 2026No contributions on Feb 23, 2026No contributions on Feb 24, 2026No contributions on Feb 25, 20262 contributions on Feb 26, 2026No contributions on Feb 27, 2026No contributions on Feb 28, 2026No contributions on Mar 1, 20262 contributions on Mar 2, 2026No contributions on Mar 3, 2026No contributions on Mar 4, 20262 contributions on Mar 5, 2026No contributions on Mar 6, 20266 contributions on Mar 7, 20266 contributions on Mar 8, 2026No contributions on Mar 9, 2026No contributions on Mar 10, 202610 contributions on Mar 11, 2026No contributions on Mar 12, 2026No contributions on Mar 13, 2026No contributions on Mar 14, 2026No contributions on Mar 15, 2026No contributions on Mar 16, 2026No contributions on Mar 17, 2026No contributions on Mar 18, 2026No contributions on Mar 19, 2026No contributions on Mar 20, 2026No contributions on Mar 21, 20262 contributions on Mar 22, 2026No contributions on Mar 23, 2026No contributions on Mar 24, 2026No contributions on Mar 25, 202610 contributions on Mar 26, 2026No contributions on Mar 27, 2026No contributions on Mar 28, 2026No contributions on Mar 29, 2026No contributions on Mar 30, 2026No contributions on Mar 31, 20262 contributions on Apr 1, 2026No contributions on Apr 2, 2026No contributions on Apr 3, 2026No contributions on Apr 4, 20266 contributions on Apr 5, 2026No contributions on Apr 6, 2026No contributions on Apr 7, 2026No contributions on Apr 8, 202656 contributions on Apr 9, 20268 contributions on Apr 10, 2026No contributions on Apr 11, 20261 contribution on Apr 12, 2026No contributions on Apr 13, 2026No contributions on Apr 14, 2026No contributions on Apr 15, 20262 contributions on Apr 16, 2026No contributions on Apr 17, 2026No contributions on Apr 18, 2026No contributions on Apr 19, 2026No contributions on Apr 20, 2026No contributions on Apr 21, 2026No contributions on Apr 22, 2026No contributions on Apr 23, 2026No contributions on Apr 24, 20265 contributions on Apr 25, 2026No contributions on Apr 26, 20265 contributions on Apr 27, 20267 contributions on Apr 28, 2026No contributions on Apr 29, 20261 contribution on Apr 30, 2026No contributions on May 1, 20266 contributions on May 2, 20266 contributions on May 3, 2026No contributions on May 4, 20268 contributions on May 5, 20262 contributions on May 6, 2026No contributions on May 7, 2026No contributions on May 8, 2026No contributions on May 9, 2026No contributions on May 10, 2026No contributions on May 11, 2026No contributions on May 12, 2026No contributions on May 13, 2026No contributions on May 14, 2026No contributions on May 15, 2026No contributions on May 16, 2026No contributions on May 17, 2026No contributions on May 18, 2026No contributions on May 19, 2026No contributions on May 20, 2026No contributions on May 21, 20262 contributions on May 22, 20262 contributions on May 23, 2026No contributions on May 24, 2026No contributions on May 25, 2026No contributions on May 26, 20263 contributions on May 27, 2026No contributions on May 28, 2026No contributions on May 29, 20261 contribution on May 30, 2026No contributions on May 31, 2026No contributions on Jun 1, 2026No contributions on Jun 2, 2026No contributions on Jun 3, 2026No contributions on Jun 4, 2026No contributions on Jun 5, 2026No contributions on Jun 6, 20261 contribution on Jun 7, 20261 contribution on Jun 8, 2026No contributions on Jun 9, 2026No contributions on Jun 10, 2026No contributions on Jun 11, 2026No contributions on Jun 12, 20262 contributions on Jun 13, 20265 contributions on Jun 14, 2026No contributions on Jun 15, 2026No contributions on Jun 16, 2026No contributions on Jun 17, 2026No contributions on Jun 18, 20262 contributions on Jun 19, 20261 contribution on Jun 20, 2026No contributions on Jun 21, 2026No contributions on Jun 22, 2026No contributions on Jun 23, 2026No contributions on Jun 24, 20262 contributions on Jun 25, 2026No contributions on Jun 26, 2026No contributions on Jun 27, 20268 contributions on Jun 28, 2026No contributions on Jun 29, 2026No contributions on Jun 30, 2026No contributions on Jul 1, 2026No contributions on Jul 2, 2026No contributions on Jul 3, 202612 contributions on Jul 4, 202651 contributions on Jul 5, 20261 contribution on Jul 6, 2026No contributions on Jul 7, 20261 contribution on Jul 8, 2026No contributions on Jul 9, 2026101 contributions on Jul 10, 2026164 contributions on Jul 11, 2026No contributions on Jul 12, 202617 contributions on Jul 13, 20261 contribution on Jul 14, 202614 contributions on Jul 15, 202649 contributions on Jul 16, 202620 contributions on Jul 17, 202641 contributions on Jul 18, 202625 contributions on Jul 19, 202625 contributions on Jul 20, 202623 contributions on Jul 21, 202615 contributions on Jul 22, 202621 contributions on Jul 23, 202636 contributions on Jul 24, 202614 contributions on Jul 25, 202614 contributions on Jul 26, 202623 contributions on Jul 27, 202626 contributions on Jul 28, 202615 contributions on Jul 29, 202610 contributions on Jul 30, 202634 contributions on Jul 31, 202610 contributions on Aug 1, 202641 contributions on Aug 2, 202646 contributions on Aug 3, 2026No contributions on Aug 4, 202648 contributions on Aug 5, 202634 contributions on Aug 6, 202625 contributions on Aug 7, 202610 contributions on Aug 8, 202619 contributions on Aug 9, 202612 contributions on Aug 10, 2026Cached build data as of Aug 10, 2026.LessMoreCombined activity visible across my personal account and Semper Digital Solutions. Client repositories remain private; these are the public profiles and repositories.GitHub's public profile calendar can include anonymized private contributions. This cached snapshot cannot separate those contributions by day.Public snapshotsInspectable examples, not a ranking of my best work.These smaller repositories can be reviewed directly. They remain here for code-level inspection and transparency, but they are supporting material.01TypeScriptPersonal · shageneQuote ExtractorSchema-enforced LLM quote extraction with deterministic validation and a source-side human review workflow.shagene/quote-extractor02PythonPersonal · shageneRestaurant Hours APIA tested FastAPI service that normalizes messy schedules into a compact week-minute interval engine.shagene/hours-interval-engine03PythonPersonal · shagenePython SEO ToolkitA crawler and sitemap-analysis toolkit for technical SEO checks and site-structure visualization.shagene/python_seo04SwiftSemper Digital Solutions · semperdigitalsolutionsMeetScribeLocal-first macOS transcription tooling built with SwiftUI, ffmpeg, whisper.cpp, structured transcript artifacts, and optional localhost-only Ollama summaries.semperdigitalsolutions/MeetScribe",
+        "mainText": "← PortfolioEngineering proof · Private systems, public signalThe strongest work is private. The engineering story is not.Aegis, Semper Command Center, and VolumeGuard are owner-controlled products whose repositories stay private. This page documents what I built and the constraints that shaped each system, then puts public activity from both GitHub accounts in context.Engineering case studiesContact Steven01 · GitHubPrivate engineering, documented without exposing source.The strongest owner-controlled product work lives in private repositories. These summaries explain the architecture and constraints; public activity follows as supporting evidence.Selected private engineeringOwner-controlled systems I can discuss at the architecture level.The code stays private. Each snapshot names the product boundary, my role, what I built, and the constraint that shaped the system without publishing protected source.01Founder & Principal EngineerSemper product · Source privateAegisLocal-first legal evidence intelligenceWhat I builtA FastAPI and React appliance that ingests discovery, preserves source hashes, processes documents and media locally, and supports case-scoped search with source-linked answers.Hard constraintRaw evidence remains read-only and case-scoped; restricted material produces no derivatives, and AI must cite the record or decline to answer.02Founder & Principal EngineerSemper product · Source privateSemper Command CenterAI-assisted sourcing operationsWhat I builtA Next.js operations hub that turns part requests, supplier results, and replies into durable RFQ jobs with role-scoped queues, evidence-backed rankings, handoff briefs, and a hash-chained work log.Hard constraintAI can normalize, rank, and draft, but purchasing, supplier outreach, and customer-facing quotes remain behind explicit human review.03Founder & Android Product EngineerSemper product · Source privateVolumeGuardNative Android utilityWhat I builtA Kotlin and Jetpack Compose app that enforces user-selected media-volume limits through coordinated service, system-observer, notification-listener, media-session, and fallback polling paths.Hard constraintAndroid provides no sanctioned volume-lock API, so enforcement must recover across independent change paths without creating feedback loops or excessive battery use.Supporting signalOne public activity view across both accounts.The calendar and repository statistics establish visible recency and breadth. They support the private-system evidence above; they do not replace it.Public-profile contributions · 12 mo2,043Combined public repos48Top languages by bytesTypeScript · Swift · HTML · DartLatest public activityJun 20, 2026Trailing 12 monthsOne combined contribution calendar.2,043 contributions visible across both public profiles.Scroll horizontally to inspect the full year.Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolutions from Aug 11, 2025 through Aug 10, 2026.AugSepOctNovDecJanFebMarAprMayJunJulAugMWFNo contributions on Aug 11, 2025No contributions on Aug 12, 2025No contributions on Aug 13, 2025No contributions on Aug 14, 2025No contributions on Aug 15, 2025No contributions on Aug 16, 2025No contributions on Aug 17, 2025No contributions on Aug 18, 2025No contributions on Aug 19, 2025No contributions on Aug 20, 2025No contributions on Aug 21, 2025No contributions on Aug 22, 2025No contributions on Aug 23, 2025No contributions on Aug 24, 2025No contributions on Aug 25, 2025No contributions on Aug 26, 2025No contributions on Aug 27, 2025No contributions on Aug 28, 2025No contributions on Aug 29, 2025No contributions on Aug 30, 2025No contributions on Aug 31, 2025No contributions on Sep 1, 2025No contributions on Sep 2, 2025No contributions on Sep 3, 2025No contributions on Sep 4, 2025No contributions on Sep 5, 2025No contributions on Sep 6, 20251 contribution on Sep 7, 2025No contributions on Sep 8, 2025No contributions on Sep 9, 2025No contributions on Sep 10, 2025No contributions on Sep 11, 2025No contributions on Sep 12, 2025No contributions on Sep 13, 2025No contributions on Sep 14, 2025No contributions on Sep 15, 2025No contributions on Sep 16, 2025No contributions on Sep 17, 2025No contributions on Sep 18, 2025No contributions on Sep 19, 2025No contributions on Sep 20, 2025No contributions on Sep 21, 2025No contributions on Sep 22, 20253 contributions on Sep 23, 2025No contributions on Sep 24, 2025No contributions on Sep 25, 2025No contributions on Sep 26, 2025No contributions on Sep 27, 20253 contributions on Sep 28, 2025No contributions on Sep 29, 20254 contributions on Sep 30, 2025No contributions on Oct 1, 20252 contributions on Oct 2, 20254 contributions on Oct 3, 20253 contributions on Oct 4, 2025No contributions on Oct 5, 20259 contributions on Oct 6, 20254 contributions on Oct 7, 2025No contributions on Oct 8, 2025No contributions on Oct 9, 20252 contributions on Oct 10, 2025No contributions on Oct 11, 2025No contributions on Oct 12, 20251 contribution on Oct 13, 2025No contributions on Oct 14, 2025No contributions on Oct 15, 2025No contributions on Oct 16, 2025No contributions on Oct 17, 2025No contributions on Oct 18, 20254 contributions on Oct 19, 2025No contributions on Oct 20, 2025No contributions on Oct 21, 2025No contributions on Oct 22, 2025No contributions on Oct 23, 2025No contributions on Oct 24, 2025No contributions on Oct 25, 2025No contributions on Oct 26, 2025No contributions on Oct 27, 2025No contributions on Oct 28, 2025No contributions on Oct 29, 2025No contributions on Oct 30, 2025No contributions on Oct 31, 2025No contributions on Nov 1, 2025No contributions on Nov 2, 2025No contributions on Nov 3, 2025No contributions on Nov 4, 2025No contributions on Nov 5, 2025No contributions on Nov 6, 2025No contributions on Nov 7, 2025No contributions on Nov 8, 2025No contributions on Nov 9, 2025No contributions on Nov 10, 2025No contributions on Nov 11, 2025No contributions on Nov 12, 2025No contributions on Nov 13, 20252 contributions on Nov 14, 2025No contributions on Nov 15, 2025No contributions on Nov 16, 2025No contributions on Nov 17, 2025No contributions on Nov 18, 20252 contributions on Nov 19, 20254 contributions on Nov 20, 20253 contributions on Nov 21, 202515 contributions on Nov 22, 202521 contributions on Nov 23, 20254 contributions on Nov 24, 2025No contributions on Nov 25, 20252 contributions on Nov 26, 20253 contributions on Nov 27, 2025No contributions on Nov 28, 2025No contributions on Nov 29, 2025No contributions on Nov 30, 2025No contributions on Dec 1, 20252 contributions on Dec 2, 2025No contributions on Dec 3, 2025No contributions on Dec 4, 2025No contributions on Dec 5, 2025No contributions on Dec 6, 2025No contributions on Dec 7, 2025No contributions on Dec 8, 2025No contributions on Dec 9, 2025No contributions on Dec 10, 2025No contributions on Dec 11, 2025No contributions on Dec 12, 2025No contributions on Dec 13, 20252 contributions on Dec 14, 2025No contributions on Dec 15, 2025No contributions on Dec 16, 2025No contributions on Dec 17, 2025No contributions on Dec 18, 2025No contributions on Dec 19, 2025No contributions on Dec 20, 2025No contributions on Dec 21, 2025No contributions on Dec 22, 2025No contributions on Dec 23, 2025No contributions on Dec 24, 2025No contributions on Dec 25, 2025No contributions on Dec 26, 2025No contributions on Dec 27, 2025No contributions on Dec 28, 2025No contributions on Dec 29, 2025No contributions on Dec 30, 2025No contributions on Dec 31, 2025No contributions on Jan 1, 2026No contributions on Jan 2, 2026No contributions on Jan 3, 2026No contributions on Jan 4, 2026No contributions on Jan 5, 2026No contributions on Jan 6, 2026No contributions on Jan 7, 2026No contributions on Jan 8, 2026No contributions on Jan 9, 2026No contributions on Jan 10, 2026No contributions on Jan 11, 202624 contributions on Jan 12, 202615 contributions on Jan 13, 2026134 contributions on Jan 14, 202616 contributions on Jan 15, 20267 contributions on Jan 16, 202628 contributions on Jan 17, 202624 contributions on Jan 18, 20264 contributions on Jan 19, 202610 contributions on Jan 20, 20262 contributions on Jan 21, 2026No contributions on Jan 22, 202615 contributions on Jan 23, 20261 contribution on Jan 24, 20264 contributions on Jan 25, 202614 contributions on Jan 26, 20268 contributions on Jan 27, 202635 contributions on Jan 28, 202690 contributions on Jan 29, 20264 contributions on Jan 30, 2026No contributions on Jan 31, 202622 contributions on Feb 1, 202612 contributions on Feb 2, 202629 contributions on Feb 3, 20262 contributions on Feb 4, 20265 contributions on Feb 5, 20261 contribution on Feb 6, 20261 contribution on Feb 7, 202648 contributions on Feb 8, 2026110 contributions on Feb 9, 202643 contributions on Feb 10, 20264 contributions on Feb 11, 20264 contributions on Feb 12, 2026No contributions on Feb 13, 20262 contributions on Feb 14, 2026No contributions on Feb 15, 2026No contributions on Feb 16, 2026No contributions on Feb 17, 20264 contributions on Feb 18, 20266 contributions on Feb 19, 20267 contributions on Feb 20, 20269 contributions on Feb 21, 202616 contributions on Feb 22, 2026No contributions on Feb 23, 2026No contributions on Feb 24, 2026No contributions on Feb 25, 20262 contributions on Feb 26, 2026No contributions on Feb 27, 2026No contributions on Feb 28, 2026No contributions on Mar 1, 20262 contributions on Mar 2, 2026No contributions on Mar 3, 2026No contributions on Mar 4, 20262 contributions on Mar 5, 2026No contributions on Mar 6, 20266 contributions on Mar 7, 20266 contributions on Mar 8, 2026No contributions on Mar 9, 2026No contributions on Mar 10, 202610 contributions on Mar 11, 2026No contributions on Mar 12, 2026No contributions on Mar 13, 2026No contributions on Mar 14, 2026No contributions on Mar 15, 2026No contributions on Mar 16, 2026No contributions on Mar 17, 2026No contributions on Mar 18, 2026No contributions on Mar 19, 2026No contributions on Mar 20, 2026No contributions on Mar 21, 20262 contributions on Mar 22, 2026No contributions on Mar 23, 2026No contributions on Mar 24, 2026No contributions on Mar 25, 202610 contributions on Mar 26, 2026No contributions on Mar 27, 2026No contributions on Mar 28, 2026No contributions on Mar 29, 2026No contributions on Mar 30, 2026No contributions on Mar 31, 20262 contributions on Apr 1, 2026No contributions on Apr 2, 2026No contributions on Apr 3, 2026No contributions on Apr 4, 20266 contributions on Apr 5, 2026No contributions on Apr 6, 2026No contributions on Apr 7, 2026No contributions on Apr 8, 202656 contributions on Apr 9, 20268 contributions on Apr 10, 2026No contributions on Apr 11, 20261 contribution on Apr 12, 2026No contributions on Apr 13, 2026No contributions on Apr 14, 2026No contributions on Apr 15, 20262 contributions on Apr 16, 2026No contributions on Apr 17, 2026No contributions on Apr 18, 2026No contributions on Apr 19, 2026No contributions on Apr 20, 2026No contributions on Apr 21, 2026No contributions on Apr 22, 2026No contributions on Apr 23, 2026No contributions on Apr 24, 20265 contributions on Apr 25, 2026No contributions on Apr 26, 20265 contributions on Apr 27, 20267 contributions on Apr 28, 2026No contributions on Apr 29, 20261 contribution on Apr 30, 2026No contributions on May 1, 20266 contributions on May 2, 20266 contributions on May 3, 2026No contributions on May 4, 20268 contributions on May 5, 20262 contributions on May 6, 2026No contributions on May 7, 2026No contributions on May 8, 2026No contributions on May 9, 2026No contributions on May 10, 2026No contributions on May 11, 2026No contributions on May 12, 2026No contributions on May 13, 2026No contributions on May 14, 2026No contributions on May 15, 2026No contributions on May 16, 2026No contributions on May 17, 2026No contributions on May 18, 2026No contributions on May 19, 2026No contributions on May 20, 2026No contributions on May 21, 20262 contributions on May 22, 20262 contributions on May 23, 2026No contributions on May 24, 2026No contributions on May 25, 2026No contributions on May 26, 20263 contributions on May 27, 2026No contributions on May 28, 2026No contributions on May 29, 20261 contribution on May 30, 2026No contributions on May 31, 2026No contributions on Jun 1, 2026No contributions on Jun 2, 2026No contributions on Jun 3, 2026No contributions on Jun 4, 2026No contributions on Jun 5, 2026No contributions on Jun 6, 20261 contribution on Jun 7, 20261 contribution on Jun 8, 2026No contributions on Jun 9, 2026No contributions on Jun 10, 2026No contributions on Jun 11, 2026No contributions on Jun 12, 20262 contributions on Jun 13, 20265 contributions on Jun 14, 2026No contributions on Jun 15, 2026No contributions on Jun 16, 2026No contributions on Jun 17, 2026No contributions on Jun 18, 20262 contributions on Jun 19, 20261 contribution on Jun 20, 2026No contributions on Jun 21, 2026No contributions on Jun 22, 2026No contributions on Jun 23, 2026No contributions on Jun 24, 20262 contributions on Jun 25, 2026No contributions on Jun 26, 2026No contributions on Jun 27, 20268 contributions on Jun 28, 2026No contributions on Jun 29, 2026No contributions on Jun 30, 2026No contributions on Jul 1, 2026No contributions on Jul 2, 2026No contributions on Jul 3, 202612 contributions on Jul 4, 202651 contributions on Jul 5, 20261 contribution on Jul 6, 2026No contributions on Jul 7, 20261 contribution on Jul 8, 2026No contributions on Jul 9, 2026101 contributions on Jul 10, 2026164 contributions on Jul 11, 2026No contributions on Jul 12, 202617 contributions on Jul 13, 20261 contribution on Jul 14, 202614 contributions on Jul 15, 202649 contributions on Jul 16, 202620 contributions on Jul 17, 202641 contributions on Jul 18, 202625 contributions on Jul 19, 202625 contributions on Jul 20, 202623 contributions on Jul 21, 202615 contributions on Jul 22, 202621 contributions on Jul 23, 202636 contributions on Jul 24, 202614 contributions on Jul 25, 202614 contributions on Jul 26, 202623 contributions on Jul 27, 202626 contributions on Jul 28, 202615 contributions on Jul 29, 202610 contributions on Jul 30, 202634 contributions on Jul 31, 202610 contributions on Aug 1, 202641 contributions on Aug 2, 202646 contributions on Aug 3, 2026No contributions on Aug 4, 202648 contributions on Aug 5, 202634 contributions on Aug 6, 202625 contributions on Aug 7, 202610 contributions on Aug 8, 202619 contributions on Aug 9, 202612 contributions on Aug 10, 2026Cached build data as of Aug 10, 2026.LessMoreCombined activity visible across my personal account and Semper Digital Solutions. Client repositories remain private; these are the public profiles and repositories.GitHub's public profile calendar can include anonymized private contributions. This cached snapshot cannot separate those contributions by day.Public sourceSource for stevenhagene.comThe complete source for this site, including its token system, build-time GitHub aggregation, metadata pipeline, accessibility checks, responsive screenshots, and deployment automation.Astro · TypeScript · Playwright · axe-coreshagene/portfolio",
         "email": null,
         "statsWidths": [
           350,
@@ -5262,22 +5292,42 @@
           "containedByPanel": true,
           "containedByViewport": true
         },
+        "privateProjects": [
+          {
+            "name": "Aegis",
+            "repositoryLinks": 0
+          },
+          {
+            "name": "Semper Command Center",
+            "repositoryLinks": 0
+          },
+          {
+            "name": "VolumeGuard",
+            "repositoryLinks": 0
+          }
+        ],
+        "portfolioSourceLinks": [
+          {
+            "tag": "A",
+            "href": "https://github.com/shagene/portfolio"
+          }
+        ],
         "metadata": {
-          "title": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "description": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "title": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "description": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "robots": "index, follow",
           "canonical": "https://www.stevenhagene.com/github/",
           "ogType": "profile",
-          "ogTitle": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "ogDescription": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "ogTitle": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "ogDescription": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "ogUrl": "https://www.stevenhagene.com/github/",
           "ogImage": "https://www.stevenhagene.com/og-github.png",
           "ogImageWidth": "1200",
           "ogImageHeight": "630",
           "ogImageAlt": "Private engineering systems and combined GitHub activity by Steven Hagene",
           "twitterCard": "summary_large_image",
-          "twitterTitle": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "twitterDescription": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "twitterTitle": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "twitterDescription": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "twitterImage": "https://www.stevenhagene.com/og-github.png",
           "twitterImageAlt": "Private engineering systems and combined GitHub activity by Steven Hagene",
           "faviconSvg": "/favicon.svg",
@@ -5335,13 +5385,13 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
       "keyboard": {
-        "expectedCount": 20,
-        "visitedCount": 20,
+        "expectedCount": 14,
+        "visitedCount": 14,
         "complete": true,
         "cycledToStart": false,
         "first": {
@@ -5458,36 +5508,6 @@
           },
           {
             "index": 10,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/teo/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 11,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/musterhall/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 12,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/crimcaseai/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 13,
             "tag": "DIV",
             "text": "Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolution",
             "href": null,
@@ -5497,7 +5517,7 @@
             "visibleInViewport": true
           },
           {
-            "index": 14,
+            "index": 11,
             "tag": "A",
             "text": "personal account",
             "href": "https://github.com/shagene",
@@ -5507,7 +5527,7 @@
             "visibleInViewport": true
           },
           {
-            "index": 15,
+            "index": 12,
             "tag": "A",
             "text": "Semper Digital Solutions",
             "href": "https://github.com/semperdigitalsolutions",
@@ -5517,40 +5537,10 @@
             "visibleInViewport": true
           },
           {
-            "index": 16,
+            "index": 13,
             "tag": "A",
-            "text": "shagene/quote-extractor",
-            "href": "https://github.com/shagene/quote-extractor",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 17,
-            "tag": "A",
-            "text": "shagene/hours-interval-engine",
-            "href": "https://github.com/shagene/hours-interval-engine",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 18,
-            "tag": "A",
-            "text": "shagene/python_seo",
-            "href": "https://github.com/shagene/python_seo",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 19,
-            "tag": "A",
-            "text": "semperdigitalsolutions/MeetScribe",
-            "href": "https://github.com/semperdigitalsolutions/MeetScribe",
+            "text": "shagene/portfolio",
+            "href": "https://github.com/shagene/portfolio",
             "outlineWidth": 2,
             "outlineStyle": "solid",
             "outlineColor": "rgb(251, 203, 167)",
@@ -5620,16 +5610,16 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 43,
+            "nodeCount": 40,
             "samples": [
               [
-                "a[href$=\"work/\"][data-astro-cid-nen7h5rs=\"\"]"
+                "li:nth-child(1) > a[href$=\"work/\"]"
               ],
               [
                 "a[href$=\"github/\"]"
               ],
               [
-                "li:nth-child(3) > a[data-astro-cid-nen7h5rs=\"\"]"
+                "li:nth-child(3) > a"
               ]
             ]
           },
@@ -5666,7 +5656,7 @@
           "page-intro",
           "github"
         ],
-        "mainText": "← PortfolioEngineering proof · Private systems, public signalThe strongest work is private. The engineering story is not.TEO, Musterhall, and CrimCaseAI best represent how I design and ship systems. Their repositories stay private, so this page leads with what I built and why it was difficult, then puts public activity from both GitHub accounts in context.Engineering case studiesContact Steven01 · GitHubPrivate systems, documented at the decision level.Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.Selected private systemsThe work I would put in front of a technical interviewer.The repositories remain private. Each case study documents the system boundary, my role, what I built, and the hard part without publishing protected source.01ALead Full-Stack EngineerPrivate repository · Case study availableTEOProperty-management financial SaaSWhat I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Why it was hardA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.Read engineering case study01BSole EngineerPrivate repository · Case study availableMusterhallCreator learning platformWhat I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Why it was hardOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.Read engineering case study01CPrincipal EngineerPrivate repository · Case study availableCrimCaseAILegal intelligence portfolioWhat I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Why it was hardLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.Read engineering case studySupporting signalOne public activity view across both accounts.The calendar and repository statistics establish visible recency and breadth. They support the private-system evidence above; they do not replace it.Public-profile contributions · 12 mo2,043Combined public repos48Top languages by bytesTypeScript · Swift · HTML · DartLatest public activityJun 20, 2026Trailing 12 monthsOne combined contribution calendar.2,043 contributions visible across both public profiles.Scroll horizontally to inspect the full year.Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolutions from Aug 11, 2025 through Aug 10, 2026.AugSepOctNovDecJanFebMarAprMayJunJulAugMWFNo contributions on Aug 11, 2025No contributions on Aug 12, 2025No contributions on Aug 13, 2025No contributions on Aug 14, 2025No contributions on Aug 15, 2025No contributions on Aug 16, 2025No contributions on Aug 17, 2025No contributions on Aug 18, 2025No contributions on Aug 19, 2025No contributions on Aug 20, 2025No contributions on Aug 21, 2025No contributions on Aug 22, 2025No contributions on Aug 23, 2025No contributions on Aug 24, 2025No contributions on Aug 25, 2025No contributions on Aug 26, 2025No contributions on Aug 27, 2025No contributions on Aug 28, 2025No contributions on Aug 29, 2025No contributions on Aug 30, 2025No contributions on Aug 31, 2025No contributions on Sep 1, 2025No contributions on Sep 2, 2025No contributions on Sep 3, 2025No contributions on Sep 4, 2025No contributions on Sep 5, 2025No contributions on Sep 6, 20251 contribution on Sep 7, 2025No contributions on Sep 8, 2025No contributions on Sep 9, 2025No contributions on Sep 10, 2025No contributions on Sep 11, 2025No contributions on Sep 12, 2025No contributions on Sep 13, 2025No contributions on Sep 14, 2025No contributions on Sep 15, 2025No contributions on Sep 16, 2025No contributions on Sep 17, 2025No contributions on Sep 18, 2025No contributions on Sep 19, 2025No contributions on Sep 20, 2025No contributions on Sep 21, 2025No contributions on Sep 22, 20253 contributions on Sep 23, 2025No contributions on Sep 24, 2025No contributions on Sep 25, 2025No contributions on Sep 26, 2025No contributions on Sep 27, 20253 contributions on Sep 28, 2025No contributions on Sep 29, 20254 contributions on Sep 30, 2025No contributions on Oct 1, 20252 contributions on Oct 2, 20254 contributions on Oct 3, 20253 contributions on Oct 4, 2025No contributions on Oct 5, 20259 contributions on Oct 6, 20254 contributions on Oct 7, 2025No contributions on Oct 8, 2025No contributions on Oct 9, 20252 contributions on Oct 10, 2025No contributions on Oct 11, 2025No contributions on Oct 12, 20251 contribution on Oct 13, 2025No contributions on Oct 14, 2025No contributions on Oct 15, 2025No contributions on Oct 16, 2025No contributions on Oct 17, 2025No contributions on Oct 18, 20254 contributions on Oct 19, 2025No contributions on Oct 20, 2025No contributions on Oct 21, 2025No contributions on Oct 22, 2025No contributions on Oct 23, 2025No contributions on Oct 24, 2025No contributions on Oct 25, 2025No contributions on Oct 26, 2025No contributions on Oct 27, 2025No contributions on Oct 28, 2025No contributions on Oct 29, 2025No contributions on Oct 30, 2025No contributions on Oct 31, 2025No contributions on Nov 1, 2025No contributions on Nov 2, 2025No contributions on Nov 3, 2025No contributions on Nov 4, 2025No contributions on Nov 5, 2025No contributions on Nov 6, 2025No contributions on Nov 7, 2025No contributions on Nov 8, 2025No contributions on Nov 9, 2025No contributions on Nov 10, 2025No contributions on Nov 11, 2025No contributions on Nov 12, 2025No contributions on Nov 13, 20252 contributions on Nov 14, 2025No contributions on Nov 15, 2025No contributions on Nov 16, 2025No contributions on Nov 17, 2025No contributions on Nov 18, 20252 contributions on Nov 19, 20254 contributions on Nov 20, 20253 contributions on Nov 21, 202515 contributions on Nov 22, 202521 contributions on Nov 23, 20254 contributions on Nov 24, 2025No contributions on Nov 25, 20252 contributions on Nov 26, 20253 contributions on Nov 27, 2025No contributions on Nov 28, 2025No contributions on Nov 29, 2025No contributions on Nov 30, 2025No contributions on Dec 1, 20252 contributions on Dec 2, 2025No contributions on Dec 3, 2025No contributions on Dec 4, 2025No contributions on Dec 5, 2025No contributions on Dec 6, 2025No contributions on Dec 7, 2025No contributions on Dec 8, 2025No contributions on Dec 9, 2025No contributions on Dec 10, 2025No contributions on Dec 11, 2025No contributions on Dec 12, 2025No contributions on Dec 13, 20252 contributions on Dec 14, 2025No contributions on Dec 15, 2025No contributions on Dec 16, 2025No contributions on Dec 17, 2025No contributions on Dec 18, 2025No contributions on Dec 19, 2025No contributions on Dec 20, 2025No contributions on Dec 21, 2025No contributions on Dec 22, 2025No contributions on Dec 23, 2025No contributions on Dec 24, 2025No contributions on Dec 25, 2025No contributions on Dec 26, 2025No contributions on Dec 27, 2025No contributions on Dec 28, 2025No contributions on Dec 29, 2025No contributions on Dec 30, 2025No contributions on Dec 31, 2025No contributions on Jan 1, 2026No contributions on Jan 2, 2026No contributions on Jan 3, 2026No contributions on Jan 4, 2026No contributions on Jan 5, 2026No contributions on Jan 6, 2026No contributions on Jan 7, 2026No contributions on Jan 8, 2026No contributions on Jan 9, 2026No contributions on Jan 10, 2026No contributions on Jan 11, 202624 contributions on Jan 12, 202615 contributions on Jan 13, 2026134 contributions on Jan 14, 202616 contributions on Jan 15, 20267 contributions on Jan 16, 202628 contributions on Jan 17, 202624 contributions on Jan 18, 20264 contributions on Jan 19, 202610 contributions on Jan 20, 20262 contributions on Jan 21, 2026No contributions on Jan 22, 202615 contributions on Jan 23, 20261 contribution on Jan 24, 20264 contributions on Jan 25, 202614 contributions on Jan 26, 20268 contributions on Jan 27, 202635 contributions on Jan 28, 202690 contributions on Jan 29, 20264 contributions on Jan 30, 2026No contributions on Jan 31, 202622 contributions on Feb 1, 202612 contributions on Feb 2, 202629 contributions on Feb 3, 20262 contributions on Feb 4, 20265 contributions on Feb 5, 20261 contribution on Feb 6, 20261 contribution on Feb 7, 202648 contributions on Feb 8, 2026110 contributions on Feb 9, 202643 contributions on Feb 10, 20264 contributions on Feb 11, 20264 contributions on Feb 12, 2026No contributions on Feb 13, 20262 contributions on Feb 14, 2026No contributions on Feb 15, 2026No contributions on Feb 16, 2026No contributions on Feb 17, 20264 contributions on Feb 18, 20266 contributions on Feb 19, 20267 contributions on Feb 20, 20269 contributions on Feb 21, 202616 contributions on Feb 22, 2026No contributions on Feb 23, 2026No contributions on Feb 24, 2026No contributions on Feb 25, 20262 contributions on Feb 26, 2026No contributions on Feb 27, 2026No contributions on Feb 28, 2026No contributions on Mar 1, 20262 contributions on Mar 2, 2026No contributions on Mar 3, 2026No contributions on Mar 4, 20262 contributions on Mar 5, 2026No contributions on Mar 6, 20266 contributions on Mar 7, 20266 contributions on Mar 8, 2026No contributions on Mar 9, 2026No contributions on Mar 10, 202610 contributions on Mar 11, 2026No contributions on Mar 12, 2026No contributions on Mar 13, 2026No contributions on Mar 14, 2026No contributions on Mar 15, 2026No contributions on Mar 16, 2026No contributions on Mar 17, 2026No contributions on Mar 18, 2026No contributions on Mar 19, 2026No contributions on Mar 20, 2026No contributions on Mar 21, 20262 contributions on Mar 22, 2026No contributions on Mar 23, 2026No contributions on Mar 24, 2026No contributions on Mar 25, 202610 contributions on Mar 26, 2026No contributions on Mar 27, 2026No contributions on Mar 28, 2026No contributions on Mar 29, 2026No contributions on Mar 30, 2026No contributions on Mar 31, 20262 contributions on Apr 1, 2026No contributions on Apr 2, 2026No contributions on Apr 3, 2026No contributions on Apr 4, 20266 contributions on Apr 5, 2026No contributions on Apr 6, 2026No contributions on Apr 7, 2026No contributions on Apr 8, 202656 contributions on Apr 9, 20268 contributions on Apr 10, 2026No contributions on Apr 11, 20261 contribution on Apr 12, 2026No contributions on Apr 13, 2026No contributions on Apr 14, 2026No contributions on Apr 15, 20262 contributions on Apr 16, 2026No contributions on Apr 17, 2026No contributions on Apr 18, 2026No contributions on Apr 19, 2026No contributions on Apr 20, 2026No contributions on Apr 21, 2026No contributions on Apr 22, 2026No contributions on Apr 23, 2026No contributions on Apr 24, 20265 contributions on Apr 25, 2026No contributions on Apr 26, 20265 contributions on Apr 27, 20267 contributions on Apr 28, 2026No contributions on Apr 29, 20261 contribution on Apr 30, 2026No contributions on May 1, 20266 contributions on May 2, 20266 contributions on May 3, 2026No contributions on May 4, 20268 contributions on May 5, 20262 contributions on May 6, 2026No contributions on May 7, 2026No contributions on May 8, 2026No contributions on May 9, 2026No contributions on May 10, 2026No contributions on May 11, 2026No contributions on May 12, 2026No contributions on May 13, 2026No contributions on May 14, 2026No contributions on May 15, 2026No contributions on May 16, 2026No contributions on May 17, 2026No contributions on May 18, 2026No contributions on May 19, 2026No contributions on May 20, 2026No contributions on May 21, 20262 contributions on May 22, 20262 contributions on May 23, 2026No contributions on May 24, 2026No contributions on May 25, 2026No contributions on May 26, 20263 contributions on May 27, 2026No contributions on May 28, 2026No contributions on May 29, 20261 contribution on May 30, 2026No contributions on May 31, 2026No contributions on Jun 1, 2026No contributions on Jun 2, 2026No contributions on Jun 3, 2026No contributions on Jun 4, 2026No contributions on Jun 5, 2026No contributions on Jun 6, 20261 contribution on Jun 7, 20261 contribution on Jun 8, 2026No contributions on Jun 9, 2026No contributions on Jun 10, 2026No contributions on Jun 11, 2026No contributions on Jun 12, 20262 contributions on Jun 13, 20265 contributions on Jun 14, 2026No contributions on Jun 15, 2026No contributions on Jun 16, 2026No contributions on Jun 17, 2026No contributions on Jun 18, 20262 contributions on Jun 19, 20261 contribution on Jun 20, 2026No contributions on Jun 21, 2026No contributions on Jun 22, 2026No contributions on Jun 23, 2026No contributions on Jun 24, 20262 contributions on Jun 25, 2026No contributions on Jun 26, 2026No contributions on Jun 27, 20268 contributions on Jun 28, 2026No contributions on Jun 29, 2026No contributions on Jun 30, 2026No contributions on Jul 1, 2026No contributions on Jul 2, 2026No contributions on Jul 3, 202612 contributions on Jul 4, 202651 contributions on Jul 5, 20261 contribution on Jul 6, 2026No contributions on Jul 7, 20261 contribution on Jul 8, 2026No contributions on Jul 9, 2026101 contributions on Jul 10, 2026164 contributions on Jul 11, 2026No contributions on Jul 12, 202617 contributions on Jul 13, 20261 contribution on Jul 14, 202614 contributions on Jul 15, 202649 contributions on Jul 16, 202620 contributions on Jul 17, 202641 contributions on Jul 18, 202625 contributions on Jul 19, 202625 contributions on Jul 20, 202623 contributions on Jul 21, 202615 contributions on Jul 22, 202621 contributions on Jul 23, 202636 contributions on Jul 24, 202614 contributions on Jul 25, 202614 contributions on Jul 26, 202623 contributions on Jul 27, 202626 contributions on Jul 28, 202615 contributions on Jul 29, 202610 contributions on Jul 30, 202634 contributions on Jul 31, 202610 contributions on Aug 1, 202641 contributions on Aug 2, 202646 contributions on Aug 3, 2026No contributions on Aug 4, 202648 contributions on Aug 5, 202634 contributions on Aug 6, 202625 contributions on Aug 7, 202610 contributions on Aug 8, 202619 contributions on Aug 9, 202612 contributions on Aug 10, 2026Cached build data as of Aug 10, 2026.LessMoreCombined activity visible across my personal account and Semper Digital Solutions. Client repositories remain private; these are the public profiles and repositories.GitHub's public profile calendar can include anonymized private contributions. This cached snapshot cannot separate those contributions by day.Public snapshotsInspectable examples, not a ranking of my best work.These smaller repositories can be reviewed directly. They remain here for code-level inspection and transparency, but they are supporting material.01TypeScriptPersonal · shageneQuote ExtractorSchema-enforced LLM quote extraction with deterministic validation and a source-side human review workflow.shagene/quote-extractor02PythonPersonal · shageneRestaurant Hours APIA tested FastAPI service that normalizes messy schedules into a compact week-minute interval engine.shagene/hours-interval-engine03PythonPersonal · shagenePython SEO ToolkitA crawler and sitemap-analysis toolkit for technical SEO checks and site-structure visualization.shagene/python_seo04SwiftSemper Digital Solutions · semperdigitalsolutionsMeetScribeLocal-first macOS transcription tooling built with SwiftUI, ffmpeg, whisper.cpp, structured transcript artifacts, and optional localhost-only Ollama summaries.semperdigitalsolutions/MeetScribe",
+        "mainText": "← PortfolioEngineering proof · Private systems, public signalThe strongest work is private. The engineering story is not.Aegis, Semper Command Center, and VolumeGuard are owner-controlled products whose repositories stay private. This page documents what I built and the constraints that shaped each system, then puts public activity from both GitHub accounts in context.Engineering case studiesContact Steven01 · GitHubPrivate engineering, documented without exposing source.The strongest owner-controlled product work lives in private repositories. These summaries explain the architecture and constraints; public activity follows as supporting evidence.Selected private engineeringOwner-controlled systems I can discuss at the architecture level.The code stays private. Each snapshot names the product boundary, my role, what I built, and the constraint that shaped the system without publishing protected source.01Founder & Principal EngineerSemper product · Source privateAegisLocal-first legal evidence intelligenceWhat I builtA FastAPI and React appliance that ingests discovery, preserves source hashes, processes documents and media locally, and supports case-scoped search with source-linked answers.Hard constraintRaw evidence remains read-only and case-scoped; restricted material produces no derivatives, and AI must cite the record or decline to answer.02Founder & Principal EngineerSemper product · Source privateSemper Command CenterAI-assisted sourcing operationsWhat I builtA Next.js operations hub that turns part requests, supplier results, and replies into durable RFQ jobs with role-scoped queues, evidence-backed rankings, handoff briefs, and a hash-chained work log.Hard constraintAI can normalize, rank, and draft, but purchasing, supplier outreach, and customer-facing quotes remain behind explicit human review.03Founder & Android Product EngineerSemper product · Source privateVolumeGuardNative Android utilityWhat I builtA Kotlin and Jetpack Compose app that enforces user-selected media-volume limits through coordinated service, system-observer, notification-listener, media-session, and fallback polling paths.Hard constraintAndroid provides no sanctioned volume-lock API, so enforcement must recover across independent change paths without creating feedback loops or excessive battery use.Supporting signalOne public activity view across both accounts.The calendar and repository statistics establish visible recency and breadth. They support the private-system evidence above; they do not replace it.Public-profile contributions · 12 mo2,043Combined public repos48Top languages by bytesTypeScript · Swift · HTML · DartLatest public activityJun 20, 2026Trailing 12 monthsOne combined contribution calendar.2,043 contributions visible across both public profiles.Scroll horizontally to inspect the full year.Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolutions from Aug 11, 2025 through Aug 10, 2026.AugSepOctNovDecJanFebMarAprMayJunJulAugMWFNo contributions on Aug 11, 2025No contributions on Aug 12, 2025No contributions on Aug 13, 2025No contributions on Aug 14, 2025No contributions on Aug 15, 2025No contributions on Aug 16, 2025No contributions on Aug 17, 2025No contributions on Aug 18, 2025No contributions on Aug 19, 2025No contributions on Aug 20, 2025No contributions on Aug 21, 2025No contributions on Aug 22, 2025No contributions on Aug 23, 2025No contributions on Aug 24, 2025No contributions on Aug 25, 2025No contributions on Aug 26, 2025No contributions on Aug 27, 2025No contributions on Aug 28, 2025No contributions on Aug 29, 2025No contributions on Aug 30, 2025No contributions on Aug 31, 2025No contributions on Sep 1, 2025No contributions on Sep 2, 2025No contributions on Sep 3, 2025No contributions on Sep 4, 2025No contributions on Sep 5, 2025No contributions on Sep 6, 20251 contribution on Sep 7, 2025No contributions on Sep 8, 2025No contributions on Sep 9, 2025No contributions on Sep 10, 2025No contributions on Sep 11, 2025No contributions on Sep 12, 2025No contributions on Sep 13, 2025No contributions on Sep 14, 2025No contributions on Sep 15, 2025No contributions on Sep 16, 2025No contributions on Sep 17, 2025No contributions on Sep 18, 2025No contributions on Sep 19, 2025No contributions on Sep 20, 2025No contributions on Sep 21, 2025No contributions on Sep 22, 20253 contributions on Sep 23, 2025No contributions on Sep 24, 2025No contributions on Sep 25, 2025No contributions on Sep 26, 2025No contributions on Sep 27, 20253 contributions on Sep 28, 2025No contributions on Sep 29, 20254 contributions on Sep 30, 2025No contributions on Oct 1, 20252 contributions on Oct 2, 20254 contributions on Oct 3, 20253 contributions on Oct 4, 2025No contributions on Oct 5, 20259 contributions on Oct 6, 20254 contributions on Oct 7, 2025No contributions on Oct 8, 2025No contributions on Oct 9, 20252 contributions on Oct 10, 2025No contributions on Oct 11, 2025No contributions on Oct 12, 20251 contribution on Oct 13, 2025No contributions on Oct 14, 2025No contributions on Oct 15, 2025No contributions on Oct 16, 2025No contributions on Oct 17, 2025No contributions on Oct 18, 20254 contributions on Oct 19, 2025No contributions on Oct 20, 2025No contributions on Oct 21, 2025No contributions on Oct 22, 2025No contributions on Oct 23, 2025No contributions on Oct 24, 2025No contributions on Oct 25, 2025No contributions on Oct 26, 2025No contributions on Oct 27, 2025No contributions on Oct 28, 2025No contributions on Oct 29, 2025No contributions on Oct 30, 2025No contributions on Oct 31, 2025No contributions on Nov 1, 2025No contributions on Nov 2, 2025No contributions on Nov 3, 2025No contributions on Nov 4, 2025No contributions on Nov 5, 2025No contributions on Nov 6, 2025No contributions on Nov 7, 2025No contributions on Nov 8, 2025No contributions on Nov 9, 2025No contributions on Nov 10, 2025No contributions on Nov 11, 2025No contributions on Nov 12, 2025No contributions on Nov 13, 20252 contributions on Nov 14, 2025No contributions on Nov 15, 2025No contributions on Nov 16, 2025No contributions on Nov 17, 2025No contributions on Nov 18, 20252 contributions on Nov 19, 20254 contributions on Nov 20, 20253 contributions on Nov 21, 202515 contributions on Nov 22, 202521 contributions on Nov 23, 20254 contributions on Nov 24, 2025No contributions on Nov 25, 20252 contributions on Nov 26, 20253 contributions on Nov 27, 2025No contributions on Nov 28, 2025No contributions on Nov 29, 2025No contributions on Nov 30, 2025No contributions on Dec 1, 20252 contributions on Dec 2, 2025No contributions on Dec 3, 2025No contributions on Dec 4, 2025No contributions on Dec 5, 2025No contributions on Dec 6, 2025No contributions on Dec 7, 2025No contributions on Dec 8, 2025No contributions on Dec 9, 2025No contributions on Dec 10, 2025No contributions on Dec 11, 2025No contributions on Dec 12, 2025No contributions on Dec 13, 20252 contributions on Dec 14, 2025No contributions on Dec 15, 2025No contributions on Dec 16, 2025No contributions on Dec 17, 2025No contributions on Dec 18, 2025No contributions on Dec 19, 2025No contributions on Dec 20, 2025No contributions on Dec 21, 2025No contributions on Dec 22, 2025No contributions on Dec 23, 2025No contributions on Dec 24, 2025No contributions on Dec 25, 2025No contributions on Dec 26, 2025No contributions on Dec 27, 2025No contributions on Dec 28, 2025No contributions on Dec 29, 2025No contributions on Dec 30, 2025No contributions on Dec 31, 2025No contributions on Jan 1, 2026No contributions on Jan 2, 2026No contributions on Jan 3, 2026No contributions on Jan 4, 2026No contributions on Jan 5, 2026No contributions on Jan 6, 2026No contributions on Jan 7, 2026No contributions on Jan 8, 2026No contributions on Jan 9, 2026No contributions on Jan 10, 2026No contributions on Jan 11, 202624 contributions on Jan 12, 202615 contributions on Jan 13, 2026134 contributions on Jan 14, 202616 contributions on Jan 15, 20267 contributions on Jan 16, 202628 contributions on Jan 17, 202624 contributions on Jan 18, 20264 contributions on Jan 19, 202610 contributions on Jan 20, 20262 contributions on Jan 21, 2026No contributions on Jan 22, 202615 contributions on Jan 23, 20261 contribution on Jan 24, 20264 contributions on Jan 25, 202614 contributions on Jan 26, 20268 contributions on Jan 27, 202635 contributions on Jan 28, 202690 contributions on Jan 29, 20264 contributions on Jan 30, 2026No contributions on Jan 31, 202622 contributions on Feb 1, 202612 contributions on Feb 2, 202629 contributions on Feb 3, 20262 contributions on Feb 4, 20265 contributions on Feb 5, 20261 contribution on Feb 6, 20261 contribution on Feb 7, 202648 contributions on Feb 8, 2026110 contributions on Feb 9, 202643 contributions on Feb 10, 20264 contributions on Feb 11, 20264 contributions on Feb 12, 2026No contributions on Feb 13, 20262 contributions on Feb 14, 2026No contributions on Feb 15, 2026No contributions on Feb 16, 2026No contributions on Feb 17, 20264 contributions on Feb 18, 20266 contributions on Feb 19, 20267 contributions on Feb 20, 20269 contributions on Feb 21, 202616 contributions on Feb 22, 2026No contributions on Feb 23, 2026No contributions on Feb 24, 2026No contributions on Feb 25, 20262 contributions on Feb 26, 2026No contributions on Feb 27, 2026No contributions on Feb 28, 2026No contributions on Mar 1, 20262 contributions on Mar 2, 2026No contributions on Mar 3, 2026No contributions on Mar 4, 20262 contributions on Mar 5, 2026No contributions on Mar 6, 20266 contributions on Mar 7, 20266 contributions on Mar 8, 2026No contributions on Mar 9, 2026No contributions on Mar 10, 202610 contributions on Mar 11, 2026No contributions on Mar 12, 2026No contributions on Mar 13, 2026No contributions on Mar 14, 2026No contributions on Mar 15, 2026No contributions on Mar 16, 2026No contributions on Mar 17, 2026No contributions on Mar 18, 2026No contributions on Mar 19, 2026No contributions on Mar 20, 2026No contributions on Mar 21, 20262 contributions on Mar 22, 2026No contributions on Mar 23, 2026No contributions on Mar 24, 2026No contributions on Mar 25, 202610 contributions on Mar 26, 2026No contributions on Mar 27, 2026No contributions on Mar 28, 2026No contributions on Mar 29, 2026No contributions on Mar 30, 2026No contributions on Mar 31, 20262 contributions on Apr 1, 2026No contributions on Apr 2, 2026No contributions on Apr 3, 2026No contributions on Apr 4, 20266 contributions on Apr 5, 2026No contributions on Apr 6, 2026No contributions on Apr 7, 2026No contributions on Apr 8, 202656 contributions on Apr 9, 20268 contributions on Apr 10, 2026No contributions on Apr 11, 20261 contribution on Apr 12, 2026No contributions on Apr 13, 2026No contributions on Apr 14, 2026No contributions on Apr 15, 20262 contributions on Apr 16, 2026No contributions on Apr 17, 2026No contributions on Apr 18, 2026No contributions on Apr 19, 2026No contributions on Apr 20, 2026No contributions on Apr 21, 2026No contributions on Apr 22, 2026No contributions on Apr 23, 2026No contributions on Apr 24, 20265 contributions on Apr 25, 2026No contributions on Apr 26, 20265 contributions on Apr 27, 20267 contributions on Apr 28, 2026No contributions on Apr 29, 20261 contribution on Apr 30, 2026No contributions on May 1, 20266 contributions on May 2, 20266 contributions on May 3, 2026No contributions on May 4, 20268 contributions on May 5, 20262 contributions on May 6, 2026No contributions on May 7, 2026No contributions on May 8, 2026No contributions on May 9, 2026No contributions on May 10, 2026No contributions on May 11, 2026No contributions on May 12, 2026No contributions on May 13, 2026No contributions on May 14, 2026No contributions on May 15, 2026No contributions on May 16, 2026No contributions on May 17, 2026No contributions on May 18, 2026No contributions on May 19, 2026No contributions on May 20, 2026No contributions on May 21, 20262 contributions on May 22, 20262 contributions on May 23, 2026No contributions on May 24, 2026No contributions on May 25, 2026No contributions on May 26, 20263 contributions on May 27, 2026No contributions on May 28, 2026No contributions on May 29, 20261 contribution on May 30, 2026No contributions on May 31, 2026No contributions on Jun 1, 2026No contributions on Jun 2, 2026No contributions on Jun 3, 2026No contributions on Jun 4, 2026No contributions on Jun 5, 2026No contributions on Jun 6, 20261 contribution on Jun 7, 20261 contribution on Jun 8, 2026No contributions on Jun 9, 2026No contributions on Jun 10, 2026No contributions on Jun 11, 2026No contributions on Jun 12, 20262 contributions on Jun 13, 20265 contributions on Jun 14, 2026No contributions on Jun 15, 2026No contributions on Jun 16, 2026No contributions on Jun 17, 2026No contributions on Jun 18, 20262 contributions on Jun 19, 20261 contribution on Jun 20, 2026No contributions on Jun 21, 2026No contributions on Jun 22, 2026No contributions on Jun 23, 2026No contributions on Jun 24, 20262 contributions on Jun 25, 2026No contributions on Jun 26, 2026No contributions on Jun 27, 20268 contributions on Jun 28, 2026No contributions on Jun 29, 2026No contributions on Jun 30, 2026No contributions on Jul 1, 2026No contributions on Jul 2, 2026No contributions on Jul 3, 202612 contributions on Jul 4, 202651 contributions on Jul 5, 20261 contribution on Jul 6, 2026No contributions on Jul 7, 20261 contribution on Jul 8, 2026No contributions on Jul 9, 2026101 contributions on Jul 10, 2026164 contributions on Jul 11, 2026No contributions on Jul 12, 202617 contributions on Jul 13, 20261 contribution on Jul 14, 202614 contributions on Jul 15, 202649 contributions on Jul 16, 202620 contributions on Jul 17, 202641 contributions on Jul 18, 202625 contributions on Jul 19, 202625 contributions on Jul 20, 202623 contributions on Jul 21, 202615 contributions on Jul 22, 202621 contributions on Jul 23, 202636 contributions on Jul 24, 202614 contributions on Jul 25, 202614 contributions on Jul 26, 202623 contributions on Jul 27, 202626 contributions on Jul 28, 202615 contributions on Jul 29, 202610 contributions on Jul 30, 202634 contributions on Jul 31, 202610 contributions on Aug 1, 202641 contributions on Aug 2, 202646 contributions on Aug 3, 2026No contributions on Aug 4, 202648 contributions on Aug 5, 202634 contributions on Aug 6, 202625 contributions on Aug 7, 202610 contributions on Aug 8, 202619 contributions on Aug 9, 202612 contributions on Aug 10, 2026Cached build data as of Aug 10, 2026.LessMoreCombined activity visible across my personal account and Semper Digital Solutions. Client repositories remain private; these are the public profiles and repositories.GitHub's public profile calendar can include anonymized private contributions. This cached snapshot cannot separate those contributions by day.Public sourceSource for stevenhagene.comThe complete source for this site, including its token system, build-time GitHub aggregation, metadata pipeline, accessibility checks, responsive screenshots, and deployment automation.Astro · TypeScript · Playwright · axe-coreshagene/portfolio",
         "email": null,
         "statsWidths": [
           353.28125,
@@ -5699,22 +5689,42 @@
           "containedByPanel": true,
           "containedByViewport": true
         },
+        "privateProjects": [
+          {
+            "name": "Aegis",
+            "repositoryLinks": 0
+          },
+          {
+            "name": "Semper Command Center",
+            "repositoryLinks": 0
+          },
+          {
+            "name": "VolumeGuard",
+            "repositoryLinks": 0
+          }
+        ],
+        "portfolioSourceLinks": [
+          {
+            "tag": "A",
+            "href": "https://github.com/shagene/portfolio"
+          }
+        ],
         "metadata": {
-          "title": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "description": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "title": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "description": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "robots": "index, follow",
           "canonical": "https://www.stevenhagene.com/github/",
           "ogType": "profile",
-          "ogTitle": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "ogDescription": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "ogTitle": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "ogDescription": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "ogUrl": "https://www.stevenhagene.com/github/",
           "ogImage": "https://www.stevenhagene.com/og-github.png",
           "ogImageWidth": "1200",
           "ogImageHeight": "630",
           "ogImageAlt": "Private engineering systems and combined GitHub activity by Steven Hagene",
           "twitterCard": "summary_large_image",
-          "twitterTitle": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "twitterDescription": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "twitterTitle": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "twitterDescription": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "twitterImage": "https://www.stevenhagene.com/og-github.png",
           "twitterImageAlt": "Private engineering systems and combined GitHub activity by Steven Hagene",
           "faviconSvg": "/favicon.svg",
@@ -5772,13 +5782,13 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
       "keyboard": {
-        "expectedCount": 20,
-        "visitedCount": 20,
+        "expectedCount": 14,
+        "visitedCount": 14,
         "complete": true,
         "cycledToStart": false,
         "first": {
@@ -5895,36 +5905,6 @@
           },
           {
             "index": 10,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/teo/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 11,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/musterhall/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 12,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/crimcaseai/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 13,
             "tag": "DIV",
             "text": "Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolution",
             "href": null,
@@ -5934,7 +5914,7 @@
             "visibleInViewport": true
           },
           {
-            "index": 14,
+            "index": 11,
             "tag": "A",
             "text": "personal account",
             "href": "https://github.com/shagene",
@@ -5944,7 +5924,7 @@
             "visibleInViewport": true
           },
           {
-            "index": 15,
+            "index": 12,
             "tag": "A",
             "text": "Semper Digital Solutions",
             "href": "https://github.com/semperdigitalsolutions",
@@ -5954,40 +5934,10 @@
             "visibleInViewport": true
           },
           {
-            "index": 16,
+            "index": 13,
             "tag": "A",
-            "text": "shagene/quote-extractor",
-            "href": "https://github.com/shagene/quote-extractor",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 17,
-            "tag": "A",
-            "text": "shagene/hours-interval-engine",
-            "href": "https://github.com/shagene/hours-interval-engine",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 18,
-            "tag": "A",
-            "text": "shagene/python_seo",
-            "href": "https://github.com/shagene/python_seo",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 19,
-            "tag": "A",
-            "text": "semperdigitalsolutions/MeetScribe",
-            "href": "https://github.com/semperdigitalsolutions/MeetScribe",
+            "text": "shagene/portfolio",
+            "href": "https://github.com/shagene/portfolio",
             "outlineWidth": 2,
             "outlineStyle": "solid",
             "outlineColor": "rgb(251, 203, 167)",
@@ -6057,13 +6007,13 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 50,
+            "nodeCount": 47,
             "samples": [
               [
                 "strong"
               ],
               [
-                "a[href$=\"work/\"][data-astro-cid-nen7h5rs=\"\"]"
+                "li:nth-child(1) > a[href$=\"work/\"]"
               ],
               [
                 "a[href$=\"github/\"]"
@@ -6103,7 +6053,7 @@
           "page-intro",
           "github"
         ],
-        "mainText": "← PortfolioEngineering proof · Private systems, public signalThe strongest work is private. The engineering story is not.TEO, Musterhall, and CrimCaseAI best represent how I design and ship systems. Their repositories stay private, so this page leads with what I built and why it was difficult, then puts public activity from both GitHub accounts in context.Engineering case studiesContact Steven01 · GitHubPrivate systems, documented at the decision level.Most current product and client work lives in private repositories. The case studies explain the architecture, constraints, and decisions; public activity follows as supporting evidence.Selected private systemsThe work I would put in front of a technical interviewer.The repositories remain private. Each case study documents the system boundary, my role, what I built, and the hard part without publishing protected source.01ALead Full-Stack EngineerPrivate repository · Case study availableTEOProperty-management financial SaaSWhat I builtPayments and accounts receivable across QuickBooks, Payabli, webhooks, background workers, and ledger-derived invoice state.Why it was hardA financial product has to preserve one trustworthy account of an invoice while QuickBooks, hosted checkout, webhooks, and background jobs all change it.Read engineering case study01BSole EngineerPrivate repository · Case study availableMusterhallCreator learning platformWhat I builtA Next.js web app, Flutter mobile app, Supabase/Postgres backend, live classrooms, and one shared design-token pipeline.Why it was hardOne learning product needed to behave coherently across web, mobile, real-time rooms, and a database with product rules that could not drift by client.Read engineering case study01CPrincipal EngineerPrivate repository · Case study availableCrimCaseAILegal intelligence portfolioWhat I builtCase-management and evidence-intelligence systems spanning in-browser ML, local processing, entity graphs, and citation-gated AI.Why it was hardLegal teams need useful intelligence from sensitive case material without weakening privilege, provenance, or the operating boundaries of restricted environments.Read engineering case studySupporting signalOne public activity view across both accounts.The calendar and repository statistics establish visible recency and breadth. They support the private-system evidence above; they do not replace it.Public-profile contributions · 12 mo2,043Combined public repos48Top languages by bytesTypeScript · Swift · HTML · DartLatest public activityJun 20, 2026Trailing 12 monthsOne combined contribution calendar.2,043 contributions visible across both public profiles.Scroll horizontally to inspect the full year.Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolutions from Aug 11, 2025 through Aug 10, 2026.AugSepOctNovDecJanFebMarAprMayJunJulAugMWFNo contributions on Aug 11, 2025No contributions on Aug 12, 2025No contributions on Aug 13, 2025No contributions on Aug 14, 2025No contributions on Aug 15, 2025No contributions on Aug 16, 2025No contributions on Aug 17, 2025No contributions on Aug 18, 2025No contributions on Aug 19, 2025No contributions on Aug 20, 2025No contributions on Aug 21, 2025No contributions on Aug 22, 2025No contributions on Aug 23, 2025No contributions on Aug 24, 2025No contributions on Aug 25, 2025No contributions on Aug 26, 2025No contributions on Aug 27, 2025No contributions on Aug 28, 2025No contributions on Aug 29, 2025No contributions on Aug 30, 2025No contributions on Aug 31, 2025No contributions on Sep 1, 2025No contributions on Sep 2, 2025No contributions on Sep 3, 2025No contributions on Sep 4, 2025No contributions on Sep 5, 2025No contributions on Sep 6, 20251 contribution on Sep 7, 2025No contributions on Sep 8, 2025No contributions on Sep 9, 2025No contributions on Sep 10, 2025No contributions on Sep 11, 2025No contributions on Sep 12, 2025No contributions on Sep 13, 2025No contributions on Sep 14, 2025No contributions on Sep 15, 2025No contributions on Sep 16, 2025No contributions on Sep 17, 2025No contributions on Sep 18, 2025No contributions on Sep 19, 2025No contributions on Sep 20, 2025No contributions on Sep 21, 2025No contributions on Sep 22, 20253 contributions on Sep 23, 2025No contributions on Sep 24, 2025No contributions on Sep 25, 2025No contributions on Sep 26, 2025No contributions on Sep 27, 20253 contributions on Sep 28, 2025No contributions on Sep 29, 20254 contributions on Sep 30, 2025No contributions on Oct 1, 20252 contributions on Oct 2, 20254 contributions on Oct 3, 20253 contributions on Oct 4, 2025No contributions on Oct 5, 20259 contributions on Oct 6, 20254 contributions on Oct 7, 2025No contributions on Oct 8, 2025No contributions on Oct 9, 20252 contributions on Oct 10, 2025No contributions on Oct 11, 2025No contributions on Oct 12, 20251 contribution on Oct 13, 2025No contributions on Oct 14, 2025No contributions on Oct 15, 2025No contributions on Oct 16, 2025No contributions on Oct 17, 2025No contributions on Oct 18, 20254 contributions on Oct 19, 2025No contributions on Oct 20, 2025No contributions on Oct 21, 2025No contributions on Oct 22, 2025No contributions on Oct 23, 2025No contributions on Oct 24, 2025No contributions on Oct 25, 2025No contributions on Oct 26, 2025No contributions on Oct 27, 2025No contributions on Oct 28, 2025No contributions on Oct 29, 2025No contributions on Oct 30, 2025No contributions on Oct 31, 2025No contributions on Nov 1, 2025No contributions on Nov 2, 2025No contributions on Nov 3, 2025No contributions on Nov 4, 2025No contributions on Nov 5, 2025No contributions on Nov 6, 2025No contributions on Nov 7, 2025No contributions on Nov 8, 2025No contributions on Nov 9, 2025No contributions on Nov 10, 2025No contributions on Nov 11, 2025No contributions on Nov 12, 2025No contributions on Nov 13, 20252 contributions on Nov 14, 2025No contributions on Nov 15, 2025No contributions on Nov 16, 2025No contributions on Nov 17, 2025No contributions on Nov 18, 20252 contributions on Nov 19, 20254 contributions on Nov 20, 20253 contributions on Nov 21, 202515 contributions on Nov 22, 202521 contributions on Nov 23, 20254 contributions on Nov 24, 2025No contributions on Nov 25, 20252 contributions on Nov 26, 20253 contributions on Nov 27, 2025No contributions on Nov 28, 2025No contributions on Nov 29, 2025No contributions on Nov 30, 2025No contributions on Dec 1, 20252 contributions on Dec 2, 2025No contributions on Dec 3, 2025No contributions on Dec 4, 2025No contributions on Dec 5, 2025No contributions on Dec 6, 2025No contributions on Dec 7, 2025No contributions on Dec 8, 2025No contributions on Dec 9, 2025No contributions on Dec 10, 2025No contributions on Dec 11, 2025No contributions on Dec 12, 2025No contributions on Dec 13, 20252 contributions on Dec 14, 2025No contributions on Dec 15, 2025No contributions on Dec 16, 2025No contributions on Dec 17, 2025No contributions on Dec 18, 2025No contributions on Dec 19, 2025No contributions on Dec 20, 2025No contributions on Dec 21, 2025No contributions on Dec 22, 2025No contributions on Dec 23, 2025No contributions on Dec 24, 2025No contributions on Dec 25, 2025No contributions on Dec 26, 2025No contributions on Dec 27, 2025No contributions on Dec 28, 2025No contributions on Dec 29, 2025No contributions on Dec 30, 2025No contributions on Dec 31, 2025No contributions on Jan 1, 2026No contributions on Jan 2, 2026No contributions on Jan 3, 2026No contributions on Jan 4, 2026No contributions on Jan 5, 2026No contributions on Jan 6, 2026No contributions on Jan 7, 2026No contributions on Jan 8, 2026No contributions on Jan 9, 2026No contributions on Jan 10, 2026No contributions on Jan 11, 202624 contributions on Jan 12, 202615 contributions on Jan 13, 2026134 contributions on Jan 14, 202616 contributions on Jan 15, 20267 contributions on Jan 16, 202628 contributions on Jan 17, 202624 contributions on Jan 18, 20264 contributions on Jan 19, 202610 contributions on Jan 20, 20262 contributions on Jan 21, 2026No contributions on Jan 22, 202615 contributions on Jan 23, 20261 contribution on Jan 24, 20264 contributions on Jan 25, 202614 contributions on Jan 26, 20268 contributions on Jan 27, 202635 contributions on Jan 28, 202690 contributions on Jan 29, 20264 contributions on Jan 30, 2026No contributions on Jan 31, 202622 contributions on Feb 1, 202612 contributions on Feb 2, 202629 contributions on Feb 3, 20262 contributions on Feb 4, 20265 contributions on Feb 5, 20261 contribution on Feb 6, 20261 contribution on Feb 7, 202648 contributions on Feb 8, 2026110 contributions on Feb 9, 202643 contributions on Feb 10, 20264 contributions on Feb 11, 20264 contributions on Feb 12, 2026No contributions on Feb 13, 20262 contributions on Feb 14, 2026No contributions on Feb 15, 2026No contributions on Feb 16, 2026No contributions on Feb 17, 20264 contributions on Feb 18, 20266 contributions on Feb 19, 20267 contributions on Feb 20, 20269 contributions on Feb 21, 202616 contributions on Feb 22, 2026No contributions on Feb 23, 2026No contributions on Feb 24, 2026No contributions on Feb 25, 20262 contributions on Feb 26, 2026No contributions on Feb 27, 2026No contributions on Feb 28, 2026No contributions on Mar 1, 20262 contributions on Mar 2, 2026No contributions on Mar 3, 2026No contributions on Mar 4, 20262 contributions on Mar 5, 2026No contributions on Mar 6, 20266 contributions on Mar 7, 20266 contributions on Mar 8, 2026No contributions on Mar 9, 2026No contributions on Mar 10, 202610 contributions on Mar 11, 2026No contributions on Mar 12, 2026No contributions on Mar 13, 2026No contributions on Mar 14, 2026No contributions on Mar 15, 2026No contributions on Mar 16, 2026No contributions on Mar 17, 2026No contributions on Mar 18, 2026No contributions on Mar 19, 2026No contributions on Mar 20, 2026No contributions on Mar 21, 20262 contributions on Mar 22, 2026No contributions on Mar 23, 2026No contributions on Mar 24, 2026No contributions on Mar 25, 202610 contributions on Mar 26, 2026No contributions on Mar 27, 2026No contributions on Mar 28, 2026No contributions on Mar 29, 2026No contributions on Mar 30, 2026No contributions on Mar 31, 20262 contributions on Apr 1, 2026No contributions on Apr 2, 2026No contributions on Apr 3, 2026No contributions on Apr 4, 20266 contributions on Apr 5, 2026No contributions on Apr 6, 2026No contributions on Apr 7, 2026No contributions on Apr 8, 202656 contributions on Apr 9, 20268 contributions on Apr 10, 2026No contributions on Apr 11, 20261 contribution on Apr 12, 2026No contributions on Apr 13, 2026No contributions on Apr 14, 2026No contributions on Apr 15, 20262 contributions on Apr 16, 2026No contributions on Apr 17, 2026No contributions on Apr 18, 2026No contributions on Apr 19, 2026No contributions on Apr 20, 2026No contributions on Apr 21, 2026No contributions on Apr 22, 2026No contributions on Apr 23, 2026No contributions on Apr 24, 20265 contributions on Apr 25, 2026No contributions on Apr 26, 20265 contributions on Apr 27, 20267 contributions on Apr 28, 2026No contributions on Apr 29, 20261 contribution on Apr 30, 2026No contributions on May 1, 20266 contributions on May 2, 20266 contributions on May 3, 2026No contributions on May 4, 20268 contributions on May 5, 20262 contributions on May 6, 2026No contributions on May 7, 2026No contributions on May 8, 2026No contributions on May 9, 2026No contributions on May 10, 2026No contributions on May 11, 2026No contributions on May 12, 2026No contributions on May 13, 2026No contributions on May 14, 2026No contributions on May 15, 2026No contributions on May 16, 2026No contributions on May 17, 2026No contributions on May 18, 2026No contributions on May 19, 2026No contributions on May 20, 2026No contributions on May 21, 20262 contributions on May 22, 20262 contributions on May 23, 2026No contributions on May 24, 2026No contributions on May 25, 2026No contributions on May 26, 20263 contributions on May 27, 2026No contributions on May 28, 2026No contributions on May 29, 20261 contribution on May 30, 2026No contributions on May 31, 2026No contributions on Jun 1, 2026No contributions on Jun 2, 2026No contributions on Jun 3, 2026No contributions on Jun 4, 2026No contributions on Jun 5, 2026No contributions on Jun 6, 20261 contribution on Jun 7, 20261 contribution on Jun 8, 2026No contributions on Jun 9, 2026No contributions on Jun 10, 2026No contributions on Jun 11, 2026No contributions on Jun 12, 20262 contributions on Jun 13, 20265 contributions on Jun 14, 2026No contributions on Jun 15, 2026No contributions on Jun 16, 2026No contributions on Jun 17, 2026No contributions on Jun 18, 20262 contributions on Jun 19, 20261 contribution on Jun 20, 2026No contributions on Jun 21, 2026No contributions on Jun 22, 2026No contributions on Jun 23, 2026No contributions on Jun 24, 20262 contributions on Jun 25, 2026No contributions on Jun 26, 2026No contributions on Jun 27, 20268 contributions on Jun 28, 2026No contributions on Jun 29, 2026No contributions on Jun 30, 2026No contributions on Jul 1, 2026No contributions on Jul 2, 2026No contributions on Jul 3, 202612 contributions on Jul 4, 202651 contributions on Jul 5, 20261 contribution on Jul 6, 2026No contributions on Jul 7, 20261 contribution on Jul 8, 2026No contributions on Jul 9, 2026101 contributions on Jul 10, 2026164 contributions on Jul 11, 2026No contributions on Jul 12, 202617 contributions on Jul 13, 20261 contribution on Jul 14, 202614 contributions on Jul 15, 202649 contributions on Jul 16, 202620 contributions on Jul 17, 202641 contributions on Jul 18, 202625 contributions on Jul 19, 202625 contributions on Jul 20, 202623 contributions on Jul 21, 202615 contributions on Jul 22, 202621 contributions on Jul 23, 202636 contributions on Jul 24, 202614 contributions on Jul 25, 202614 contributions on Jul 26, 202623 contributions on Jul 27, 202626 contributions on Jul 28, 202615 contributions on Jul 29, 202610 contributions on Jul 30, 202634 contributions on Jul 31, 202610 contributions on Aug 1, 202641 contributions on Aug 2, 202646 contributions on Aug 3, 2026No contributions on Aug 4, 202648 contributions on Aug 5, 202634 contributions on Aug 6, 202625 contributions on Aug 7, 202610 contributions on Aug 8, 202619 contributions on Aug 9, 202612 contributions on Aug 10, 2026Cached build data as of Aug 10, 2026.LessMoreCombined activity visible across my personal account and Semper Digital Solutions. Client repositories remain private; these are the public profiles and repositories.GitHub's public profile calendar can include anonymized private contributions. This cached snapshot cannot separate those contributions by day.Public snapshotsInspectable examples, not a ranking of my best work.These smaller repositories can be reviewed directly. They remain here for code-level inspection and transparency, but they are supporting material.01TypeScriptPersonal · shageneQuote ExtractorSchema-enforced LLM quote extraction with deterministic validation and a source-side human review workflow.shagene/quote-extractor02PythonPersonal · shageneRestaurant Hours APIA tested FastAPI service that normalizes messy schedules into a compact week-minute interval engine.shagene/hours-interval-engine03PythonPersonal · shagenePython SEO ToolkitA crawler and sitemap-analysis toolkit for technical SEO checks and site-structure visualization.shagene/python_seo04SwiftSemper Digital Solutions · semperdigitalsolutionsMeetScribeLocal-first macOS transcription tooling built with SwiftUI, ffmpeg, whisper.cpp, structured transcript artifacts, and optional localhost-only Ollama summaries.semperdigitalsolutions/MeetScribe",
+        "mainText": "← PortfolioEngineering proof · Private systems, public signalThe strongest work is private. The engineering story is not.Aegis, Semper Command Center, and VolumeGuard are owner-controlled products whose repositories stay private. This page documents what I built and the constraints that shaped each system, then puts public activity from both GitHub accounts in context.Engineering case studiesContact Steven01 · GitHubPrivate engineering, documented without exposing source.The strongest owner-controlled product work lives in private repositories. These summaries explain the architecture and constraints; public activity follows as supporting evidence.Selected private engineeringOwner-controlled systems I can discuss at the architecture level.The code stays private. Each snapshot names the product boundary, my role, what I built, and the constraint that shaped the system without publishing protected source.01Founder & Principal EngineerSemper product · Source privateAegisLocal-first legal evidence intelligenceWhat I builtA FastAPI and React appliance that ingests discovery, preserves source hashes, processes documents and media locally, and supports case-scoped search with source-linked answers.Hard constraintRaw evidence remains read-only and case-scoped; restricted material produces no derivatives, and AI must cite the record or decline to answer.02Founder & Principal EngineerSemper product · Source privateSemper Command CenterAI-assisted sourcing operationsWhat I builtA Next.js operations hub that turns part requests, supplier results, and replies into durable RFQ jobs with role-scoped queues, evidence-backed rankings, handoff briefs, and a hash-chained work log.Hard constraintAI can normalize, rank, and draft, but purchasing, supplier outreach, and customer-facing quotes remain behind explicit human review.03Founder & Android Product EngineerSemper product · Source privateVolumeGuardNative Android utilityWhat I builtA Kotlin and Jetpack Compose app that enforces user-selected media-volume limits through coordinated service, system-observer, notification-listener, media-session, and fallback polling paths.Hard constraintAndroid provides no sanctioned volume-lock API, so enforcement must recover across independent change paths without creating feedback loops or excessive battery use.Supporting signalOne public activity view across both accounts.The calendar and repository statistics establish visible recency and breadth. They support the private-system evidence above; they do not replace it.Public-profile contributions · 12 mo2,043Combined public repos48Top languages by bytesTypeScript · Swift · HTML · DartLatest public activityJun 20, 2026Trailing 12 monthsOne combined contribution calendar.2,043 contributions visible across both public profiles.Scroll horizontally to inspect the full year.Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolutions from Aug 11, 2025 through Aug 10, 2026.AugSepOctNovDecJanFebMarAprMayJunJulAugMWFNo contributions on Aug 11, 2025No contributions on Aug 12, 2025No contributions on Aug 13, 2025No contributions on Aug 14, 2025No contributions on Aug 15, 2025No contributions on Aug 16, 2025No contributions on Aug 17, 2025No contributions on Aug 18, 2025No contributions on Aug 19, 2025No contributions on Aug 20, 2025No contributions on Aug 21, 2025No contributions on Aug 22, 2025No contributions on Aug 23, 2025No contributions on Aug 24, 2025No contributions on Aug 25, 2025No contributions on Aug 26, 2025No contributions on Aug 27, 2025No contributions on Aug 28, 2025No contributions on Aug 29, 2025No contributions on Aug 30, 2025No contributions on Aug 31, 2025No contributions on Sep 1, 2025No contributions on Sep 2, 2025No contributions on Sep 3, 2025No contributions on Sep 4, 2025No contributions on Sep 5, 2025No contributions on Sep 6, 20251 contribution on Sep 7, 2025No contributions on Sep 8, 2025No contributions on Sep 9, 2025No contributions on Sep 10, 2025No contributions on Sep 11, 2025No contributions on Sep 12, 2025No contributions on Sep 13, 2025No contributions on Sep 14, 2025No contributions on Sep 15, 2025No contributions on Sep 16, 2025No contributions on Sep 17, 2025No contributions on Sep 18, 2025No contributions on Sep 19, 2025No contributions on Sep 20, 2025No contributions on Sep 21, 2025No contributions on Sep 22, 20253 contributions on Sep 23, 2025No contributions on Sep 24, 2025No contributions on Sep 25, 2025No contributions on Sep 26, 2025No contributions on Sep 27, 20253 contributions on Sep 28, 2025No contributions on Sep 29, 20254 contributions on Sep 30, 2025No contributions on Oct 1, 20252 contributions on Oct 2, 20254 contributions on Oct 3, 20253 contributions on Oct 4, 2025No contributions on Oct 5, 20259 contributions on Oct 6, 20254 contributions on Oct 7, 2025No contributions on Oct 8, 2025No contributions on Oct 9, 20252 contributions on Oct 10, 2025No contributions on Oct 11, 2025No contributions on Oct 12, 20251 contribution on Oct 13, 2025No contributions on Oct 14, 2025No contributions on Oct 15, 2025No contributions on Oct 16, 2025No contributions on Oct 17, 2025No contributions on Oct 18, 20254 contributions on Oct 19, 2025No contributions on Oct 20, 2025No contributions on Oct 21, 2025No contributions on Oct 22, 2025No contributions on Oct 23, 2025No contributions on Oct 24, 2025No contributions on Oct 25, 2025No contributions on Oct 26, 2025No contributions on Oct 27, 2025No contributions on Oct 28, 2025No contributions on Oct 29, 2025No contributions on Oct 30, 2025No contributions on Oct 31, 2025No contributions on Nov 1, 2025No contributions on Nov 2, 2025No contributions on Nov 3, 2025No contributions on Nov 4, 2025No contributions on Nov 5, 2025No contributions on Nov 6, 2025No contributions on Nov 7, 2025No contributions on Nov 8, 2025No contributions on Nov 9, 2025No contributions on Nov 10, 2025No contributions on Nov 11, 2025No contributions on Nov 12, 2025No contributions on Nov 13, 20252 contributions on Nov 14, 2025No contributions on Nov 15, 2025No contributions on Nov 16, 2025No contributions on Nov 17, 2025No contributions on Nov 18, 20252 contributions on Nov 19, 20254 contributions on Nov 20, 20253 contributions on Nov 21, 202515 contributions on Nov 22, 202521 contributions on Nov 23, 20254 contributions on Nov 24, 2025No contributions on Nov 25, 20252 contributions on Nov 26, 20253 contributions on Nov 27, 2025No contributions on Nov 28, 2025No contributions on Nov 29, 2025No contributions on Nov 30, 2025No contributions on Dec 1, 20252 contributions on Dec 2, 2025No contributions on Dec 3, 2025No contributions on Dec 4, 2025No contributions on Dec 5, 2025No contributions on Dec 6, 2025No contributions on Dec 7, 2025No contributions on Dec 8, 2025No contributions on Dec 9, 2025No contributions on Dec 10, 2025No contributions on Dec 11, 2025No contributions on Dec 12, 2025No contributions on Dec 13, 20252 contributions on Dec 14, 2025No contributions on Dec 15, 2025No contributions on Dec 16, 2025No contributions on Dec 17, 2025No contributions on Dec 18, 2025No contributions on Dec 19, 2025No contributions on Dec 20, 2025No contributions on Dec 21, 2025No contributions on Dec 22, 2025No contributions on Dec 23, 2025No contributions on Dec 24, 2025No contributions on Dec 25, 2025No contributions on Dec 26, 2025No contributions on Dec 27, 2025No contributions on Dec 28, 2025No contributions on Dec 29, 2025No contributions on Dec 30, 2025No contributions on Dec 31, 2025No contributions on Jan 1, 2026No contributions on Jan 2, 2026No contributions on Jan 3, 2026No contributions on Jan 4, 2026No contributions on Jan 5, 2026No contributions on Jan 6, 2026No contributions on Jan 7, 2026No contributions on Jan 8, 2026No contributions on Jan 9, 2026No contributions on Jan 10, 2026No contributions on Jan 11, 202624 contributions on Jan 12, 202615 contributions on Jan 13, 2026134 contributions on Jan 14, 202616 contributions on Jan 15, 20267 contributions on Jan 16, 202628 contributions on Jan 17, 202624 contributions on Jan 18, 20264 contributions on Jan 19, 202610 contributions on Jan 20, 20262 contributions on Jan 21, 2026No contributions on Jan 22, 202615 contributions on Jan 23, 20261 contribution on Jan 24, 20264 contributions on Jan 25, 202614 contributions on Jan 26, 20268 contributions on Jan 27, 202635 contributions on Jan 28, 202690 contributions on Jan 29, 20264 contributions on Jan 30, 2026No contributions on Jan 31, 202622 contributions on Feb 1, 202612 contributions on Feb 2, 202629 contributions on Feb 3, 20262 contributions on Feb 4, 20265 contributions on Feb 5, 20261 contribution on Feb 6, 20261 contribution on Feb 7, 202648 contributions on Feb 8, 2026110 contributions on Feb 9, 202643 contributions on Feb 10, 20264 contributions on Feb 11, 20264 contributions on Feb 12, 2026No contributions on Feb 13, 20262 contributions on Feb 14, 2026No contributions on Feb 15, 2026No contributions on Feb 16, 2026No contributions on Feb 17, 20264 contributions on Feb 18, 20266 contributions on Feb 19, 20267 contributions on Feb 20, 20269 contributions on Feb 21, 202616 contributions on Feb 22, 2026No contributions on Feb 23, 2026No contributions on Feb 24, 2026No contributions on Feb 25, 20262 contributions on Feb 26, 2026No contributions on Feb 27, 2026No contributions on Feb 28, 2026No contributions on Mar 1, 20262 contributions on Mar 2, 2026No contributions on Mar 3, 2026No contributions on Mar 4, 20262 contributions on Mar 5, 2026No contributions on Mar 6, 20266 contributions on Mar 7, 20266 contributions on Mar 8, 2026No contributions on Mar 9, 2026No contributions on Mar 10, 202610 contributions on Mar 11, 2026No contributions on Mar 12, 2026No contributions on Mar 13, 2026No contributions on Mar 14, 2026No contributions on Mar 15, 2026No contributions on Mar 16, 2026No contributions on Mar 17, 2026No contributions on Mar 18, 2026No contributions on Mar 19, 2026No contributions on Mar 20, 2026No contributions on Mar 21, 20262 contributions on Mar 22, 2026No contributions on Mar 23, 2026No contributions on Mar 24, 2026No contributions on Mar 25, 202610 contributions on Mar 26, 2026No contributions on Mar 27, 2026No contributions on Mar 28, 2026No contributions on Mar 29, 2026No contributions on Mar 30, 2026No contributions on Mar 31, 20262 contributions on Apr 1, 2026No contributions on Apr 2, 2026No contributions on Apr 3, 2026No contributions on Apr 4, 20266 contributions on Apr 5, 2026No contributions on Apr 6, 2026No contributions on Apr 7, 2026No contributions on Apr 8, 202656 contributions on Apr 9, 20268 contributions on Apr 10, 2026No contributions on Apr 11, 20261 contribution on Apr 12, 2026No contributions on Apr 13, 2026No contributions on Apr 14, 2026No contributions on Apr 15, 20262 contributions on Apr 16, 2026No contributions on Apr 17, 2026No contributions on Apr 18, 2026No contributions on Apr 19, 2026No contributions on Apr 20, 2026No contributions on Apr 21, 2026No contributions on Apr 22, 2026No contributions on Apr 23, 2026No contributions on Apr 24, 20265 contributions on Apr 25, 2026No contributions on Apr 26, 20265 contributions on Apr 27, 20267 contributions on Apr 28, 2026No contributions on Apr 29, 20261 contribution on Apr 30, 2026No contributions on May 1, 20266 contributions on May 2, 20266 contributions on May 3, 2026No contributions on May 4, 20268 contributions on May 5, 20262 contributions on May 6, 2026No contributions on May 7, 2026No contributions on May 8, 2026No contributions on May 9, 2026No contributions on May 10, 2026No contributions on May 11, 2026No contributions on May 12, 2026No contributions on May 13, 2026No contributions on May 14, 2026No contributions on May 15, 2026No contributions on May 16, 2026No contributions on May 17, 2026No contributions on May 18, 2026No contributions on May 19, 2026No contributions on May 20, 2026No contributions on May 21, 20262 contributions on May 22, 20262 contributions on May 23, 2026No contributions on May 24, 2026No contributions on May 25, 2026No contributions on May 26, 20263 contributions on May 27, 2026No contributions on May 28, 2026No contributions on May 29, 20261 contribution on May 30, 2026No contributions on May 31, 2026No contributions on Jun 1, 2026No contributions on Jun 2, 2026No contributions on Jun 3, 2026No contributions on Jun 4, 2026No contributions on Jun 5, 2026No contributions on Jun 6, 20261 contribution on Jun 7, 20261 contribution on Jun 8, 2026No contributions on Jun 9, 2026No contributions on Jun 10, 2026No contributions on Jun 11, 2026No contributions on Jun 12, 20262 contributions on Jun 13, 20265 contributions on Jun 14, 2026No contributions on Jun 15, 2026No contributions on Jun 16, 2026No contributions on Jun 17, 2026No contributions on Jun 18, 20262 contributions on Jun 19, 20261 contribution on Jun 20, 2026No contributions on Jun 21, 2026No contributions on Jun 22, 2026No contributions on Jun 23, 2026No contributions on Jun 24, 20262 contributions on Jun 25, 2026No contributions on Jun 26, 2026No contributions on Jun 27, 20268 contributions on Jun 28, 2026No contributions on Jun 29, 2026No contributions on Jun 30, 2026No contributions on Jul 1, 2026No contributions on Jul 2, 2026No contributions on Jul 3, 202612 contributions on Jul 4, 202651 contributions on Jul 5, 20261 contribution on Jul 6, 2026No contributions on Jul 7, 20261 contribution on Jul 8, 2026No contributions on Jul 9, 2026101 contributions on Jul 10, 2026164 contributions on Jul 11, 2026No contributions on Jul 12, 202617 contributions on Jul 13, 20261 contribution on Jul 14, 202614 contributions on Jul 15, 202649 contributions on Jul 16, 202620 contributions on Jul 17, 202641 contributions on Jul 18, 202625 contributions on Jul 19, 202625 contributions on Jul 20, 202623 contributions on Jul 21, 202615 contributions on Jul 22, 202621 contributions on Jul 23, 202636 contributions on Jul 24, 202614 contributions on Jul 25, 202614 contributions on Jul 26, 202623 contributions on Jul 27, 202626 contributions on Jul 28, 202615 contributions on Jul 29, 202610 contributions on Jul 30, 202634 contributions on Jul 31, 202610 contributions on Aug 1, 202641 contributions on Aug 2, 202646 contributions on Aug 3, 2026No contributions on Aug 4, 202648 contributions on Aug 5, 202634 contributions on Aug 6, 202625 contributions on Aug 7, 202610 contributions on Aug 8, 202619 contributions on Aug 9, 202612 contributions on Aug 10, 2026Cached build data as of Aug 10, 2026.LessMoreCombined activity visible across my personal account and Semper Digital Solutions. Client repositories remain private; these are the public profiles and repositories.GitHub's public profile calendar can include anonymized private contributions. This cached snapshot cannot separate those contributions by day.Public sourceSource for stevenhagene.comThe complete source for this site, including its token system, build-time GitHub aggregation, metadata pipeline, accessibility checks, responsive screenshots, and deployment automation.Astro · TypeScript · Playwright · axe-coreshagene/portfolio",
         "email": null,
         "statsWidths": [
           296,
@@ -6136,22 +6086,42 @@
           "containedByPanel": true,
           "containedByViewport": true
         },
+        "privateProjects": [
+          {
+            "name": "Aegis",
+            "repositoryLinks": 0
+          },
+          {
+            "name": "Semper Command Center",
+            "repositoryLinks": 0
+          },
+          {
+            "name": "VolumeGuard",
+            "repositoryLinks": 0
+          }
+        ],
+        "portfolioSourceLinks": [
+          {
+            "tag": "A",
+            "href": "https://github.com/shagene/portfolio"
+          }
+        ],
         "metadata": {
-          "title": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "description": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "title": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "description": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "robots": "index, follow",
           "canonical": "https://www.stevenhagene.com/github/",
           "ogType": "profile",
-          "ogTitle": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "ogDescription": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "ogTitle": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "ogDescription": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "ogUrl": "https://www.stevenhagene.com/github/",
           "ogImage": "https://www.stevenhagene.com/og-github.png",
           "ogImageWidth": "1200",
           "ogImageHeight": "630",
           "ogImageAlt": "Private engineering systems and combined GitHub activity by Steven Hagene",
           "twitterCard": "summary_large_image",
-          "twitterTitle": "Private Engineering Work & GitHub Activity | Steven Hagene",
-          "twitterDescription": "Private-system case studies from Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
+          "twitterTitle": "Private Product Engineering & GitHub Activity | Steven Hagene",
+          "twitterDescription": "Selected private products engineered by Steven Hagene, plus combined public GitHub activity across his personal and Semper Digital Solutions accounts.",
           "twitterImage": "https://www.stevenhagene.com/og-github.png",
           "twitterImageAlt": "Private engineering systems and combined GitHub activity by Steven Hagene",
           "faviconSvg": "/favicon.svg",
@@ -6209,13 +6179,13 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
       "keyboard": {
-        "expectedCount": 20,
-        "visitedCount": 20,
+        "expectedCount": 14,
+        "visitedCount": 14,
         "complete": true,
         "cycledToStart": false,
         "first": {
@@ -6332,36 +6302,6 @@
           },
           {
             "index": 10,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/teo/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 11,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/musterhall/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 12,
-            "tag": "A",
-            "text": "Read engineering case study",
-            "href": "/work/crimcaseai/",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 13,
             "tag": "DIV",
             "text": "Combined GitHub contribution activityDaily activity visible across shagene and semperdigitalsolution",
             "href": null,
@@ -6371,7 +6311,7 @@
             "visibleInViewport": true
           },
           {
-            "index": 14,
+            "index": 11,
             "tag": "A",
             "text": "personal account",
             "href": "https://github.com/shagene",
@@ -6381,7 +6321,7 @@
             "visibleInViewport": true
           },
           {
-            "index": 15,
+            "index": 12,
             "tag": "A",
             "text": "Semper Digital Solutions",
             "href": "https://github.com/semperdigitalsolutions",
@@ -6391,40 +6331,10 @@
             "visibleInViewport": true
           },
           {
-            "index": 16,
+            "index": 13,
             "tag": "A",
-            "text": "shagene/quote-extractor",
-            "href": "https://github.com/shagene/quote-extractor",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 17,
-            "tag": "A",
-            "text": "shagene/hours-interval-engine",
-            "href": "https://github.com/shagene/hours-interval-engine",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 18,
-            "tag": "A",
-            "text": "shagene/python_seo",
-            "href": "https://github.com/shagene/python_seo",
-            "outlineWidth": 2,
-            "outlineStyle": "solid",
-            "outlineColor": "rgb(251, 203, 167)",
-            "visibleInViewport": true
-          },
-          {
-            "index": 19,
-            "tag": "A",
-            "text": "semperdigitalsolutions/MeetScribe",
-            "href": "https://github.com/semperdigitalsolutions/MeetScribe",
+            "text": "shagene/portfolio",
+            "href": "https://github.com/shagene/portfolio",
             "outlineWidth": 2,
             "outlineStyle": "solid",
             "outlineColor": "rgb(251, 203, 167)",
@@ -6494,13 +6404,13 @@
           {
             "id": "color-contrast",
             "impact": "serious",
-            "nodeCount": 54,
+            "nodeCount": 51,
             "samples": [
               [
                 "strong"
               ],
               [
-                "a[href$=\"work/\"][data-astro-cid-nen7h5rs=\"\"]"
+                "li:nth-child(1) > a[href$=\"work/\"]"
               ],
               [
                 "a[href$=\"github/\"]"
@@ -6559,6 +6469,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Experience & Skills | Steven Hagene",
           "description": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
@@ -6632,7 +6544,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -6879,6 +6791,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Experience & Skills | Steven Hagene",
           "description": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
@@ -6952,7 +6866,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -7199,6 +7113,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Experience & Skills | Steven Hagene",
           "description": "Steven Hagene's engineering experience across product systems, accessible design systems, full-stack software, AI, and military communications.",
@@ -7272,7 +7188,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -7520,6 +7436,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Building Semper Digital Solutions | Steven Hagene",
           "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
@@ -7593,7 +7511,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -7851,6 +7769,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Building Semper Digital Solutions | Steven Hagene",
           "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
@@ -7924,7 +7844,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -8182,6 +8102,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Building Semper Digital Solutions | Steven Hagene",
           "description": "How Steven Hagene is building Semper Digital Solutions, an SBA-certified SDVOSB and VOSB software company grounded in direct senior delivery.",
@@ -8255,7 +8177,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": null
       },
       "statsWidthDelta": 0,
@@ -8492,7 +8414,7 @@
         "sectionIds": [
           ""
         ],
-        "mainText": "Steven Hagene SH monogram404 · Route not foundThis path ends here.The page may have moved, or the address may be mistyped. The work and the rest of the site are still intact.Return homeExplore selected workView public code",
+        "mainText": "Steven Hagene SH monogram404 · Route not foundThis path ends here.The page may have moved, or the address may be mistyped. The work and the rest of the site are still intact.Return homeExplore selected workView engineering proof",
         "email": null,
         "statsWidths": [],
         "portraitTransform": null,
@@ -8507,6 +8429,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Page Not Found | Steven Hagene",
           "description": "The requested page does not exist. Return to Steven Hagene's portfolio or engineering case studies.",
@@ -8578,7 +8502,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": {
           "heading": "This path ends here.",
           "hasBrandMark": true,
@@ -8697,7 +8621,7 @@
           {
             "index": 9,
             "tag": "A",
-            "text": "View public code",
+            "text": "View engineering proof",
             "href": "/github/",
             "outlineWidth": 2,
             "outlineStyle": "solid",
@@ -8774,7 +8698,7 @@
         ]
       },
       "consoleErrors": [
-        "Failed to load resource: the server responded with a status of 404 ()"
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
       ],
       "pageErrors": [],
       "failures": []
@@ -8792,7 +8716,7 @@
         "sectionIds": [
           ""
         ],
-        "mainText": "Steven Hagene SH monogram404 · Route not foundThis path ends here.The page may have moved, or the address may be mistyped. The work and the rest of the site are still intact.Return homeExplore selected workView public code",
+        "mainText": "Steven Hagene SH monogram404 · Route not foundThis path ends here.The page may have moved, or the address may be mistyped. The work and the rest of the site are still intact.Return homeExplore selected workView engineering proof",
         "email": null,
         "statsWidths": [],
         "portraitTransform": null,
@@ -8807,6 +8731,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Page Not Found | Steven Hagene",
           "description": "The requested page does not exist. Return to Steven Hagene's portfolio or engineering case studies.",
@@ -8878,7 +8804,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": {
           "heading": "This path ends here.",
           "hasBrandMark": true,
@@ -8997,7 +8923,7 @@
           {
             "index": 9,
             "tag": "A",
-            "text": "View public code",
+            "text": "View engineering proof",
             "href": "/github/",
             "outlineWidth": 2,
             "outlineStyle": "solid",
@@ -9074,7 +9000,7 @@
         ]
       },
       "consoleErrors": [
-        "Failed to load resource: the server responded with a status of 404 ()"
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
       ],
       "pageErrors": [],
       "failures": []
@@ -9092,7 +9018,7 @@
         "sectionIds": [
           ""
         ],
-        "mainText": "Steven Hagene SH monogram404 · Route not foundThis path ends here.The page may have moved, or the address may be mistyped. The work and the rest of the site are still intact.Return homeExplore selected workView public code",
+        "mainText": "Steven Hagene SH monogram404 · Route not foundThis path ends here.The page may have moved, or the address may be mistyped. The work and the rest of the site are still intact.Return homeExplore selected workView engineering proof",
         "email": null,
         "statsWidths": [],
         "portraitTransform": null,
@@ -9107,6 +9033,8 @@
           "application/ld+json"
         ],
         "heatmap": null,
+        "privateProjects": [],
+        "portfolioSourceLinks": [],
         "metadata": {
           "title": "Page Not Found | Steven Hagene",
           "description": "The requested page does not exist. Return to Steven Hagene's portfolio or engineering case studies.",
@@ -9178,7 +9106,7 @@
           "anchorsWithoutHref": 0,
           "nonAnchorLinkControls": []
         },
-        "oldRepoReferences": [],
+        "rejectedRepoReferences": [],
         "notFound": {
           "heading": "This path ends here.",
           "hasBrandMark": true,
@@ -9297,7 +9225,7 @@
           {
             "index": 9,
             "tag": "A",
-            "text": "View public code",
+            "text": "View engineering proof",
             "href": "/github/",
             "outlineWidth": 2,
             "outlineStyle": "solid",
@@ -9374,7 +9302,7 @@
         ]
       },
       "consoleErrors": [
-        "Failed to load resource: the server responded with a status of 404 ()"
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
       ],
       "pageErrors": [],
       "failures": []
@@ -9384,7 +9312,7 @@
     {
       "path": "/logo-mark.svg",
       "status": 200,
-      "contentType": "image/svg+xml",
+      "contentType": "image/svg+xml; charset=utf-8",
       "bytes": 586,
       "dimensions": null,
       "failures": []
@@ -9392,7 +9320,7 @@
     {
       "path": "/logo-mark-inverted.svg",
       "status": 200,
-      "contentType": "image/svg+xml",
+      "contentType": "image/svg+xml; charset=utf-8",
       "bytes": 579,
       "dimensions": null,
       "failures": []
@@ -9400,7 +9328,7 @@
     {
       "path": "/favicon.svg",
       "status": 200,
-      "contentType": "image/svg+xml",
+      "contentType": "image/svg+xml; charset=utf-8",
       "bytes": 474,
       "dimensions": null,
       "failures": []
@@ -9408,7 +9336,7 @@
     {
       "path": "/favicon.ico",
       "status": 200,
-      "contentType": "image/vnd.microsoft.icon",
+      "contentType": "image/x-icon",
       "bytes": 3037,
       "dimensions": [
         {
@@ -9457,7 +9385,7 @@
       "path": "/og-image.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 54769,
+      "bytes": 54362,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -9468,7 +9396,7 @@
       "path": "/og-work.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 51358,
+      "bytes": 51264,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -9479,7 +9407,7 @@
       "path": "/og-teo.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 44814,
+      "bytes": 44059,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -9490,7 +9418,7 @@
       "path": "/og-musterhall.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 47232,
+      "bytes": 47431,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -9501,7 +9429,7 @@
       "path": "/og-crimcaseai.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 51557,
+      "bytes": 51425,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -9512,7 +9440,7 @@
       "path": "/og-github.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 48109,
+      "bytes": 47333,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -9523,7 +9451,7 @@
       "path": "/og-experience.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 50010,
+      "bytes": 50213,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -9534,7 +9462,7 @@
       "path": "/og-semper.png",
       "status": 200,
       "contentType": "image/png",
-      "bytes": 49438,
+      "bytes": 49432,
       "dimensions": {
         "width": 1200,
         "height": 630

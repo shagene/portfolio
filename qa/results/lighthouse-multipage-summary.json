@@ -2,7 +2,7 @@
   {
     "route": "/",
     "formFactor": "desktop",
-    "finalUrl": "https://www.stevenhagene.com/",
+    "finalUrl": "http://127.0.0.1:4331/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
@@ -15,9 +15,9 @@
   {
     "route": "/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/",
+    "finalUrl": "http://127.0.0.1:4331/",
     "scores": {
-      "performance": 100,
+      "performance": 99,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
@@ -28,7 +28,7 @@
   {
     "route": "/work/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/work/",
+    "finalUrl": "http://127.0.0.1:4331/work/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
@@ -41,7 +41,7 @@
   {
     "route": "/work/teo/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/work/teo/",
+    "finalUrl": "http://127.0.0.1:4331/work/teo/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
@@ -54,7 +54,7 @@
   {
     "route": "/work/musterhall/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/work/musterhall/",
+    "finalUrl": "http://127.0.0.1:4331/work/musterhall/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
@@ -67,7 +67,7 @@
   {
     "route": "/work/crimcaseai/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/work/crimcaseai/",
+    "finalUrl": "http://127.0.0.1:4331/work/crimcaseai/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
@@ -80,7 +80,7 @@
   {
     "route": "/experience/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/experience/",
+    "finalUrl": "http://127.0.0.1:4331/experience/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
@@ -93,7 +93,7 @@
   {
     "route": "/founder/semper-digital-solutions/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/founder/semper-digital-solutions/",
+    "finalUrl": "http://127.0.0.1:4331/founder/semper-digital-solutions/",
     "scores": {
       "performance": 100,
       "accessibility": 100,
@@ -106,9 +106,9 @@
   {
     "route": "/github/",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/github/",
+    "finalUrl": "http://127.0.0.1:4331/github/",
     "scores": {
-      "performance": 100,
+      "performance": 99,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
@@ -119,7 +119,7 @@
   {
     "route": "/404.html",
     "formFactor": "mobile",
-    "finalUrl": "https://www.stevenhagene.com/404.html",
+    "finalUrl": "http://127.0.0.1:4331/404.html",
     "scores": {
       "performance": 100,
       "accessibility": 100,
