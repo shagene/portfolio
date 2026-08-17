@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "dataAsOf": "2026-08-11",
+  "dataAsOf": "2026-08-17",
   "source": "committed-cache",
   "provenance": "Authenticated GitHub GraphQL snapshot committed for graceful build fallback.",
   "range": {
-    "from": "2025-08-12",
-    "to": "2026-08-11"
+    "from": "2025-08-18",
+    "to": "2026-08-17"
   },
   "accounts": [
     {
@@ -15,27 +15,31 @@
       "publicRepos": 39,
       "visibleContributions": 4,
       "restrictedContributions": 0,
-      "latestPublicPush": "2026-08-11T16:22:06Z"
+      "latestPublicPush": "2026-08-11T16:24:39Z"
     },
     {
       "login": "semperdigitalsolutions",
       "label": "Semper Digital Solutions",
       "profileUrl": "https://github.com/semperdigitalsolutions",
-      "publicRepos": 9,
-      "visibleContributions": 2072,
-      "restrictedContributions": 2053,
-      "latestPublicPush": "2026-06-20T14:53:20Z"
+      "publicRepos": 10,
+      "visibleContributions": 2140,
+      "restrictedContributions": 2114,
+      "latestPublicPush": "2026-08-13T00:38:58Z"
     }
   ],
   "combined": {
-    "visibleContributions": 2076,
-    "publicContributions": 23,
-    "restrictedContributions": 2053,
-    "publicRepos": 48,
+    "visibleContributions": 2144,
+    "publicContributions": 30,
+    "restrictedContributions": 2114,
+    "publicRepos": 49,
     "topLanguages": [
       {
         "name": "TypeScript",
         "bytes": 3053233
+      },
+      {
+        "name": "C#",
+        "bytes": 994618
       },
       {
         "name": "Swift",
@@ -43,7 +47,7 @@
       },
       {
         "name": "HTML",
-        "bytes": 555107
+        "bytes": 555910
       },
       {
         "name": "Dart",
@@ -52,38 +56,10 @@
       {
         "name": "Astro",
         "bytes": 239942
-      },
-      {
-        "name": "Python",
-        "bytes": 182853
       }
     ],
-    "latestPublicActivity": "2026-08-11T16:22:06Z",
+    "latestPublicActivity": "2026-08-13T00:38:58Z",
     "calendar": [
-      {
-        "date": "2025-08-12",
-        "count": 0
-      },
-      {
-        "date": "2025-08-13",
-        "count": 0
-      },
-      {
-        "date": "2025-08-14",
-        "count": 0
-      },
-      {
-        "date": "2025-08-15",
-        "count": 0
-      },
-      {
-        "date": "2025-08-16",
-        "count": 0
-      },
-      {
-        "date": "2025-08-17",
-        "count": 0
-      },
       {
         "date": "2025-08-18",
         "count": 0
@@ -1518,7 +1494,31 @@
       },
       {
         "date": "2026-08-11",
-        "count": 25
+        "count": 40
+      },
+      {
+        "date": "2026-08-12",
+        "count": 21
+      },
+      {
+        "date": "2026-08-13",
+        "count": 10
+      },
+      {
+        "date": "2026-08-14",
+        "count": 0
+      },
+      {
+        "date": "2026-08-15",
+        "count": 22
+      },
+      {
+        "date": "2026-08-16",
+        "count": 0
+      },
+      {
+        "date": "2026-08-17",
+        "count": 0
       }
     ]
   }
