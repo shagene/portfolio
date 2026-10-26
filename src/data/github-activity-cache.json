@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "dataAsOf": "2026-10-19",
+  "dataAsOf": "2026-10-26",
   "source": "committed-cache",
   "provenance": "Authenticated GitHub GraphQL snapshot committed for graceful build fallback.",
   "range": {
-    "from": "2025-10-20",
-    "to": "2026-10-19"
+    "from": "2025-10-27",
+    "to": "2026-10-26"
   },
   "accounts": [
     {
@@ -15,22 +15,22 @@
       "publicRepos": 39,
       "visibleContributions": 4,
       "restrictedContributions": 0,
-      "latestPublicPush": "2026-10-12T19:49:17Z"
+      "latestPublicPush": "2026-10-19T16:59:54Z"
     },
     {
       "login": "semperdigitalsolutions",
       "label": "Semper Digital Solutions",
       "profileUrl": "https://github.com/semperdigitalsolutions",
       "publicRepos": 12,
-      "visibleContributions": 4666,
-      "restrictedContributions": 4646,
+      "visibleContributions": 4956,
+      "restrictedContributions": 4936,
       "latestPublicPush": "2026-08-18T17:02:36Z"
     }
   ],
   "combined": {
-    "visibleContributions": 4670,
+    "visibleContributions": 4960,
     "publicContributions": 24,
-    "restrictedContributions": 4646,
+    "restrictedContributions": 4936,
     "publicRepos": 51,
     "topLanguages": [
       {
@@ -58,36 +58,8 @@
         "bytes": 239942
       }
     ],
-    "latestPublicActivity": "2026-10-12T19:49:17Z",
+    "latestPublicActivity": "2026-10-19T16:59:54Z",
     "calendar": [
-      {
-        "date": "2025-10-20",
-        "count": 0
-      },
-      {
-        "date": "2025-10-21",
-        "count": 0
-      },
-      {
-        "date": "2025-10-22",
-        "count": 0
-      },
-      {
-        "date": "2025-10-23",
-        "count": 0
-      },
-      {
-        "date": "2025-10-24",
-        "count": 0
-      },
-      {
-        "date": "2025-10-25",
-        "count": 0
-      },
-      {
-        "date": "2025-10-26",
-        "count": 0
-      },
       {
         "date": "2025-10-27",
         "count": 0
@@ -1518,7 +1490,35 @@
       },
       {
         "date": "2026-10-19",
-        "count": 54
+        "count": 95
+      },
+      {
+        "date": "2026-10-20",
+        "count": 12
+      },
+      {
+        "date": "2026-10-21",
+        "count": 17
+      },
+      {
+        "date": "2026-10-22",
+        "count": 4
+      },
+      {
+        "date": "2026-10-23",
+        "count": 47
+      },
+      {
+        "date": "2026-10-24",
+        "count": 169
+      },
+      {
+        "date": "2026-10-25",
+        "count": 0
+      },
+      {
+        "date": "2026-10-26",
+        "count": 0
       }
     ]
   }
